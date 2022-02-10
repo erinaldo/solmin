@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A28CEBF7-D176-4F2E-B76D-B8873933C2BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RANSA.SolminControls</RootNamespace>
+    <AssemblyName>RANSA.SolminControls</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RANSA.SolminControls.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RANSA.SolminControls.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="RANSA.SolminControls, Version=1.0.3510.16452, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\RANSA.SolminControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeValidatorKryton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL's\TypeValidatorKryton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente\ucCliente_DgF01.Designer.vb">
+      <DependentUpon>ucCliente_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\ucCliente_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cliente\ucCliente_FCliente.Designer.vb">
+      <DependentUpon>ucCliente_FCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\ucCliente_FCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\ucCliente_TxtF01.Designer.vb">
+      <DependentUpon>ucCliente_TxtF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\ucCliente_TxtF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Servicios\ucServicios_DgF01.Designer.vb">
+      <DependentUpon>ucServicios_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ucServicios_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Servicios\ucServicios_DgF02.Designer.vb">
+      <DependentUpon>ucServicios_DgF02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ucServicios_DgF02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Servicios - Gestión\ucServicios_FServF01.Designer.vb">
+      <DependentUpon>ucServicios_FServF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios - Gestión\ucServicios_FServF01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ucServicios_Mercaderia_DgF01.Designer.vb">
+      <DependentUpon>ucServicios_Mercaderia_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ucServicios_Mercaderia_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucControlOperacion_DgF01.Designer.vb">
+      <DependentUpon>ucControlOperacion_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucControlOperacion_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Waybill\ucItemsWaybill_DgF01.Designer.vb">
+      <DependentUpon>ucItemsWaybill_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Waybill\ucItemsWaybill_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Servicios\ucServicios_Waybill_DgF01.Designer.vb">
+      <DependentUpon>ucServicios_Waybill_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ucServicios_Waybill_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Waybill\ucWaybill_PreDespacho.Designer.vb">
+      <DependentUpon>ucWaybill_PreDespacho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Waybill\ucWaybill_PreDespacho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Waybill\ucWaybill_DgF01.Designer.vb">
+      <DependentUpon>ucWaybill_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Waybill\ucWaybill_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cliente\ucCliente_DgF01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCliente_DgF01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\ucCliente_FCliente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCliente_FCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\ucCliente_TxtF01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCliente_TxtF01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ucServicios_DgF01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucServicios_DgF01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ucServicios_DgF02.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucServicios_DgF02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios - Gestión\ucServicios_FServF01.resx">
+      <DependentUpon>ucServicios_FServF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ucServicios_Mercaderia_DgF01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucServicios_Mercaderia_DgF01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucControlOperacion_DgF01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucControlOperacion_DgF01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waybill\ucItemsWaybill_DgF01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucItemsWaybill_DgF01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ucServicios_Waybill_DgF01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucServicios_Waybill_DgF01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waybill\ucWaybill_PreDespacho.resx">
+      <DependentUpon>ucWaybill_PreDespacho.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waybill\ucWaybill_DgF01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucWaybill_DgF01.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DBManager\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager %28L1 - Data Layer\ConnectionManager\DB2Manager\Db2Manager%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SolucionesWIN\slnSOLMIN_SA\RANSA.DATA\RANSA.DATA.vbproj">
+      <Project>{57583771-9974-49B0-8C46-3BBCC5EA6467}</Project>
+      <Name>RANSA.DATA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SolucionesWIN\slnSOLMIN_SA\RANSA.TYPEDEF\RANSA.TYPEDEF.vbproj">
+      <Project>{92EF2C77-6996-427A-8E39-0F003417E224}</Project>
+      <Name>RANSA.TYPEDEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TipoAyuda\Ransa.Controls.TipoAyuda\Ransa.Controls.TipoAyuda.vbproj">
+      <Project>{031CF484-82D4-455C-BCEC-237F0124FF66}</Project>
+      <Name>Ransa.Controls.TipoAyuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TipoAyuda\Ransa.TypeDef.TipoAyuda\Ransa.TypeDef.TipoAyuda.vbproj">
+      <Project>{9382918F-A0B4-4D8E-9258-7B85513D2C19}</Project>
+      <Name>Ransa.TypeDef.TipoAyuda</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

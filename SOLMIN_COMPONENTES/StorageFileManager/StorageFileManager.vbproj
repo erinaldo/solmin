@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3165C610-476B-40FA-BD2B-B32A920398A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>StorageFileManager</RootNamespace>
+    <AssemblyName>StorageFileManager</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>StorageFileManager.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>StorageFileManager.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>StorageFileManager.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK.CognitoIdentity">
+      <HintPath>..\..\Dlls\AWSSDK.CognitoIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core">
+      <HintPath>..\..\Dlls\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.S3">
+      <HintPath>..\..\Dlls\AWSSDK.S3.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecurityToken">
+      <HintPath>..\..\Dlls\AWSSDK.SecurityToken.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e">
+      <HintPath>..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\CargaAdjuntos.vb" />
+    <Compile Include="Classes\CargaAdjuntos_BL.vb" />
+    <Compile Include="Classes\CargaAdjuntos_DAL.vb" />
+    <Compile Include="Classes\EntityFileStorage.vb" />
+    <Compile Include="Classes\Imagen_BLL.vb" />
+    <Compile Include="Classes\Imagen_DAL.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargaAdjuntosList.Designer.vb">
+      <DependentUpon>frmCargaAdjuntosList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargaAdjuntosList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargaAdjuntos.Designer.vb">
+      <DependentUpon>frmCargaAdjuntos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargaAdjuntos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstructuraArchivo.Designer.vb">
+      <DependentUpon>frmEstructuraArchivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstructuraArchivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProxyFileManagerAWS.vb">
+      <SubType>code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargaAdjuntosList.resx">
+      <DependentUpon>frmCargaAdjuntosList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargaAdjuntos.resx">
+      <DependentUpon>frmCargaAdjuntos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstructuraArchivo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEstructuraArchivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\StorageFileManager.Classes.EntityFileStorage.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="StorageFileManager.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileopen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kspread_ksp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\source.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spreadsheet_document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spreadsheet_document1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\template_source.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spreadsheet_document2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\template_source1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_action_fail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletecell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_remove1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Db2Manager\Db2Manager.vbproj">
+      <Project>{a2c91cd2-a100-4979-9ea9-53939e4a666f}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entidad\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

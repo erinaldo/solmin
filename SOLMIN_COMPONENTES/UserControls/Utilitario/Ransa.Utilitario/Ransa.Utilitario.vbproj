@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ransa.Utilitario</RootNamespace>
+    <AssemblyName>Ransa.Utilitario</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Utilitario.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ransa.Utilitario.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Ransa.Utilitario.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL" />
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="NPOIV2, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\NPOI\NPOIV2.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOIV2.DDF, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\NPOI\NPOIV2.DDF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOIV2.HPSF, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\NPOI\NPOIV2.HPSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOIV2.HSSF, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\NPOI\NPOIV2.HSSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOIV2.POIFS, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\NPOI\NPOIV2.POIFS.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOIV2.SS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\NPOI\NPOIV2.SS.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOIV2.Util, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\NPOI\NPOIV2.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalendarColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CloneObject.vb" />
+    <Compile Include="CtrlAyuda\Busqueda.vb" />
+    <Compile Include="CtrlAyuda\Comparador.vb" />
+    <Compile Include="CtrlAyuda\frmAyuda.Designer.vb">
+      <DependentUpon>frmAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlAyuda\frmAyuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CtrlAyuda\Predicado.vb" />
+    <Compile Include="CtrlAyuda\ucAyuda.Designer.vb">
+      <DependentUpon>ucAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlAyuda\ucAyuda.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlCliente_Check\beCliente.vb" />
+    <Compile Include="CtrlCliente_Check\frmCliente_Check.Designer.vb">
+      <DependentUpon>frmCliente_Check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlCliente_Check\frmCliente_Check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CtrlCliente_Check\ucCliente_Check.Designer.vb">
+      <DependentUpon>ucCliente_Check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlCliente_Check\ucCliente_Check.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlComboBox\CCBoxItem.vb" />
+    <Compile Include="CtrlComboBox\CheckComboBoxGeneral.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CtrlComboBox\ctrlComboBox.Designer.vb">
+      <DependentUpon>ctrlComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlComboBox\ctrlComboBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlDirDelServicio\DA\clsUbigeo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CtrlDirDelServicio\EN\beClienteDireccion.vb" />
+    <Compile Include="CtrlDirDelServicio\EN\beDirecServ.vb" />
+    <Compile Include="CtrlDirDelServicio\EN\beUbigeo.vb" />
+    <Compile Include="CtrlDirDelServicio\DA\clsDirDelServicio.vb" />
+    <Compile Include="CtrlDirDelServicio\EN\beZonaFacturacion.vb" />
+    <Compile Include="CtrlDirDelServicio\frmBuscarDireccionServicio.Designer.vb">
+      <DependentUpon>frmBuscarDireccionServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlDirDelServicio\frmBuscarDireccionServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CtrlSendMail\UCSendMail.Designer.vb">
+      <DependentUpon>UCSendMail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlSendMail\UCSendMail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlSendMail\ws_solmin_common_task.vb" />
+    <Compile Include="CtrlTexto\Texto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CtrlValidaNumeros\clsTextBoxNumero.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CtrlValidaNumeros\UCtxtSoloDecimales.Designer.vb">
+      <DependentUpon>UCtxtSoloDecimales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlValidaNumeros\UCtxtSoloDecimales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Encabezados.vb" />
+    <Compile Include="HelpClass.vb" />
+    <Compile Include="HelpClass_NPOI.vb" />
+    <Compile Include="HelpClass_NPOI_AD.vb" />
+    <Compile Include="HelpClass_NPOI_SA.vb" />
+    <Compile Include="HelpClass_NPOI_SC.vb" />
+    <Compile Include="HelpClass_NPOI_ST.vb" />
+    <Compile Include="HelpClass_Txt.vb" />
+    <Compile Include="Logger\Logger.vb" />
+    <Compile Include="Logger\ManejadorExcepciones.vb" />
+    <Compile Include="MainModuleDeploy.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="String\StringExtension.vb" />
+    <Compile Include="UCDataGridView.vb" />
+    <Compile Include="UCOrdena.vb" />
+    <Compile Include="UCOrdenaS.vb" />
+    <Compile Include="UCPaginacion.Designer.vb">
+      <DependentUpon>UCPaginacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCPaginacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlValidaNumeros\UCtxtSoloNumeros.Designer.vb">
+      <DependentUpon>UCtxtSoloNumeros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlValidaNumeros\UCtxtSoloNumeros.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CtrlAyuda\frmAyuda.resx">
+      <DependentUpon>frmAyuda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlAyuda\ucAyuda.resx">
+      <DependentUpon>ucAyuda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlCliente_Check\frmCliente_Check.resx">
+      <DependentUpon>frmCliente_Check.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlCliente_Check\ucCliente_Check.resx">
+      <DependentUpon>ucCliente_Check.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlComboBox\ctrlComboBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctrlComboBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlDirDelServicio\frmBuscarDireccionServicio.resx">
+      <DependentUpon>frmBuscarDireccionServicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlSendMail\UCSendMail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCSendMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlValidaNumeros\UCtxtSoloDecimales.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCtxtSoloDecimales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPaginacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCPaginacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlValidaNumeros\UCtxtSoloNumeros.resx">
+      <DependentUpon>UCtxtSoloNumeros.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NPOI\Ionic.Zip.dll" />
+    <Content Include="NPOI\NPOI.dll" />
+    <Content Include="NPOI\NPOIV2.DDF.dll" />
+    <Content Include="NPOI\NPOIV2.dll" />
+    <Content Include="NPOI\NPOIV2.HPSF.dll" />
+    <Content Include="NPOI\NPOIV2.HSSF.dll" />
+    <Content Include="NPOI\NPOIV2.POIFS.dll" />
+    <Content Include="NPOI\NPOIV2.SS.dll" />
+    <Content Include="NPOI\NPOIV2.Util.dll" />
+    <Content Include="Resources\ark_selectall.png" />
+    <Content Include="Resources\button_ok.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\exit1.png" />
+    <Content Include="Resources\search.png" />
+    <None Include="Ransa.Utilitario.pfx" />
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

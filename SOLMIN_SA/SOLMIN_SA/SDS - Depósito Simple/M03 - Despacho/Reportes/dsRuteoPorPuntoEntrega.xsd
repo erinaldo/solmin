@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRuteoPorPuntoEntrega" targetNamespace="http://tempuri.org/dsRuteoPorPuntoEntrega.xsd" xmlns:mstns="http://tempuri.org/dsRuteoPorPuntoEntrega.xsd" xmlns="http://tempuri.org/dsRuteoPorPuntoEntrega.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRuteoPorPuntoEntrega" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRuteoPorPuntoEntrega" msprop:Generator_DataSetName="dsRuteoPorPuntoEntrega">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RuteoPorPuntoEntrega" msprop:Generator_UserTableName="RuteoPorPuntoEntrega" msprop:Generator_RowDeletedName="RuteoPorPuntoEntregaRowDeleted" msprop:Generator_RowChangedName="RuteoPorPuntoEntregaRowChanged" msprop:Generator_RowClassName="RuteoPorPuntoEntregaRow" msprop:Generator_RowChangingName="RuteoPorPuntoEntregaRowChanging" msprop:Generator_RowEvArgName="RuteoPorPuntoEntregaRowChangeEvent" msprop:Generator_RowEvHandlerName="RuteoPorPuntoEntregaRowChangeEventHandler" msprop:Generator_TableClassName="RuteoPorPuntoEntregaDataTable" msprop:Generator_TableVarName="tableRuteoPorPuntoEntrega" msprop:Generator_RowDeletingName="RuteoPorPuntoEntregaRowDeleting" msprop:Generator_TablePropName="RuteoPorPuntoEntrega">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CDPEPL" msprop:Generator_UserColumnName="CDPEPL" msprop:Generator_ColumnVarNameInTable="columnCDPEPL" msprop:Generator_ColumnPropNameInRow="CDPEPL" msprop:Generator_ColumnPropNameInTable="CDPEPLColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="NGUIRM" msprop:Generator_UserColumnName="NGUIRM" msprop:Generator_ColumnVarNameInTable="columnNGUIRM" msprop:Generator_ColumnPropNameInRow="NGUIRM" msprop:Generator_ColumnPropNameInTable="NGUIRMColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="NORDS1" msprop:Generator_UserColumnName="NORDS1" msprop:Generator_ColumnVarNameInTable="columnNORDS1" msprop:Generator_ColumnPropNameInRow="NORDS1" msprop:Generator_ColumnPropNameInTable="NORDS1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CMRCLR" msprop:Generator_UserColumnName="CMRCLR" msprop:Generator_ColumnVarNameInTable="columnCMRCLR" msprop:Generator_ColumnPropNameInRow="CMRCLR" msprop:Generator_ColumnPropNameInTable="CMRCLRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TMRCD2" msprop:Generator_UserColumnName="TMRCD2" msprop:Generator_ColumnVarNameInTable="columnTMRCD2" msprop:Generator_ColumnPropNameInRow="TMRCD2" msprop:Generator_ColumnPropNameInTable="TMRCD2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="qcngu" msprop:Generator_UserColumnName="qcngu" msprop:Generator_ColumnVarNameInTable="columnqcngu" msprop:Generator_ColumnPropNameInRow="qcngu" msprop:Generator_ColumnPropNameInTable="qcnguColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cuncn" msprop:Generator_UserColumnName="cuncn" msprop:Generator_ColumnVarNameInTable="columncuncn" msprop:Generator_ColumnPropNameInRow="cuncn" msprop:Generator_ColumnPropNameInTable="cuncnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="qpsgu" msprop:Generator_UserColumnName="qpsgu" msprop:Generator_ColumnVarNameInTable="columnqpsgu" msprop:Generator_ColumnPropNameInRow="qpsgu" msprop:Generator_ColumnPropNameInTable="qpsguColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cunps" msprop:Generator_UserColumnName="cunps" msprop:Generator_ColumnVarNameInTable="columncunps" msprop:Generator_ColumnPropNameInRow="cunps" msprop:Generator_ColumnPropNameInTable="cunpsColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

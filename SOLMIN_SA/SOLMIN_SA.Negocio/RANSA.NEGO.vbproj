@@ -1,0 +1,1453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51B8061D-C481-405B-B692-7C2EDC3464CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RANSA.NEGO</RootNamespace>
+    <AssemblyName>RANSA.NEGO</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RANSA.NEGO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RANSA.NEGO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\Dlls\Restsharp\net35\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API_REST\API_REST.vb" />
+    <Compile Include="G00 - GENERAL\brAlmacen.vb" />
+    <Compile Include="G00 - GENERAL\brCheckPoint.vb" />
+    <Compile Include="G00 - GENERAL\brDocumento.vb" />
+    <Compile Include="G00 - GENERAL\brGeneral.vb" />
+    <Compile Include="G00 - GENERAL\brIntegracion.vb" />
+    <Compile Include="G00 - GENERAL\brInterfazOutoTec.vb" />
+    <Compile Include="G00 - GENERAL\brOrdenDeCompra.vb" />
+    <Compile Include="G00 - GENERAL\brPlanta.vb" />
+    <Compile Include="G00 - GENERAL\brProveedor.vb" />
+    <Compile Include="G00 - GENERAL\brUnidadMedida.vb" />
+    <Compile Include="G00 - GENERAL\brBase.vb" />
+    <Compile Include="G00 - GENERAL\clsUploadImg.vb" />
+    <Compile Include="GR_E_Pacasmayo\br_Rest_Remision_Pacasmayo.vb" />
+    <Compile Include="GR_E_Pacasmayo\GR_JSON_PACASMAYO.vb" />
+    <Compile Include="GR_E_Pacasmayo\GR_JSON_RPTA_PACASMAYO.vb" />
+    <Compile Include="GR_E_Pacasmayo\ProxyFileDOCAWS.vb" />
+    <Compile Include="ProxyWS\IntegracionABB.vb" />
+    <Compile Include="ProxyWS\SI_AnulaRecepcion_Ransa_OutService.vb" />
+    <Compile Include="ProxyWS\SI_EnvioDespachos_Ransa_OutService.vb" />
+    <Compile Include="ProxyWS\SI_EnvioRecepcion_Ransa_OutService.vb" />
+    <Compile Include="ProxyWS\ProxyPacasmayo_GR_Anulacion.vb" />
+    <Compile Include="ProxyWS\ProxyPacasmayo_GR_Emision.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R00 - General\brBulto.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R00 - General\brCargarImagen.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R00 - General\brContenedor.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R00 - General\brUbicacionesXCliente.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R00 - General\brZonaAlmacen.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R01 - RECEPCION\CentroOrigen.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\CargaRecepcion_CC.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\InterfaseCorpesa.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptIngresosPorLote.vb">
+      <DependentUpon>rptIngresosPorLote.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptIngresosPorAlmacenXloteXSolic.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptIngresosPorAlmacenXloteXSolic.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptReceivingReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptReceivingReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="G00 - GENERAL\BO\brMercaderia.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\brGuiasRemision.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\brReporteAT.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionCH2M.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionCH2M.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM012.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM012.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM013.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM013.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM05B.vb">
+      <DependentUpon>rptGuiaRemisionM05B.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM05A.vb">
+      <DependentUpon>rptGuiaRemisionM05A.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM06b.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM06b.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM08.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM08.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM09B.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM09B.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM10.vb">
+      <DependentUpon>rptGuiaRemisionM10.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptDespachoMercaderiaUnidad.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDespachoMercaderiaUnidad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM09.vb">
+      <DependentUpon>rptGuiaRemisionM09.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM14.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM14.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM15.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM15.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM16.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM16.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM17.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM17.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM18.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM18.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM19.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM19.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM201.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM20.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptSalidaUnidades.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSalidaUnidades.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R05 - CONSULTAS\brDespachoMovimientos.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R05 - CONSULTAS\brIngresoMovimientos.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R05 - CONSULTAS\brPreDespacho.vb" />
+    <Compile Include="SDS - Depósito Simple\R00 - General\brIndicador.vb" />
+    <Compile Include="SDS - Depósito Simple\R00 - General\brLoteDeMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\R00 - General\brTipoDeDeposito.vb" />
+    <Compile Include="SDS - Depósito Simple\R00 - General\brUsuario.vb" />
+    <Compile Include="SDS - Depósito Simple\R00 - General\brReporteDS.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brAcoplado.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brIncidencias.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brLote.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brMaestroRuta.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brObservacionesPedido.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brPlantaClienteProveedor.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brProveedor.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brRutaTienda.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brSerieMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brSugerenciaMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brTransportista.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brUbicacion.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brCamion.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\brChofer.vb" />
+    <Compile Include="SDS - Depósito Simple\R02 - RECEPCION\brProyecto.vb" />
+    <Compile Include="SDS - Depósito Simple\R02 - RECEPCION\brRecepcionInterfaceSap.vb" />
+    <Compile Include="SDS - Depósito Simple\R02 - RECEPCION\KryptonForm.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\brDespachoMasivo.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\brPedido.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\brPosicion.vb" />
+    <Compile Include="G00 - GENERAL\BO\brCamion.vb" />
+    <Compile Include="G00 - GENERAL\BO\brChofer.vb" />
+    <Compile Include="G00 - GENERAL\clsBasicClass.vb" />
+    <Compile Include="G00 - GENERAL\General.vb" />
+    <Compile Include="G00 - GENERAL\Seguridad.vb" />
+    <Compile Include="G00 - GENERAL\SendFileToEMail.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R00 - General\General_SAT.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R01 - RECEPCION\Filtros.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R01 - RECEPCION\RecepcionSAT.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R01 - RECEPCION\RecepcionSAT_DAO.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\AlmacenSAT.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\AlmacenSAT_DAO.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\EstructuraAlmacenSAT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstructuraAlmacenSAT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\EstructuraAlmacenSAT.vb">
+      <DependentUpon>EstructuraAlmacenSAT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\Filtros.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\MovimientoProductoValorizado.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovimientoProductoValorizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\Reportes.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptActividadAlmacen.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptActividadAlmacen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptSegOCSegunFechaEntrega.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSegOCSegunFechaEntrega.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R03 - PRE-DESPACHO\Filtros.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R03 - PRE-DESPACHO\PreDespacho.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R03 - PRE-DESPACHO\PreDespachoSAT_DAO.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\DespachoSAT.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\DespachoSAT_DAO.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\EstructuraDespachos.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EstructuraDespachos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\EstructuraDespachos.vb">
+      <DependentUpon>EstructuraDespachos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\Filtros.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\Reportes.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaDeSalida.vb">
+      <DependentUpon>rptGuiaDeSalida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM01.vb">
+      <DependentUpon>rptGuiaRemisionM01.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM02.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM03.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM04.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM04.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM05.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionM05.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM06.vb">
+      <DependentUpon>rptGuiaRemisionM06.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM07.vb">
+      <DependentUpon>rptGuiaRemisionM07.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="SDA - Depósito Autorizado\R00 - General\Filtros.vb" />
+    <Compile Include="SDA - Depósito Autorizado\R00 - General\GeneralSDA.vb" />
+    <Compile Include="SDA - Depósito Autorizado\R02 - RECEPCION\EstructuraRecepcionSDA.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstructuraRecepcionSDA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDA - Depósito Autorizado\R02 - RECEPCION\RecepcionSDA.vb" />
+    <Compile Include="SDA - Depósito Autorizado\R02 - RECEPCION\Reportes.vb" />
+    <Compile Include="SDA - Depósito Autorizado\R02 - RECEPCION\rptGuiaRecepcionSDA.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRecepcionSDA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R00 - General\Filtros.vb" />
+    <Compile Include="SDS - Depósito Simple\R00 - General\GeneralSDS.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\Filtros.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\MantenimientoSDS.vb" />
+    <Compile Include="SDS - Depósito Simple\R01 - MANTENIMIENTO\MantenimientoSDS_DAO.vb" />
+    <Compile Include="SDS - Depósito Simple\R02 - RECEPCION\EstructuraRecepcionSDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstructuraRecepcionSDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R02 - RECEPCION\Filtros.vb" />
+    <Compile Include="SDS - Depósito Simple\R02 - RECEPCION\RecepcionSDS.vb" />
+    <Compile Include="SDS - Depósito Simple\R02 - RECEPCION\RecepcionSDS_DAO.vb" />
+    <Compile Include="SDS - Depósito Simple\R02 - RECEPCION\Reportes.vb" />
+    <Compile Include="SDS - Depósito Simple\R02 - RECEPCION\rptGuiaRecepcion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRecepcion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\brDespacho.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\brPreDespacho.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaDespacho2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaDespacho2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaInterfazRecepcion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaInterfazRecepcion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M04.vb">
+      <DependentUpon>rptGuiaRemisionSDS_M04.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\DespachoSDS.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\DespachoSDS_DAO.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\EstructuraDespachoSDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstructuraDespachoSDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\Filtros.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\Reportes.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaDespacho.vb">
+      <DependentUpon>rptGuiaDespacho.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionSDS_M01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M02.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionSDS_M02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M03.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionSDS_M03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M05.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionSDS_M05.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M06.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemisionSDS_M06.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\dstReporteIncidencias.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstReporteIncidencias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\dstReporteIncidencias.vb">
+      <DependentUpon>dstReporteIncidencias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptDetalleIncidencia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDetalleIncidencia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptGraficoDetalleIncidencia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGraficoDetalleIncidencia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptIncidencias.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptIncidencias.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptIndicadorAnual.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptIndicadorAnual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptIndicadorMensual.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptIndicadorMensual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptInventarioPosicion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInventarioPosicion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptMovimientoLugarEntrega.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMovimientoLugarEntrega.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptMovimientoxCeCo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMovimientoxCeCo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptPedidoPendienteEntrega.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPedidoPendienteEntrega.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptPendienteRecepcion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPendienteRecepcion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptSugerenciaPiking.vb">
+      <DependentUpon>rptSugerenciaPiking.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\InventarioMercaderiaUbicacion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventarioMercaderiaUbicacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\MovimientoProductosR01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovimientoProductosR01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\MovimientoProductosR02.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovimientoProductosR02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\MovimientoProductosR03.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovimientoProductosR03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\MovProductosPorUbicacionR01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovProductosPorUbicacionR01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\MovProductosPorUbicacionR02.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovProductosPorUbicacionR02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\ReporteSDS.vb" />
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\ReporteSDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteSDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptInventarioMercaderias.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInventarioMercaderias.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\rptUbicacionGuiaIngresoS.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptUbicacionGuiaIngresoS.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\StockProductosPorAlmacenR01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockProductosPorAlmacenR01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\StockProductosPorAlmacenR02.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockProductosPorAlmacenR02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\StockProductosR01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockProductosR01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R04 - REPORTES\ucMovMercaderias_F03.vb">
+      <DependentUpon>ucMovMercaderias_F03.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\R05 - CONSULTAS\blInventarioMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\R05 - CONSULTAS\blMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\R05 - CONSULTAS\blOrdenCompra.vb" />
+    <Compile Include="SDS - Depósito Simple\R05 - CONSULTAS\blPedidoDeposito.vb" />
+    <Compile Include="SDS - Depósito Simple\R05 - CONSULTAS\blPoliza.vb" />
+    <Compile Include="SDS - Depósito Simple\R05 - CONSULTAS\blSerie.vb" />
+    <Compile Include="SDS - Depósito Simple\R05 - CONSULTAS\blUbicacionSugeridaMercaderiaGuia.vb" />
+    <Compile Include="SDS - Depósito Simple\R05 - CONSULTAS\blTomaInvertario.vb" />
+    <Compile Include="SDS - Depósito Simple\R05 - CONSULTAS\brGuiasRemision.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\G00 - General\clsBasicClassSDSW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\G00 - General\GeneralSDSW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R00 - General\FiltrosSDSW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R00 - General\FiltrosWrrt.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R00 - General\GeneralSDSW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R00 - General\GeneralSDSW_DAO.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R00 - General\ReportesSDSW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R01 - Mantenimiento\MantenimientoSDSW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R01 - Mantenimiento\MantenimientoSDSW_DAO.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R02 - Recepcion\EstructuraRecepcionSDSW.Designer.vb">
+      <DependentUpon>EstructuraRecepcionSDSW.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R02 - Recepcion\EstructuraRecepcionSDSW.vb">
+      <DependentUpon>EstructuraRecepcionSDSW.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R02 - Recepcion\RecepcionSDSW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R02 - Recepcion\ReportesSDSW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R02 - Recepcion\rptGuiaRecepcionAlma.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRecepcionAlma.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R03 - Despacho\DespachoSDSW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R03 - Despacho\DespachoSDSW_DAO.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R03 - Despacho\Filtros.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R03 - Despacho\Reportes.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R04 - Ticket\EstructuraTicketSDSW.Designer.vb">
+      <DependentUpon>EstructuraTicketSDSW.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R04 - Ticket\EstructuraTicketSDSW.vb">
+      <DependentUpon>EstructuraTicketSDSW.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R04 - Ticket\ReportesW.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R04 - Ticket\rptTicketOrdenServicio.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTicketOrdenServicio.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R05 - Reporte Inventario\EstructuraReporteInventario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstructuraReporteInventario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R05 - Reporte Inventario\ReporteInventario.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R05 - Reporte Inventario\rptReporteInventario.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptReporteInventario.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R06 - Reporte Pre - Factura\EstructuraReportePreFactVeh.Designer.vb">
+      <DependentUpon>EstructuraReportePreFactVeh.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R06 - Reporte Pre - Factura\EstructuraReportePreFactVeh.vb">
+      <DependentUpon>EstructuraReportePreFactVeh.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R06 - Reporte Pre - Factura\ReportePreFactVeh.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R06 - Reporte Pre - Factura\rptReportePreFactVeh.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptReportePreFactVeh.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R07 - Reporte Consistencia\EstructuraReporteConsistencia.Designer.vb">
+      <DependentUpon>EstructuraReporteConsistencia.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R07 - Reporte Consistencia\EstructuraReporteConsistencia.vb">
+      <DependentUpon>EstructuraReporteConsistencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R07 - Reporte Consistencia\ReporteConsistencia.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R07 - Reporte Consistencia\rptReporteConsistencia.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptReporteConsistencia.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\EstructuraReporteIngresos.Designer.vb">
+      <DependentUpon>EstructuraReporteIngresos.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\EstructuraReporteIngresos.vb">
+      <DependentUpon>EstructuraReporteIngresos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\EstructuraReporteSalida.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstructuraReporteSalida.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\ReporteIngresosAmcor.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\ReporteSalidaAmcor.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\rpReporteIngresosAmcor.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpReporteIngresosAmcor.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\rpReporteSalidaAmcor.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpReporteSalidaAmcor.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R09 - REPORTE - CONSULTA GENERAL AMCOR\EstructuraReporteAmcorGeneral.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstructuraReporteAmcorGeneral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R09 - REPORTE - CONSULTA GENERAL AMCOR\ReporteGeneralAmcor.vb" />
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R09 - REPORTE - CONSULTA GENERAL AMCOR\rpReporteIngresosTotalAmcor.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpReporteIngresosTotalAmcor.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R09 - REPORTE - CONSULTA GENERAL AMCOR\rpReporteSalidaTotalAmcor.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpReporteSalidaTotalAmcor.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSCargarDocumento\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptIngresosPorLote.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIngresosPorLote.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R02 - ALMACEN\MovimientoProductoValorizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MovimientoProductoValorizado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptActividadAlmacen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptActividadAlmacen.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptIngresosPorAlmacenXloteXSolic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIngresosPorAlmacenXloteXSolic.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptReceivingReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptReceivingReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R02 - ALMACEN\rptSegOCSegunFechaEntrega.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSegOCSegunFechaEntrega.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionCH2M.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionCH2M.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM012.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM012.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM013.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM013.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM05B.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM05B.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM05A.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM05A.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM06b.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM06b.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM08.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM08.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM09B.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM09B.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM10.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptDespachoMercaderiaUnidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDespachoMercaderiaUnidad.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM09.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM09.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaDeSalida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaDeSalida.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM02.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM03.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM04.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM05.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM05.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM06.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM06.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM07.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM07.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM14.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM15.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM15.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM16.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM16.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM17.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM17.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM18.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM18.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM19.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM19.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptGuiaRemisionM20.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionM201.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT - Almacén de Tránsito\R04 - DESPACHO\rptSalidaUnidades.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSalidaUnidades.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDA - Depósito Autorizado\R02 - RECEPCION\rptGuiaRecepcionSDA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRecepcionSDA.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R02 - RECEPCION\rptGuiaRecepcion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRecepcion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaDespacho2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaDespacho2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaInterfazRecepcion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaInterfazRecepcion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionSDS_M04.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaDespacho.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaDespacho.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionSDS_M01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionSDS_M02.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionSDS_M03.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M05.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionSDS_M05.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R03 - DESPACHO\rptGuiaRemisionSDS_M06.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemisionSDS_M06.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptDetalleIncidencia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDetalleIncidencia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptGraficoDetalleIncidencia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGraficoDetalleIncidencia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptIncidencias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIncidencias.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptIndicadorAnual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIndicadorAnual.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptIndicadorMensual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIndicadorMensual.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptInventarioPosicion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInventarioPosicion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptMovimientoLugarEntrega.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMovimientoLugarEntrega.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptMovimientoxCeCo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMovimientoxCeCo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptPedidoPendienteEntrega.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPedidoPendienteEntrega.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptPendienteRecepcion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPendienteRecepcion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptSugerenciaPiking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSugerenciaPiking.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\InventarioMercaderiaUbicacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InventarioMercaderiaUbicacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\MovimientoProductosR01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MovimientoProductosR01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\MovimientoProductosR02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MovimientoProductosR02.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\MovimientoProductosR03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MovimientoProductosR03.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\MovProductosPorUbicacionR01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MovProductosPorUbicacionR01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\MovProductosPorUbicacionR02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MovProductosPorUbicacionR02.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptInventarioMercaderias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInventarioMercaderias.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\rptUbicacionGuiaIngresoS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptUbicacionGuiaIngresoS.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\StockProductosPorAlmacenR01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StockProductosPorAlmacenR01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\StockProductosPorAlmacenR02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StockProductosPorAlmacenR02.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\StockProductosR01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StockProductosR01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDS - Depósito Simple\R04 - REPORTES\ucMovMercaderias_F03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ucMovMercaderias_F03.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R02 - Recepcion\rptGuiaRecepcionAlma.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRecepcionAlma.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R04 - Ticket\rptTicketOrdenServicio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTicketOrdenServicio.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R05 - Reporte Inventario\rptReporteInventario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptReporteInventario.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R06 - Reporte Pre - Factura\rptReportePreFactVeh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptReportePreFactVeh.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R07 - Reporte Consistencia\rptReporteConsistencia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptReporteConsistencia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\rpReporteIngresosAmcor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpReporteIngresosAmcor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\rpReporteSalidaAmcor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpReporteSalidaAmcor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R09 - REPORTE - CONSULTA GENERAL AMCOR\rpReporteIngresosTotalAmcor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpReporteIngresosTotalAmcor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R09 - REPORTE - CONSULTA GENERAL AMCOR\rpReporteSalidaTotalAmcor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpReporteSalidaTotalAmcor.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SAT - Almacén de Tránsito\R02 - ALMACEN\EstructuraAlmacenSAT.xsc">
+      <DependentUpon>EstructuraAlmacenSAT.xsd</DependentUpon>
+    </None>
+    <None Include="SAT - Almacén de Tránsito\R02 - ALMACEN\EstructuraAlmacenSAT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraAlmacenSAT.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SAT - Almacén de Tránsito\R02 - ALMACEN\EstructuraAlmacenSAT.xss">
+      <DependentUpon>EstructuraAlmacenSAT.xsd</DependentUpon>
+    </None>
+    <None Include="SAT - Almacén de Tránsito\R04 - DESPACHO\EstructuraDespachos.xsc">
+      <DependentUpon>EstructuraDespachos.xsd</DependentUpon>
+    </None>
+    <None Include="SAT - Almacén de Tránsito\R04 - DESPACHO\EstructuraDespachos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraDespachos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SAT - Almacén de Tránsito\R04 - DESPACHO\EstructuraDespachos.xss">
+      <DependentUpon>EstructuraDespachos.xsd</DependentUpon>
+    </None>
+    <None Include="SDA - Depósito Autorizado\R02 - RECEPCION\EstructuraRecepcionSDA.xsc">
+      <DependentUpon>EstructuraRecepcionSDA.xsd</DependentUpon>
+    </None>
+    <None Include="SDA - Depósito Autorizado\R02 - RECEPCION\EstructuraRecepcionSDA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraRecepcionSDA.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDA - Depósito Autorizado\R02 - RECEPCION\EstructuraRecepcionSDA.xss">
+      <DependentUpon>EstructuraRecepcionSDA.xsd</DependentUpon>
+    </None>
+    <None Include="SDS - Depósito Simple\Fuentes\IDAutomationHC39M.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SDS - Depósito Simple\R02 - RECEPCION\EstructuraRecepcionSDS.xsc">
+      <DependentUpon>EstructuraRecepcionSDS.xsd</DependentUpon>
+    </None>
+    <None Include="SDS - Depósito Simple\R02 - RECEPCION\EstructuraRecepcionSDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraRecepcionSDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDS - Depósito Simple\R02 - RECEPCION\EstructuraRecepcionSDS.xss">
+      <DependentUpon>EstructuraRecepcionSDS.xsd</DependentUpon>
+    </None>
+    <None Include="SDS - Depósito Simple\R03 - DESPACHO\EstructuraDespachoSDS.xsc">
+      <DependentUpon>EstructuraDespachoSDS.xsd</DependentUpon>
+    </None>
+    <None Include="SDS - Depósito Simple\R03 - DESPACHO\EstructuraDespachoSDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraDespachoSDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDS - Depósito Simple\R03 - DESPACHO\EstructuraDespachoSDS.xss">
+      <DependentUpon>EstructuraDespachoSDS.xsd</DependentUpon>
+    </None>
+    <None Include="SDS - Depósito Simple\R04 - REPORTES\ReporteSDS.xsc">
+      <DependentUpon>ReporteSDS.xsd</DependentUpon>
+    </None>
+    <None Include="SDS - Depósito Simple\R04 - REPORTES\ReporteSDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReporteSDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDS - Depósito Simple\R04 - REPORTES\ReporteSDS.xss">
+      <DependentUpon>ReporteSDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\CodeTextBox\CodeTextBox.vbproj">
+      <Project>{65b6ad03-eff5-418e-832c-56a7a543f82c}</Project>
+      <Name>CodeTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\CorpesaWsLib\CorpesaWsLib.vbproj">
+      <Project>{5A7980E0-B9CE-4E62-BE34-2FE3EE8CFE36}</Project>
+      <Name>CorpesaWsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\NetPacasmayoService\NetPacasmayoService.vbproj">
+      <Project>{330104f3-101f-4597-bd93-9a7a01789180}</Project>
+      <Name>NetPacasmayoService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\SecurityAccess\RANSA.SolminSecurityAccess\RANSA.SolminSecurityAccess.vbproj">
+      <Project>{D562B4E0-131E-494B-90F6-29AB38857E89}</Project>
+      <Name>RANSA.SolminSecurityAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\SolminMenu\SOLMIN.MENUBAR\SOLMIN.MENUBAR.vbproj">
+      <Project>{e0f2d457-3dbf-4b72-bb47-670d12f4acc7}</Project>
+      <Name>SOLMIN.MENUBAR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\StorageFileManager\StorageFileManager.vbproj">
+      <Project>{3165c610-476b-40fa-bd2b-b32a920398a9}</Project>
+      <Name>StorageFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{e440d2c4-a8d1-44ee-9a08-18d9acea0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Mercaderia\Ransa.Rpt.Mercaderia\Ransa.Rpt.Mercaderia.vbproj">
+      <Project>{0A6B2517-727C-4B83-B0BD-FE7E93E6919C}</Project>
+      <Name>Ransa.Rpt.Mercaderia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Mercaderia\Ransa.Rpt.Mercaderia\Ransa.Rpt.Mercaderia.vbproj">
+      <Project>{0A6B2517-727C-4B83-B0BD-FE7E93E6919C}</Project>
+      <Name>Ransa.Rpt.Mercaderia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\OrdenCompra\Ransa.DAO.OrdenCompra\Ransa.DAO.OrdenCompra.vbproj">
+      <Project>{31A4B52C-FCFB-47D0-BCE2-EC45626A2F42}</Project>
+      <Name>Ransa.DAO.OrdenCompra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\OrdenCompra\Ransa.TypeDef.OrdenCompra\Ransa.TypeDef.OrdenCompra.vbproj">
+      <Project>{8D9C6E27-6902-4D9B-8DEA-170AFFC0D93F}</Project>
+      <Name>Ransa.TypeDef.OrdenCompra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Serie\Ransa.Controls.Serie\Ransa.Controls.Serie.vbproj">
+      <Project>{932116b3-8127-4417-a348-71db2c1efa0a}</Project>
+      <Name>Ransa.Controls.Serie</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_SC\Ransa.Controls.Email\Ransa.Controls.Email.vbproj">
+      <Project>{A8A5563C-2A27-488C-A655-E7D2E66739CF}</Project>
+      <Name>Ransa.Controls.Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SA.Datos\RANSA.DATA.vbproj">
+      <Project>{57583771-9974-49B0-8C46-3BBCC5EA6467}</Project>
+      <Name>RANSA.DATA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SA.Menu\SOLMIN_SA.Menu.vbproj">
+      <Project>{d780f098-7997-45af-870c-bd1f72b9c08a}</Project>
+      <Name>SOLMIN_SA.Menu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SA.Seguridad\RANSA.SecurityAccess.vbproj">
+      <Project>{ABC4F2F4-35F1-4C44-9662-2EFC4FAAB61D}</Project>
+      <Name>RANSA.SecurityAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SA.Seguridad\RANSA.SecurityAccess.vbproj">
+      <Project>{ABC4F2F4-35F1-4C44-9662-2EFC4FAAB61D}</Project>
+      <Name>RANSA.SecurityAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SA.TypeDef\RANSA.TYPEDEF.vbproj">
+      <Project>{92EF2C77-6996-427A-8E39-0F003417E224}</Project>
+      <Name>RANSA.TYPEDEF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R02 - Recepcion\EstructuraRecepcionSDSW.xsc">
+      <DependentUpon>EstructuraRecepcionSDSW.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R02 - Recepcion\EstructuraRecepcionSDSW.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraRecepcionSDSW.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R02 - Recepcion\EstructuraRecepcionSDSW.xss">
+      <DependentUpon>EstructuraRecepcionSDSW.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R04 - Ticket\EstructuraTicketSDSW.xsc">
+      <DependentUpon>EstructuraTicketSDSW.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R04 - Ticket\EstructuraTicketSDSW.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraTicketSDSW.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R04 - Ticket\EstructuraTicketSDSW.xss">
+      <DependentUpon>EstructuraTicketSDSW.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R05 - Reporte Inventario\EstructuraReporteInventario.xsc">
+      <DependentUpon>EstructuraReporteInventario.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R05 - Reporte Inventario\EstructuraReporteInventario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraReporteInventario.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R05 - Reporte Inventario\EstructuraReporteInventario.xss">
+      <DependentUpon>EstructuraReporteInventario.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R06 - Reporte Pre - Factura\EstructuraReportePreFactVeh.xsc">
+      <DependentUpon>EstructuraReportePreFactVeh.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R06 - Reporte Pre - Factura\EstructuraReportePreFactVeh.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraReportePreFactVeh.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R06 - Reporte Pre - Factura\EstructuraReportePreFactVeh.xss">
+      <DependentUpon>EstructuraReportePreFactVeh.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R07 - Reporte Consistencia\EstructuraReporteConsistencia.xsc">
+      <DependentUpon>EstructuraReporteConsistencia.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R07 - Reporte Consistencia\EstructuraReporteConsistencia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraReporteConsistencia.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R07 - Reporte Consistencia\EstructuraReporteConsistencia.xss">
+      <DependentUpon>EstructuraReporteConsistencia.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://secure.ransa.net/imagenessolmin/solminweb.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSCargarDocumento\</RelPath>
+      <UpdateFromURL>http://secure.ransa.net/imagenessolmin/solminweb.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>RANSA_NEGO_WSCargarDocumento_SolminWeb</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SDS - Depósito Simple\R04 - REPORTES\dstReporteIncidencias.xsc">
+      <DependentUpon>dstReporteIncidencias.xsd</DependentUpon>
+    </None>
+    <None Include="SDS - Depósito Simple\R04 - REPORTES\dstReporteIncidencias.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstReporteIncidencias.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDS - Depósito Simple\R04 - REPORTES\dstReporteIncidencias.xss">
+      <DependentUpon>dstReporteIncidencias.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\EstructuraReporteIngresos.xsc">
+      <DependentUpon>EstructuraReporteIngresos.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\EstructuraReporteIngresos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraReporteIngresos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\EstructuraReporteIngresos.xss">
+      <DependentUpon>EstructuraReporteIngresos.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\EstructuraReporteSalida.xsc">
+      <DependentUpon>EstructuraReporteSalida.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\EstructuraReporteSalida.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraReporteSalida.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R08- REPORTE - INGRESOS AMCOR\EstructuraReporteSalida.xss">
+      <DependentUpon>EstructuraReporteSalida.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R09 - REPORTE - CONSULTA GENERAL AMCOR\EstructuraReporteAmcorGeneral.xsc">
+      <DependentUpon>EstructuraReporteAmcorGeneral.xsd</DependentUpon>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R09 - REPORTE - CONSULTA GENERAL AMCOR\EstructuraReporteAmcorGeneral.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstructuraReporteAmcorGeneral.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SDSW - Deposito Simple Warrant\SDSW - Deposito Simple\R09 - REPORTE - CONSULTA GENERAL AMCOR\EstructuraReporteAmcorGeneral.xss">
+      <DependentUpon>EstructuraReporteAmcorGeneral.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WSCargarDocumento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSCargarDocumento\solminweb.disco" />
+    <None Include="Web References\WSCargarDocumento\solminweb.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SDA - Depósito Autorizado\R01 - MANTENIMIENTO\" />
+    <Folder Include="SDA - Depósito Autorizado\R03 - Pedidos\" />
+    <Folder Include="SDA - Depósito Autorizado\R04 - DESPACHO\" />
+    <Folder Include="SDSW - Deposito Simple Warrant\M00 - Modulos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

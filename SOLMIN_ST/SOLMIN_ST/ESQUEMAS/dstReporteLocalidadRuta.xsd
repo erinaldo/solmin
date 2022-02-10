@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReporteLocalidadRuta" targetNamespace="http://tempuri.org/dstReporteLocalidadRuta.xsd" xmlns:mstns="http://tempuri.org/dstReporteLocalidadRuta.xsd" xmlns="http://tempuri.org/dstReporteLocalidadRuta.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReporteLocalidadRuta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReporteLocalidadRuta" msprop:Generator_DataSetName="dstReporteLocalidadRuta">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LocalidadRuta" msprop:Generator_UserTableName="LocalidadRuta" msprop:Generator_RowDeletedName="LocalidadRutaRowDeleted" msprop:Generator_TableClassName="LocalidadRutaDataTable" msprop:Generator_RowChangedName="LocalidadRutaRowChanged" msprop:Generator_RowClassName="LocalidadRutaRow" msprop:Generator_RowChangingName="LocalidadRutaRowChanging" msprop:Generator_RowEvArgName="LocalidadRutaRowChangeEvent" msprop:Generator_RowEvHandlerName="LocalidadRutaRowChangeEventHandler" msprop:Generator_TablePropName="LocalidadRuta" msprop:Generator_TableVarName="tableLocalidadRuta" msprop:Generator_RowDeletingName="LocalidadRutaRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CLCLD" msprop:Generator_UserColumnName="CLCLD" msprop:Generator_ColumnPropNameInRow="CLCLD" msprop:Generator_ColumnVarNameInTable="columnCLCLD" msprop:Generator_ColumnPropNameInTable="CLCLDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMLCL" msprop:Generator_UserColumnName="TCMLCL" msprop:Generator_ColumnPropNameInRow="TCMLCL" msprop:Generator_ColumnVarNameInTable="columnTCMLCL" msprop:Generator_ColumnPropNameInTable="TCMLCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TABLCL" msprop:Generator_UserColumnName="TABLCL" msprop:Generator_ColumnPropNameInRow="TABLCL" msprop:Generator_ColumnVarNameInTable="columnTABLCL" msprop:Generator_ColumnPropNameInTable="TABLCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CUBGEL" msprop:Generator_UserColumnName="CUBGEL" msprop:Generator_ColumnPropNameInRow="CUBGEL" msprop:Generator_ColumnVarNameInTable="columnCUBGEL" msprop:Generator_ColumnPropNameInTable="CUBGELColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UBIGEO" msprop:Generator_UserColumnName="UBIGEO" msprop:Generator_ColumnPropNameInRow="UBIGEO" msprop:Generator_ColumnVarNameInTable="columnUBIGEO" msprop:Generator_ColumnPropNameInTable="UBIGEOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CUBGEO" msprop:Generator_UserColumnName="CUBGEO" msprop:Generator_ColumnPropNameInRow="CUBGEO" msprop:Generator_ColumnVarNameInTable="columnCUBGEO" msprop:Generator_ColumnPropNameInTable="CUBGEOColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsClientes" targetNamespace="http://tempuri.org/dsClientes.xsd" xmlns:mstns="http://tempuri.org/dsClientes.xsd" xmlns="http://tempuri.org/dsClientes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsClientes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsClientes" msprop:Generator_DataSetName="dsClientes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtCarteraCliente" msprop:Generator_UserTableName="dtCarteraCliente" msprop:Generator_RowDeletedName="dtCarteraClienteRowDeleted" msprop:Generator_RowChangedName="dtCarteraClienteRowChanged" msprop:Generator_RowClassName="dtCarteraClienteRow" msprop:Generator_RowChangingName="dtCarteraClienteRowChanging" msprop:Generator_RowEvArgName="dtCarteraClienteRowChangeEvent" msprop:Generator_RowEvHandlerName="dtCarteraClienteRowChangeEventHandler" msprop:Generator_TableClassName="dtCarteraClienteDataTable" msprop:Generator_TableVarName="tabledtCarteraCliente" msprop:Generator_RowDeletingName="dtCarteraClienteRowDeleting" msprop:Generator_TablePropName="dtCarteraCliente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NRCTCL" msprop:Generator_UserColumnName="NRCTCL" msprop:Generator_ColumnVarNameInTable="columnNRCTCL" msprop:Generator_ColumnPropNameInRow="NRCTCL" msprop:Generator_ColumnPropNameInTable="NRCTCLColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DESCAR" msprop:Generator_UserColumnName="DESCAR" msprop:Generator_ColumnVarNameInTable="columnDESCAR" msprop:Generator_ColumnPropNameInRow="DESCAR" msprop:Generator_ColumnPropNameInTable="DESCARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMCAR" msprop:Generator_UserColumnName="NOMCAR" msprop:Generator_ColumnVarNameInTable="columnNOMCAR" msprop:Generator_ColumnPropNameInRow="NOMCAR" msprop:Generator_ColumnPropNameInTable="NOMCARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSCRT" msprop:Generator_UserColumnName="CUSCRT" msprop:Generator_ColumnVarNameInTable="columnCUSCRT" msprop:Generator_ColumnPropNameInRow="CUSCRT" msprop:Generator_ColumnPropNameInTable="CUSCRTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FCHCRT" msprop:Generator_UserColumnName="FCHCRT" msprop:Generator_ColumnVarNameInTable="columnFCHCRT" msprop:Generator_ColumnPropNameInRow="FCHCRT" msprop:Generator_ColumnPropNameInTable="FCHCRTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="HRACRT" msprop:Generator_UserColumnName="HRACRT" msprop:Generator_ColumnVarNameInTable="columnHRACRT" msprop:Generator_ColumnPropNameInRow="HRACRT" msprop:Generator_ColumnPropNameInTable="HRACRTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SESTRG" msprop:Generator_UserColumnName="SESTRG" msprop:Generator_ColumnVarNameInTable="columnSESTRG" msprop:Generator_ColumnPropNameInRow="SESTRG" msprop:Generator_ColumnPropNameInTable="SESTRGColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMPCL" msprop:Generator_UserColumnName="TCMPCL" msprop:Generator_ColumnPropNameInRow="TCMPCL" msprop:Generator_ColumnVarNameInTable="columnTCMPCL" msprop:Generator_ColumnPropNameInTable="TCMPCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRUC" msprop:Generator_UserColumnName="NRUC" msprop:Generator_ColumnPropNameInRow="NRUC" msprop:Generator_ColumnVarNameInTable="columnNRUC" msprop:Generator_ColumnPropNameInTable="NRUCColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TMTVBJ" msprop:Generator_UserColumnName="TMTVBJ" msprop:Generator_ColumnPropNameInRow="TMTVBJ" msprop:Generator_ColumnVarNameInTable="columnTMTVBJ" msprop:Generator_ColumnPropNameInTable="TMTVBJColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

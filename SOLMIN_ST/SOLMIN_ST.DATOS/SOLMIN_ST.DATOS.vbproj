@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB1FDD1C-AF45-4F39-9CEC-74581C252646}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SOLMIN_ST.DATOS</RootNamespace>
+    <AssemblyName>SOLMIN_ST.DATOS</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOLMIN_ST.DATOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOLMIN_ST.DATOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\6.1\IBM.Data.DB2.iSeries.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comun\AdjuntarImagen_DAL.vb" />
+    <Compile Include="comun\Autenticacion_DAL.vb" />
+    <Compile Include="comun\DbBridge.vb" />
+    <Compile Include="comun\Formato_Documento.vb" />
+    <Compile Include="comun\OptionAccess.vb" />
+    <Compile Include="comun\RegionVenta_DAL.vb" />
+    <Compile Include="comun\Validacion.vb" />
+    <Compile Include="comun\XmlParser.vb" />
+    <Compile Include="consultas\AtributosOI_DAL.vb" />
+    <Compile Include="consultas\Indicadores_DAL.vb" />
+    <Compile Include="mantenimientos\Acoplado_DAL.vb" />
+    <Compile Include="mantenimientos\AlquilerUnidad_DAL.vb" />
+    <Compile Include="mantenimientos\AsignacionRuta_DAL.vb" />
+    <Compile Include="mantenimientos\AVC_DAL.vb" />
+    <Compile Include="mantenimientos\CapacitacionConductor_DAL.vb" />
+    <Compile Include="mantenimientos\CategoriaChofer_DAL.vb" />
+    <Compile Include="mantenimientos\CentroCosto_DAL.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\Chofer_DAL.vb" />
+    <Compile Include="mantenimientos\Combustible_DAL.vb" />
+    <Compile Include="mantenimientos\CompaniaSeguro_DAL.vb" />
+    <Compile Include="mantenimientos\CondicionRuta_DAL.vb" />
+    <Compile Include="mantenimientos\ConfiguracionVehicular_DAL.vb" />
+    <Compile Include="mantenimientos\Contratista_Cliente_DAL.vb" />
+    <Compile Include="mantenimientos\DocAdjuntoConductor_DAL.vb" />
+    <Compile Include="mantenimientos\DocsAdjuntos_SolTransporte_DAL.vb" />
+    <Compile Include="mantenimientos\DuracionDias_DAL.vb" />
+    <Compile Include="mantenimientos\Empleado_DAL.vb" />
+    <Compile Include="mantenimientos\EnvioEmailNotificacion.vb" />
+    <Compile Include="mantenimientos\EvaluacionOperativa_DAL.vb" />
+    <Compile Include="mantenimientos\FactorPagoAVC_DAL.vb" />
+    <Compile Include="mantenimientos\Grifos_DAL.vb" />
+    <Compile Include="mantenimientos\GuiaTransportista_DAL.vb" />
+    <Compile Include="mantenimientos\Localidad_DAL.vb" />
+    <Compile Include="mantenimientos\LocalidadRuta_DAL.vb" />
+    <Compile Include="mantenimientos\MedioTransporte_DAL.vb" />
+    <Compile Include="mantenimientos\Moneda_DAL.vb" />
+    <Compile Include="mantenimientos\Naves_DAL.vb" />
+    <Compile Include="mantenimientos\Obrero_DAL.vb" />
+    <Compile Include="mantenimientos\OperacionesXAlquiler_DAL.vb" />
+    <Compile Include="mantenimientos\ParametroFacturacion_DAL.vb" />
+    <Compile Include="mantenimientos\PedidoEfectivo_DAL.vb" />
+    <Compile Include="mantenimientos\Personal_Contratista_DAL.vb" />
+    <Compile Include="mantenimientos\Planeamiento_DAL.vb" />
+    <Compile Include="mantenimientos\PlantaFacturacion_DAL.vb" />
+    <Compile Include="mantenimientos\Proveedor_DAL.vb" />
+    <Compile Include="mantenimientos\RecursoEquipo_DAL.vb" />
+    <Compile Include="mantenimientos\ReportesVariados_DAL.vb" />
+    <Compile Include="mantenimientos\ServicioCotizacion_DAL.vb" />
+    <Compile Include="mantenimientos\SolicitudEfectivoSAP_DAL.vb" />
+    <Compile Include="mantenimientos\TipoCarroceria_DAL.vb" />
+    <Compile Include="mantenimientos\TipoCombustible_DAL.vb" />
+    <Compile Include="mantenimientos\TipodeTracto_DAL.vb" />
+    <Compile Include="mantenimientos\TipoDocumento_DAL.vb" />
+    <Compile Include="mantenimientos\TipoOperacion_DAL.vb" />
+    <Compile Include="mantenimientos\TipoServicioTransporte_DAL.vb" />
+    <Compile Include="mantenimientos\TipoSubServicioTransporte_DAL.vb" />
+    <Compile Include="mantenimientos\TransportistaAS400_DAL.vb" />
+    <Compile Include="mantenimientos\Reportes_DAL.vb" />
+    <Compile Include="mantenimientos\Ubigeo_DAL.vb" />
+    <Compile Include="mantenimientos\UnidadesTransporte_DAL.vb" />
+    <Compile Include="mantenimientos\UnidadMedida_BLL.vb" />
+    <Compile Include="mantenimientos\Urea_DAL.vb" />
+    <Compile Include="mantenimientos\UrlServicios.vb" />
+    <Compile Include="mantenimientos\VacacionesConductor_DAL.vb" />
+    <Compile Include="mantenimientos\Viajes_Cliente_DAL.vb" />
+    <Compile Include="mantenimientos\Viajes_Ruta_DAL.vb" />
+    <Compile Include="mantenimientos\Viaje_Pasajero_DAL.vb" />
+    <Compile Include="operaciones\AtencionRequerimiento_DAL.vb" />
+    <Compile Include="operaciones\clsPreDocum_DAL.vb" />
+    <Compile Include="operaciones\Combustible_DAL.vb" />
+    <Compile Include="operaciones\ConsumoNeumatico_DAL.vb" />
+    <Compile Include="operaciones\ControlHito_DAL.vb" />
+    <Compile Include="operaciones\CostoMantenimiento_DAL.vb" />
+    <Compile Include="operaciones\Detalle_Solicitud_Transporte_DAL.vb" />
+    <Compile Include="operaciones\Dimensiones_DAL.vb" />
+    <Compile Include="operaciones\DocAjuntoAWS_DAL.vb" />
+    <Compile Include="operaciones\Factura_Transporte_DAL.vb" />
+    <Compile Include="operaciones\Gastos_Ruta_DAL.vb" />
+    <Compile Include="operaciones\GuiaRemision_DAL.vb" />
+    <Compile Include="operaciones\JuntaRequerimiento_DAL.vb" />
+    <Compile Include="operaciones\Junta_Transporte_DAL.vb" />
+    <Compile Include="mantenimientos\MercaderiaTransportes_DAL.vb" />
+    <Compile Include="mantenimientos\PaseConductor_DAL.vb" />
+    <Compile Include="mantenimientos\RecordGeneral_DAL.vb" />
+    <Compile Include="mantenimientos\RecordMedico_DAL.vb" />
+    <Compile Include="mantenimientos\ServicioTransporte_DAL.vb" />
+    <Compile Include="mantenimientos\TipoAcoplado_DAL.vb" />
+    <Compile Include="mantenimientos\TipoCapacitacionConductor_DAL.vb" />
+    <Compile Include="mantenimientos\TipoLicenciaConducir_DAL.vb" />
+    <Compile Include="mantenimientos\TipoPaseConductor_DAL.vb" />
+    <Compile Include="mantenimientos\TipoRecord_DAL.vb" />
+    <Compile Include="mantenimientos\TransportistaAcoplado_DAL.vb" />
+    <Compile Include="mantenimientos\TransportistaConductor_DAL.vb" />
+    <Compile Include="mantenimientos\TransportistaTracto_DAL.vb" />
+    <Compile Include="mantenimientos\Vacunas_DAL.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="mantenimientos\Tracto_DAL.vb" />
+    <Compile Include="mantenimientos\Transportista_DAL.vb" />
+    <Compile Include="operaciones\LiquidacionCombustible_DAL.vb" />
+    <Compile Include="operaciones\LiquidacionGastos_DAL.vb" />
+    <Compile Include="operaciones\LiquidarOperacion_DA.vb" />
+    <Compile Include="operaciones\Multimodal_DAL.vb" />
+    <Compile Include="operaciones\OperacionTransporte_DAL.vb" />
+    <Compile Include="operaciones\OrdenInterna_DAL.vb" />
+    <Compile Include="operaciones\OrdenServicioAgenciaRansa_DAL.vb" />
+    <Compile Include="operaciones\OrdenServicio_DAL.vb" />
+    <Compile Include="operaciones\PlanRuta_DAL.vb" />
+    <Compile Include="operaciones\PreAsignacioUnidades_DAL.vb" />
+    <Compile Include="operaciones\PreLiquidacion_DAL.vb" />
+    <Compile Include="operaciones\Programacion_Unid_Junta_DAL.vb" />
+    <Compile Include="operaciones\RecursosReasignado_DAL.vb" />
+    <Compile Include="operaciones\ReFacturacion_DAL.vb" />
+    <Compile Include="operaciones\Repartos_DAL.vb" />
+    <Compile Include="operaciones\ServicioMercaderia_DAL.vb" />
+    <Compile Include="operaciones\SolicitudPedidoEfectivo_DAL.vb" />
+    <Compile Include="operaciones\TipoDatoGeneral_DAL.vb" />
+    <Compile Include="operaciones\TransporteConsolidado_DAL.vb" />
+    <Compile Include="operaciones\UnidadProductiva_DAL.vb" />
+    <Compile Include="operaciones\ValeCombustible_DAL.vb" />
+    <Compile Include="seguimiento_wap\SeguimientoGPS_DAL.vb" />
+    <Compile Include="seguimiento_wap\SeguimientoWap_DAL.vb" />
+    <Compile Include="operaciones\Solicitud_Transporte_DAL.vb" />
+    <Compile Include="Seguridad\Acceso_Opciones_Usuario_DAL.vb" />
+    <Compile Include="Seguridad\Compania_DAL.vb" />
+    <Compile Include="Seguridad\Division_DAL.vb" />
+    <Compile Include="Seguridad\Planta_DAL.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_ST.ENTIDADES\SOLMIN_ST.ENTIDADES.vbproj">
+      <Project>{38D2DECF-4373-4252-9A95-5DE1D7CF8686}</Project>
+      <Name>SOLMIN_ST.ENTIDADES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsResumenEjecutivoST" targetNamespace="http://tempuri.org/dsResumenEjecutivoST.xsd" xmlns:mstns="http://tempuri.org/dsResumenEjecutivoST.xsd" xmlns="http://tempuri.org/dsResumenEjecutivoST.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsResumenEjecutivoST" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsResumenEjecutivoST" msprop:Generator_DataSetName="dsResumenEjecutivoST">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtST_TotalesTransporte" msprop:Generator_UserTableName="dtST_TotalesTransporte" msprop:Generator_RowDeletedName="dtST_TotalesTransporteRowDeleted" msprop:Generator_RowChangedName="dtST_TotalesTransporteRowChanged" msprop:Generator_RowClassName="dtST_TotalesTransporteRow" msprop:Generator_RowChangingName="dtST_TotalesTransporteRowChanging" msprop:Generator_RowEvArgName="dtST_TotalesTransporteRowChangeEvent" msprop:Generator_RowEvHandlerName="dtST_TotalesTransporteRowChangeEventHandler" msprop:Generator_TableClassName="dtST_TotalesTransporteDataTable" msprop:Generator_TableVarName="tabledtST_TotalesTransporte" msprop:Generator_RowDeletingName="dtST_TotalesTransporteRowDeleting" msprop:Generator_TablePropName="dtST_TotalesTransporte">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Viaje" msprop:Generator_UserColumnName="Viaje" msprop:Generator_ColumnVarNameInTable="columnViaje" msprop:Generator_ColumnPropNameInRow="Viaje" msprop:Generator_ColumnPropNameInTable="ViajeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Kilometraje" msprop:Generator_UserColumnName="Kilometraje" msprop:Generator_ColumnVarNameInTable="columnKilometraje" msprop:Generator_ColumnPropNameInRow="Kilometraje" msprop:Generator_ColumnPropNameInTable="KilometrajeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Peso" msprop:Generator_UserColumnName="Peso" msprop:Generator_ColumnVarNameInTable="columnPeso" msprop:Generator_ColumnPropNameInRow="Peso" msprop:Generator_ColumnPropNameInTable="PesoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PesoValor" msprop:Generator_UserColumnName="PesoValor" msprop:Generator_ColumnVarNameInTable="columnPesoValor" msprop:Generator_ColumnPropNameInRow="PesoValor" msprop:Generator_ColumnPropNameInTable="PesoValorColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtST_Unidades" msprop:Generator_UserTableName="dtST_Unidades" msprop:Generator_RowDeletedName="dtST_UnidadesRowDeleted" msprop:Generator_RowChangedName="dtST_UnidadesRowChanged" msprop:Generator_RowClassName="dtST_UnidadesRow" msprop:Generator_RowChangingName="dtST_UnidadesRowChanging" msprop:Generator_RowEvArgName="dtST_UnidadesRowChangeEvent" msprop:Generator_RowEvHandlerName="dtST_UnidadesRowChangeEventHandler" msprop:Generator_TableClassName="dtST_UnidadesDataTable" msprop:Generator_TableVarName="tabledtST_Unidades" msprop:Generator_RowDeletingName="dtST_UnidadesRowDeleting" msprop:Generator_TablePropName="dtST_Unidades">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TUNDVH" msprop:Generator_UserColumnName="TUNDVH" msprop:Generator_ColumnVarNameInTable="columnTUNDVH" msprop:Generator_ColumnPropNameInRow="TUNDVH" msprop:Generator_ColumnPropNameInTable="TUNDVHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIDADES" msprop:Generator_UserColumnName="UNIDADES" msprop:Generator_ColumnVarNameInTable="columnUNIDADES" msprop:Generator_ColumnPropNameInRow="UNIDADES" msprop:Generator_ColumnPropNameInTable="UNIDADESColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtST_ViajesXRuta" msprop:Generator_UserTableName="dtST_ViajesXRuta" msprop:Generator_RowDeletedName="dtST_ViajesXRutaRowDeleted" msprop:Generator_RowChangedName="dtST_ViajesXRutaRowChanged" msprop:Generator_RowClassName="dtST_ViajesXRutaRow" msprop:Generator_RowChangingName="dtST_ViajesXRutaRowChanging" msprop:Generator_RowEvArgName="dtST_ViajesXRutaRowChangeEvent" msprop:Generator_RowEvHandlerName="dtST_ViajesXRutaRowChangeEventHandler" msprop:Generator_TableClassName="dtST_ViajesXRutaDataTable" msprop:Generator_TableVarName="tabledtST_ViajesXRuta" msprop:Generator_RowDeletingName="dtST_ViajesXRutaRowDeleting" msprop:Generator_TablePropName="dtST_ViajesXRuta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ruta" msprop:Generator_UserColumnName="Ruta" msprop:Generator_ColumnVarNameInTable="columnRuta" msprop:Generator_ColumnPropNameInRow="Ruta" msprop:Generator_ColumnPropNameInTable="RutaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Viaje" msprop:Generator_UserColumnName="Viaje" msprop:Generator_ColumnVarNameInTable="columnViaje" msprop:Generator_ColumnPropNameInRow="Viaje" msprop:Generator_ColumnPropNameInTable="ViajeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtST_Resumen" msprop:Generator_UserTableName="dtST_Resumen" msprop:Generator_RowDeletedName="dtST_ResumenRowDeleted" msprop:Generator_RowChangedName="dtST_ResumenRowChanged" msprop:Generator_RowClassName="dtST_ResumenRow" msprop:Generator_RowChangingName="dtST_ResumenRowChanging" msprop:Generator_RowEvArgName="dtST_ResumenRowChangeEvent" msprop:Generator_RowEvHandlerName="dtST_ResumenRowChangeEventHandler" msprop:Generator_TableClassName="dtST_ResumenDataTable" msprop:Generator_TableVarName="tabledtST_Resumen" msprop:Generator_RowDeletingName="dtST_ResumenRowDeleting" msprop:Generator_TablePropName="dtST_Resumen">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Titulo" msprop:Generator_UserColumnName="Titulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Indicador" msprop:Generator_UserColumnName="Indicador" msprop:Generator_ColumnPropNameInRow="Indicador" msprop:Generator_ColumnVarNameInTable="columnIndicador" msprop:Generator_ColumnPropNameInTable="IndicadorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" msprop:Generator_UserColumnName="Valor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInTable="ValorColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_UserColumnName="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtST_Propietario" msprop:Generator_UserTableName="dtST_Propietario" msprop:Generator_RowDeletedName="dtST_PropietarioRowDeleted" msprop:Generator_TableClassName="dtST_PropietarioDataTable" msprop:Generator_RowChangedName="dtST_PropietarioRowChanged" msprop:Generator_RowClassName="dtST_PropietarioRow" msprop:Generator_RowChangingName="dtST_PropietarioRowChanging" msprop:Generator_RowEvArgName="dtST_PropietarioRowChangeEvent" msprop:Generator_RowEvHandlerName="dtST_PropietarioRowChangeEventHandler" msprop:Generator_TablePropName="dtST_Propietario" msprop:Generator_TableVarName="tabledtST_Propietario" msprop:Generator_RowDeletingName="dtST_PropietarioRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROPIETARIO" msprop:Generator_UserColumnName="PROPIETARIO" msprop:Generator_ColumnPropNameInRow="PROPIETARIO" msprop:Generator_ColumnVarNameInTable="columnPROPIETARIO" msprop:Generator_ColumnPropNameInTable="PROPIETARIOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VIAJE" msprop:Generator_UserColumnName="VIAJE" msprop:Generator_ColumnPropNameInRow="VIAJE" msprop:Generator_ColumnVarNameInTable="columnVIAJE" msprop:Generator_ColumnPropNameInTable="VIAJEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VIAJE_POR" msprop:Generator_UserColumnName="VIAJE_POR" msprop:Generator_ColumnPropNameInRow="VIAJE_POR" msprop:Generator_ColumnVarNameInTable="columnVIAJE_POR" msprop:Generator_ColumnPropNameInTable="VIAJE_PORColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PESO" msprop:Generator_UserColumnName="PESO" msprop:Generator_ColumnPropNameInRow="PESO" msprop:Generator_ColumnVarNameInTable="columnPESO" msprop:Generator_ColumnPropNameInTable="PESOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PESO_POR" msprop:Generator_UserColumnName="PESO_POR" msprop:Generator_ColumnPropNameInRow="PESO_POR" msprop:Generator_ColumnVarNameInTable="columnPESO_POR" msprop:Generator_ColumnPropNameInTable="PESO_PORColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RATIO" msprop:Generator_UserColumnName="RATIO" msprop:Generator_ColumnPropNameInRow="RATIO" msprop:Generator_ColumnVarNameInTable="columnRATIO" msprop:Generator_ColumnPropNameInTable="RATIOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RATIO_TOTAL" msprop:Generator_UserColumnName="RATIO_TOTAL" msprop:Generator_ColumnPropNameInRow="RATIO_TOTAL" msprop:Generator_ColumnVarNameInTable="columnRATIO_TOTAL" msprop:Generator_ColumnPropNameInTable="RATIO_TOTALColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

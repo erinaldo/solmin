@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstContratistaPersonal" targetNamespace="http://tempuri.org/dstContratistaPersonal.xsd" xmlns:mstns="http://tempuri.org/dstContratistaPersonal.xsd" xmlns="http://tempuri.org/dstContratistaPersonal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstContratistaPersonal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstContratistaPersonal" msprop:Generator_DataSetName="dstContratistaPersonal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Contratista_Cliente" msprop:Generator_UserTableName="Contratista_Cliente" msprop:Generator_RowDeletedName="Contratista_ClienteRowDeleted" msprop:Generator_RowChangedName="Contratista_ClienteRowChanged" msprop:Generator_RowClassName="Contratista_ClienteRow" msprop:Generator_RowChangingName="Contratista_ClienteRowChanging" msprop:Generator_RowEvArgName="Contratista_ClienteRowChangeEvent" msprop:Generator_RowEvHandlerName="Contratista_ClienteRowChangeEventHandler" msprop:Generator_TableClassName="Contratista_ClienteDataTable" msprop:Generator_TableVarName="tableContratista_Cliente" msprop:Generator_RowDeletingName="Contratista_ClienteRowDeleting" msprop:Generator_TablePropName="Contratista_Cliente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TCMPCL" msprop:Generator_UserColumnName="TCMPCL" msprop:Generator_ColumnVarNameInTable="columnTCMPCL" msprop:Generator_ColumnPropNameInRow="TCMPCL" msprop:Generator_ColumnPropNameInTable="TCMPCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRUC" msprop:Generator_UserColumnName="NRUC" msprop:Generator_ColumnVarNameInTable="columnNRUC" msprop:Generator_ColumnPropNameInRow="NRUC" msprop:Generator_ColumnPropNameInTable="NRUCColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="TPRVCL" msprop:Generator_UserColumnName="TPRVCL" msprop:Generator_ColumnVarNameInTable="columnTPRVCL" msprop:Generator_ColumnPropNameInRow="TPRVCL" msprop:Generator_ColumnPropNameInTable="TPRVCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRUCPR" msprop:Generator_UserColumnName="NRUCPR" msprop:Generator_ColumnVarNameInTable="columnNRUCPR" msprop:Generator_ColumnPropNameInRow="NRUCPR" msprop:Generator_ColumnPropNameInTable="NRUCPRColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="NDIART_C" msprop:Generator_UserColumnName="NDIART_C" msprop:Generator_ColumnVarNameInTable="columnNDIART_C" msprop:Generator_ColumnPropNameInRow="NDIART_C" msprop:Generator_ColumnPropNameInTable="NDIART_CColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TPDCPE" msprop:Generator_UserColumnName="TPDCPE" msprop:Generator_ColumnVarNameInTable="columnTPDCPE" msprop:Generator_ColumnPropNameInRow="TPDCPE" msprop:Generator_ColumnPropNameInTable="TPDCPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NMDCPE" msprop:Generator_UserColumnName="NMDCPE" msprop:Generator_ColumnVarNameInTable="columnNMDCPE" msprop:Generator_ColumnPropNameInRow="NMDCPE" msprop:Generator_ColumnPropNameInTable="NMDCPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NMBPER" msprop:Generator_UserColumnName="NMBPER" msprop:Generator_ColumnVarNameInTable="columnNMBPER" msprop:Generator_ColumnPropNameInRow="NMBPER" msprop:Generator_ColumnPropNameInTable="NMBPERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FNCMTO" msprop:Generator_UserColumnName="FNCMTO" msprop:Generator_ColumnVarNameInTable="columnFNCMTO" msprop:Generator_ColumnPropNameInRow="FNCMTO" msprop:Generator_ColumnPropNameInTable="FNCMTOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TNCION" msprop:Generator_UserColumnName="TNCION" msprop:Generator_ColumnVarNameInTable="columnTNCION" msprop:Generator_ColumnPropNameInRow="TNCION" msprop:Generator_ColumnPropNameInTable="TNCIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDSDES" msprop:Generator_UserColumnName="TDSDES" msprop:Generator_ColumnVarNameInTable="columnTDSDES" msprop:Generator_ColumnPropNameInRow="TDSDES" msprop:Generator_ColumnPropNameInTable="TDSDESColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CCTPPE" msprop:Generator_UserColumnName="CCTPPE" msprop:Generator_ColumnVarNameInTable="columnCCTPPE" msprop:Generator_ColumnPropNameInRow="CCTPPE" msprop:Generator_ColumnPropNameInTable="CCTPPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FINGEM" msprop:Generator_UserColumnName="FINGEM" msprop:Generator_ColumnPropNameInRow="FINGEM" msprop:Generator_ColumnVarNameInTable="columnFINGEM" msprop:Generator_ColumnPropNameInTable="FINGEMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PDCNAT" msprop:Generator_UserColumnName="PDCNAT" msprop:Generator_ColumnVarNameInTable="columnPDCNAT" msprop:Generator_ColumnPropNameInRow="PDCNAT" msprop:Generator_ColumnPropNameInTable="PDCNATColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NMCNAP" msprop:Generator_UserColumnName="NMCNAP" msprop:Generator_ColumnVarNameInTable="columnNMCNAP" msprop:Generator_ColumnPropNameInRow="NMCNAP" msprop:Generator_ColumnPropNameInTable="NMCNAPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NDIART_P" msprop:Generator_UserColumnName="NDIART_P" msprop:Generator_ColumnVarNameInTable="columnNDIART_P" msprop:Generator_ColumnPropNameInRow="NDIART_P" msprop:Generator_ColumnPropNameInTable="NDIART_PColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

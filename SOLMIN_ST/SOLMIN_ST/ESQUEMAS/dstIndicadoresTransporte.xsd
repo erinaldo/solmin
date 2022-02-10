@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstIndicadoresTransporte" targetNamespace="http://tempuri.org/dstIndicadoresTransporte.xsd" xmlns:mstns="http://tempuri.org/dstIndicadoresTransporte.xsd" xmlns="http://tempuri.org/dstIndicadoresTransporte.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstIndicadoresTransporte" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstIndicadoresTransporte" msprop:Generator_DataSetName="dstIndicadoresTransporte">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtKilometrosPorDiaBarras" msprop:Generator_UserTableName="dtKilometrosPorDiaBarras" msprop:Generator_RowDeletedName="dtKilometrosPorDiaBarrasRowDeleted" msprop:Generator_RowChangedName="dtKilometrosPorDiaBarrasRowChanged" msprop:Generator_RowClassName="dtKilometrosPorDiaBarrasRow" msprop:Generator_RowChangingName="dtKilometrosPorDiaBarrasRowChanging" msprop:Generator_RowEvArgName="dtKilometrosPorDiaBarrasRowChangeEvent" msprop:Generator_RowEvHandlerName="dtKilometrosPorDiaBarrasRowChangeEventHandler" msprop:Generator_TableClassName="dtKilometrosPorDiaBarrasDataTable" msprop:Generator_TableVarName="tabledtKilometrosPorDiaBarras" msprop:Generator_RowDeletingName="dtKilometrosPorDiaBarrasRowDeleting" msprop:Generator_TablePropName="dtKilometrosPorDiaBarras">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DIA" msprop:Generator_UserColumnName="DIA" msprop:Generator_ColumnPropNameInRow="DIA" msprop:Generator_ColumnVarNameInTable="columnDIA" msprop:Generator_ColumnPropNameInTable="DIAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtKilometrosPorTipoPie" msprop:Generator_UserTableName="dtKilometrosPorTipoPie" msprop:Generator_RowDeletedName="dtKilometrosPorTipoPieRowDeleted" msprop:Generator_RowChangedName="dtKilometrosPorTipoPieRowChanged" msprop:Generator_RowClassName="dtKilometrosPorTipoPieRow" msprop:Generator_RowChangingName="dtKilometrosPorTipoPieRowChanging" msprop:Generator_RowEvArgName="dtKilometrosPorTipoPieRowChangeEvent" msprop:Generator_RowEvHandlerName="dtKilometrosPorTipoPieRowChangeEventHandler" msprop:Generator_TableClassName="dtKilometrosPorTipoPieDataTable" msprop:Generator_TableVarName="tabledtKilometrosPorTipoPie" msprop:Generator_RowDeletingName="dtKilometrosPorTipoPieRowDeleting" msprop:Generator_TablePropName="dtKilometrosPorTipoPie">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtKilometrosPorTipoTotales" msprop:Generator_UserTableName="dtKilometrosPorTipoTotales" msprop:Generator_RowDeletedName="dtKilometrosPorTipoTotalesRowDeleted" msprop:Generator_RowChangedName="dtKilometrosPorTipoTotalesRowChanged" msprop:Generator_RowClassName="dtKilometrosPorTipoTotalesRow" msprop:Generator_RowChangingName="dtKilometrosPorTipoTotalesRowChanging" msprop:Generator_RowEvArgName="dtKilometrosPorTipoTotalesRowChangeEvent" msprop:Generator_RowEvHandlerName="dtKilometrosPorTipoTotalesRowChangeEventHandler" msprop:Generator_TableClassName="dtKilometrosPorTipoTotalesDataTable" msprop:Generator_TableVarName="tabledtKilometrosPorTipoTotales" msprop:Generator_RowDeletingName="dtKilometrosPorTipoTotalesRowDeleting" msprop:Generator_TablePropName="dtKilometrosPorTipoTotales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TOTAL" msprop:Generator_UserColumnName="TOTAL" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PROPIOS" msprop:Generator_UserColumnName="PROPIOS" msprop:Generator_ColumnVarNameInTable="columnPropios" msprop:Generator_ColumnPropNameInRow="Propios" msprop:Generator_ColumnPropNameInTable="PropiosColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TERCEROS" msprop:Generator_UserColumnName="TERCEROS" msprop:Generator_ColumnVarNameInTable="columnTerceros" msprop:Generator_ColumnPropNameInRow="Terceros" msprop:Generator_ColumnPropNameInTable="TercerosColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtPesosPorDiaBarras" msprop:Generator_UserTableName="dtPesosPorDiaBarras" msprop:Generator_RowDeletedName="dtPesosPorDiaBarrasRowDeleted" msprop:Generator_RowChangedName="dtPesosPorDiaBarrasRowChanged" msprop:Generator_RowClassName="dtPesosPorDiaBarrasRow" msprop:Generator_RowChangingName="dtPesosPorDiaBarrasRowChanging" msprop:Generator_RowEvArgName="dtPesosPorDiaBarrasRowChangeEvent" msprop:Generator_RowEvHandlerName="dtPesosPorDiaBarrasRowChangeEventHandler" msprop:Generator_TableClassName="dtPesosPorDiaBarrasDataTable" msprop:Generator_TableVarName="tabledtPesosPorDiaBarras" msprop:Generator_RowDeletingName="dtPesosPorDiaBarrasRowDeleting" msprop:Generator_TablePropName="dtPesosPorDiaBarras">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DIA" msprop:Generator_UserColumnName="DIA" msprop:Generator_ColumnVarNameInTable="columnDIA" msprop:Generator_ColumnPropNameInRow="DIA" msprop:Generator_ColumnPropNameInTable="DIAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtPesosPorTipoPie" msprop:Generator_UserTableName="dtPesosPorTipoPie" msprop:Generator_RowDeletedName="dtPesosPorTipoPieRowDeleted" msprop:Generator_RowChangedName="dtPesosPorTipoPieRowChanged" msprop:Generator_RowClassName="dtPesosPorTipoPieRow" msprop:Generator_RowChangingName="dtPesosPorTipoPieRowChanging" msprop:Generator_RowEvArgName="dtPesosPorTipoPieRowChangeEvent" msprop:Generator_RowEvHandlerName="dtPesosPorTipoPieRowChangeEventHandler" msprop:Generator_TableClassName="dtPesosPorTipoPieDataTable" msprop:Generator_TableVarName="tabledtPesosPorTipoPie" msprop:Generator_RowDeletingName="dtPesosPorTipoPieRowDeleting" msprop:Generator_TablePropName="dtPesosPorTipoPie">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtPesosPorTipoTotales" msprop:Generator_UserTableName="dtPesosPorTipoTotales" msprop:Generator_RowDeletedName="dtPesosPorTipoTotalesRowDeleted" msprop:Generator_RowChangedName="dtPesosPorTipoTotalesRowChanged" msprop:Generator_RowClassName="dtPesosPorTipoTotalesRow" msprop:Generator_RowChangingName="dtPesosPorTipoTotalesRowChanging" msprop:Generator_RowEvArgName="dtPesosPorTipoTotalesRowChangeEvent" msprop:Generator_RowEvHandlerName="dtPesosPorTipoTotalesRowChangeEventHandler" msprop:Generator_TableClassName="dtPesosPorTipoTotalesDataTable" msprop:Generator_TableVarName="tabledtPesosPorTipoTotales" msprop:Generator_RowDeletingName="dtPesosPorTipoTotalesRowDeleting" msprop:Generator_TablePropName="dtPesosPorTipoTotales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TOTAL" msprop:Generator_UserColumnName="TOTAL" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PROPIOS" msprop:Generator_UserColumnName="PROPIOS" msprop:Generator_ColumnVarNameInTable="columnPROPIOS" msprop:Generator_ColumnPropNameInRow="PROPIOS" msprop:Generator_ColumnPropNameInTable="PROPIOSColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TERCEROS" msprop:Generator_UserColumnName="TERCEROS" msprop:Generator_ColumnVarNameInTable="columnTERCEROS" msprop:Generator_ColumnPropNameInRow="TERCEROS" msprop:Generator_ColumnPropNameInTable="TERCEROSColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtViajesPorDiaBarras" msprop:Generator_UserTableName="dtViajesPorDiaBarras" msprop:Generator_RowDeletedName="dtViajesPorDiaBarrasRowDeleted" msprop:Generator_RowChangedName="dtViajesPorDiaBarrasRowChanged" msprop:Generator_RowClassName="dtViajesPorDiaBarrasRow" msprop:Generator_RowChangingName="dtViajesPorDiaBarrasRowChanging" msprop:Generator_RowEvArgName="dtViajesPorDiaBarrasRowChangeEvent" msprop:Generator_RowEvHandlerName="dtViajesPorDiaBarrasRowChangeEventHandler" msprop:Generator_TableClassName="dtViajesPorDiaBarrasDataTable" msprop:Generator_TableVarName="tabledtViajesPorDiaBarras" msprop:Generator_RowDeletingName="dtViajesPorDiaBarrasRowDeleting" msprop:Generator_TablePropName="dtViajesPorDiaBarras">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DIA" msprop:Generator_UserColumnName="DIA" msprop:Generator_ColumnVarNameInTable="columnDIA" msprop:Generator_ColumnPropNameInRow="DIA" msprop:Generator_ColumnPropNameInTable="DIAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtViajesPorTipoPie" msprop:Generator_UserTableName="dtViajesPorTipoPie" msprop:Generator_RowDeletedName="dtViajesPorTipoPieRowDeleted" msprop:Generator_RowChangedName="dtViajesPorTipoPieRowChanged" msprop:Generator_RowClassName="dtViajesPorTipoPieRow" msprop:Generator_RowChangingName="dtViajesPorTipoPieRowChanging" msprop:Generator_RowEvArgName="dtViajesPorTipoPieRowChangeEvent" msprop:Generator_RowEvHandlerName="dtViajesPorTipoPieRowChangeEventHandler" msprop:Generator_TableClassName="dtViajesPorTipoPieDataTable" msprop:Generator_TableVarName="tabledtViajesPorTipoPie" msprop:Generator_RowDeletingName="dtViajesPorTipoPieRowDeleting" msprop:Generator_TablePropName="dtViajesPorTipoPie">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtViajesPorTipoTotales" msprop:Generator_UserTableName="dtViajesPorTipoTotales" msprop:Generator_RowDeletedName="dtViajesPorTipoTotalesRowDeleted" msprop:Generator_RowChangedName="dtViajesPorTipoTotalesRowChanged" msprop:Generator_RowClassName="dtViajesPorTipoTotalesRow" msprop:Generator_RowChangingName="dtViajesPorTipoTotalesRowChanging" msprop:Generator_RowEvArgName="dtViajesPorTipoTotalesRowChangeEvent" msprop:Generator_RowEvHandlerName="dtViajesPorTipoTotalesRowChangeEventHandler" msprop:Generator_TableClassName="dtViajesPorTipoTotalesDataTable" msprop:Generator_TableVarName="tabledtViajesPorTipoTotales" msprop:Generator_RowDeletingName="dtViajesPorTipoTotalesRowDeleting" msprop:Generator_TablePropName="dtViajesPorTipoTotales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TOTAL" msprop:Generator_UserColumnName="TOTAL" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PROPIOS" msprop:Generator_UserColumnName="PROPIOS" msprop:Generator_ColumnVarNameInTable="columnPROPIOS" msprop:Generator_ColumnPropNameInRow="PROPIOS" msprop:Generator_ColumnPropNameInTable="PROPIOSColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TERCEROS" msprop:Generator_UserColumnName="TERCEROS" msprop:Generator_ColumnVarNameInTable="columnTERCEROS" msprop:Generator_ColumnPropNameInRow="TERCEROS" msprop:Generator_ColumnPropNameInTable="TERCEROSColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCantidadesPorDiaBarras" msprop:Generator_UserTableName="dtCantidadesPorDiaBarras" msprop:Generator_RowDeletedName="dtCantidadesPorDiaBarrasRowDeleted" msprop:Generator_RowChangedName="dtCantidadesPorDiaBarrasRowChanged" msprop:Generator_RowClassName="dtCantidadesPorDiaBarrasRow" msprop:Generator_RowChangingName="dtCantidadesPorDiaBarrasRowChanging" msprop:Generator_RowEvArgName="dtCantidadesPorDiaBarrasRowChangeEvent" msprop:Generator_RowEvHandlerName="dtCantidadesPorDiaBarrasRowChangeEventHandler" msprop:Generator_TableClassName="dtCantidadesPorDiaBarrasDataTable" msprop:Generator_TableVarName="tabledtCantidadesPorDiaBarras" msprop:Generator_RowDeletingName="dtCantidadesPorDiaBarrasRowDeleting" msprop:Generator_TablePropName="dtCantidadesPorDiaBarras">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DIA" msprop:Generator_UserColumnName="DIA" msprop:Generator_ColumnVarNameInTable="columnDIA" msprop:Generator_ColumnPropNameInRow="DIA" msprop:Generator_ColumnPropNameInTable="DIAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCantidadesPorTipoPie" msprop:Generator_UserTableName="dtCantidadesPorTipoPie" msprop:Generator_RowDeletedName="dtCantidadesPorTipoPieRowDeleted" msprop:Generator_RowChangedName="dtCantidadesPorTipoPieRowChanged" msprop:Generator_RowClassName="dtCantidadesPorTipoPieRow" msprop:Generator_RowChangingName="dtCantidadesPorTipoPieRowChanging" msprop:Generator_RowEvArgName="dtCantidadesPorTipoPieRowChangeEvent" msprop:Generator_RowEvHandlerName="dtCantidadesPorTipoPieRowChangeEventHandler" msprop:Generator_TableClassName="dtCantidadesPorTipoPieDataTable" msprop:Generator_TableVarName="tabledtCantidadesPorTipoPie" msprop:Generator_RowDeletingName="dtCantidadesPorTipoPieRowDeleting" msprop:Generator_TablePropName="dtCantidadesPorTipoPie">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCantidadesPorTipoTotales" msprop:Generator_UserTableName="dtCantidadesPorTipoTotales" msprop:Generator_RowDeletedName="dtCantidadesPorTipoTotalesRowDeleted" msprop:Generator_RowChangedName="dtCantidadesPorTipoTotalesRowChanged" msprop:Generator_RowClassName="dtCantidadesPorTipoTotalesRow" msprop:Generator_RowChangingName="dtCantidadesPorTipoTotalesRowChanging" msprop:Generator_RowEvArgName="dtCantidadesPorTipoTotalesRowChangeEvent" msprop:Generator_RowEvHandlerName="dtCantidadesPorTipoTotalesRowChangeEventHandler" msprop:Generator_TableClassName="dtCantidadesPorTipoTotalesDataTable" msprop:Generator_TableVarName="tabledtCantidadesPorTipoTotales" msprop:Generator_RowDeletingName="dtCantidadesPorTipoTotalesRowDeleting" msprop:Generator_TablePropName="dtCantidadesPorTipoTotales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TOTAL" msprop:Generator_UserColumnName="TOTAL" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PROPIOS" msprop:Generator_UserColumnName="PROPIOS" msprop:Generator_ColumnVarNameInTable="columnPROPIOS" msprop:Generator_ColumnPropNameInRow="PROPIOS" msprop:Generator_ColumnPropNameInTable="PROPIOSColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TERCEROS" msprop:Generator_UserColumnName="TERCEROS" msprop:Generator_ColumnVarNameInTable="columnTERCEROS" msprop:Generator_ColumnPropNameInRow="TERCEROS" msprop:Generator_ColumnPropNameInTable="TERCEROSColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtRutasKilometros" msprop:Generator_UserTableName="dtRutasKilometros" msprop:Generator_RowDeletedName="dtRutasKilometrosRowDeleted" msprop:Generator_RowChangedName="dtRutasKilometrosRowChanged" msprop:Generator_RowClassName="dtRutasKilometrosRow" msprop:Generator_RowChangingName="dtRutasKilometrosRowChanging" msprop:Generator_RowEvArgName="dtRutasKilometrosRowChangeEvent" msprop:Generator_RowEvHandlerName="dtRutasKilometrosRowChangeEventHandler" msprop:Generator_TableClassName="dtRutasKilometrosDataTable" msprop:Generator_TableVarName="tabledtRutasKilometros" msprop:Generator_RowDeletingName="dtRutasKilometrosRowDeleting" msprop:Generator_TablePropName="dtRutasKilometros">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RUTA" msdata:Caption="DIA" msprop:Generator_UserColumnName="RUTA" msprop:Generator_ColumnPropNameInRow="RUTA" msprop:Generator_ColumnVarNameInTable="columnRUTA" msprop:Generator_ColumnPropNameInTable="RUTAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtRutasViajes" msprop:Generator_UserTableName="dtRutasViajes" msprop:Generator_RowDeletedName="dtRutasViajesRowDeleted" msprop:Generator_RowChangedName="dtRutasViajesRowChanged" msprop:Generator_RowClassName="dtRutasViajesRow" msprop:Generator_RowChangingName="dtRutasViajesRowChanging" msprop:Generator_RowEvArgName="dtRutasViajesRowChangeEvent" msprop:Generator_RowEvHandlerName="dtRutasViajesRowChangeEventHandler" msprop:Generator_TableClassName="dtRutasViajesDataTable" msprop:Generator_TableVarName="tabledtRutasViajes" msprop:Generator_RowDeletingName="dtRutasViajesRowDeleting" msprop:Generator_TablePropName="dtRutasViajes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RUTA" msprop:Generator_UserColumnName="RUTA" msprop:Generator_ColumnVarNameInTable="columnRUTA" msprop:Generator_ColumnPropNameInRow="RUTA" msprop:Generator_ColumnPropNameInTable="RUTAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtRutasPesos" msprop:Generator_UserTableName="dtRutasPesos" msprop:Generator_RowDeletedName="dtRutasPesosRowDeleted" msprop:Generator_RowChangedName="dtRutasPesosRowChanged" msprop:Generator_RowClassName="dtRutasPesosRow" msprop:Generator_RowChangingName="dtRutasPesosRowChanging" msprop:Generator_RowEvArgName="dtRutasPesosRowChangeEvent" msprop:Generator_RowEvHandlerName="dtRutasPesosRowChangeEventHandler" msprop:Generator_TableClassName="dtRutasPesosDataTable" msprop:Generator_TableVarName="tabledtRutasPesos" msprop:Generator_RowDeletingName="dtRutasPesosRowDeleting" msprop:Generator_TablePropName="dtRutasPesos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RUTA" msprop:Generator_UserColumnName="RUTA" msprop:Generator_ColumnVarNameInTable="columnRUTA" msprop:Generator_ColumnPropNameInRow="RUTA" msprop:Generator_ColumnPropNameInTable="RUTAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtRutasCantidades" msprop:Generator_UserTableName="dtRutasCantidades" msprop:Generator_RowDeletedName="dtRutasCantidadesRowDeleted" msprop:Generator_RowChangedName="dtRutasCantidadesRowChanged" msprop:Generator_RowClassName="dtRutasCantidadesRow" msprop:Generator_RowChangingName="dtRutasCantidadesRowChanging" msprop:Generator_RowEvArgName="dtRutasCantidadesRowChangeEvent" msprop:Generator_RowEvHandlerName="dtRutasCantidadesRowChangeEventHandler" msprop:Generator_TableClassName="dtRutasCantidadesDataTable" msprop:Generator_TableVarName="tabledtRutasCantidades" msprop:Generator_RowDeletingName="dtRutasCantidadesRowDeleting" msprop:Generator_TablePropName="dtRutasCantidades">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RUTA" msprop:Generator_UserColumnName="RUTA" msprop:Generator_ColumnVarNameInTable="columnRUTA" msprop:Generator_ColumnPropNameInRow="RUTA" msprop:Generator_ColumnPropNameInTable="RUTAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_UserColumnName="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

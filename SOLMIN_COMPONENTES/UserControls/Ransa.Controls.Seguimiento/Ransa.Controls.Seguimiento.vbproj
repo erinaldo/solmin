@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD4B88EE-30DD-4708-BB90-F64240D217E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Ransa.Controls.Seguimiento</RootNamespace>
+    <AssemblyName>Ransa.Controls.Seguimiento</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Seguimiento.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Seguimiento.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e">
+      <HintPath>..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeValidatorKryton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KryptonValidator\TypeValidatorKryton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONTROL\ucSeguimiento.Designer.vb">
+      <DependentUpon>ucSeguimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\ucSeguimiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DATOS\clsEmbarqueConsultaDAL.vb" />
+    <Compile Include="DATOS\clsEmbarqueDAL.vb" />
+    <Compile Include="ENTIDAD\beCheckpointConsulta.vb" />
+    <Compile Include="ENTIDAD\beDocCargaInternacionalConsulta.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ENTIDAD\beEmbarqueEntidad.vb" />
+    <Compile Include="ENTIDAD\beEmbarqueConsulta.vb" />
+    <Compile Include="ENTIDAD\beServicioFacturarConsulta.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FORM\FrmSeguimientoCarga.Designer.vb">
+      <DependentUpon>FrmSeguimientoCarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FrmSeguimientoCarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NEGOCIO\clsEmbarque.vb" />
+    <Compile Include="NEGOCIO\clsEmbarqueConsultaBL.vb" />
+    <Compile Include="NEGOCIO\clsTab.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CONTROL\ucSeguimiento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSeguimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FrmSeguimientoCarga.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSeguimientoCarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnBlanco.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archivo.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StorageFileManager\StorageFileManager.vbproj">
+      <Project>{3165C610-476B-40FA-BD2B-B32A920398A9}</Project>
+      <Name>StorageFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UbicacionPlanta\Ransa.Controls.UbicacionPlanta\Ransa.Controls.UbicacionPlanta.vbproj">
+      <Project>{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}</Project>
+      <Name>Ransa.Controls.UbicacionPlanta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D780F098-7997-45AF-870C-BD1F72B9C08A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SOLMIN_SA.Menu</RootNamespace>
+    <AssemblyName>SOLMIN_SA.Menu</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOLMIN.MENUBAR.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOLMIN.MENUBAR.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e">
+      <HintPath>..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\SolminStatusBuilder.vb" />
+    <Compile Include="Clases\SolminToolBuilder.vb" />
+    <Compile Include="frmAcercaDe.Designer.vb">
+      <DependentUpon>frmAcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Clases\SolminMenuBuilder.vb" />
+    <Compile Include="Seguridad\Clases\HelpClass.vb" />
+    <Compile Include="Seguridad\Clases\TreeViewMetodos.vb" />
+    <Compile Include="Seguridad\Datos\Acceso_Directo_DAL.vb" />
+    <Compile Include="Seguridad\Datos\Aplicacion_DAL.vb" />
+    <Compile Include="Seguridad\Datos\Menu_DAL.vb" />
+    <Compile Include="Seguridad\Datos\Opcion_DAL.vb" />
+    <Compile Include="Seguridad\Datos\Rol_DAL.vb" />
+    <Compile Include="Seguridad\Datos\Rol_Opcion_DAL.vb" />
+    <Compile Include="Seguridad\Datos\TreeViewNodos_DAL.vb" />
+    <Compile Include="Seguridad\Datos\Usuario_DAL.vb" />
+    <Compile Include="Seguridad\Datos\Usuario_Opcion_DAL.vb" />
+    <Compile Include="Seguridad\Entidades\Acceso_DirectoBE.vb" />
+    <Compile Include="Seguridad\Entidades\AplicacionBE.vb" />
+    <Compile Include="Seguridad\Entidades\MenuBE.vb" />
+    <Compile Include="Seguridad\Entidades\OpcionBE.vb" />
+    <Compile Include="Seguridad\Entidades\RolBE.vb" />
+    <Compile Include="Seguridad\Entidades\Rol_OpcionBE.vb" />
+    <Compile Include="Seguridad\Entidades\TreeViewNodosBE.vb" />
+    <Compile Include="Seguridad\Entidades\UsuarioBE.vb" />
+    <Compile Include="Seguridad\Entidades\Usuario_OpcionBE.vb" />
+    <Compile Include="Seguridad\Formularios\FrmAplicacion.Designer.vb">
+      <DependentUpon>FrmAplicacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmAplicacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmMenu.Designer.vb">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmOpcion.Designer.vb">
+      <DependentUpon>FrmOpcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmOpcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmOpcionRol.Designer.vb">
+      <DependentUpon>FrmOpcionRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmOpcionRol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmOpcionUsuario.Designer.vb">
+      <DependentUpon>FrmOpcionUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmOpcionUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\frmPermisosUsuario.Designer.vb">
+      <DependentUpon>frmPermisosUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\frmPermisosUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmRol.Designer.vb">
+      <DependentUpon>FrmRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Formularios\FrmRol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\modulos\MainModule.vb" />
+    <Compile Include="Seguridad\Negocio\Acceso_Directo_BL.vb" />
+    <Compile Include="Seguridad\Negocio\Aplicacion_BL.vb" />
+    <Compile Include="Seguridad\Negocio\Menu_BL.vb" />
+    <Compile Include="Seguridad\Negocio\Opcion_BL.vb" />
+    <Compile Include="Seguridad\Negocio\Rol_BL.vb" />
+    <Compile Include="Seguridad\Negocio\Rol_Opcion_BL.vb" />
+    <Compile Include="Seguridad\Negocio\TreeViewNodos_BL.vb" />
+    <Compile Include="Seguridad\Negocio\Usuario_BL.vb" />
+    <Compile Include="Seguridad\Negocio\Usuario_Opcion_BL.vb" />
+    <Compile Include="SolminMenuStrip.Designer.vb">
+      <DependentUpon>SolminMenuStrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SolminMenuStrip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SolminStatusStrip.Designer.vb">
+      <DependentUpon>SolminStatusStrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SolminStatusStrip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SolminToolStrip.Designer.vb">
+      <DependentUpon>SolminToolStrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SolminToolStrip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="Sql\TSP_SOLMIN_SA_LISTAR_MENU_X_APLICACION_RAIZ.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAcercaDe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAcercaDe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Formularios\FrmAplicacion.resx">
+      <DependentUpon>FrmAplicacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Formularios\FrmMenu.resx">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Formularios\FrmOpcion.resx">
+      <DependentUpon>FrmOpcion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Formularios\FrmOpcionRol.resx">
+      <DependentUpon>FrmOpcionRol.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Formularios\FrmOpcionUsuario.resx">
+      <DependentUpon>FrmOpcionUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Formularios\frmPermisosUsuario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPermisosUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Formularios\FrmRol.resx">
+      <DependentUpon>FrmRol.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolminMenuStrip.resx">
+      <DependentUpon>SolminMenuStrip.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolminStatusStrip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SolminStatusStrip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolminToolStrip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SolminToolStrip.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Host24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Host16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kterm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\display.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_comit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_family.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\fondo.jpg" />
+    <None Include="Sql\SP_SOLMIN_SA_LISTAR_APLICACION_X_USUARIO.sql" />
+    <None Include="Sql\SP_SOLMIN_SA_LISTAR_TOOL_X_APLICACION_USUARIO.sql" />
+    <None Include="Sql\SP_SOLMIN_SS_LISTAR_MENU_X_APLICACION_RAIZ.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Crystal_Clear_app_internet1.png" />
+    <None Include="Resources\Almacen.png" />
+    <Content Include="Resources\imagen%2820%29.jpg" />
+    <Content Include="Resources\lblImpresora.Image.png" />
+    <Content Include="Resources\lblServidor.Image.png" />
+    <Content Include="Resources\lblSistema.Image.png" />
+    <Content Include="Resources\lblUsuario.Image.png" />
+    <Content Include="Resources\ToolStripButton12.Image.png" />
+    <Content Include="Resources\ToolStripButton13.Image.png" />
+    <Content Include="Resources\ToolStripMenuItem25.Image.png" />
+    <Content Include="Resources\ToolStripMenuItem26.Image.png" />
+    <Content Include="Resources\ToolStripMenuItem27.Image.png" />
+    <Content Include="Resources\tsbEtiqueta.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

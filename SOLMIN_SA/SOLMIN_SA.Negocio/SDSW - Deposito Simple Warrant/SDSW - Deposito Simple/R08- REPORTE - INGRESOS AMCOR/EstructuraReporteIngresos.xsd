@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EstructuraReporteIngresos" targetNamespace="http://tempuri.org/EstructuraReporteIngresos.xsd" xmlns:mstns="http://tempuri.org/EstructuraReporteIngresos.xsd" xmlns="http://tempuri.org/EstructuraReporteIngresos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EstructuraReporteIngresos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EstructuraReporteIngresos" msprop:Generator_DataSetName="EstructuraReporteIngresos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtReporteIngresosAmcor" msprop:Generator_UserTableName="dtReporteIngresosAmcor" msprop:Generator_RowDeletedName="dtReporteIngresosAmcorRowDeleted" msprop:Generator_RowChangedName="dtReporteIngresosAmcorRowChanged" msprop:Generator_RowClassName="dtReporteIngresosAmcorRow" msprop:Generator_RowChangingName="dtReporteIngresosAmcorRowChanging" msprop:Generator_RowEvArgName="dtReporteIngresosAmcorRowChangeEvent" msprop:Generator_RowEvHandlerName="dtReporteIngresosAmcorRowChangeEventHandler" msprop:Generator_TableClassName="dtReporteIngresosAmcorDataTable" msprop:Generator_TableVarName="tabledtReporteIngresosAmcor" msprop:Generator_RowDeletingName="dtReporteIngresosAmcorRowDeleting" msprop:Generator_TablePropName="dtReporteIngresosAmcor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NORDSR" msprop:Generator_UserColumnName="NORDSR" msprop:Generator_ColumnPropNameInRow="NORDSR" msprop:Generator_ColumnVarNameInTable="columnNORDSR" msprop:Generator_ColumnPropNameInTable="NORDSRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NGUIIN" msprop:Generator_UserColumnName="NGUIIN" msprop:Generator_ColumnPropNameInRow="NGUIIN" msprop:Generator_ColumnVarNameInTable="columnNGUIIN" msprop:Generator_ColumnPropNameInTable="NGUIINColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CETQWR" msprop:Generator_UserColumnName="CETQWR" msprop:Generator_ColumnPropNameInRow="CETQWR" msprop:Generator_ColumnVarNameInTable="columnCETQWR" msprop:Generator_ColumnPropNameInTable="CETQWRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CUNCN5" msprop:Generator_UserColumnName="CUNCN5" msprop:Generator_ColumnPropNameInRow="CUNCN5" msprop:Generator_ColumnVarNameInTable="columnCUNCN5" msprop:Generator_ColumnPropNameInTable="CUNCN5Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CUNPS5" msprop:Generator_UserColumnName="CUNPS5" msprop:Generator_ColumnPropNameInRow="CUNPS5" msprop:Generator_ColumnVarNameInTable="columnCUNPS5" msprop:Generator_ColumnPropNameInTable="CUNPS5Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CMRCD" msprop:Generator_UserColumnName="CMRCD" msprop:Generator_ColumnPropNameInRow="CMRCD" msprop:Generator_ColumnVarNameInTable="columnCMRCD" msprop:Generator_ColumnPropNameInTable="CMRCDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QMRCD1" msprop:Generator_UserColumnName="QMRCD1" msprop:Generator_ColumnPropNameInRow="QMRCD1" msprop:Generator_ColumnVarNameInTable="columnQMRCD1" msprop:Generator_ColumnPropNameInTable="QMRCD1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QPSMR1" msprop:Generator_UserColumnName="QPSMR1" msprop:Generator_ColumnPropNameInRow="QPSMR1" msprop:Generator_ColumnVarNameInTable="columnQPSMR1" msprop:Generator_ColumnPropNameInTable="QPSMR1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QVLMR1" msprop:Generator_UserColumnName="QVLMR1" msprop:Generator_ColumnPropNameInRow="QVLMR1" msprop:Generator_ColumnVarNameInTable="columnQVLMR1" msprop:Generator_ColumnPropNameInTable="QVLMR1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TCMPRD" msprop:Generator_UserColumnName="TCMPRD" msprop:Generator_ColumnPropNameInRow="TCMPRD" msprop:Generator_ColumnVarNameInTable="columnTCMPRD" msprop:Generator_ColumnPropNameInTable="TCMPRDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SESTRG" msprop:Generator_UserColumnName="SESTRG" msprop:Generator_ColumnPropNameInRow="SESTRG" msprop:Generator_ColumnVarNameInTable="columnSESTRG" msprop:Generator_ColumnPropNameInTable="SESTRGColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMPCL" msprop:Generator_UserColumnName="TCMPCL" msprop:Generator_ColumnPropNameInRow="TCMPCL" msprop:Generator_ColumnVarNameInTable="columnTCMPCL" msprop:Generator_ColumnPropNameInTable="TCMPCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FINGAL" msprop:Generator_UserColumnName="FINGAL" msprop:Generator_ColumnPropNameInRow="FINGAL" msprop:Generator_ColumnVarNameInTable="columnFINGAL" msprop:Generator_ColumnPropNameInTable="FINGALColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

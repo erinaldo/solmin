@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReporteListaPedidoEfectivo" targetNamespace="http://tempuri.org/dstReporteListaPedidoEfectivo.xsd" xmlns:mstns="http://tempuri.org/dstReporteListaPedidoEfectivo.xsd" xmlns="http://tempuri.org/dstReporteListaPedidoEfectivo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReporteListaPedidoEfectivo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReporteListaPedidoEfectivo" msprop:Generator_DataSetName="dstReporteListaPedidoEfectivo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PED_EFECTIVO" msprop:Generator_UserTableName="PED_EFECTIVO" msprop:Generator_RowDeletedName="PED_EFECTIVORowDeleted" msprop:Generator_RowChangedName="PED_EFECTIVORowChanged" msprop:Generator_RowClassName="PED_EFECTIVORow" msprop:Generator_RowChangingName="PED_EFECTIVORowChanging" msprop:Generator_RowEvArgName="PED_EFECTIVORowChangeEvent" msprop:Generator_RowEvHandlerName="PED_EFECTIVORowChangeEventHandler" msprop:Generator_TableClassName="PED_EFECTIVODataTable" msprop:Generator_TableVarName="tablePED_EFECTIVO" msprop:Generator_RowDeletingName="PED_EFECTIVORowDeleting" msprop:Generator_TablePropName="PED_EFECTIVO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COBRR" msprop:Generator_UserColumnName="COBRR" msprop:Generator_ColumnVarNameInTable="columnCOBRR" msprop:Generator_ColumnPropNameInRow="COBRR" msprop:Generator_ColumnPropNameInTable="COBRRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMCHOFER" msdata:Caption="RUTA" msprop:Generator_UserColumnName="NOMCHOFER" msprop:Generator_ColumnVarNameInTable="columnNOMCHOFER" msprop:Generator_ColumnPropNameInRow="NOMCHOFER" msprop:Generator_ColumnPropNameInTable="NOMCHOFERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FCJSPE" msdata:Caption="FINAVC" msprop:Generator_UserColumnName="FCJSPE" msprop:Generator_ColumnVarNameInTable="columnFCJSPE" msprop:Generator_ColumnPropNameInRow="FCJSPE" msprop:Generator_ColumnPropNameInTable="FCJSPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FESLPE" msdata:Caption="FCHLQD" msprop:Generator_UserColumnName="FESLPE" msprop:Generator_ColumnVarNameInTable="columnFESLPE" msprop:Generator_ColumnPropNameInRow="FESLPE" msprop:Generator_ColumnPropNameInTable="FESLPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOPRCN" msprop:Generator_UserColumnName="NOPRCN" msprop:Generator_ColumnVarNameInTable="columnNOPRCN" msprop:Generator_ColumnPropNameInRow="NOPRCN" msprop:Generator_ColumnPropNameInTable="NOPRCNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ORIGEN" msprop:Generator_UserColumnName="ORIGEN" msprop:Generator_ColumnVarNameInTable="columnORIGEN" msprop:Generator_ColumnPropNameInRow="ORIGEN" msprop:Generator_ColumnPropNameInTable="ORIGENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DESTIN" msprop:Generator_UserColumnName="DESTIN" msprop:Generator_ColumnVarNameInTable="columnDESTIN" msprop:Generator_ColumnPropNameInRow="DESTIN" msprop:Generator_ColumnPropNameInTable="DESTINColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ISLPES" msdata:Caption="NCSLPE" msprop:Generator_UserColumnName="ISLPES" msprop:Generator_ColumnVarNameInTable="columnISLPES" msprop:Generator_ColumnPropNameInRow="ISLPES" msprop:Generator_ColumnPropNameInTable="ISLPESColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ISLPESP" msdata:Caption="IARAVC" msprop:Generator_UserColumnName="ISLPESP" msprop:Generator_ColumnVarNameInTable="columnISLPESP" msprop:Generator_ColumnPropNameInRow="ISLPESP" msprop:Generator_ColumnPropNameInTable="ISLPESPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ESTADO" msprop:Generator_UserColumnName="ESTADO" msprop:Generator_ColumnVarNameInTable="columnESTADO" msprop:Generator_ColumnPropNameInRow="ESTADO" msprop:Generator_ColumnPropNameInTable="ESTADOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECINI" msprop:Generator_UserColumnName="FECINI" msprop:Generator_ColumnVarNameInTable="columnFECINI" msprop:Generator_ColumnPropNameInRow="FECINI" msprop:Generator_ColumnPropNameInTable="FECINIColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECFIN" msprop:Generator_UserColumnName="FECFIN" msprop:Generator_ColumnVarNameInTable="columnFECFIN" msprop:Generator_ColumnPropNameInRow="FECFIN" msprop:Generator_ColumnPropNameInTable="FECFINColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USUARIO" msprop:Generator_UserColumnName="USUARIO" msprop:Generator_ColumnVarNameInTable="columnUSUARIO" msprop:Generator_ColumnPropNameInRow="USUARIO" msprop:Generator_ColumnPropNameInTable="USUARIOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NMSLPE" msprop:Generator_UserColumnName="NMSLPE" msprop:Generator_ColumnPropNameInRow="NMSLPE" msprop:Generator_ColumnVarNameInTable="columnNMSLPE" msprop:Generator_ColumnPropNameInTable="NMSLPEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

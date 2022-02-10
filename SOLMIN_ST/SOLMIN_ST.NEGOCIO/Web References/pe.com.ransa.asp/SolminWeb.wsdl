@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ransa.biz/" xmlns:s1="http://ransa.biz/AbstractTypes" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://ransa.biz/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ransa.biz/">
+      <s:element name="GuardarImagen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Imagen" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Carpeta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GuardarImagenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GuardarImagenResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExisteImagen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Carpeta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExisteImagenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExisteImagenResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Carpeta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getImageResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileExtension">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Carpeta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileExtensionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFileExtensionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="boolean" type="s:boolean" />
+      <s:element name="anyType" nillable="true" />
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+    <s:schema targetNamespace="http://ransa.biz/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GuardarImagenSoapIn">
+    <wsdl:part name="parameters" element="tns:GuardarImagen" />
+  </wsdl:message>
+  <wsdl:message name="GuardarImagenSoapOut">
+    <wsdl:part name="parameters" element="tns:GuardarImagenResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExisteImagenSoapIn">
+    <wsdl:part name="parameters" element="tns:ExisteImagen" />
+  </wsdl:message>
+  <wsdl:message name="ExisteImagenSoapOut">
+    <wsdl:part name="parameters" element="tns:ExisteImagenResponse" />
+  </wsdl:message>
+  <wsdl:message name="getImageSoapIn">
+    <wsdl:part name="parameters" element="tns:getImage" />
+  </wsdl:message>
+  <wsdl:message name="getImageSoapOut">
+    <wsdl:part name="parameters" element="tns:getImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFileExtensionSoapIn">
+    <wsdl:part name="parameters" element="tns:getFileExtension" />
+  </wsdl:message>
+  <wsdl:message name="getFileExtensionSoapOut">
+    <wsdl:part name="parameters" element="tns:getFileExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GuardarImagenHttpPostIn">
+    <wsdl:part name="Imagen" type="s1:StringArray" />
+    <wsdl:part name="Nombre" type="s:string" />
+    <wsdl:part name="Carpeta" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GuardarImagenHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="ExisteImagenHttpPostIn">
+    <wsdl:part name="Carpeta" type="s:string" />
+    <wsdl:part name="Nombre" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExisteImagenHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="getImageHttpPostIn">
+    <wsdl:part name="Carpeta" type="s:string" />
+    <wsdl:part name="Nombre" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getImageHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="getFileExtensionHttpPostIn">
+    <wsdl:part name="Carpeta" type="s:string" />
+    <wsdl:part name="Nombre" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getFileExtensionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="SolminWebSoap">
+    <wsdl:operation name="GuardarImagen">
+      <wsdl:input message="tns:GuardarImagenSoapIn" />
+      <wsdl:output message="tns:GuardarImagenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExisteImagen">
+      <wsdl:input message="tns:ExisteImagenSoapIn" />
+      <wsdl:output message="tns:ExisteImagenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getImage">
+      <wsdl:input message="tns:getImageSoapIn" />
+      <wsdl:output message="tns:getImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFileExtension">
+      <wsdl:input message="tns:getFileExtensionSoapIn" />
+      <wsdl:output message="tns:getFileExtensionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SolminWebHttpPost">
+    <wsdl:operation name="GuardarImagen">
+      <wsdl:input message="tns:GuardarImagenHttpPostIn" />
+      <wsdl:output message="tns:GuardarImagenHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExisteImagen">
+      <wsdl:input message="tns:ExisteImagenHttpPostIn" />
+      <wsdl:output message="tns:ExisteImagenHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getImage">
+      <wsdl:input message="tns:getImageHttpPostIn" />
+      <wsdl:output message="tns:getImageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFileExtension">
+      <wsdl:input message="tns:getFileExtensionHttpPostIn" />
+      <wsdl:output message="tns:getFileExtensionHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SolminWebSoap" type="tns:SolminWebSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GuardarImagen">
+      <soap:operation soapAction="http://ransa.biz/GuardarImagen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExisteImagen">
+      <soap:operation soapAction="http://ransa.biz/ExisteImagen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImage">
+      <soap:operation soapAction="http://ransa.biz/getImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileExtension">
+      <soap:operation soapAction="http://ransa.biz/getFileExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SolminWebSoap12" type="tns:SolminWebSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GuardarImagen">
+      <soap12:operation soapAction="http://ransa.biz/GuardarImagen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExisteImagen">
+      <soap12:operation soapAction="http://ransa.biz/ExisteImagen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImage">
+      <soap12:operation soapAction="http://ransa.biz/getImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileExtension">
+      <soap12:operation soapAction="http://ransa.biz/getFileExtension" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SolminWebHttpPost" type="tns:SolminWebHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GuardarImagen">
+      <http:operation location="/GuardarImagen" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExisteImagen">
+      <http:operation location="/ExisteImagen" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImage">
+      <http:operation location="/getImage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileExtension">
+      <http:operation location="/getFileExtension" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SolminWeb">
+    <wsdl:port name="SolminWebSoap" binding="tns:SolminWebSoap">
+      <soap:address location="http://asp.ransa.com.pe/wapmineria/SolminWeb.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SolminWebSoap12" binding="tns:SolminWebSoap12">
+      <soap12:address location="http://asp.ransa.com.pe/wapmineria/SolminWeb.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SolminWebHttpPost" binding="tns:SolminWebHttpPost">
+      <http:address location="http://asp.ransa.com.pe/wapmineria/SolminWeb.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

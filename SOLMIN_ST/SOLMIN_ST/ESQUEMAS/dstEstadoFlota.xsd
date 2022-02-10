@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstEstadoFlota" targetNamespace="http://tempuri.org/dstEstadoFlota.xsd" xmlns:mstns="http://tempuri.org/dstEstadoFlota.xsd" xmlns="http://tempuri.org/dstEstadoFlota.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstEstadoFlota" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstEstadoFlota" msprop:Generator_DataSetName="dstEstadoFlota">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Estado_Flota" msprop:Generator_UserTableName="Estado_Flota" msprop:Generator_RowDeletedName="Estado_FlotaRowDeleted" msprop:Generator_RowChangedName="Estado_FlotaRowChanged" msprop:Generator_RowClassName="Estado_FlotaRow" msprop:Generator_RowChangingName="Estado_FlotaRowChanging" msprop:Generator_RowEvArgName="Estado_FlotaRowChangeEvent" msprop:Generator_RowEvHandlerName="Estado_FlotaRowChangeEventHandler" msprop:Generator_TableClassName="Estado_FlotaDataTable" msprop:Generator_TableVarName="tableEstado_Flota" msprop:Generator_RowDeletingName="Estado_FlotaRowDeleting" msprop:Generator_TablePropName="Estado_Flota">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NPLCUN" msprop:Generator_UserColumnName="NPLCUN" msprop:Generator_ColumnPropNameInRow="NPLCUN" msprop:Generator_ColumnVarNameInTable="columnNPLCUN" msprop:Generator_ColumnPropNameInTable="NPLCUNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NEJSUN" msprop:Generator_UserColumnName="NEJSUN" msprop:Generator_ColumnPropNameInRow="NEJSUN" msprop:Generator_ColumnVarNameInTable="columnNEJSUN" msprop:Generator_ColumnPropNameInTable="NEJSUNColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NTERPM" msprop:Generator_UserColumnName="NTERPM" msprop:Generator_ColumnPropNameInRow="NTERPM" msprop:Generator_ColumnVarNameInTable="columnNTERPM" msprop:Generator_ColumnPropNameInTable="NTERPMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NPLACP" msprop:Generator_UserColumnName="NPLACP" msprop:Generator_ColumnPropNameInRow="NPLACP" msprop:Generator_ColumnVarNameInTable="columnNPLACP" msprop:Generator_ColumnPropNameInTable="NPLACPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CBRCND" msprop:Generator_UserColumnName="CBRCND" msprop:Generator_ColumnPropNameInRow="CBRCND" msprop:Generator_ColumnVarNameInTable="columnCBRCND" msprop:Generator_ColumnPropNameInTable="CBRCNDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMCRA" msprop:Generator_UserColumnName="TCMCRA" msprop:Generator_ColumnPropNameInRow="TCMCRA" msprop:Generator_ColumnVarNameInTable="columnTCMCRA" msprop:Generator_ColumnPropNameInTable="TCMCRAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOBS" msprop:Generator_UserColumnName="TOBS" msprop:Generator_ColumnPropNameInRow="TOBS" msprop:Generator_ColumnVarNameInTable="columnTOBS" msprop:Generator_ColumnPropNameInTable="TOBSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NSRCHU" msprop:Generator_UserColumnName="NSRCHU" msprop:Generator_ColumnPropNameInRow="NSRCHU" msprop:Generator_ColumnVarNameInTable="columnNSRCHU" msprop:Generator_ColumnPropNameInTable="NSRCHUColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHOR" msprop:Generator_UserColumnName="FECHOR" msprop:Generator_ColumnPropNameInRow="FECHOR" msprop:Generator_ColumnVarNameInTable="columnFECHOR" msprop:Generator_ColumnPropNameInTable="FECHORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ORIDES" msprop:Generator_UserColumnName="ORIDES" msprop:Generator_ColumnPropNameInRow="ORIDES" msprop:Generator_ColumnVarNameInTable="columnORIDES" msprop:Generator_ColumnPropNameInTable="ORIDESColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CODCLI" msprop:Generator_UserColumnName="CODCLI" msprop:Generator_ColumnVarNameInTable="columnCODCLI" msprop:Generator_ColumnPropNameInRow="CODCLI" msprop:Generator_ColumnPropNameInTable="CODCLIColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TCMPCL" msprop:Generator_UserColumnName="TCMPCL" msprop:Generator_ColumnPropNameInRow="TCMPCL" msprop:Generator_ColumnVarNameInTable="columnTCMPCL" msprop:Generator_ColumnPropNameInTable="TCMPCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NCOACC" msprop:Generator_UserColumnName="NCOACC" msprop:Generator_ColumnVarNameInTable="columnNCOACC" msprop:Generator_ColumnPropNameInRow="NCOACC" msprop:Generator_ColumnPropNameInTable="NCOACCColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

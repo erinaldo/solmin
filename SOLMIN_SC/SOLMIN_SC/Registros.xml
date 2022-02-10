@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DocumentElement>
+  <ParamToChangeCheckPoint>    
+    <Cliente>11232</Cliente>
+    <Destinatario>rortizp@gromero.com.pe</Destinatario>    
+  </ParamToChangeCheckPoint>
+  <ParamToChangeCheckPoint>
+    <Cliente>11232</Cliente>
+    <Destinatario>warteagaj@gromero.com.pe</Destinatario>
+  </ParamToChangeCheckPoint>
+  <ParamToChangeCheckPoint>
+    <Cliente>11232</Cliente>
+    <Destinatario>azorrillap@gromero.com.pe</Destinatario>
+  </ParamToChangeCheckPoint>
+  <ParamToChangeCheckPoint>
+    <Cliente>11232</Cliente>
+    <Destinatario>ajuandediosl@gromero.com.pe</Destinatario>
+  </ParamToChangeCheckPoint>
+</DocumentElement>
+

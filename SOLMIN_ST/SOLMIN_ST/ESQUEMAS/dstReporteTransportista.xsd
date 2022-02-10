@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReporteTransportista" targetNamespace="http://tempuri.org/dstReporteTransportista.xsd" xmlns:mstns="http://tempuri.org/dstReporteTransportista.xsd" xmlns="http://tempuri.org/dstReporteTransportista.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReporteTransportista" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReporteTransportista" msprop:Generator_DataSetName="dstReporteTransportista">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TRANSPORTISTA" msprop:Generator_UserTableName="TRANSPORTISTA" msprop:Generator_RowDeletedName="TRANSPORTISTARowDeleted" msprop:Generator_RowChangedName="TRANSPORTISTARowChanged" msprop:Generator_RowClassName="TRANSPORTISTARow" msprop:Generator_RowChangingName="TRANSPORTISTARowChanging" msprop:Generator_RowEvArgName="TRANSPORTISTARowChangeEvent" msprop:Generator_RowEvHandlerName="TRANSPORTISTARowChangeEventHandler" msprop:Generator_TableClassName="TRANSPORTISTADataTable" msprop:Generator_TableVarName="tableTRANSPORTISTA" msprop:Generator_RowDeletingName="TRANSPORTISTARowDeleting" msprop:Generator_TablePropName="TRANSPORTISTA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NRUCTR" msprop:Generator_UserColumnName="NRUCTR" msprop:Generator_ColumnVarNameInTable="columnNRUCTR" msprop:Generator_ColumnPropNameInRow="NRUCTR" msprop:Generator_ColumnPropNameInTable="NRUCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMTRT" msprop:Generator_UserColumnName="TCMTRT" msprop:Generator_ColumnVarNameInTable="columnTCMTRT" msprop:Generator_ColumnPropNameInRow="TCMTRT" msprop:Generator_ColumnPropNameInTable="TCMTRTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TABTRT" msprop:Generator_UserColumnName="TABTRT" msprop:Generator_ColumnVarNameInTable="columnTABTRT" msprop:Generator_ColumnPropNameInRow="TABTRT" msprop:Generator_ColumnPropNameInTable="TABTRTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDRCTR" msprop:Generator_UserColumnName="TDRCTR" msprop:Generator_ColumnVarNameInTable="columnTDRCTR" msprop:Generator_ColumnPropNameInRow="TDRCTR" msprop:Generator_ColumnPropNameInTable="TDRCTRColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TR_VEHICULO" msprop:Generator_UserTableName="TR_VEHICULO" msprop:Generator_RowDeletedName="TR_VEHICULORowDeleted" msprop:Generator_RowChangedName="TR_VEHICULORowChanged" msprop:Generator_RowClassName="TR_VEHICULORow" msprop:Generator_RowChangingName="TR_VEHICULORowChanging" msprop:Generator_RowEvArgName="TR_VEHICULORowChangeEvent" msprop:Generator_RowEvHandlerName="TR_VEHICULORowChangeEventHandler" msprop:Generator_TableClassName="TR_VEHICULODataTable" msprop:Generator_TableVarName="tableTR_VEHICULO" msprop:Generator_RowDeletingName="TR_VEHICULORowDeleting" msprop:Generator_TablePropName="TR_VEHICULO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NRUCTR" msprop:Generator_UserColumnName="NRUCTR" msprop:Generator_ColumnVarNameInTable="columnNRUCTR" msprop:Generator_ColumnPropNameInRow="NRUCTR" msprop:Generator_ColumnPropNameInTable="NRUCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NPLCUN" msprop:Generator_UserColumnName="NPLCUN" msprop:Generator_ColumnVarNameInTable="columnNPLCUN" msprop:Generator_ColumnPropNameInRow="NPLCUN" msprop:Generator_ColumnPropNameInTable="NPLCUNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NEJSUN" msprop:Generator_UserColumnName="NEJSUN" msprop:Generator_ColumnVarNameInTable="columnNEJSUN" msprop:Generator_ColumnPropNameInRow="NEJSUN" msprop:Generator_ColumnPropNameInTable="NEJSUNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TMRCTR" msprop:Generator_UserColumnName="TMRCTR" msprop:Generator_ColumnVarNameInTable="columnTMRCTR" msprop:Generator_ColumnPropNameInRow="TMRCTR" msprop:Generator_ColumnPropNameInTable="TMRCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOBS" msprop:Generator_UserColumnName="TOBS" msprop:Generator_ColumnVarNameInTable="columnTOBS" msprop:Generator_ColumnPropNameInRow="TOBS" msprop:Generator_ColumnPropNameInTable="TOBSColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TR_ACOPLADO" msprop:Generator_UserTableName="TR_ACOPLADO" msprop:Generator_RowDeletedName="TR_ACOPLADORowDeleted" msprop:Generator_RowChangedName="TR_ACOPLADORowChanged" msprop:Generator_RowClassName="TR_ACOPLADORow" msprop:Generator_RowChangingName="TR_ACOPLADORowChanging" msprop:Generator_RowEvArgName="TR_ACOPLADORowChangeEvent" msprop:Generator_RowEvHandlerName="TR_ACOPLADORowChangeEventHandler" msprop:Generator_TableClassName="TR_ACOPLADODataTable" msprop:Generator_TableVarName="tableTR_ACOPLADO" msprop:Generator_RowDeletingName="TR_ACOPLADORowDeleting" msprop:Generator_TablePropName="TR_ACOPLADO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NRUCTR" msprop:Generator_UserColumnName="NRUCTR" msprop:Generator_ColumnVarNameInTable="columnNRUCTR" msprop:Generator_ColumnPropNameInRow="NRUCTR" msprop:Generator_ColumnPropNameInTable="NRUCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NPLCAC" msprop:Generator_UserColumnName="NPLCAC" msprop:Generator_ColumnVarNameInTable="columnNPLCAC" msprop:Generator_ColumnPropNameInRow="NPLCAC" msprop:Generator_ColumnPropNameInTable="NPLCACColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NEJSUN" msprop:Generator_UserColumnName="NEJSUN" msprop:Generator_ColumnVarNameInTable="columnNEJSUN" msprop:Generator_ColumnPropNameInRow="NEJSUN" msprop:Generator_ColumnPropNameInTable="NEJSUNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TMRCVH" msprop:Generator_UserColumnName="TMRCVH" msprop:Generator_ColumnVarNameInTable="columnTMRCVH" msprop:Generator_ColumnPropNameInRow="TMRCVH" msprop:Generator_ColumnPropNameInTable="TMRCVHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOBS" msprop:Generator_UserColumnName="TOBS" msprop:Generator_ColumnVarNameInTable="columnTOBS" msprop:Generator_ColumnPropNameInRow="TOBS" msprop:Generator_ColumnPropNameInTable="TOBSColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TR_CONDUCTOR" msprop:Generator_UserTableName="TR_CONDUCTOR" msprop:Generator_RowDeletedName="TR_CONDUCTORRowDeleted" msprop:Generator_RowChangedName="TR_CONDUCTORRowChanged" msprop:Generator_RowClassName="TR_CONDUCTORRow" msprop:Generator_RowChangingName="TR_CONDUCTORRowChanging" msprop:Generator_RowEvArgName="TR_CONDUCTORRowChangeEvent" msprop:Generator_RowEvHandlerName="TR_CONDUCTORRowChangeEventHandler" msprop:Generator_TableClassName="TR_CONDUCTORDataTable" msprop:Generator_TableVarName="tableTR_CONDUCTOR" msprop:Generator_RowDeletingName="TR_CONDUCTORRowDeleting" msprop:Generator_TablePropName="TR_CONDUCTOR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NRUCTR" msprop:Generator_UserColumnName="NRUCTR" msprop:Generator_ColumnVarNameInTable="columnNRUCTR" msprop:Generator_ColumnPropNameInRow="NRUCTR" msprop:Generator_ColumnPropNameInTable="NRUCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CBRCNT" msprop:Generator_UserColumnName="CBRCNT" msprop:Generator_ColumnVarNameInTable="columnCBRCNT" msprop:Generator_ColumnPropNameInRow="CBRCNT" msprop:Generator_ColumnPropNameInTable="CBRCNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TNMCMC" msprop:Generator_UserColumnName="TNMCMC" msprop:Generator_ColumnVarNameInTable="columnTNMCMC" msprop:Generator_ColumnPropNameInRow="TNMCMC" msprop:Generator_ColumnPropNameInTable="TNMCMCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="APEPAT" msprop:Generator_UserColumnName="APEPAT" msprop:Generator_ColumnVarNameInTable="columnAPEPAT" msprop:Generator_ColumnPropNameInRow="APEPAT" msprop:Generator_ColumnPropNameInTable="APEPATColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="APEMAT" msprop:Generator_UserColumnName="APEMAT" msprop:Generator_ColumnVarNameInTable="columnAPEMAT" msprop:Generator_ColumnPropNameInRow="APEMAT" msprop:Generator_ColumnPropNameInTable="APEMATColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOBS" msprop:Generator_UserColumnName="TOBS" msprop:Generator_ColumnVarNameInTable="columnTOBS" msprop:Generator_ColumnPropNameInRow="TOBS" msprop:Generator_ColumnPropNameInTable="TOBSColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

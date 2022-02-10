@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="SOLMIN_CTZ.Entidades.Bitacora_Contrato" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Bitacora_Contrato.vb</FileName>
+      <HashCode>AACABAEAYAAAAAAAAAAAQAAAEAAAAAAACCAgAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Bitacora_Detalle" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Bitacora_Detalle.vb</FileName>
+      <HashCode>AACABIEAYACAAAAAAAAAQAAAEAAAAAAACCAgAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.CentroCosto" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\CentroCosto.vb</FileName>
+      <HashCode>AhAIJAAAIAAAkAQAAAAIAAgAAAAAAAAAAAhAggAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Cliente" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Cliente.vb</FileName>
+      <HashCode>AAAAAAAgAIABAAAABAAAIAAAAAAAAAAAgAgAACAAAUA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Contrato" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Contrato.vb</FileName>
+      <HashCode>AAAEFCAAQUBAAAEAAAAAaAABECACBASAADAgACAIAQE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Contrato_Almacen" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Contrato_Almacen.vb</FileName>
+      <HashCode>gAAMAIAAEAAAAIIAJAECAIYBACAgFgAACIAAABCAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Contrato_SIL" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Contrato_SIL.vb</FileName>
+      <HashCode>gBAkFQAAxCAAAAAhBAQESAABQAAYBAAIAIIgAAGCAEE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Contrato_Transporte" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Contrato_Transporte.vb</FileName>
+      <HashCode>iAAkBSAAQCAAAAAAJQQGSAaBAGEYBABCCIAhAgGDCEE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.CtaCte_Observacion" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\CtaCte_Observacion.vb</FileName>
+      <HashCode>AAEAAAAAAAAAAAAAAAgAAAAAAAAAAAABAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.CtaCte_Venta" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\CtaCte_Venta.vb</FileName>
+      <HashCode>AAACAAAAAAAAAAAAAAGgAQAAEAEAAEAAQAAYAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.CuentaCorriente" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\CuentaCorriente.vb</FileName>
+      <HashCode>FARAMEAHAAAAgAAIRIiKCDhAkkQAIBAEAUBAIAAyAkk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Detalle_Contrato" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Detalle_Contrato.vb</FileName>
+      <HashCode>AAAEFIAAQUCAAAEAAAAAAAABAAIABAQAACAggAAAAQE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.FacturaSIL" Collapsed="true">
+    <Position X="4" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\FacturaSIL.vb</FileName>
+      <HashCode>CDABQQIAACAQCAAYBAgHFNAAEIRIAARDAoQIECGgAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Filtro" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Filtro.vb</FileName>
+      <HashCode>QAAAAAAAoUAIAAAAUAAA/wEAIAAAAQAAAAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.OrdenesInternas" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\OrdenesInternas.vb</FileName>
+      <HashCode>FCAQdMIBAEgQCgLAVMSKADgYEwSDYBhSAWHIACCAWtM=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.OrdenInternaControl" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Entidades\OrdenInternaControl.vb</FileName>
+      <HashCode>CCABQAAAACAAAAAYAAAFFNAAEAQAAARCAoQIECGgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Rango" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Rango.vb</FileName>
+      <HashCode>gQAkFAEAQAAAAAIAAAAIAAAhAAAABIQQCAAghAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Rubro" Collapsed="true">
+    <Position X="16.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Rubro.vb</FileName>
+      <HashCode>ABA1FgAAQAiAAAQAAAAASAABAIAABABQAJAgAAEADAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Rubro_X_Division" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Rubro_X_Division.vb</FileName>
+      <HashCode>AAElFgAAYAAAAAAAAAAASAABAAAABAAAAAAgAAEAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Servicio" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Servicio.vb</FileName>
+      <HashCode>AAAENAAAQAAAAAAAIAAAIIABAAAABAAAAAAgAAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Servicio_Atendido" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Servicio_Atendido.vb</FileName>
+      <HashCode>CAA0FQAgQciQEAUABCACTQYIAIYIQgRRAoSoBAGCAks=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Servicio_General" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Servicio_General.vb</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Servicio_X_Rubro" Collapsed="true">
+    <Position X="16.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Servicio_X_Rubro.vb</FileName>
+      <HashCode>ABA1NgAAQAiAAAQAAAAAaAABBIAABQBQAIEgAAFACAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Tarifa">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Tarifa.vb</FileName>
+      <HashCode>ABAlB0MAQUgACAUQAAACSAABFJIIBQQAASEghAHACQE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Tarifario" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entidades\Tarifario.vb</FileName>
+      <HashCode>AAAEFAAAAAAAAAAAAAACYAgBEABABAAAAAAgAACAAQE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.Base_BE" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\Base_BE.vb</FileName>
+      <HashCode>AgCAgBAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAmAIBQAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_CTZ.Entidades.My.MySettings" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="SOLMIN_CTZ.Entidades.My.Resources.Resources" Collapsed="true">
+    <Position X="11.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SOLMIN_CTZ.Entidades.My.MySettingsProperty" Collapsed="true">
+    <Position X="9.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+</ClassDiagram>

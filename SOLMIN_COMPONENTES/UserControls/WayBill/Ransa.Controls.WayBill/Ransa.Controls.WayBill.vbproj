@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EC37909-CAF8-4120-B205-8AFA0A80CF58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ransa.Controls.WayBill</RootNamespace>
+    <AssemblyName>Ransa.Controls.WayBill</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.WayBill.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ransa.Controls.WayBill.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeValidatorKryton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\KryptonValidator\TypeValidatorKryton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmPreDespachoPltz.designer.vb">
+      <DependentUpon>frmPreDespachoPltz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreDespachoPltz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenPallet.designer.vb">
+      <DependentUpon>frmGenPallet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenPallet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuditoria.designer.vb">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmarLlegada.Designer.vb">
+      <DependentUpon>frmConfirmarLlegada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmarLlegada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mLocalRutime.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ucControlOperacion_DgF01.Designer.vb">
+      <DependentUpon>ucControlOperacion_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucControlOperacion_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucItemsWaybill_DgF01.Designer.vb">
+      <DependentUpon>ucItemsWaybill_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucItemsWaybill_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucWaybill_DgF01.Designer.vb">
+      <DependentUpon>ucWaybill_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucWaybill_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucWaybill_PreDespacho.Designer.vb">
+      <DependentUpon>ucWaybill_PreDespacho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucWaybill_PreDespacho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmPreDespachoPltz.resx">
+      <DependentUpon>frmPreDespachoPltz.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenPallet.resx">
+      <DependentUpon>frmGenPallet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuditoria.resx">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmarLlegada.resx">
+      <DependentUpon>frmConfirmarLlegada.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucControlOperacion_DgF01.resx">
+      <DependentUpon>ucControlOperacion_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucItemsWaybill_DgF01.resx">
+      <DependentUpon>ucItemsWaybill_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucWaybill_DgF01.resx">
+      <DependentUpon>ucWaybill_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucWaybill_PreDespacho.resx">
+      <DependentUpon>ucWaybill_PreDespacho.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SOLMIN_SA\SOLMIN_SA.Negocio\RANSA.NEGO.vbproj">
+      <Project>{51b8061d-c481-405b-b692-7c2edc3464cb}</Project>
+      <Name>RANSA.NEGO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOLMIN_SA\SOLMIN_SA.TypeDef\RANSA.TYPEDEF.vbproj">
+      <Project>{92EF2C77-6996-427A-8E39-0F003417E224}</Project>
+      <Name>RANSA.TYPEDEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{E440D2C4-A8D1-44EE-9A08-18D9ACEA0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ransa.Rutime.CtrlsSolmin\Ransa.Rutime.CtrlsSolmin.vbproj">
+      <Project>{7A592B05-2D87-4A2A-9E9D-A96C51CB191F}</Project>
+      <Name>Ransa.Rutime.CtrlsSolmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ransa.Rutime.HojaCalculo\Ransa.Rutime.HojaCalculo.vbproj">
+      <Project>{0953D65A-7148-48E9-A35A-C0011F4B18DC}</Project>
+      <Name>Ransa.Rutime.HojaCalculo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ransa.DAO.WayBill\Ransa.DAO.WayBill.vbproj">
+      <Project>{29556B62-F1F0-41F2-A881-BBE35475D342}</Project>
+      <Name>Ransa.DAO.WayBill</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ransa.TypeDef.WayBill\Ransa.TypeDef.WayBill.vbproj">
+      <Project>{5ED53B2E-130D-44AF-93C5-02D1DC7EEB7C}</Project>
+      <Name>Ransa.TypeDef.WayBill</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\edit_add.png" />
+    <None Include="Resources\inventario.png" />
+    <None Include="Resources\btnconfirmar.gif" />
+    <None Include="Resources\Agregar2.jpg" />
+    <Content Include="Resources\agt_update-product.png" />
+    <Content Include="Resources\button_cancel.png" />
+    <Content Include="Resources\button_ok.png" />
+    <None Include="Resources\verde.png" />
+    <None Include="Resources\Rojo.png" />
+    <None Include="Resources\Pedido de Traslado.png" />
+    <None Include="Resources\naranja.png" />
+    <None Include="Resources\enviar.png" />
+    <None Include="Resources\Confirmacion de recepcion.png" />
+    <None Include="Resources\confirmacion 1.png" />
+    <None Include="Resources\cofirmacion 2.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\email_star.png" />
+    <None Include="Resources\filesave.bmp" />
+    <None Include="Resources\text_block.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

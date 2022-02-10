@@ -1,0 +1,28 @@
+# Archivo de proyecto de Microsoft Developer Studio - Proyecto de base de datos
+Begin DataProject = "RANSA.DB2Script"
+   MSDTVersion = "80"
+   DefDBRef = "ODBC.RANSA01.DB2400"
+   SccProjectName = "SAK"
+   SccLocalPath = "SAK"
+   SccAuxPath = "SAK"
+   SccProvider = "SAK"
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "ODBC.RANSA.DB2400"
+         ConnectStr = "Dsn=PRODUCCION;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+      Begin DBRefNode = "ODBC.RANSA01.DB2400"
+         ConnectStr = "Dsn=DESARROLLO;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+   End
+   Begin Folder = "Functions"
+   End
+   Begin Folder = "Procedures"
+      Script = "SP_SOLMIN_ACCESO.sql"
+   End
+   Begin Folder = "Queries"
+   End
+End

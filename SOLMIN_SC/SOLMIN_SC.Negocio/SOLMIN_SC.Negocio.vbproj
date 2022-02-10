@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23FCF56C-D940-435F-9EE5-4EB288E7FC25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SOLMIN_SC.Negocio</RootNamespace>
+    <AssemblyName>SOLMIN_SC.Negocio</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOLMIN_SC.Negocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOLMIN_SC.Negocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="GmailHelper, Version=1.0.0.0, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsAcceso.vb" />
+    <Compile Include="clsUsuario.vb" />
+    <Compile Include="Consulta\clsConsultaDUA_BLL.vb" />
+    <Compile Include="Consulta\clsConsultaOAgencia.vb" />
+    <Compile Include="Consulta\clsResumenEjecutivo_BLL.vb" />
+    <Compile Include="Consulta\clsResumenTipoCarga.vb" />
+    <Compile Include="Consulta\clsSolicitudTransporte.vb" />
+    <Compile Include="General\clsAgenteCarga.vb" />
+    <Compile Include="General\clsBanco.vb" />
+    <Compile Include="General\clsCalendario.vb" />
+    <Compile Include="General\clsCanal.vb" />
+    <Compile Include="General\clsCartaFianza.vb" />
+    <Compile Include="General\clsCliente.vb" />
+    <Compile Include="General\clsDespacho.vb" />
+    <Compile Include="General\clsDocApertura.vb" />
+    <Compile Include="General\clsEnvio.vb" />
+    <Compile Include="General\clsEstado.vb" />
+    <Compile Include="General\clsGeneral.vb" />
+    <Compile Include="General\clsImageWebUpload.vb" />
+    <Compile Include="General\clsImpInfEmbarcador.vb" />
+    <Compile Include="General\clsIncoterm.vb" />
+    <Compile Include="General\clsLiquidacion.vb" />
+    <Compile Include="General\clsMedioTransporte.vb" />
+    <Compile Include="General\clsMoneda.vb" />
+    <Compile Include="General\clsNoLaborable.vb" />
+    <Compile Include="General\clsPais.vb" />
+    <Compile Include="General\clsPartidaArancelaria.vb" />
+    <Compile Include="General\clsPrioridad.vb" />
+    <Compile Include="General\clsProveedor.vb" />
+    <Compile Include="General\clsPuerto.vb" />
+    <Compile Include="General\clsRegimen.vb" />
+    <Compile Include="General\clsRepContenedor.vb" />
+    <Compile Include="General\clsRepDespacho.vb" />
+    <Compile Include="General\clsTerminal.vb" />
+    <Compile Include="General\clsTipoCambio.vb" />
+    <Compile Include="General\clsTipoCarga.vb" />
+    <Compile Include="General\clsTipoDatoGeneral.vb" />
+    <Compile Include="General\clsTransporte.vb" />
+    <Compile Include="General\clsUploadImg.vb" />
+    <Compile Include="General\clsVapor.vb" />
+    <Compile Include="General\clsZona.vb" />
+    <Compile Include="MigracionAgencias_BLL.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Operaciones\clsAlcanceServicio.vb" />
+    <Compile Include="Operaciones\clsAscinsa.vb" />
+    <Compile Include="Operaciones\clsBitacora.vb" />
+    <Compile Include="Operaciones\clsCierreEmbarque.vb" />
+    <Compile Include="Operaciones\clsCostoItem.vb" />
+    <Compile Include="Operaciones\clsDespachoNacional.vb" />
+    <Compile Include="Operaciones\clsDetOC.vb" />
+    <Compile Include="Operaciones\clsDocumentoAdjunto.vb" />
+    <Compile Include="Operaciones\clsEmailManager.vb" />
+    <Compile Include="Operaciones\clsEmbarque.vb" />
+    <Compile Include="Operaciones\clsEmbarqueAduanas.vb" />
+    <Compile Include="Operaciones\clsExportarCostos.vb" />
+    <Compile Include="Operaciones\ClsFnDespachoLocal.vb" />
+    <Compile Include="Operaciones\clsImporCostos..vb" />
+    <Compile Include="Operaciones\clsLocalidad.vb" />
+    <Compile Include="Operaciones\clsOC.vb" />
+    <Compile Include="Operaciones\clsPreEmbarque.vb" />
+    <Compile Include="Operaciones\clsServicio.vb" />
+    <Compile Include="Operaciones\clsTipoDato.vb" />
+    <Compile Include="Operaciones\clsZonasEmbarque.vb" />
+    <Compile Include="Reportes\clsRep3PL.vb" />
+    <Compile Include="Reportes\clsRepColumnaEmbarque.vb" />
+    <Compile Include="Reportes\clsRepEntregaEmbAlm.vb" />
+    <Compile Include="Reportes\clsRepGenerales.vb" />
+    <Compile Include="Reportes\clsRepLiqAntamina.vb" />
+    <Compile Include="Reportes\clsRepMenAdn.vb" />
+    <Compile Include="Reportes\clsRepMenSA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reportes\clsRepMonthly.vb" />
+    <Compile Include="Reportes\clsRepRatioLandedCost .vb" />
+    <Compile Include="Reportes\clsRepSadAntamina.vb" />
+    <Compile Include="Reportes\clsRptMenCI.vb" />
+    <Compile Include="SEGURIDAD\Seguridad_BLL.vb" />
+    <Compile Include="SIL\Estado_BLL.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tablas\clsCheckPoint.vb" />
+    <Compile Include="Tablas\clsCiaTransporte.vb" />
+    <Compile Include="Tablas\clsEmbarcador.vb" />
+    <Compile Include="Tablas\clsMultiTabla.vb" />
+    <Compile Include="Tablas\clsSegNotificacion.vb" />
+    <Compile Include="Tablas\clsTableroDatos.vb" />
+    <Compile Include="Tablas\clsVapores.vb" />
+    <Compile Include="Web References\ascinsa.ransa.asp\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\pe.com.ransa.asp\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSABB.IntegracionTest\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSABB.Integracion\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSmiqpowerplus\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSmiqransa\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSyrcRns\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClasesNegocio.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SC.Datos\SOLMIN_SC.Datos.vbproj">
+      <Project>{4C6966E3-DD71-45F4-A225-8420FEBC7E7A}</Project>
+      <Name>SOLMIN_SC.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SC.Entidad\SOLMIN_SC.Entidad.vbproj">
+      <Project>{03FE2E77-8772-425C-80DA-E176A045CF99}</Project>
+      <Name>SOLMIN_SC.Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://asp.ransa.net/wsmineria/wssolminsil.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ascinsa.ransa.asp\</RelPath>
+      <UpdateFromURL>http://asp.ransa.net/wsmineria/wssolminsil.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SOLMIN_SC_Negocio_ascinsa_ransa_asp_WsSolminSil</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://asp.ransa.net/WSMineriaABB/IntegracionABB.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSABB.Integracion\</RelPath>
+      <UpdateFromURL>http://asp.ransa.net/WSMineriaABB/IntegracionABB.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SOLMIN_SC_Negocio_WSABB_Integracion_IntegracionABB</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://asp.ransa.net/WSMineriaABB/IntegracionABBtest.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSABB.IntegracionTest\</RelPath>
+      <UpdateFromURL>http://asp.ransa.net/WSMineriaABB/IntegracionABBtest.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SOLMIN_SC_Negocio_WSABB_IntegracionTest_IntegracionABBTest</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://powerplus.miq.com/miqransaws/AddData.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSmiqpowerplus\</RelPath>
+      <UpdateFromURL>http://powerplus.miq.com/miqransaws/AddData.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SOLMIN_SC_Negocio_WSmiqpowerplus_AddData</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://ranmolapl01.gruporansa.gromero.net/imagenessolmin/SolminWeb.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\pe.com.ransa.asp\</RelPath>
+      <UpdateFromURL>http://ranmolapl01.gruporansa.gromero.net/imagenessolmin/SolminWeb.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SOLMIN_SC_Negocio_pe_com_ransa_asp_SolminWeb</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://www.miqransaexpediting.com/miqransaws/adddata.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSmiqransa\</RelPath>
+      <UpdateFromURL>http://www.miqransaexpediting.com/miqransaws/adddata.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SOLMIN_SC_Negocio_WSmiqransa_AddData</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://www.yrcransaexpediting.com/yrcransaws/AddData.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSyrcRns\</RelPath>
+      <UpdateFromURL>http://www.yrcransaexpediting.com/yrcransaws/AddData.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SOLMIN_SC_Negocio_WSyrcRns_AddData</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Web References\WSyrcRns\AddData.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WSyrcRns\AddData.disco" />
+    <None Include="Web References\WSyrcRns\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WSABB.Integracion\IntegracionABB.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WSABB.Integracion\IntegracionABB.disco" />
+    <None Include="Web References\WSABB.Integracion\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ascinsa.ransa.asp\wssolminsil.wsdl" />
+    <None Include="Web References\WSABB.IntegracionTest\IntegracionABBtest.disco" />
+    <None Include="Web References\WSABB.IntegracionTest\IntegracionABBtest.wsdl" />
+    <None Include="Web References\WSABB.IntegracionTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libreria\GmailHelper.dll" />
+    <None Include="Web References\WSmiqpowerplus\AddData.disco" />
+    <None Include="Web References\WSmiqpowerplus\AddData.wsdl" />
+    <None Include="Web References\WSmiqpowerplus\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSmiqransa\adddata.disco" />
+    <None Include="Web References\pe.com.ransa.asp\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\pe.com.ransa.asp\SolminWeb.disco" />
+    <None Include="Web References\ascinsa.ransa.asp\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\ascinsa.ransa.asp\wssolminsil.disco" />
+    <None Include="Web References\pe.com.ransa.asp\SolminWeb.wsdl" />
+    <None Include="Web References\WSmiqransa\adddata.wsdl" />
+    <None Include="Web References\WSmiqransa\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

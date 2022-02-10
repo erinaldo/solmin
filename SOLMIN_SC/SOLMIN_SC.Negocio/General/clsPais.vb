@@ -1,0 +1,41 @@
+Imports SOLMIN_SC.Entidad
+Public Class clsPais
+    Private oPais As Datos.clsPais
+    Private oDt As DataTable
+
+    Sub New()
+        oPais = New Datos.clsPais
+    End Sub
+
+    Property Lista()
+        Get
+            Return oDt
+        End Get
+        Set(ByVal value)
+            oDt = value
+        End Set
+    End Property
+
+    Public Function Lista_Pais(Optional ByVal pintFlag As Integer = 0) As DataTable
+        Dim objDr As DataRow
+        Dim objDt As DataTable
+
+        objDt = oDt.Copy
+        If objDt.Rows.Count > 0 And pintFlag = 0 Then
+            objDr = objDt.NewRow
+            objDr(0) = "0"
+            objDr(1) = "TODOS"
+            objDt.Rows.InsertAt(objDr, 0)
+        End If
+        Return objDt
+    End Function
+
+    Public Sub Crea_Lista()
+        oDt = oPais.Lista_Pais
+    End Sub
+    Public Function Listar_Pais() As List(Of bePais)
+        Dim oListPais As New List(Of bePais)
+        oListPais = oPais.Listar_Pais
+        Return oListPais
+    End Function
+End Class

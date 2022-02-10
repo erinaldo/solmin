@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDespachoNacionales" targetNamespace="http://tempuri.org/dsDespachoNacionales.xsd" xmlns:mstns="http://tempuri.org/dsDespachoNacionales.xsd" xmlns="http://tempuri.org/dsDespachoNacionales.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDespachoNacionales" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsDespachoNacionales" msprop:Generator_DataSetName="dsDespachoNacionales">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_DESPACHO_NAC" msprop:Generator_UserTableName="DT_DESPACHO_NAC" msprop:Generator_RowDeletedName="DT_DESPACHO_NACRowDeleted" msprop:Generator_RowChangedName="DT_DESPACHO_NACRowChanged" msprop:Generator_RowClassName="DT_DESPACHO_NACRow" msprop:Generator_RowChangingName="DT_DESPACHO_NACRowChanging" msprop:Generator_RowEvArgName="DT_DESPACHO_NACRowChangeEvent" msprop:Generator_RowEvHandlerName="DT_DESPACHO_NACRowChangeEventHandler" msprop:Generator_TableClassName="DT_DESPACHO_NACDataTable" msprop:Generator_TableVarName="tableDT_DESPACHO_NAC" msprop:Generator_RowDeletingName="DT_DESPACHO_NACRowDeleting" msprop:Generator_TablePropName="DT_DESPACHO_NAC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NORSCI" msprop:Generator_UserColumnName="NORSCI" msprop:Generator_ColumnPropNameInRow="NORSCI" msprop:Generator_ColumnVarNameInTable="columnNORSCI" msprop:Generator_ColumnPropNameInTable="NORSCIColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NUMDCR" msprop:Generator_UserColumnName="NUMDCR" msprop:Generator_ColumnPropNameInRow="NUMDCR" msprop:Generator_ColumnVarNameInTable="columnNUMDCR" msprop:Generator_ColumnPropNameInTable="NUMDCRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_56-FRE-CHK" msprop:Generator_UserColumnName="156-FRE-CHK" msprop:Generator_ColumnPropNameInRow="_156_FRE_CHK" msprop:Generator_ColumnVarNameInTable="_column156_FRE_CHK" msprop:Generator_ColumnPropNameInTable="_156_FRE_CHKColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TIPO_TARIFA" msprop:Generator_UserColumnName="TIPO_TARIFA" msprop:Generator_ColumnPropNameInRow="TIPO_TARIFA" msprop:Generator_ColumnVarNameInTable="columnTIPO_TARIFA" msprop:Generator_ColumnPropNameInTable="TIPO_TARIFAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMLCL_ORIGEN" msprop:Generator_UserColumnName="TCMLCL_ORIGEN" msprop:Generator_ColumnPropNameInRow="TCMLCL_ORIGEN" msprop:Generator_ColumnVarNameInTable="columnTCMLCL_ORIGEN" msprop:Generator_ColumnPropNameInTable="TCMLCL_ORIGENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMLCL_DESTINO" msprop:Generator_UserColumnName="TCMLCL_DESTINO" msprop:Generator_ColumnPropNameInRow="TCMLCL_DESTINO" msprop:Generator_ColumnVarNameInTable="columnTCMLCL_DESTINO" msprop:Generator_ColumnPropNameInTable="TCMLCL_DESTINOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_57-FRE-CHK" msprop:Generator_UserColumnName="157-FRE-CHK" msprop:Generator_ColumnPropNameInRow="_157_FRE_CHK" msprop:Generator_ColumnVarNameInTable="_column157_FRE_CHK" msprop:Generator_ColumnPropNameInTable="_157_FRE_CHKColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_58-FRE-CHK" msprop:Generator_UserColumnName="158-FRE-CHK" msprop:Generator_ColumnPropNameInRow="_158_FRE_CHK" msprop:Generator_ColumnVarNameInTable="_column158_FRE_CHK" msprop:Generator_ColumnPropNameInTable="_158_FRE_CHKColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DIF_158_157" msprop:Generator_UserColumnName="DIF_158_157" msprop:Generator_ColumnPropNameInRow="DIF_158_157" msprop:Generator_ColumnVarNameInTable="columnDIF_158_157" msprop:Generator_ColumnPropNameInTable="DIF_158_157Column" type="xs:string" minOccurs="0" />
+              <xs:element name="SESTRG_DESC" msprop:Generator_UserColumnName="SESTRG_DESC" msprop:Generator_ColumnPropNameInRow="SESTRG_DESC" msprop:Generator_ColumnVarNameInTable="columnSESTRG_DESC" msprop:Generator_ColumnPropNameInTable="SESTRG_DESCColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_DESP_TRANSITO" msprop:Generator_UserTableName="DT_DESP_TRANSITO" msprop:Generator_RowDeletedName="DT_DESP_TRANSITORowDeleted" msprop:Generator_RowChangedName="DT_DESP_TRANSITORowChanged" msprop:Generator_RowClassName="DT_DESP_TRANSITORow" msprop:Generator_RowChangingName="DT_DESP_TRANSITORowChanging" msprop:Generator_RowEvArgName="DT_DESP_TRANSITORowChangeEvent" msprop:Generator_RowEvHandlerName="DT_DESP_TRANSITORowChangeEventHandler" msprop:Generator_TableClassName="DT_DESP_TRANSITODataTable" msprop:Generator_TableVarName="tableDT_DESP_TRANSITO" msprop:Generator_RowDeletingName="DT_DESP_TRANSITORowDeleting" msprop:Generator_TablePropName="DT_DESP_TRANSITO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FORMAT_DIA" msprop:Generator_UserColumnName="FORMAT_DIA" msprop:Generator_ColumnPropNameInRow="FORMAT_DIA" msprop:Generator_ColumnVarNameInTable="columnFORMAT_DIA" msprop:Generator_ColumnPropNameInTable="FORMAT_DIAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ACUMULADO" msprop:Generator_UserColumnName="ACUMULADO" msprop:Generator_ColumnPropNameInRow="ACUMULADO" msprop:Generator_ColumnVarNameInTable="columnACUMULADO" msprop:Generator_ColumnPropNameInTable="ACUMULADOColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_DESP_TIPO_TARIFA" msprop:Generator_UserTableName="DT_DESP_TIPO_TARIFA" msprop:Generator_RowDeletedName="DT_DESP_TIPO_TARIFARowDeleted" msprop:Generator_RowChangedName="DT_DESP_TIPO_TARIFARowChanged" msprop:Generator_RowClassName="DT_DESP_TIPO_TARIFARow" msprop:Generator_RowChangingName="DT_DESP_TIPO_TARIFARowChanging" msprop:Generator_RowEvArgName="DT_DESP_TIPO_TARIFARowChangeEvent" msprop:Generator_RowEvHandlerName="DT_DESP_TIPO_TARIFARowChangeEventHandler" msprop:Generator_TableClassName="DT_DESP_TIPO_TARIFADataTable" msprop:Generator_TableVarName="tableDT_DESP_TIPO_TARIFA" msprop:Generator_RowDeletingName="DT_DESP_TIPO_TARIFARowDeleting" msprop:Generator_TablePropName="DT_DESP_TIPO_TARIFA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TIPO_TARIFA" msprop:Generator_UserColumnName="TIPO_TARIFA" msprop:Generator_ColumnVarNameInTable="columnTIPO_TARIFA" msprop:Generator_ColumnPropNameInRow="TIPO_TARIFA" msprop:Generator_ColumnPropNameInTable="TIPO_TARIFAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_TARIFA_TRANSITO" msprop:Generator_UserTableName="DT_TARIFA_TRANSITO" msprop:Generator_RowDeletedName="DT_TARIFA_TRANSITORowDeleted" msprop:Generator_RowChangedName="DT_TARIFA_TRANSITORowChanged" msprop:Generator_RowClassName="DT_TARIFA_TRANSITORow" msprop:Generator_RowChangingName="DT_TARIFA_TRANSITORowChanging" msprop:Generator_RowEvArgName="DT_TARIFA_TRANSITORowChangeEvent" msprop:Generator_RowEvHandlerName="DT_TARIFA_TRANSITORowChangeEventHandler" msprop:Generator_TableClassName="DT_TARIFA_TRANSITODataTable" msprop:Generator_TableVarName="tableDT_TARIFA_TRANSITO" msprop:Generator_RowDeletingName="DT_TARIFA_TRANSITORowDeleting" msprop:Generator_TablePropName="DT_TARIFA_TRANSITO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_TARIFA" msprop:Generator_UserColumnName="COD_TARIFA" msprop:Generator_ColumnPropNameInRow="COD_TARIFA" msprop:Generator_ColumnVarNameInTable="columnCOD_TARIFA" msprop:Generator_ColumnPropNameInTable="COD_TARIFAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TIPO_TARIFA" msprop:Generator_UserColumnName="TIPO_TARIFA" msprop:Generator_ColumnPropNameInRow="TIPO_TARIFA" msprop:Generator_ColumnVarNameInTable="columnTIPO_TARIFA" msprop:Generator_ColumnPropNameInTable="TIPO_TARIFAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FORMAT_DIA" msprop:Generator_UserColumnName="FORMAT_DIA" msprop:Generator_ColumnPropNameInRow="FORMAT_DIA" msprop:Generator_ColumnVarNameInTable="columnFORMAT_DIA" msprop:Generator_ColumnPropNameInTable="FORMAT_DIAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ACUMULADO" msprop:Generator_UserColumnName="ACUMULADO" msprop:Generator_ColumnPropNameInRow="ACUMULADO" msprop:Generator_ColumnVarNameInTable="columnACUMULADO" msprop:Generator_ColumnPropNameInTable="ACUMULADOColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

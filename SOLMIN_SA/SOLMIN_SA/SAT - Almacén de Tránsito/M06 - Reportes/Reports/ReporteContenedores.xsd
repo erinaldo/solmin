@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteContenedores" targetNamespace="http://tempuri.org/ReporteContenedores.xsd" xmlns:mstns="http://tempuri.org/ReporteContenedores.xsd" xmlns="http://tempuri.org/ReporteContenedores.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReporteContenedores" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ReporteContenedores" msprop:Generator_DataSetName="ReporteContenedores">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONTENEDOR" msprop:Generator_UserColumnName="CONTENEDOR" msprop:Generator_ColumnVarNameInTable="columnCONTENEDOR" msprop:Generator_ColumnPropNameInRow="CONTENEDOR" msprop:Generator_ColumnPropNameInTable="CONTENEDORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCMTRCN" msprop:Generator_UserColumnName="DESCMTRCN" msprop:Generator_ColumnVarNameInTable="columnDESCMTRCN" msprop:Generator_ColumnPropNameInRow="DESCMTRCN" msprop:Generator_ColumnPropNameInTable="DESCMTRCNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCCLOR" msprop:Generator_UserColumnName="DESCCLOR" msprop:Generator_ColumnVarNameInTable="columnDESCCLOR" msprop:Generator_ColumnPropNameInRow="DESCCLOR" msprop:Generator_ColumnPropNameInTable="DESCCLORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCTPOC1" msprop:Generator_UserColumnName="DESCTPOC1" msprop:Generator_ColumnVarNameInTable="columnDESCTPOC1" msprop:Generator_ColumnPropNameInRow="DESCTPOC1" msprop:Generator_ColumnPropNameInTable="DESCTPOC1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CDMNCN" msprop:Generator_UserColumnName="CDMNCN" msprop:Generator_ColumnVarNameInTable="columnCDMNCN" msprop:Generator_ColumnPropNameInRow="CDMNCN" msprop:Generator_ColumnPropNameInTable="CDMNCNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TPLNTA" msprop:Generator_UserColumnName="TPLNTA" msprop:Generator_ColumnVarNameInTable="columnTPLNTA" msprop:Generator_ColumnPropNameInRow="TPLNTA" msprop:Generator_ColumnPropNameInTable="TPLNTAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CREFFW" msprop:Generator_UserColumnName="CREFFW" msprop:Generator_ColumnVarNameInTable="columnCREFFW" msprop:Generator_ColumnPropNameInRow="CREFFW" msprop:Generator_ColumnPropNameInTable="CREFFWColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FREFFW" msprop:Generator_UserColumnName="FREFFW" msprop:Generator_ColumnVarNameInTable="columnFREFFW" msprop:Generator_ColumnPropNameInRow="FREFFW" msprop:Generator_ColumnPropNameInTable="FREFFWColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NGRPRV" msprop:Generator_UserColumnName="NGRPRV" msprop:Generator_ColumnVarNameInTable="columnNGRPRV" msprop:Generator_ColumnPropNameInRow="NGRPRV" msprop:Generator_ColumnPropNameInTable="NGRPRVColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TLUGOR" msprop:Generator_UserColumnName="TLUGOR" msprop:Generator_ColumnVarNameInTable="columnTLUGOR" msprop:Generator_ColumnPropNameInRow="TLUGOR" msprop:Generator_ColumnPropNameInTable="TLUGORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TLUGEN" msprop:Generator_UserColumnName="TLUGEN" msprop:Generator_ColumnVarNameInTable="columnTLUGEN" msprop:Generator_ColumnPropNameInRow="TLUGEN" msprop:Generator_ColumnPropNameInTable="TLUGENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FSLFFW" msprop:Generator_UserColumnName="FSLFFW" msprop:Generator_ColumnVarNameInTable="columnFSLFFW" msprop:Generator_ColumnPropNameInRow="FSLFFW" msprop:Generator_ColumnPropNameInTable="FSLFFWColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NGUIRM" msprop:Generator_UserColumnName="NGUIRM" msprop:Generator_ColumnVarNameInTable="columnNGUIRM" msprop:Generator_ColumnPropNameInRow="NGUIRM" msprop:Generator_ColumnPropNameInTable="NGUIRMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GUIA_TRANS" msprop:Generator_UserColumnName="GUIA_TRANS" msprop:Generator_ColumnVarNameInTable="columnGUIA_TRANS" msprop:Generator_ColumnPropNameInRow="GUIA_TRANS" msprop:Generator_ColumnPropNameInTable="GUIA_TRANSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMLCL_OR" msprop:Generator_UserColumnName="TCMLCL_OR" msprop:Generator_ColumnVarNameInTable="columnTCMLCL_OR" msprop:Generator_ColumnPropNameInRow="TCMLCL_OR" msprop:Generator_ColumnPropNameInTable="TCMLCL_ORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMLCL_DES" msprop:Generator_UserColumnName="TCMLCL_DES" msprop:Generator_ColumnVarNameInTable="columnTCMLCL_DES" msprop:Generator_ColumnPropNameInRow="TCMLCL_DES" msprop:Generator_ColumnPropNameInTable="TCMLCL_DESColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TNMMDT" msprop:Generator_UserColumnName="TNMMDT" msprop:Generator_ColumnPropNameInRow="TNMMDT" msprop:Generator_ColumnVarNameInTable="columnTNMMDT" msprop:Generator_ColumnPropNameInTable="TNMMDTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMTRT" msprop:Generator_UserColumnName="TCMTRT" msprop:Generator_ColumnPropNameInRow="TCMTRT" msprop:Generator_ColumnVarNameInTable="columnTCMTRT" msprop:Generator_ColumnPropNameInTable="TCMTRTColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

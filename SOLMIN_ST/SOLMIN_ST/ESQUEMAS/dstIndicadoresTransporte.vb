@@ -1,0 +1,2 @@
+﻿Partial Class dstIndicadoresTransporte
+End Class

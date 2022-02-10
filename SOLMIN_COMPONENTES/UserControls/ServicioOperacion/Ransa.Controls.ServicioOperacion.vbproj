@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19AC96BC-B103-42D3-BF6E-6C24DDC1568C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ransa.Controls.ServicioOperacion</RootNamespace>
+    <AssemblyName>Ransa.Controls.ServicioOperacion</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.ServicioOperacion.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e">
+      <HintPath>..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ransa.Controls.Transporte, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ransa.Controls.Transporte\bin\Debug\Ransa.Controls.Transporte.dll</HintPath>
+    </Reference>
+    <Reference Include="Ransa.Controls.Transportista, Version=1.0.6897.31662, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Transportista\Ransa.Controls.Transportista\bin\Debug\Ransa.Controls.Transportista.dll</HintPath>
+    </Reference>
+    <Reference Include="Ransa.DAO.Transportista, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Transportista\Ransa.DAO.Transportista\bin\Debug\Ransa.DAO.Transportista.dll</HintPath>
+    </Reference>
+    <Reference Include="Ransa.TypeDef.Transportista, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Transportista\Ransa.TypeDef.Transportista\bin\Debug\Ransa.TypeDef.Transportista.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeValidatorKryton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KryptonValidator\TypeValidatorKryton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentService\ws_reversion_Ingreso.vb" />
+    <Compile Include="COMUN\CCBoxItem.vb" />
+    <Compile Include="COMUN\CheckComboBoxTest.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="COMUN\Estaticos.vb" />
+    <Compile Include="DATOS\clsCentroCosto_DAL.vb" />
+    <Compile Include="DATOS\clsClaseGeneral_DAL.vb" />
+    <Compile Include="DATOS\clsCliente_DAL.vb" />
+    <Compile Include="DATOS\clsDatoGeneral_DAL.vb" />
+    <Compile Include="DATOS\clsDirecServ_DAL.vb" />
+    <Compile Include="DATOS\clsDocumento_DAL.vb" />
+    <Compile Include="DATOS\clsFactura_DAL.vb" />
+    <Compile Include="DATOS\clsMoneda_DAL.vb" />
+    <Compile Include="DATOS\clsPreDoc_DAL.vb" />
+    <Compile Include="DATOS\clsPreLiquidar_DAL.vb" />
+    <Compile Include="DATOS\clsRegionVenta_DAL.vb" />
+    <Compile Include="DATOS\clsServicioSC_DAL.vb" />
+    <Compile Include="DATOS\clsTipoDocumento_DAL.vb" />
+    <Compile Include="DATOS\clsUbigeo_DAL.vb" />
+    <Compile Include="DATOS\clsUploadImagen.vb" />
+    <Compile Include="DATOS\clsUrlWServicio_DAL.vb" />
+    <Compile Include="ENTIDAD\Base_BE.vb" />
+    <Compile Include="COMUN\Comun.vb" />
+    <Compile Include="DATASET\dsServicioOperacion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsServicioOperacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASET\dsServicioOperacion.vb">
+      <DependentUpon>dsServicioOperacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ENTIDAD\Cliente_BE.vb" />
+    <Compile Include="ENTIDAD\Filtro_BE.vb" />
+    <Compile Include="ENTIDAD\PreLiquidar_BE.vb" />
+    <Compile Include="ENTIDAD\Ubigeo_BE.vb" />
+    <Compile Include="ENTIDAD\CentroCosto_BE.vb" />
+    <Compile Include="ENTIDAD\ClaseGeneral_BE.vb" />
+    <Compile Include="ENTIDAD\PreDoc_BE.vb" />
+    <Compile Include="ENTIDAD\TipoAlmacen_BE.vb" />
+    <Compile Include="ENTIDAD\TipoDatoGeneral.vb" />
+    <Compile Include="ENTIDAD\TipoMaterial_BE.vb" />
+    <Compile Include="NEGOCIO\clsCentroCosto_BL.vb" />
+    <Compile Include="NEGOCIO\clsClaseGeneral_BL.vb" />
+    <Compile Include="NEGOCIO\clsCliente_BL.vb" />
+    <Compile Include="NEGOCIO\clsDatoGeneral_BLL.vb" />
+    <Compile Include="NEGOCIO\clsDirecServ_BL.vb" />
+    <Compile Include="NEGOCIO\clsFactura_BL.vb" />
+    <Compile Include="NEGOCIO\clsMoneda_BL.vb" />
+    <Compile Include="NEGOCIO\clsPreDoc_BL.vb" />
+    <Compile Include="NEGOCIO\clsPreLiquidar_BL.vb" />
+    <Compile Include="NEGOCIO\ClsUbigeo_BL.vb" />
+    <Compile Include="NEGOCIO\ClsUrlWServicio.vb" />
+    <Compile Include="REPORTE\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\clsCompania.vb" />
+    <Compile Include="DATOS\clsConsistencia_DAL.vb" />
+    <Compile Include="DATOS\clsDivision.vb" />
+    <Compile Include="DATOS\clsPlanta.vb" />
+    <Compile Include="DATOS\clsServicio_DAL.vb" />
+    <Compile Include="ENTIDAD\Documento_BE.vb" />
+    <Compile Include="ENTIDAD\Estado_BE.vb" />
+    <Compile Include="ENTIDAD\ServicioReembolso_BE.vb" />
+    <Compile Include="ENTIDAD\ServicioSILDet.vb" />
+    <Compile Include="ENTIDAD\Servicio_BE.vb" />
+    <Compile Include="NEGOCIO\clsCargarImagen_BL.vb" />
+    <Compile Include="NEGOCIO\clsConsistencia_BL.vb" />
+    <Compile Include="NEGOCIO\clsDocumento_BL.vb" />
+    <Compile Include="NEGOCIO\clsRegioVenta_BL.vb" />
+    <Compile Include="NEGOCIO\clsServicioSC_BL.vb" />
+    <Compile Include="NEGOCIO\clsServicio_BL.vb" />
+    <Compile Include="NEGOCIO\clsTipoDocumento_BL.vb" />
+    <Compile Include="NEGOCIO\clsUnidadMedida_BL.vb" />
+    <Compile Include="NEGOCIO\clsUploadImg.vb" />
+    <Compile Include="REPORTE\rptConsistencia.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptConsistencia.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTE\rptConsistenciaDetalle.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptConsistenciaDetalle.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTE\rptConsistenciaResumenSIL.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptConsistenciaResumenSIL.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTE\rptConsistenciaSILOperacion.vb">
+      <DependentUpon>rptConsistenciaSILOperacion.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="REPORTE\rptConsistenciaAlmacenOperacion.vb">
+      <DependentUpon>rptConsistenciaAlmacenOperacion.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="REPORTE\rptConsistenciaAlmacenRevision.vb">
+      <DependentUpon>rptConsistenciaAlmacenRevision.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="REPORTE\rptConsistenciaSILRevision.vb">
+      <DependentUpon>rptConsistenciaSILRevision.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="REPORTE\rptConsistenciaAlmacen.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptConsistenciaAlmacen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORTE\rptConsistenciaSIL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptConsistenciaSIL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORTE\rptOperacionSASAT.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOperacionSASAT.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTE\rptResumenConsistencia.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptResumenConsistencia.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ESPECIALES\frmAgregarServicioPermanencia.Designer.vb">
+      <DependentUpon>frmAgregarServicioPermanencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ESPECIALES\frmAgregarServicioPermanencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ESPECIALES\frmAgregarServicioReembolso.Designer.vb">
+      <DependentUpon>frmAgregarServicioReembolso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ESPECIALES\frmAgregarServicioReembolso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ESPECIALES\frmBuscarCargoPlan.Designer.vb">
+      <DependentUpon>frmBuscarCargoPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ESPECIALES\frmBuscarCargoPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ESPECIALES\frmServEspPorPromedio.Designer.vb">
+      <DependentUpon>frmServEspPorPromedio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ESPECIALES\frmServEspPorPromedio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBultosConfirmarManipuleo.Designer.vb">
+      <DependentUpon>frmBultosConfirmarManipuleo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmBultosConfirmarManipuleo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBultosConfirma_2.Designer.vb">
+      <DependentUpon>frmBultosConfirma_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmBultosConfirma_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBuscaOS.Designer.vb">
+      <DependentUpon>frmBuscaOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmBuscaOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBuscarBulto.Designer.vb">
+      <DependentUpon>frmBuscarBulto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmBuscarBulto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBuscarDireccionServicio.Designer.vb">
+      <DependentUpon>frmBuscarDireccionServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmBuscarDireccionServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBuscarEmbarque.Designer.vb">
+      <DependentUpon>frmBuscarEmbarque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmBuscarEmbarque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmConsultaLineaCredito.Designer.vb">
+      <DependentUpon>frmConsultaLineaCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmConsultaLineaCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmDetalleBulto.Designer.vb">
+      <DependentUpon>frmDetalleBulto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmDetalleBulto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmSubirArchivo.Designer.vb">
+      <DependentUpon>frmSubirArchivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmSubirArchivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmAgregaServicioGral.Designer.vb">
+      <DependentUpon>frmAgregaServicioGral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmAgregaServicioGral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmAuditoria.Designer.vb">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmBultosConfirmaGral.Designer.vb">
+      <DependentUpon>frmBultosConfirmaGral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmBultosConfirmaGral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmCalculadoraSimple.Designer.vb">
+      <DependentUpon>frmCalculadoraSimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmCalculadoraSimple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmCentroCosto.Designer.vb">
+      <DependentUpon>frmCentroCosto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GENERAL\frmCentroCosto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmAjustarImporte.Designer.vb">
+      <DependentUpon>frmAjustarImporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmAjustarImporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmEditPreDoc.Designer.vb">
+      <DependentUpon>frmEditPreDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmEditPreDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmGenerarPDoc.Designer.vb">
+      <DependentUpon>frmGenerarPDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmGenerarPDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmGenerarPreDoc.Designer.vb">
+      <DependentUpon>frmGenerarPreDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmGenerarPreDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmNroPL.Designer.vb">
+      <DependentUpon>frmNroPL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmNroPL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmOperacionesXPreDoc.Designer.vb">
+      <DependentUpon>frmOperacionesXPreDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pre_Documento\frmOperacionesXPreDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PrintForm.Designer.vb">
+      <DependentUpon>PrintForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PrintForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Revisado\frmActualizaClienteFacturar.Designer.vb">
+      <DependentUpon>frmActualizaClienteFacturar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Revisado\frmActualizaClienteFacturar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Revisado\frmEditDocSubDocCliente.Designer.vb">
+      <DependentUpon>frmEditDocSubDocCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Revisado\frmEditDocSubDocCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Revisado\frmverDetalle.Designer.vb">
+      <DependentUpon>frmverDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Revisado\frmverDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Revisado\frmListaServicios.Designer.vb">
+      <DependentUpon>frmListaServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Revisado\frmListaServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Revisado\frmPreLiquidar.Designer.vb">
+      <DependentUpon>frmPreLiquidar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Revisado\frmPreLiquidar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Revisado\frmTrasladarOperacion.Designer.vb">
+      <DependentUpon>frmTrasladarOperacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Revisado\frmTrasladarOperacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Revisado\UcPorOperacion.Designer.vb">
+      <DependentUpon>UcPorOperacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Revisado\UcPorOperacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Revisado\UcPorRevision.Designer.vb">
+      <DependentUpon>UcPorRevision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Revisado\UcPorRevision.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Revisado\UCServicioPorFacturar.Designer.vb">
+      <DependentUpon>UCServicioPorFacturar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Revisado\UCServicioPorFacturar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UcClienteSolmin.Designer.vb">
+      <DependentUpon>UcClienteSolmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UcClienteSolmin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UcFrmConsistencia.Designer.vb">
+      <DependentUpon>UcFrmConsistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UcFrmConsistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UcFrmEmbarqueDetalle.Designer.vb">
+      <DependentUpon>UcFrmEmbarqueDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UcFrmEmbarqueDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UcFrmServicioAgregarSA_DS.Designer.vb">
+      <DependentUpon>UcFrmServicioAgregarSA_DS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UcFrmServicioAgregarSA_DS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="NEGOCIO\clsCompaniaNeg.vb" />
+    <Compile Include="NEGOCIO\clsDivisionNeg.vb" />
+    <Compile Include="NEGOCIO\clsEstadoNeg.vb" />
+    <Compile Include="NEGOCIO\clsPlantaNeg.vb" />
+    <Compile Include="UI\UcFrmServicioAgregarSC.designer.vb">
+      <DependentUpon>UcFrmServicioAgregarSC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UcFrmServicioAgregarSC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UcFrmServicioAlmacenajeAgregarSA.Designer.vb">
+      <DependentUpon>UcFrmServicioAlmacenajeAgregarSA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UcFrmServicioAlmacenajeAgregarSA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UcServicioAtendido.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UcServicioAtendido.Designer.vb">
+      <DependentUpon>UcServicioAtendido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Web References\WSCargarDocumento\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="REPORTE\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptConsistencia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsistencia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptConsistenciaDetalle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsistenciaDetalle.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptConsistenciaResumenSIL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsistenciaResumenSIL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptConsistenciaSILOperacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsistenciaSILOperacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptConsistenciaAlmacenOperacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsistenciaAlmacenOperacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptConsistenciaAlmacenRevision.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsistenciaAlmacenRevision.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptConsistenciaSILRevision.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsistenciaSILRevision.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptConsistenciaAlmacen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsistenciaAlmacen.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptConsistenciaSIL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsistenciaSIL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptOperacionSASAT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOperacionSASAT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE\rptResumenConsistencia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResumenConsistencia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ESPECIALES\frmAgregarServicioPermanencia.resx">
+      <DependentUpon>frmAgregarServicioPermanencia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ESPECIALES\frmAgregarServicioReembolso.resx">
+      <DependentUpon>frmAgregarServicioReembolso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ESPECIALES\frmBuscarCargoPlan.resx">
+      <DependentUpon>frmBuscarCargoPlan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ESPECIALES\frmServEspPorPromedio.resx">
+      <DependentUpon>frmServEspPorPromedio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBultosConfirmarManipuleo.resx">
+      <DependentUpon>frmBultosConfirmarManipuleo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBultosConfirma_2.resx">
+      <DependentUpon>frmBultosConfirma_2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBuscaOS.resx">
+      <DependentUpon>frmBuscaOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBuscarBulto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBuscarBulto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBuscarDireccionServicio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBuscarDireccionServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBuscarEmbarque.resx">
+      <DependentUpon>frmBuscarEmbarque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmConsultaLineaCredito.resx">
+      <DependentUpon>frmConsultaLineaCredito.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmDetalleBulto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDetalleBulto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmSubirArchivo.resx">
+      <DependentUpon>frmSubirArchivo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GENERAL\frmAgregaServicioGral.resx">
+      <DependentUpon>frmAgregaServicioGral.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GENERAL\frmAuditoria.resx">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GENERAL\frmBultosConfirmaGral.resx">
+      <DependentUpon>frmBultosConfirmaGral.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GENERAL\frmCalculadoraSimple.resx">
+      <DependentUpon>frmCalculadoraSimple.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GENERAL\frmCentroCosto.resx">
+      <DependentUpon>frmCentroCosto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pre_Documento\frmAjustarImporte.resx">
+      <DependentUpon>frmAjustarImporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pre_Documento\frmEditPreDoc.resx">
+      <DependentUpon>frmEditPreDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pre_Documento\frmGenerarPDoc.resx">
+      <DependentUpon>frmGenerarPDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pre_Documento\frmGenerarPreDoc.resx">
+      <DependentUpon>frmGenerarPreDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pre_Documento\frmNroPL.resx">
+      <DependentUpon>frmNroPL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pre_Documento\frmOperacionesXPreDoc.resx">
+      <DependentUpon>frmOperacionesXPreDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrintForm.resx">
+      <DependentUpon>PrintForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Revisado\frmActualizaClienteFacturar.resx">
+      <DependentUpon>frmActualizaClienteFacturar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Revisado\frmEditDocSubDocCliente.resx">
+      <DependentUpon>frmEditDocSubDocCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Revisado\frmverDetalle.resx">
+      <DependentUpon>frmverDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Revisado\frmListaServicios.resx">
+      <DependentUpon>frmListaServicios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Revisado\frmPreLiquidar.resx">
+      <DependentUpon>frmPreLiquidar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Revisado\frmTrasladarOperacion.resx">
+      <DependentUpon>frmTrasladarOperacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Revisado\UcPorOperacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UcPorOperacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Revisado\UcPorRevision.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UcPorRevision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Revisado\UCServicioPorFacturar.resx">
+      <DependentUpon>UCServicioPorFacturar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcClienteSolmin.resx">
+      <DependentUpon>UcClienteSolmin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcFrmConsistencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UcFrmConsistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcFrmEmbarqueDetalle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UcFrmEmbarqueDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcFrmServicioAgregarSA_DS.resx">
+      <DependentUpon>UcFrmServicioAgregarSA_DS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcFrmServicioAgregarSC.resx">
+      <DependentUpon>UcFrmServicioAgregarSC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcFrmServicioAlmacenajeAgregarSA.resx">
+      <DependentUpon>UcFrmServicioAlmacenajeAgregarSA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcServicioAtendido.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UcServicioAtendido.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StorageFileManager\StorageFileManager.vbproj">
+      <Project>{3165C610-476B-40FA-BD2B-B32A920398A9}</Project>
+      <Name>StorageFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{E440D2C4-A8D1-44EE-9A08-18D9ACEA0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GrupoCliente\Ransa.Controls.GrupoCliente\Ransa.Controls.GrupoCliente\Ransa.Controls.GrupoCliente.vbproj">
+      <Project>{5322ECC4-F97D-432C-BDF3-439870718405}</Project>
+      <Name>Ransa.Controls.GrupoCliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proveedor\Ransa.Controls.Proveedor\Ransa.Controls.Proveedor.vbproj">
+      <Project>{BFDD001A-A03F-4D84-A788-F4F87EF27A62}</Project>
+      <Name>Ransa.Controls.Proveedor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UbicacionPlanta\Ransa.Controls.UbicacionPlanta\Ransa.Controls.UbicacionPlanta.vbproj">
+      <Project>{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}</Project>
+      <Name>Ransa.Controls.UbicacionPlanta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ark_selectall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kexi_kexi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ark_selectall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kexi_kexi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_exp_excel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DATASET\dsServicioOperacion.xsc">
+      <DependentUpon>dsServicioOperacion.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\dsServicioOperacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsServicioOperacion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DATASET\dsServicioOperacion.xss">
+      <DependentUpon>dsServicioOperacion.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\button_cancel1.png" />
+    <None Include="Resources\cell_layout1.png" />
+    <None Include="Resources\db_remove1.png" />
+    <None Include="Resources\_Red.png" />
+    <None Include="Web References\WSCargarDocumento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSCargarDocumento\SolminWeb.disco" />
+    <None Include="app.config" />
+    <None Include="Resources\icono_billetes.png" />
+    <None Include="Resources\doc2.png" />
+    <None Include="Resources\lupa_10.jpg" />
+    <None Include="Web References\WSCargarDocumento\SolminWeb.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://ranmolapl01.gruporansa.gromero.net/imagenessolmin/SolminWeb.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSCargarDocumento\</RelPath>
+      <UpdateFromURL>http://ranmolapl01.gruporansa.gromero.net/imagenessolmin/SolminWeb.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Ransa_Controls_ServicioOperacion_WSCargarDocumento_SolminWeb</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\Por Revisar\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

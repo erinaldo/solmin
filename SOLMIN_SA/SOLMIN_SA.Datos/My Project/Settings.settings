@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="RANSA" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;DataSource=10.72.16.41;UserID=UUUUUU;Password=PPPPPP;DefaultCollection=DC@RNSLIB;DataCompression=True;ConnectionTimeout=300&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">DataSource=10.72.16.41;UserID=UUUUUU;Password=PPPPPP;DefaultCollection=DC@RNSLIB;DataCompression=True;ConnectionTimeout=300</Value>
+    </Setting>
+    <Setting Name="RANSA01" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;DataSource=RANSA01;UserID=UUUUUU;Password=PPPPPP;DefaultCollection=DC@DESLIB;DataCompression=True;ConnectionTimeout=300&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">DataSource=RANSA01;UserID=UUUUUU;Password=PPPPPP;DefaultCollection=DC@DESLIB;DataCompression=True;ConnectionTimeout=300</Value>
+    </Setting>
+    <Setting Name="RANSAT01" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;DataSource=10.72.13.115;UserID=UUUUUU;Password=PPPPPP;DefaultCollection=DC@RNSLIB;DataCompression=True;ConnectionTimeout=300&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">DataSource=10.72.13.115;UserID=UUUUUU;Password=PPPPPP;DefaultCollection=DC@RNSLIB;DataCompression=True;ConnectionTimeout=300</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

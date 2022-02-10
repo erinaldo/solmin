@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F00BFB1C-2AAD-41E5-A633-4DC07737D4C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ransa.Controls.Transporte</RootNamespace>
+    <AssemblyName>Ransa.Controls.Transporte</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>SOLMIN.pfx</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Transporte.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Transporte.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e">
+      <HintPath>..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Design\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="GmailHelper, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\GmailHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeValidatorKryton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KryptonValidator\TypeValidatorKryton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASES\DataSetHelper.vb" />
+    <Compile Include="CLASES\HelpClassST.vb" />
+    <Compile Include="DATOS\Comun\Autenticacion_DAL.vb" />
+    <Compile Include="DATOS\Comun\DbBridge.vb" />
+    <Compile Include="DATOS\Comun\UploadImagen.vb" />
+    <Compile Include="DATOS\Operaciones\DetalleCotizacion_DAL.vb" />
+    <Compile Include="DATOS\Operaciones\Dimensiones_DAL.vb" />
+    <Compile Include="DATOS\Operaciones\MedioTransporte_DAL.vb" />
+    <Compile Include="DATOS\Operaciones\OrdenServicioAgenciaRansa_DAL.vb" />
+    <Compile Include="DATOS\Operaciones\OrdenServicio_DAL.vb" />
+    <Compile Include="DATOS\Operaciones\RequerimientoServicioEnvio_DAL.vb" />
+    <Compile Include="DATOS\Operaciones\RequerimientoServicio_DAL.vb" />
+    <Compile Include="DATOS\Operaciones\ServicioMercaderia_DAL.vb" />
+    <Compile Include="DATOS\Seguridad\Acceso_Opciones_Usuario_DAL.vb" />
+    <Compile Include="ENTIDAD\Mantenimientos\ClaseGeneral.vb" />
+    <Compile Include="ENTIDAD\Operaciones\beDestinatario.vb" />
+    <Compile Include="ENTIDAD\Operaciones\Detalle_Cotizacion.vb" />
+    <Compile Include="ENTIDAD\Operaciones\Dimensiones.vb" />
+    <Compile Include="ENTIDAD\Operaciones\MedioTransporte.vb" />
+    <Compile Include="ENTIDAD\Operaciones\OrdenServicioAgenciaRansa.vb" />
+    <Compile Include="ENTIDAD\Operaciones\OrdenServicioTransporte.vb" />
+    <Compile Include="ENTIDAD\Operaciones\Programacion_Unidad.vb" />
+    <Compile Include="ENTIDAD\Operaciones\RequerimientoServicio.vb" />
+    <Compile Include="ENTIDAD\Operaciones\SegEnvioRequerimiento.vb" />
+    <Compile Include="ENTIDAD\Operaciones\ServicioMercaderia.vb" />
+    <Compile Include="ENTIDAD\Operaciones\Solicitud_Transporte.vb" />
+    <Compile Include="MainModule.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NEGOCIO\Comun\Autenticacion_BLL.vb" />
+    <Compile Include="NEGOCIO\Comun\DbBridge_BLL.vb" />
+    <Compile Include="NEGOCIO\Operaciones\DetalleCotizacion_BLL.vb" />
+    <Compile Include="NEGOCIO\Operaciones\Dimensiones_BLL.vb" />
+    <Compile Include="NEGOCIO\Operaciones\MedioTransporte_BLL.vb" />
+    <Compile Include="NEGOCIO\Operaciones\OrdenServicioAgenciaRansa_BLL.vb" />
+    <Compile Include="NEGOCIO\Operaciones\OrdenServicio_BLL.vb" />
+    <Compile Include="NEGOCIO\Operaciones\RequerimientoServicioEnvio_BLL.vb" />
+    <Compile Include="NEGOCIO\Operaciones\RequerimientoServicio_BLL.vb" />
+    <Compile Include="NEGOCIO\Operaciones\ServicioMercaderia_BLL.vb" />
+    <Compile Include="NEGOCIO\Seguridad\Acceso_Opciones_Usuario_BLL.vb" />
+    <Compile Include="UI\Operaciones\frmBuscarOrdenServicio.Designer.vb">
+      <DependentUpon>frmBuscarOrdenServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmBuscarOrdenServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmDimensiones.Designer.vb">
+      <DependentUpon>frmDimensiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmDimensiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmEnviarNotificacion.Designer.vb">
+      <DependentUpon>frmEnviarNotificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmEnviarNotificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmListaNotificacion.Designer.vb">
+      <DependentUpon>frmListaNotificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmListaNotificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmOperacionAgenciasRansaPopup.Designer.vb">
+      <DependentUpon>frmOperacionAgenciasRansaPopup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmOperacionAgenciasRansaPopup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmVerSolicitudes.Designer.vb">
+      <DependentUpon>frmVerSolicitudes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmVerSolicitudes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmVerUnidadesAsignadas.Designer.vb">
+      <DependentUpon>frmVerUnidadesAsignadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmVerUnidadesAsignadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmVerUnidadesProgramadas.Designer.vb">
+      <DependentUpon>frmVerUnidadesProgramadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Operaciones\frmVerUnidadesProgramadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ucAprobarOrdenServicio.Designer.vb">
+      <DependentUpon>ucAprobarOrdenServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucAprobarOrdenServicio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucSolicitudRequerimiento.Designer.vb">
+      <DependentUpon>ucSolicitudRequerimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucSolicitudRequerimiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Operaciones\frmBuscarOrdenServicio.resx">
+      <DependentUpon>frmBuscarOrdenServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Operaciones\frmDimensiones.resx">
+      <DependentUpon>frmDimensiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Operaciones\frmEnviarNotificacion.resx">
+      <DependentUpon>frmEnviarNotificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Operaciones\frmListaNotificacion.resx">
+      <DependentUpon>frmListaNotificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Operaciones\frmOperacionAgenciasRansaPopup.resx">
+      <DependentUpon>frmOperacionAgenciasRansaPopup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Operaciones\frmVerSolicitudes.resx">
+      <DependentUpon>frmVerSolicitudes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Operaciones\frmVerUnidadesAsignadas.resx">
+      <DependentUpon>frmVerUnidadesAsignadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Operaciones\frmVerUnidadesProgramadas.resx">
+      <DependentUpon>frmVerUnidadesProgramadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucAprobarOrdenServicio.resx">
+      <DependentUpon>ucAprobarOrdenServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucSolicitudRequerimiento.resx">
+      <DependentUpon>ucSolicitudRequerimiento.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excelicon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ark_selectall.png" />
+    <Content Include="Resources\cell_layout.png" />
+    <Content Include="Resources\CuadradoBlanco.JPG" />
+    <None Include="Resources\email_start.png" />
+    <Content Include="Resources\LogoFactura.JPG" />
+    <Content Include="Resources\ok.png" />
+    <Content Include="Resources\text_block.png" />
+    <None Include="Resources\unsortedList1.png" />
+    <None Include="Resources\ok1.png" />
+    <None Include="SOLMIN.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SOLMIN_SC\Ransa.Controls.Email\Ransa.Controls.Email.vbproj">
+      <Project>{A8A5563C-2A27-488C-A655-E7D2E66739CF}</Project>
+      <Name>Ransa.Controls.Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CodeTextBox\CodeTextBox.vbproj">
+      <Project>{65B6AD03-EFF5-418E-832C-56A7A543F82C}</Project>
+      <Name>CodeTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CodeTextBox\CodeTextBox.vbproj">
+      <Project>{65B6AD03-EFF5-418E-832C-56A7A543F82C}</Project>
+      <Name>CodeTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StorageFileManager\StorageFileManager.vbproj">
+      <Project>{3165C610-476B-40FA-BD2B-B32A920398A9}</Project>
+      <Name>StorageFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{E440D2C4-A8D1-44EE-9A08-18D9ACEA0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Moneda\Ransa.Controls.Moneda\Ransa.Controls.Moneda.vbproj">
+      <Project>{7E1EA8CB-19AF-442C-8608-B15D85EE0866}</Project>
+      <Name>Ransa.Controls.Moneda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServicioTranporte\Ransa.Controls.ServTransp\Ransa.Controls.ServTransp.vbproj">
+      <Project>{AE1C72D8-3E70-4369-98C2-E8484081B993}</Project>
+      <Name>Ransa.Controls.ServTransp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UbicacionPlanta\Ransa.Controls.UbicacionPlanta\Ransa.Controls.UbicacionPlanta.vbproj">
+      <Project>{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}</Project>
+      <Name>Ransa.Controls.UbicacionPlanta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UbicacionPlanta\Ransa.Controls.UbicacionPlanta\Ransa.Controls.UbicacionPlanta.vbproj">
+      <Project>{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}</Project>
+      <Name>Ransa.Controls.UbicacionPlanta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unidad\Ransa.Controls.Unidad\Ransa.Controls.Unidad.vbproj">
+      <Project>{0590279D-8483-41A0-A3F9-2B99FAFEFE1A}</Project>
+      <Name>Ransa.Controls.Unidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AdjuntarDocumento\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

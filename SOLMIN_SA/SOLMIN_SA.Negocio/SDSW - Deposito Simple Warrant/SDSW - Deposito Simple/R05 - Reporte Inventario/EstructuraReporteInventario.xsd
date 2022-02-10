@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EstructuraReporteInventario" targetNamespace="http://tempuri.org/EstructuraReporteInventario.xsd" xmlns:mstns="http://tempuri.org/EstructuraReporteInventario.xsd" xmlns="http://tempuri.org/EstructuraReporteInventario.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EstructuraReporteInventario" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EstructuraReporteInventario" msprop:Generator_DataSetName="EstructuraReporteInventario">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtReporteInventario" msprop:Generator_UserTableName="dtReporteInventario" msprop:Generator_RowDeletedName="dtReporteInventarioRowDeleted" msprop:Generator_RowChangedName="dtReporteInventarioRowChanged" msprop:Generator_RowClassName="dtReporteInventarioRow" msprop:Generator_RowChangingName="dtReporteInventarioRowChanging" msprop:Generator_RowEvArgName="dtReporteInventarioRowChangeEvent" msprop:Generator_RowEvHandlerName="dtReporteInventarioRowChangeEventHandler" msprop:Generator_TableClassName="dtReporteInventarioDataTable" msprop:Generator_TableVarName="tabledtReporteInventario" msprop:Generator_RowDeletingName="dtReporteInventarioRowDeleting" msprop:Generator_TablePropName="dtReporteInventario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMPCL" msprop:Generator_UserColumnName="TCMPCL" msprop:Generator_ColumnPropNameInRow="TCMPCL" msprop:Generator_ColumnVarNameInTable="columnTCMPCL" msprop:Generator_ColumnPropNameInTable="TCMPCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOPRCN" msprop:Generator_UserColumnName="NOPRCN" msprop:Generator_ColumnPropNameInRow="NOPRCN" msprop:Generator_ColumnVarNameInTable="columnNOPRCN" msprop:Generator_ColumnPropNameInTable="NOPRCNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CMNDA" msprop:Generator_UserColumnName="CMNDA" msprop:Generator_ColumnPropNameInRow="CMNDA" msprop:Generator_ColumnVarNameInTable="columnCMNDA" msprop:Generator_ColumnPropNameInTable="CMNDAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NORDS1" msprop:Generator_UserColumnName="NORDS1" msprop:Generator_ColumnPropNameInRow="NORDS1" msprop:Generator_ColumnVarNameInTable="columnNORDS1" msprop:Generator_ColumnPropNameInTable="NORDS1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="NITEM" msprop:Generator_UserColumnName="NITEM" msprop:Generator_ColumnPropNameInRow="NITEM" msprop:Generator_ColumnVarNameInTable="columnNITEM" msprop:Generator_ColumnPropNameInTable="NITEMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMPRD" msprop:Generator_UserColumnName="TCMPRD" msprop:Generator_ColumnPropNameInRow="TCMPRD" msprop:Generator_ColumnVarNameInTable="columnTCMPRD" msprop:Generator_ColumnPropNameInTable="TCMPRDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTFINAN" msprop:Generator_UserColumnName="CANTFINAN" msprop:Generator_ColumnPropNameInRow="CANTFINAN" msprop:Generator_ColumnVarNameInTable="columnCANTFINAN" msprop:Generator_ColumnPropNameInTable="CANTFINANColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PESOFINAN" msprop:Generator_UserColumnName="PESOFINAN" msprop:Generator_ColumnPropNameInRow="PESOFINAN" msprop:Generator_ColumnVarNameInTable="columnPESOFINAN" msprop:Generator_ColumnPropNameInTable="PESOFINANColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IMPORTFINAN" msprop:Generator_UserColumnName="IMPORTFINAN" msprop:Generator_ColumnPropNameInRow="IMPORTFINAN" msprop:Generator_ColumnVarNameInTable="columnIMPORTFINAN" msprop:Generator_ColumnPropNameInTable="IMPORTFINANColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIDMED" msprop:Generator_UserColumnName="UNIDMED" msprop:Generator_ColumnPropNameInRow="UNIDMED" msprop:Generator_ColumnVarNameInTable="columnUNIDMED" msprop:Generator_ColumnPropNameInTable="UNIDMEDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FINGR" msprop:Generator_UserColumnName="FINGR" msprop:Generator_ColumnVarNameInTable="columnFINGR" msprop:Generator_ColumnPropNameInRow="FINGR" msprop:Generator_ColumnPropNameInTable="FINGRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UNICANT" msprop:Generator_UserColumnName="UNICANT" msprop:Generator_ColumnPropNameInRow="UNICANT" msprop:Generator_ColumnVarNameInTable="columnUNICANT" msprop:Generator_ColumnPropNameInTable="UNICANTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIPESO" msprop:Generator_UserColumnName="UNIPESO" msprop:Generator_ColumnPropNameInRow="UNIPESO" msprop:Generator_ColumnVarNameInTable="columnUNIPESO" msprop:Generator_ColumnPropNameInTable="UNIPESOColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

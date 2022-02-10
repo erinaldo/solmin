@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReporteBultoOperacion" targetNamespace="http://tempuri.org/dstReporteBultoOperacion.xsd" xmlns:mstns="http://tempuri.org/dstReporteBultoOperacion.xsd" xmlns="http://tempuri.org/dstReporteBultoOperacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReporteBultoOperacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReporteBultoOperacion" msprop:Generator_DataSetName="dstReporteBultoOperacion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Bulto_Operacion" msprop:Generator_UserTableName="Bulto_Operacion" msprop:Generator_RowDeletedName="Bulto_OperacionRowDeleted" msprop:Generator_TableClassName="Bulto_OperacionDataTable" msprop:Generator_RowChangedName="Bulto_OperacionRowChanged" msprop:Generator_RowClassName="Bulto_OperacionRow" msprop:Generator_RowChangingName="Bulto_OperacionRowChanging" msprop:Generator_RowEvArgName="Bulto_OperacionRowChangeEvent" msprop:Generator_RowEvHandlerName="Bulto_OperacionRowChangeEventHandler" msprop:Generator_TablePropName="Bulto_Operacion" msprop:Generator_TableVarName="tableBulto_Operacion" msprop:Generator_RowDeletingName="Bulto_OperacionRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CLIENTE" msprop:Generator_UserColumnName="CLIENTE" msprop:Generator_ColumnPropNameInRow="CLIENTE" msprop:Generator_ColumnVarNameInTable="columnCLIENTE" msprop:Generator_ColumnPropNameInTable="CLIENTEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GUIA_CLIENTE" msprop:Generator_UserColumnName="GUIA_CLIENTE" msprop:Generator_ColumnPropNameInRow="GUIA_CLIENTE" msprop:Generator_ColumnVarNameInTable="columnGUIA_CLIENTE" msprop:Generator_ColumnPropNameInTable="GUIA_CLIENTEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BULTO" msprop:Generator_UserColumnName="BULTO" msprop:Generator_ColumnPropNameInRow="BULTO" msprop:Generator_ColumnVarNameInTable="columnBULTO" msprop:Generator_ColumnPropNameInTable="BULTOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CONTENIDO" msprop:Generator_UserColumnName="CONTENIDO" msprop:Generator_ColumnPropNameInRow="CONTENIDO" msprop:Generator_ColumnVarNameInTable="columnCONTENIDO" msprop:Generator_ColumnPropNameInTable="CONTENIDOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="F_DE_SALIDA" msprop:Generator_UserColumnName="F_DE_SALIDA" msprop:Generator_ColumnPropNameInRow="F_DE_SALIDA" msprop:Generator_ColumnVarNameInTable="columnF_DE_SALIDA" msprop:Generator_ColumnPropNameInTable="F_DE_SALIDAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OC" msprop:Generator_UserColumnName="OC" msprop:Generator_ColumnPropNameInRow="OC" msprop:Generator_ColumnVarNameInTable="columnOC" msprop:Generator_ColumnPropNameInTable="OCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LOTE" msprop:Generator_UserColumnName="LOTE" msprop:Generator_ColumnPropNameInRow="LOTE" msprop:Generator_ColumnVarNameInTable="columnLOTE" msprop:Generator_ColumnPropNameInTable="LOTEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PESO" msprop:Generator_UserColumnName="PESO" msprop:Generator_ColumnPropNameInRow="PESO" msprop:Generator_ColumnVarNameInTable="columnPESO" msprop:Generator_ColumnPropNameInTable="PESOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M3" msprop:Generator_UserColumnName="M3" msprop:Generator_ColumnPropNameInRow="M3" msprop:Generator_ColumnVarNameInTable="columnM3" msprop:Generator_ColumnPropNameInTable="M3Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PESO_VOL" msprop:Generator_UserColumnName="PESO_VOL" msprop:Generator_ColumnPropNameInRow="PESO_VOL" msprop:Generator_ColumnVarNameInTable="columnPESO_VOL" msprop:Generator_ColumnPropNameInTable="PESO_VOLColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MEDIO_ENVIO" msprop:Generator_UserColumnName="MEDIO_ENVIO" msprop:Generator_ColumnPropNameInRow="MEDIO_ENVIO" msprop:Generator_ColumnVarNameInTable="columnMEDIO_ENVIO" msprop:Generator_ColumnPropNameInTable="MEDIO_ENVIOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CUENTA_IMPUTACION" msprop:Generator_UserColumnName="CUENTA_IMPUTACION" msprop:Generator_ColumnPropNameInRow="CUENTA_IMPUTACION" msprop:Generator_ColumnVarNameInTable="columnCUENTA_IMPUTACION" msprop:Generator_ColumnPropNameInTable="CUENTA_IMPUTACIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AFE" msprop:Generator_UserColumnName="AFE" msprop:Generator_ColumnPropNameInRow="AFE" msprop:Generator_ColumnVarNameInTable="columnAFE" msprop:Generator_ColumnPropNameInTable="AFEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

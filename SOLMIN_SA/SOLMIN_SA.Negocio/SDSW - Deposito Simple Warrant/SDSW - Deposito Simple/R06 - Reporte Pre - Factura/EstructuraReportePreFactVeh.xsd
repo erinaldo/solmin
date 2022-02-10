@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EstructuraReportePreFactVeh" targetNamespace="http://tempuri.org/EstructuraReportePreFactVeh.xsd" xmlns:mstns="http://tempuri.org/EstructuraReportePreFactVeh.xsd" xmlns="http://tempuri.org/EstructuraReportePreFactVeh.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EstructuraReportePreFactVeh" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EstructuraReportePreFactVeh" msprop:Generator_DataSetName="EstructuraReportePreFactVeh">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtPreFactVehiculo" msprop:Generator_UserTableName="dtPreFactVehiculo" msprop:Generator_RowDeletedName="dtPreFactVehiculoRowDeleted" msprop:Generator_TableClassName="dtPreFactVehiculoDataTable" msprop:Generator_RowChangedName="dtPreFactVehiculoRowChanged" msprop:Generator_RowClassName="dtPreFactVehiculoRow" msprop:Generator_RowChangingName="dtPreFactVehiculoRowChanging" msprop:Generator_RowEvArgName="dtPreFactVehiculoRowChangeEvent" msprop:Generator_RowEvHandlerName="dtPreFactVehiculoRowChangeEventHandler" msprop:Generator_TablePropName="dtPreFactVehiculo" msprop:Generator_TableVarName="tabledtPreFactVehiculo" msprop:Generator_RowDeletingName="dtPreFactVehiculoRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FCDRMV" msprop:Generator_UserColumnName="FCDRMV" msprop:Generator_ColumnPropNameInRow="FCDRMV" msprop:Generator_ColumnVarNameInTable="columnFCDRMV" msprop:Generator_ColumnPropNameInTable="FCDRMVColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CALMCM" msprop:Generator_UserColumnName="CALMCM" msprop:Generator_ColumnPropNameInRow="CALMCM" msprop:Generator_ColumnVarNameInTable="columnCALMCM" msprop:Generator_ColumnPropNameInTable="CALMCMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NCHSVH" msprop:Generator_UserColumnName="NCHSVH" msprop:Generator_ColumnPropNameInRow="NCHSVH" msprop:Generator_ColumnVarNameInTable="columnNCHSVH" msprop:Generator_ColumnPropNameInTable="NCHSVHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDRALC" msprop:Generator_UserColumnName="TDRALC" msprop:Generator_ColumnPropNameInRow="TDRALC" msprop:Generator_ColumnVarNameInTable="columnTDRALC" msprop:Generator_ColumnPropNameInTable="TDRALCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NDCCT2" msprop:Generator_UserColumnName="NDCCT2" msprop:Generator_ColumnPropNameInRow="NDCCT2" msprop:Generator_ColumnVarNameInTable="columnNDCCT2" msprop:Generator_ColumnPropNameInTable="NDCCT2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMPCL" msprop:Generator_UserColumnName="TCMPCL" msprop:Generator_ColumnPropNameInRow="TCMPCL" msprop:Generator_ColumnVarNameInTable="columnTCMPCL" msprop:Generator_ColumnPropNameInTable="TCMPCLColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

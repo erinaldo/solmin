@@ -1,0 +1,922 @@
+
+        ''' <summary>
+        '''  Función que devuelve un DataSet en base a un stored procedure [StoredPocedure param] y
+        '''  un objeto (tipo colección) de parametros
+        ''' </summary>
+
+        Public Function ExecuteDataSet(ByVal StoreProcedure As String, ByVal sqlparams As Parameter) As DataSet
+
+            Dim objData As New DataSet
+            Dim objTransaction As iDB2Transaction
+
+            Try
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmdAdaptador As iDB2DataAdapter
+                Dim cmd As New iDB2Command
+
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.CommandText = StoreProcedure
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                Dim i As Integer
+                Dim SqlParametro As iDB2Parameter
+
+                If Not (sqlparams Is Nothing) Then
+                    For i = 1 To sqlparams.Count
+                        ' SqlParametro = CType(sqlparams.Item(i), iDB2Parameter)
+                        cmd.Parameters.Add(CType(sqlparams.Item(i), iDB2Parameter))
+                    Next
+                End If
+
+                'Verificando el tipo de control de transacción
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                cmdAdaptador = New iDB2DataAdapter(cmd)
+                cmdAdaptador.Fill(objData)
+                fillParameterCollection(cmd.Parameters)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    SqlParametro = Nothing
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objData
+
+        End Function
+
+        ''' <summary>
+        '''  Función que devuelve un DataSet en base a una cadena SQL
+        ''' </summary>
+
+        Public Function ExecuteDataSet(ByVal Query As String) As DataSet
+
+            Dim objData As New DataSet
+            Dim objTransaction As iDB2Transaction
+
+            Try
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmdAdaptador As iDB2DataAdapter
+                Dim cmd As New iDB2Command
+
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.Text
+                cmd.CommandText = Query
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                cmdAdaptador = New iDB2DataAdapter(cmd)
+
+                cmdAdaptador.Fill(objData)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objData
+
+        End Function
+
+        ''' <summary>
+        '''  Procedimiento que ejecuta una instrucción SQL en base a un stored procedure [StoredPocedure param] y
+        '''  un objeto (tipo colección) de parametros
+        ''' </summary>
+
+        Public Sub ExecuteNonQuery(ByVal StoreProcedure As String, ByVal sqlparams As Parameter)
+
+            Dim objResultado As String = ""
+            Dim objTransaction As iDB2Transaction
+
+            Try
+                'Obteniendo una conexion a la base de datos
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmd As New iDB2Command
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.CommandText = StoreProcedure
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                Dim i As Integer
+                Dim SqlParametro As iDB2Parameter
+                Dim s As String = ""
+                If Not (sqlparams Is Nothing) Then
+                    For i = 1 To sqlparams.Count
+                        'SqlParametro = CType(sqlparams.Item(i), iDB2Parameter)
+                        'cmd.Parameters.Add(SqlParametro.ParameterName, SqlParametro.Value)
+                        cmd.Parameters.Add(CType(sqlparams.Item(i), iDB2Parameter))
+                        s = s & "'" & sqlparams.Item(i).Value & "',"
+                    Next
+                End If
+
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                cmd.ExecuteNonQuery()
+                fillParameterCollection(cmd.Parameters)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    SqlParametro = Nothing
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+
+        End Sub
+
+        ''' <summary>
+        '''  Procedimiento que ejecuta una instrucción SQL en base a un stored procedure [StoredPocedure param] y
+        '''  un objeto (tipo colección) de parametros
+        ''' </summary>
+
+        Public Sub ExecuteNonQuery(ByVal Query As String)
+
+            Dim objResultado As String = ""
+            Dim objTransaction As iDB2Transaction
+
+            Try
+                'Obteniendo una conexion a la base de datos
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmd As New iDB2Command
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.Text
+                cmd.CommandText = Query
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                cmd.ExecuteNonQuery()
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+        End Sub
+
+        ''' <summary>
+        '''  Función que puede devolver (opcional) un objeto, (confirmación de operación)
+        '''  en base a un stored procedure [StoredPocedure param] y
+        '''  un objeto (tipo colección) de parametros
+        ''' </summary>
+
+        Public Function ExecuteNoQuery(ByVal StoreProcedure As String, ByVal sqlparams As Parameter) As String
+            Dim objResultado As String = ""
+            Dim objTransaction As iDB2Transaction
+            Try
+                'Obteniendo una conexion a la base de datos
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmd As New iDB2Command
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.CommandText = StoreProcedure
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                Dim i As Integer
+                Dim SqlParametro As iDB2Parameter
+                Dim x As String = ""
+                If Not (sqlparams Is Nothing) Then
+                    For i = 1 To sqlparams.Count
+                        'SqlParametro = CType(sqlparams.Item(i), iDB2Parameter)
+                        cmd.Parameters.Add(CType(sqlparams.Item(i), iDB2Parameter))
+                        x += "'" & sqlparams.Item(i).Value & "',"
+                    Next
+                End If
+
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                objResultado = cmd.ExecuteScalar()
+                fillParameterCollection(cmd.Parameters)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    SqlParametro = Nothing
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objResultado
+
+        End Function
+
+        ''' <summary>
+        '''  Función que puede devolver (opcional) un objeto, (confirmación de operación)
+        '''  en base a una instrucción SQL
+        ''' </summary>
+
+        Public Function ExecuteNoQuery(ByVal Query As String) As String
+            Dim objResultado As String = ""
+            Dim objTransaction As iDB2Transaction
+            Try
+                'Obteniendo una conexion a la base de datos
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmd As New iDB2Command
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.Text
+                cmd.CommandText = Query
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                objResultado = cmd.ExecuteScalar()
+                fillParameterCollection(cmd.Parameters)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+
+            End Try
+            objTransaction = Nothing
+            Return objResultado
+
+        End Function
+
+        ''' <summary>
+        '''  Función que devuelve un Idb2DataReader (No recomendado)
+        '''  en base a un stored procedure [StoredPocedure param] y
+        '''  un objeto (tipo colección) de parametros
+        ''' </summary>
+
+        Public Function ExecuteDataReader(ByVal StoreProcedure As String, ByVal sqlparams As Parameter) As iDB2DataReader
+
+            Dim objData As iDB2DataReader
+            Dim objTransaction As iDB2Transaction
+
+            Try
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmd As New iDB2Command
+
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.CommandText = StoreProcedure
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                Dim i As Integer
+                Dim SqlParametro As iDB2Parameter
+
+                If Not (sqlparams Is Nothing) Then
+                    For i = 1 To sqlparams.Count
+                        ' SqlParametro = CType(sqlparams.Item(i), iDB2Parameter)
+                        cmd.Parameters.Add(CType(sqlparams.Item(i), iDB2Parameter))
+                    Next
+                End If
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                objData = cmd.ExecuteReader(CommandBehavior.CloseConnection)
+                fillParameterCollection(cmd.Parameters)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    'cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    SqlParametro = Nothing
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objData
+
+        End Function
+
+        ''' <summary>
+        '''  Función que devuelve un Idb2DataReader (No recomendado)
+        '''   en base a una instrucción SQL
+        ''' </summary>
+
+        Public Function ExecuteDataReader(ByVal Query As String) As iDB2DataReader
+
+            Dim objData As iDB2DataReader
+            Dim objTransaction As iDB2Transaction
+
+            Try
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmd As New iDB2Command
+
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.Text
+                cmd.CommandText = Query
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                objData = cmd.ExecuteReader(CommandBehavior.CloseConnection)
+
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    'cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objData
+
+        End Function
+
+        ''' <summary>
+        '''  Función que devuelve un único resultado 
+        '''  en base a un stored procedure [StoredPocedure param] y
+        '''  un objeto (tipo colección) de parametros
+        ''' </summary>
+
+        Public Function ExecuteScalar(ByVal StoreProcedure As String, ByVal sqlparams As Parameter) As String
+            Dim objResultado As String = ""
+            Dim objTransaction As iDB2Transaction
+            Try
+                'Obteniendo una conexion a la base de datos
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmd As New iDB2Command
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.CommandText = StoreProcedure
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                Dim i As Integer
+                Dim SqlParametro As iDB2Parameter
+
+                If Not (sqlparams Is Nothing) Then
+                    For i = 1 To sqlparams.Count
+                        ' SqlParametro = CType(sqlparams.Item(i), iDB2Parameter)
+                        cmd.Parameters.Add(CType(sqlparams.Item(i), iDB2Parameter))
+                    Next
+                End If
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                objResultado = cmd.ExecuteScalar().ToString()
+                fillParameterCollection(cmd.Parameters)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    SqlParametro = Nothing
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objResultado
+        End Function
+
+        ''' <summary>
+        '''  Función que devuelve un único resultado 
+        '''  en base a una instucción SQL
+        ''' </summary>
+
+        Public Function ExecuteScalar(ByVal Query As String) As String
+            Dim objResultado As String = ""
+            Dim objTransaction As iDB2Transaction
+            Try
+                'Obteniendo una conexion a la base de datos
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmd As New iDB2Command
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.Text
+                cmd.CommandText = Query
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                objResultado = cmd.ExecuteScalar().ToString()
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objResultado
+
+        End Function
+
+        ''' <summary>
+        '''  Función que devuelve un DataTable 
+        '''  en base a un stored procedure [StoredPocedure param] y
+        '''  un objeto (tipo colección) de parametros
+        ''' </summary>
+
+        Public Function ExecuteDataTable(ByVal StoreProcedure As String, ByVal sqlparams As Parameter) As DataTable
+
+            Dim objData As New DataSet
+            Dim objTransaction As iDB2Transaction
+
+            Try
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmdAdaptador As iDB2DataAdapter
+                Dim cmd As New iDB2Command
+
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.CommandText = StoreProcedure
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                Dim i As Integer
+                Dim SqlParametro As iDB2Parameter
+                Dim S As String
+                If Not (sqlparams Is Nothing) Then
+                    For i = 1 To sqlparams.Count
+                        '  SqlParametro = CType(sqlparams.Item(i), iDB2Parameter)
+                        cmd.Parameters.Add(CType(sqlparams.Item(i), iDB2Parameter))
+                        S = S & "'" & sqlparams.Item(i).Value & "'"
+                    Next
+                End If
+
+                cmdAdaptador = New iDB2DataAdapter(cmd)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                                        cmdAdaptador.Fill(objData)
+                fillParameterCollection(cmd.Parameters)
+
+                        If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    SqlParametro = Nothing
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objData.Tables(0).Copy()
+
+        End Function
+
+        ''' <summary>
+        '''  Función que devuelve un único resultado 
+        '''  en base a una instucción SQL
+        ''' </summary>
+
+        Public Function ExecuteDataTable(ByVal Query As String) As DataTable
+            Dim objData As New DataSet
+            Dim objTransaction As iDB2Transaction
+
+            Try
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmdAdaptador As iDB2DataAdapter
+                Dim cmd As New iDB2Command
+
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.Text
+                cmd.CommandText = Query
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                cmdAdaptador = New iDB2DataAdapter(cmd)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                cmdAdaptador.Fill(objData)
+                fillParameterCollection(cmd.Parameters)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objData.Tables(0).Copy()
+        End Function
+
+        ''' <summary>
+        '''  Función que devuelve un DataTableReader 
+        '''  en base a un stored procedure [StoredPocedure param] y
+        '''  un objeto (tipo colección) de parametros
+        ''' </summary>
+
+        Public Function ExecuteIDataReader(ByVal StoreProcedure As String, ByVal sqlparams As Parameter) As IDataReader
+
+            Dim objData As New DataSet
+            Dim objTransaction As iDB2Transaction
+
+            Try
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmdAdaptador As iDB2DataAdapter
+                Dim cmd As New iDB2Command
+
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.CommandText = StoreProcedure
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                Dim i As Integer
+                Dim SqlParametro As iDB2Parameter
+
+                If Not (sqlparams Is Nothing) Then
+                    For i = 1 To sqlparams.Count
+                        '  SqlParametro = CType(sqlparams.Item(i), iDB2Parameter)
+                        cmd.Parameters.Add(CType(sqlparams.Item(i), iDB2Parameter))
+                    Next
+                End If
+
+                cmdAdaptador = New iDB2DataAdapter(cmd)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                cmdAdaptador.Fill(objData)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    SqlParametro = Nothing
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objData.Tables(0).Copy().CreateDataReader()
+
+        End Function
+
+
+        Public Function ExecuteIDataReader(ByVal Query As String) As IDataReader
+            Dim objData As New DataSet
+            Dim objTransaction As iDB2Transaction
+
+            Try
+
+                Dim cnx As iDB2Connection
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx = Me.Conectar()
+                Else
+                    cnx = Me.objGlobalConnection
+                End If
+
+                Dim cmdAdaptador As iDB2DataAdapter
+                Dim cmd As New iDB2Command
+
+                cmd.Connection = cnx
+                cmd.CommandType = CommandType.Text
+                cmd.CommandText = Query
+                cmd.CommandTimeout = Me.TiempoRespuesta
+
+                cmdAdaptador = New iDB2DataAdapter(cmd)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    cnx.Open()
+                    objTransaction = cnx.BeginTransaction(IsolationLevel.RepeatableRead)
+                    cmd.Transaction = objTransaction
+                Else
+                    cmd.Transaction = Me.objGlobalTransaction
+                End If
+
+                cmdAdaptador.Fill(objData)
+
+                If Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Commit()
+                    objTransaction.Dispose()
+                    cnx.Close()
+                    cnx.Dispose()
+                    cmd.Dispose()
+                    cmd = Nothing
+                    cnx = Nothing
+
+                End If
+
+            Catch ex As Exception
+                If objTransaction IsNot Nothing And Me.TipoControlTransaccion = TransactionType.Automatic Then
+                    objTransaction.Rollback()
+                End If
+                Throw New Exception(ex.ToString())
+            End Try
+
+            objTransaction = Nothing
+            Return objData.Tables(0).Copy().CreateDataReader()
+        End Function

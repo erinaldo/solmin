@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstOperacionesAsignadas" targetNamespace="http://tempuri.org/dstOperacionesAsignadas.xsd" xmlns:mstns="http://tempuri.org/dstOperacionesAsignadas.xsd" xmlns="http://tempuri.org/dstOperacionesAsignadas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstOperacionesAsignadas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstOperacionesAsignadas" msprop:Generator_DataSetName="dstOperacionesAsignadas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RZST073" msprop:Generator_UserTableName="RZST073" msprop:Generator_RowDeletedName="RZST073RowDeleted" msprop:Generator_RowChangedName="RZST073RowChanged" msprop:Generator_RowClassName="RZST073Row" msprop:Generator_RowChangingName="RZST073RowChanging" msprop:Generator_RowEvArgName="RZST073RowChangeEvent" msprop:Generator_RowEvHandlerName="RZST073RowChangeEventHandler" msprop:Generator_TableClassName="RZST073DataTable" msprop:Generator_TableVarName="tableRZST073" msprop:Generator_RowDeletingName="RZST073RowDeleting" msprop:Generator_TablePropName="RZST073">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NCSOTR" msprop:Generator_UserColumnName="NCSOTR" msprop:Generator_ColumnVarNameInTable="columnNCSOTR" msprop:Generator_ColumnPropNameInRow="NCSOTR" msprop:Generator_ColumnPropNameInTable="NCSOTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NCRRSR" msprop:Generator_UserColumnName="NCRRSR" msprop:Generator_ColumnVarNameInTable="columnNCRRSR" msprop:Generator_ColumnPropNameInRow="NCRRSR" msprop:Generator_ColumnPropNameInTable="NCRRSRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOPRCN" msprop:Generator_UserColumnName="NOPRCN" msprop:Generator_ColumnVarNameInTable="columnNOPRCN" msprop:Generator_ColumnPropNameInRow="NOPRCN" msprop:Generator_ColumnPropNameInTable="NOPRCNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NPLNJT" msprop:Generator_UserColumnName="NPLNJT" msprop:Generator_ColumnVarNameInTable="columnNPLNJT" msprop:Generator_ColumnPropNameInRow="NPLNJT" msprop:Generator_ColumnPropNameInTable="NPLNJTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NCRRPL" msprop:Generator_UserColumnName="NCRRPL" msprop:Generator_ColumnVarNameInTable="columnNCRRPL" msprop:Generator_ColumnPropNameInRow="NCRRPL" msprop:Generator_ColumnPropNameInTable="NCRRPLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QSLCIT" msprop:Generator_UserColumnName="QSLCIT" msprop:Generator_ColumnVarNameInTable="columnQSLCIT" msprop:Generator_ColumnPropNameInRow="QSLCIT" msprop:Generator_ColumnPropNameInTable="QSLCITColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="QATNAN" msprop:Generator_UserColumnName="QATNAN" msprop:Generator_ColumnVarNameInTable="columnQATNAN" msprop:Generator_ColumnPropNameInRow="QATNAN" msprop:Generator_ColumnPropNameInTable="QATNANColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NPLCUN" msprop:Generator_UserColumnName="NPLCUN" msprop:Generator_ColumnVarNameInTable="columnNPLCUN" msprop:Generator_ColumnPropNameInRow="NPLCUN" msprop:Generator_ColumnPropNameInTable="NPLCUNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NPLCAC" msprop:Generator_UserColumnName="NPLCAC" msprop:Generator_ColumnVarNameInTable="columnNPLCAC" msprop:Generator_ColumnPropNameInRow="NPLCAC" msprop:Generator_ColumnPropNameInTable="NPLCACColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CBRCNT" msprop:Generator_UserColumnName="CBRCNT" msprop:Generator_ColumnVarNameInTable="columnCBRCNT" msprop:Generator_ColumnPropNameInRow="CBRCNT" msprop:Generator_ColumnPropNameInTable="CBRCNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRUCTR" msprop:Generator_UserColumnName="NRUCTR" msprop:Generator_ColumnVarNameInTable="columnNRUCTR" msprop:Generator_ColumnPropNameInRow="NRUCTR" msprop:Generator_ColumnPropNameInTable="NRUCTRColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

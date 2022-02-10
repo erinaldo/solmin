@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B556156-F067-49DF-9066-67E5AE2375D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ransa.Controls.OrdenCompra</RootNamespace>
+    <AssemblyName>Ransa.Controls.OrdenCompra</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.OrdenCompra.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ransa.Controls.OrdenCompra.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Design\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\..\DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\..\DLL\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeValidatorKryton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\KryptonValidator\TypeValidatorKryton.dll</HintPath>
+      <HintPath>..\..\..\DLL\TypeValidatorKryton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\beBultoSegAlmacen.vb" />
+    <Compile Include="Datos\daBultoSegAlmacen.vb" />
+    <Compile Include="Datos\OrdenCompra_DAL.vb" />
+    <Compile Include="frmImportarOC.Designer.vb">
+      <DependentUpon>frmImportarOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportarOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportarOCDeExcel.Designer.vb">
+      <DependentUpon>frmImportarOCDeExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportarOCDeExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClienteDestino.Designer.vb">
+      <DependentUpon>frmClienteDestino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClienteDestino.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportarOcSDS.Designer.vb">
+      <DependentUpon>frmImportarOcSDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportarOcSDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportarOCTxt.Designer.vb">
+      <DependentUpon>frmImportarOCTxt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportarOCTxt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportarOC_MIQ.Designer.vb">
+      <DependentUpon>frmImportarOC_MIQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportarOC_MIQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaOC_MIQ.Designer.vb">
+      <DependentUpon>frmListaOC_MIQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaOC_MIQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPendienteOC.Designer.vb">
+      <DependentUpon>frmPendienteOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPendienteOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpOC.vb" />
+    <Compile Include="Interfaz OC\frmImportarOCExcel_PPC.Designer.vb">
+      <DependentUpon>frmImportarOCExcel_PPC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz OC\frmImportarOCExcel_PPC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz OC\frmInterfazOC.Designer.vb">
+      <DependentUpon>frmInterfazOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz OC\frmInterfazOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz OC\brInterfazOC.vb" />
+    <Compile Include="Negocio\brBultoSegAlmacen.vb" />
+    <Compile Include="PrintFormOC.Designer.vb">
+      <DependentUpon>PrintFormOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintFormOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\frmDetalleBulto.Designer.vb">
+      <DependentUpon>frmDetalleBulto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\frmDetalleBulto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\FrmMovimientoOC.Designer.vb">
+      <DependentUpon>FrmMovimientoOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\FrmMovimientoOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\frmMovimientoOcSDS.Designer.vb">
+      <DependentUpon>frmMovimientoOcSDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\frmMovimientoOcSDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\frmMovimientoxItem.designer.vb">
+      <DependentUpon>frmMovimientoxItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\frmMovimientoxItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\frmSubItemEnAlmacen.designer.vb">
+      <DependentUpon>frmSubItemEnAlmacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeguimientoAlmacen\frmSubItemEnAlmacen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucSubItemOcEnAlmacen_DgF01.Designer.vb">
+      <DependentUpon>ucSubItemOcEnAlmacen_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucSubItemOcEnAlmacen_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucItemOC_DgF01_Importar.Designer.vb">
+      <DependentUpon>ucItemOC_DgF01_Importar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucItemOC_DgF01_Importar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListaOC.Designer.vb">
+      <DependentUpon>frmListaOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucListaSubItemOC_DgF01.Designer.vb">
+      <DependentUpon>ucListaSubItemOC_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucListaSubItemOC_DgF01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucSubItemOC_DgF01.Designer.vb">
+      <DependentUpon>ucSubItemOC_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucSubItemOC_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ucItemOC_DgF01.Designer.vb">
+      <DependentUpon>ucItemOC_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucItemOC_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucItemOC_MItem.Designer.vb">
+      <DependentUpon>ucItemOC_MItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucItemOC_MItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucOrdenCompra_DgF01.Designer.vb">
+      <DependentUpon>ucOrdenCompra_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucOrdenCompra_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOrdenCompra_MOC.Designer.vb">
+      <DependentUpon>ucOrdenCompra_MOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucOrdenCompra_MOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucSubItemOC_MItem.Designer.vb">
+      <DependentUpon>ucSubItemOC_MItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucSubItemOC_MItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidarCaracter.vb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmImportarOC.resx">
+      <DependentUpon>frmImportarOC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportarOCDeExcel.resx">
+      <DependentUpon>frmImportarOCDeExcel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClienteDestino.resx">
+      <DependentUpon>frmClienteDestino.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportarOcSDS.resx">
+      <DependentUpon>frmImportarOcSDS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportarOCTxt.resx">
+      <DependentUpon>frmImportarOCTxt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportarOC_MIQ.resx">
+      <DependentUpon>frmImportarOC_MIQ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaOC_MIQ.resx">
+      <DependentUpon>frmListaOC_MIQ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPendienteOC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPendienteOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz OC\frmImportarOCExcel_PPC.resx">
+      <DependentUpon>frmImportarOCExcel_PPC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz OC\frmInterfazOC.resx">
+      <DependentUpon>frmInterfazOC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintFormOC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintFormOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeguimientoAlmacen\frmDetalleBulto.resx">
+      <DependentUpon>frmDetalleBulto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeguimientoAlmacen\FrmMovimientoOC.resx">
+      <DependentUpon>FrmMovimientoOC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeguimientoAlmacen\frmMovimientoOcSDS.resx">
+      <DependentUpon>frmMovimientoOcSDS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeguimientoAlmacen\frmMovimientoxItem.resx">
+      <DependentUpon>frmMovimientoxItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeguimientoAlmacen\frmSubItemEnAlmacen.resx">
+      <DependentUpon>frmSubItemEnAlmacen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSubItemOcEnAlmacen_DgF01.resx">
+      <DependentUpon>ucSubItemOcEnAlmacen_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucItemOC_DgF01_Importar.resx">
+      <DependentUpon>ucItemOC_DgF01_Importar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaOC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmListaOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucListaSubItemOC_DgF01.resx">
+      <DependentUpon>ucListaSubItemOC_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSubItemOC_DgF01.resx">
+      <DependentUpon>ucSubItemOC_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucItemOC_DgF01.resx">
+      <DependentUpon>ucItemOC_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucItemOC_MItem.resx">
+      <DependentUpon>ucItemOC_MItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOrdenCompra_DgF01.resx">
+      <DependentUpon>ucOrdenCompra_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOrdenCompra_MOC.resx">
+      <DependentUpon>ucOrdenCompra_MOC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSubItemOC_MItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSubItemOC_MItem.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SOLMIN_SA\SOLMIN_SA.Datos\RANSA.DATA.vbproj">
+      <Project>{57583771-9974-49B0-8C46-3BBCC5EA6467}</Project>
+      <Name>RANSA.DATA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOLMIN_SA\SOLMIN_SA.Negocio\RANSA.NEGO.vbproj">
+      <Project>{51B8061D-C481-405B-B692-7C2EDC3464CB}</Project>
+      <Name>RANSA.NEGO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOLMIN_SA\SOLMIN_SA.TypeDef\RANSA.TYPEDEF.vbproj">
+      <Project>{92EF2C77-6996-427A-8E39-0F003417E224}</Project>
+      <Name>RANSA.TYPEDEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CodeTextBox\CodeTextBox.vbproj">
+      <Project>{65B6AD03-EFF5-418E-832C-56A7A543F82C}</Project>
+      <Name>CodeTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\StorageFileManager\StorageFileManager.vbproj">
+      <Project>{3165C610-476B-40FA-BD2B-B32A920398A9}</Project>
+      <Name>StorageFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{E440D2C4-A8D1-44EE-9A08-18D9ACEA0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Moneda\Ransa.Controls.Moneda\Ransa.Controls.Moneda.vbproj">
+      <Project>{7E1EA8CB-19AF-442C-8608-B15D85EE0866}</Project>
+      <Name>Ransa.Controls.Moneda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Proveedor\Ransa.Controls.Proveedor\Ransa.Controls.Proveedor.vbproj">
+      <Project>{BFDD001A-A03F-4D84-A788-F4F87EF27A62}</Project>
+      <Name>Ransa.Controls.Proveedor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ransa.Controls.Seguimiento\Ransa.Controls.Seguimiento.vbproj">
+      <Project>{CD4B88EE-30DD-4708-BB90-F64240D217E7}</Project>
+      <Name>Ransa.Controls.Seguimiento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ransa.Rutime.CtrlsSolmin\Ransa.Rutime.CtrlsSolmin.vbproj">
+      <Project>{7a592b05-2d87-4a2a-9e9d-a96c51cb191f}</Project>
+      <Name>Ransa.Rutime.CtrlsSolmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TipoAyuda\Ransa.Controls.TipoAyuda\Ransa.Controls.TipoAyuda.vbproj">
+      <Project>{031CF484-82D4-455C-BCEC-237F0124FF66}</Project>
+      <Name>Ransa.Controls.TipoAyuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Unidad\Ransa.Controls.Unidad\Ransa.Controls.Unidad.vbproj">
+      <Project>{0590279D-8483-41A0-A3F9-2B99FAFEFE1A}</Project>
+      <Name>Ransa.Controls.Unidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ransa.DAO.OrdenCompra\Ransa.DAO.OrdenCompra.vbproj">
+      <Project>{31A4B52C-FCFB-47D0-BCE2-EC45626A2F42}</Project>
+      <Name>Ransa.DAO.OrdenCompra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ransa.TypeDef.OrdenCompra\Ransa.TypeDef.OrdenCompra.vbproj">
+      <Project>{8D9C6E27-6902-4D9B-8DEA-170AFFC0D93F}</Project>
+      <Name>Ransa.TypeDef.OrdenCompra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\button_ok1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_cancel.png" />
+    <None Include="Resources\edit_add.png" />
+    <None Include="Resources\CambiarDeCliente.jpg" />
+    <None Include="Resources\autostart.png" />
+    <Content Include="Resources\button_ok11.png" />
+    <Content Include="Resources\cajas.png" />
+    <Content Include="Resources\eliminarItem.png" />
+    <Content Include="Resources\EnBlanco.JPG" />
+    <Content Include="Resources\text_block.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\exit2.png" />
+    <None Include="Resources\filesave1.png" />
+    <None Include="Resources\ImportarYRC.png" />
+    <None Include="Resources\printer2.png" />
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

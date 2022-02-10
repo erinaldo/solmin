@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReporteListaEmpleado" targetNamespace="http://tempuri.org/dstReporteListaEmpleado.xsd" xmlns:mstns="http://tempuri.org/dstReporteListaEmpleado.xsd" xmlns="http://tempuri.org/dstReporteListaEmpleado.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReporteListaEmpleado" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReporteListaEmpleado" msprop:Generator_DataSetName="dstReporteListaEmpleado">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtsEmpleado" msprop:Generator_UserTableName="dtsEmpleado" msprop:Generator_RowDeletedName="dtsEmpleadoRowDeleted" msprop:Generator_TableClassName="dtsEmpleadoDataTable" msprop:Generator_RowChangedName="dtsEmpleadoRowChanged" msprop:Generator_RowClassName="dtsEmpleadoRow" msprop:Generator_RowChangingName="dtsEmpleadoRowChanging" msprop:Generator_RowEvArgName="dtsEmpleadoRowChangeEvent" msprop:Generator_RowEvHandlerName="dtsEmpleadoRowChangeEventHandler" msprop:Generator_TablePropName="dtsEmpleado" msprop:Generator_TableVarName="tabledtsEmpleado" msprop:Generator_RowDeletingName="dtsEmpleadoRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CEMPC" msprop:Generator_UserColumnName="CEMPC" msprop:Generator_ColumnPropNameInRow="CEMPC" msprop:Generator_ColumnVarNameInTable="columnCEMPC" msprop:Generator_ColumnPropNameInTable="CEMPCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMPEM" msprop:Generator_UserColumnName="TCMPEM" msprop:Generator_ColumnPropNameInRow="TCMPEM" msprop:Generator_ColumnVarNameInTable="columnTCMPEM" msprop:Generator_ColumnPropNameInTable="TCMPEMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TABREM" msprop:Generator_UserColumnName="TABREM" msprop:Generator_ColumnPropNameInRow="TABREM" msprop:Generator_ColumnVarNameInTable="columnTABREM" msprop:Generator_ColumnPropNameInTable="TABREMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDRCEM" msprop:Generator_UserColumnName="TDRCEM" msprop:Generator_ColumnPropNameInRow="TDRCEM" msprop:Generator_ColumnVarNameInTable="columnTDRCEM" msprop:Generator_ColumnPropNameInTable="TDRCEMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TLCLEM" msprop:Generator_UserColumnName="TLCLEM" msprop:Generator_ColumnPropNameInRow="TLCLEM" msprop:Generator_ColumnVarNameInTable="columnTLCLEM" msprop:Generator_ColumnPropNameInTable="TLCLEMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDPTEM" msprop:Generator_UserColumnName="TDPTEM" msprop:Generator_ColumnPropNameInRow="TDPTEM" msprop:Generator_ColumnVarNameInTable="columnTDPTEM" msprop:Generator_ColumnPropNameInTable="TDPTEMColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

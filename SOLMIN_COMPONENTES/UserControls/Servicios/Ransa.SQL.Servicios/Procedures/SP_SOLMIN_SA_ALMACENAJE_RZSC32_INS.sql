@@ -1,0 +1,230 @@
+-- CAMBIAR RNSLIB POR RNSLIB
+DROP PROCEDURE DC@RNSLIB.SP_SOLMIN_SA_ALMACENAJE_RZSC32_INS
+GO
+CREATE PROCEDURE DC@RNSLIB.SP_SOLMIN_SA_ALMACENAJE_RZSC32_INS(
+		IN	IN_CCLNT		NUMERIC(6, 0),
+		IN	IN_CCMPN		VARCHAR(2),
+        IN	IN_CDVSN		VARCHAR(1),
+        IN	IN_CPLNDV		NUMERIC(3, 0),
+        IN	IN_STPODP		VARCHAR(1),
+		IN	IN_NANPRC		NUMERIC(4, 0),		-- Año de Proceso
+		IN	IN_NMES			NUMERIC(2, 0),		-- Mes de Proceso
+		IN	IN_FECINI		NUMERIC(8, 0),		-- Fecha de Inicio de la Facturación
+		IN	IN_FECFIN		NUMERIC(8, 0),		-- Fecha de Final de la Facturación
+		IN	IN_OBSERV		VARCHAR(60),		-- Observaciones
+		IN	IN_NDIALI		NUMERIC(2, 0),		-- Nro. de días libres por cliente
+        IN	IN_NRTFSV		NUMERIC(10, 0),
+        IN	IN_QCNESP		NUMERIC(15, 5),
+        IN	IN_TUNDIT		VARCHAR(10),
+        IN	IN_STPOUN		VARCHAR(1),
+        IN	IN_CMNDA1		NUMERIC(3, 0),
+        IN	IN_VALUNI		DECIMAL(15, 2),
+		IN	IN_STPFLT		VARCHAR(1),			-- Procesar Filtro
+		IN	IN_CREFFW		VARCHAR(256),		-- Condiciones de Filtro
+		IN	IN_NROPLT		VARCHAR(256),
+		IN	IN_TTINTC		VARCHAR(6),
+		IN	IN_TUBRFR		VARCHAR(17),
+		IN	IN_STPING		VARCHAR(1),
+		IN	IN_CRTLTE		VARCHAR(256),
+		IN  IN_USUARI  		VARCHAR(10),
+		OUT OU_NPRALM		NUMERIC(10, 0)
+        )
+RESULT SETS 0
+LANGUAGE SQL
+BEGIN
+	--------------------------------------
+	-- Variables de Trabajo - Seguridad --
+	--------------------------------------
+	DECLARE	WK_FECHA	NUMERIC(10, 0)	DEFAULT 0;
+	DECLARE	WK_HORA		NUMERIC(10, 0)	DEFAULT 0;
+	--------------------------
+	-- Variables de Trabajo --
+	--------------------------
+	DECLARE WK_TNPRAL			NUMERIC(10, 0)	DEFAULT 0;
+	DECLARE	WK_NPRALM			NUMERIC(10, 0)	DEFAULT 0;
+	DECLARE WK_TQAROC			DECIMAL(15, 5)	DEFAULT 0;
+	DECLARE WK_TQPSOB			DECIMAL(15, 5)	DEFAULT 0;
+	DECLARE WK_TQVLBT			DECIMAL(15, 5)	DEFAULT 0;
+	DECLARE WK_TNDPER			NUMERIC(10, 0)	DEFAULT 0;
+	DECLARE WK_TNDAFA			NUMERIC(10, 0)	DEFAULT 0;
+	DECLARE	WK_NMONOC			VARCHAR(10)		DEFAULT '';
+	DECLARE WK_IMPFACT			DECIMAL(15, 5)	DEFAULT 0;
+	
+	DECLARE strSQL				VARCHAR(4000)	DEFAULT '';
+	DECLARE strSQL_CREFFW		VARCHAR(300)	DEFAULT '';
+	DECLARE strSQL_NROPLT		VARCHAR(300)	DEFAULT '';
+	DECLARE strSQL_FECFAC		VARCHAR(900)	DEFAULT '';
+	DECLARE WK_FSLFFW			VARCHAR(200)	DEFAULT '';
+	DECLARE strSQL_TTINTC		VARCHAR(300)	DEFAULT '';
+	DECLARE strSQL_TUBRFR		VARCHAR(100)	DEFAULT '';
+	DECLARE strSQL_STPING		VARCHAR(100)	DEFAULT '';
+	DECLARE strSQL_CRTLTE		VARCHAR(300)	DEFAULT '';
+	
+	-- Obtengo la fecha y hora actual
+	SET	WK_FECHA = YEAR(CURRENT DATE) * 10000 + MONTH(CURRENT DATE) * 100 + DAY(CURRENT DATE);
+	SET	WK_HORA  = HOUR(CURRENT TIME) * 10000 + MINUTE(CURRENT TIME) * 100 + SECOND(CURRENT TIME);
+	
+	SET OU_NPRALM = 0;
+	
+	SELECT	IFNULL(MAX(NPRALM), (IN_NANPRC*100 + IN_NMES)*1000 ) + 1
+	INTO	WK_NPRALM
+	FROM	RZSC32
+	WHERE	CCLNT	= IN_CCLNT
+	AND		NANPRC	= IN_NANPRC
+	AND		NMES	= IN_NMES;
+	
+	SELECT	IFNULL(TSGNMN, '')
+	INTO	WK_NMONOC
+	FROM	RZZK02
+	WHERE	CMNDA1 = IN_CMNDA1;
+	
+	SET OU_NPRALM = WK_NPRALM;
+	
+	INSERT INTO RZSC32(	NPRALM,		CCLNT,		CCMPN,		CDVSN,		CPLNDV,		STPODP,		NANPRC,
+						NMES,		FECINI,		FECFIN,		OBSERV,		NDIALI,		STPOFC,		TQAROC,
+						TQPSOB,		TQVLBT,		TNDPER,		TNDAFA,		NOPRCN,		NRTFSV,		QCNESP,
+						TUNDIT,		STPOUN,		CMNDA1,		NMONOC,		VALUNI,		IMPFACT,	SESTRG,
+						CUSCRT,		FCHCRT,		HRACRT,		CULUSA,		FULTAC,		HULTAC,		UPDATE_IDENT )
+				VALUES(	WK_NPRALM,	IN_CCLNT,	IN_CCMPN,	IN_CDVSN,	IN_CPLNDV,	IN_STPODP,	IN_NANPRC,
+						IN_NMES,	IN_FECINI,	IN_FECFIN,	IN_OBSERV,	IN_NDIALI,	'P',		0,
+						0,			0,			0,			0,			0,			IN_NRTFSV,	IN_QCNESP,
+						IN_TUNDIT,	IN_STPOUN,	IN_CMNDA1,	WK_NMONOC,	IN_VALUNI,	0,			'A',
+						IN_USUARI,	WK_FECHA,	WK_HORA,	IN_USUARI,	WK_FECHA,	WK_HORA,	1 );
+	
+	If IN_STPFLT = 'S' Then
+			-- Filtros según Códigos de Bultos
+		IF IN_CREFFW <> '' THEN
+			IF POSSTR( IN_CREFFW, ',') <> 0 THEN
+				SET IN_CREFFW = REPLACE( REPLACE( IN_CREFFW, ' ', '' ), ',', ''',''');
+				SET strSQL_CREFFW = ' And CREFFW IN  ( '''  || IN_CREFFW || ''') ' ;
+			ELSE
+				SET IN_CREFFW = REPLACE( IN_CREFFW, '*', '%');
+				SET strSQL_CREFFW = ' And Trim(CREFFW) LIKE '''  || IN_CREFFW || ''' ' ;
+			END IF;
+		END IF;
+		
+		-- Filtros según Nro de Paleta
+		IF IN_NROPLT <> '' THEN
+			IF POSSTR( IN_NROPLT, ',') <> 0 THEN
+				SET strSQL_NROPLT = ' And CREFFW IN ( SELECT CREFFW FROM RZOL65Q WHERE CCLNT = RZOL65.CCLNT And NROPLT IN  ( '  || IN_NROPLT || ') ) ' ;
+			ELSE
+				SET IN_NROPLT = REPLACE( REPLACE( IN_NROPLT, ' ', '' ), '*', '%');
+				SET strSQL_NROPLT = ' And CREFFW IN ( SELECT CREFFW FROM RZOL65Q WHERE CCLNT = RZOL65.CCLNT And Trim(NROPLT) LIKE '''  || IN_NROPLT || ''' ) ' ;
+			END IF;
+		END IF;
+		
+		-- Filtros según Fecha de Facturación
+		SET WK_FSLFFW = '(CASE WHEN FSLFFW = 0 THEN ' || IN_FECFIN || ' ELSE (CASE WHEN FSLFFW > ' || IN_FECFIN || ' THEN ' || IN_FECFIN || ' ELSE FSLFFW END) END)';
+		SET strSQL_FECFAC = ' And ( ( ' || IN_FECINI || ' <= FREFFW AND ' || WK_FSLFFW || ' <= ' || IN_FECFIN || ' ) ' ||
+								' OR( ' || IN_FECINI || ' <= FREFFW AND FREFFW <= ' || IN_FECFIN || ' AND ' || WK_FSLFFW || ' >  ' || IN_FECFIN || ' ) ' ||
+								' OR( ' || IN_FECINI || ' >  FREFFW AND ' || WK_FSLFFW || ' >= ' || IN_FECINI || ' AND ' || WK_FSLFFW || ' <= ' || IN_FECFIN || ' ) ' ||
+								' OR( ' || IN_FECINI || ' >  FREFFW AND ' || WK_FSLFFW || ' >  ' || IN_FECFIN || ' ) ) ';
+
+		-- Filtros según el Termino Internacional de la Orden de Compra
+		IF IN_TTINTC <> '' THEN
+			SET strSQL_TTINTC = ' And Exists( SELECT	CREFFW ' ||
+											' FROM		RZOL66 WHERE RZOL66.CCLNT = RZOL65.CCLNT AND RZOL66.CREFFW = RZOL65.CREFFW ' ||
+											' AND		EXISTS( SELECT	NORCML ' ||
+															'	FROM	RZOL38 WHERE RZOL38.CCLNT = RZOL66.CCLNT AND RZOL38.NORCML = RZOL66.NORCML ' ||
+															'	AND		TTINTC = ''' || IN_TTINTC || ''' ))';
+		END IF;
+
+		-- Filtros según Ubicación en Almacén
+		IF IN_TUBRFR <> '' THEN
+			SET strSQL_TUBRFR = ' And TUBRFR = '''  || IN_TUBRFR || ''' ' ;
+		END IF;
+
+		-- Filtros según Tipo de Movimiento
+		IF IN_STPING <> '' THEN
+			SET strSQL_STPING = ' And STPING = '''  || IN_STPING || ''' ' ;
+		END IF;
+		
+		-- Filtros según Criterio
+		IF IN_CRTLTE <> '' THEN
+			IF POSSTR( IN_CRTLTE, ',') <> 0 THEN
+				SET IN_CRTLTE = REPLACE( REPLACE( IN_CRTLTE, ' ', '' ), ',', ''',''');
+				SET strSQL_CRTLTE = ' And CRTLTE IN  ( '''  || IN_CRTLTE || ''') ' ;
+			ELSE
+				SET IN_CRTLTE = REPLACE( REPLACE( IN_CRTLTE, ' ', '' ), '*', '%');
+				SET strSQL_CRTLTE = ' And Trim(CRTLTE) LIKE '''  || IN_CRTLTE || ''' ' ;
+			END IF;
+		END IF;
+		
+		SET WK_TNPRAL = IN_NANPRC*100 + IN_NMES;
+
+		-- Armamos la consulta final con toda la información
+		SET strSQL = '	DECLARE Global Temporary Table Bultos AS ( ' ||
+					 '	SELECT	CREFFW, NumberToDate(FREFFW) FREFFW,  ' || 
+							'	NumberToDate(FULFAC) FULFAC, ' ||
+							'	CASE WHEN FULFAC = 0 THEN NumberToDate(FREFFW) ELSE NumberToDate(FULFAC) + 1 Day END FINIPR, ' ||
+							'	CASE WHEN FSLFFW = 0 THEN NumberToDate(' || IN_FECFIN || ') ' ||
+								'	 ELSE ( CASE WHEN FSLFFW > ' || IN_FECFIN || ' THEN NumberToDate(' || IN_FECFIN || ')  ' ||
+											'	 ELSE NumberToDate(FSLFFW) END ) END FFINPR, ' ||
+							'	QAROCP, QPSOBL, QVLBTO, 0 NDPERM, 0 NDLIPE, 0 NDFACT, 0 NDAFAC, DECIMAL(0, 15, 5) IMPFACT, ' ||
+							'	CASE WHEN FULFAC <> 0 THEN Days(NumberToDate(FULFAC)) - Days(NumberToDate(FREFFW)) + 1 ELSE 0 END NDLIAC ' ||
+					 '	FROM	RZOL65 ' ||
+					 '	WHERE	CCLNT = ' || IN_CCLNT  || strSQL_CREFFW || ' And SESTRG <> ''*'' ' || 
+					 '	AND		FREFFW <= ' || IN_FECFIN || strSQL_NROPLT || strSQL_FECFAC || strSQL_TTINTC || strSQL_TUBRFR || strSQL_STPING || strSQL_CRTLTE || 
+					 '	AND NOT EXISTS( SELECT t1.CREFFW FROM RZSC33 t1 WHERE t1.CCLNT = ' || IN_CCLNT  ||  
+									'	AND t1.NPRALM LIKE ''' || WK_TNPRAL || '%'' AND t1.CREFFW = RZOL65.CREFFW AND SESTRG <> ''*'' ) )WITH DATA WITH REPLACE Not Logged ' ;
+
+		PREPARE dclstmt FROM strSQL;
+		EXECUTE dclstmt;
+		
+		IF EXISTS( SELECT CREFFW FROM Session.Bultos) THEN
+			Update	Session.Bultos
+			Set		NDPERM = Days(FFINPR) - Days(FREFFW) + 1,
+					NDLIPE = Case When NDLIAC >= IN_NDIALI Then 0 
+								  Else (Case When IN_NDIALI > (Days(FFINPR) - Days(FREFFW) + 1) then (Days(FFINPR) - Days(FREFFW) + 1) 
+											 Else IN_NDIALI End) - NDLIAC End,
+					NDLIAC = Case When NDLIAC > IN_NDIALI Then IN_NDIALI Else NDLIAC End;
+
+			Update	Session.Bultos
+			Set		NDFACT  = Days(FINIPR - 1 day) - Days(FREFFW) - NDLIAC + 1,
+					NDAFAC  = Days(FFINPR) - Days(Ifnull(FULFAC, FINIPR - 1 day)) - NDLIPE,
+					IMPFACT = ( Case When IN_STPOUN = 'A' Then QAROCP
+									 When IN_STPOUN = 'P' Then QPSOBL 
+									 Else QVLBTO End ) * IN_VALUNI * DECIMAL( Days(FFINPR) - Days(Ifnull(FULFAC, FINIPR - 1 day)) - NDLIPE, 15, 5 );
+
+			SELECT	SUM(IFNULL(QAROCP, 0)), 
+					SUM(IFNULL(QPSOBL, 0)), 
+					SUM(IFNULL(QVLBTO, 0)), 
+					SUM(IFNULL(NDPERM, 0)), 
+					SUM(IFNULL(NDAFAC, 0)), 
+					SUM(IFNULL(IMPFACT, 0))
+			INTO	WK_TQAROC, 
+					WK_TQPSOB, 
+					WK_TQVLBT, 
+					WK_TNDPER, 
+					WK_TNDAFA, 
+					WK_IMPFACT
+			FROM	Session.Bultos;
+			
+			Update	RZSC32
+			Set		TQAROC  = TQAROC  + IFNULL(WK_TQAROC, 0),
+					TQPSOB  = TQPSOB  + IFNULL(WK_TQPSOB, 0),
+					TQVLBT  = TQVLBT  + IFNULL(WK_TQVLBT, 0), 
+					TNDPER  = TNDPER  + IFNULL(WK_TNDPER, 0), 
+					TNDAFA  = TNDAFA  + IFNULL(WK_TNDAFA, 0),
+					IMPFACT = IMPFACT + IFNULL(WK_IMPFACT, 0)
+			Where	NPRALM  = WK_NPRALM
+			and		CCLNT   = IN_CCLNT;
+				
+			INSERT INTO RZSC33(	CCLNT,		NPRALM,		CREFFW,		FREFFW,		FULFAC,		FECINI,		FECFIN,
+								QAROCP,		QPSOBL,		QVLBTO,		NDPERM,		NDLIAC,		NDLIPE,		NDFACT,
+								NDAFAC,		IMPFACT,	SESTRG,		CUSCRT,		FCHCRT,		HRACRT,		CULUSA,
+								FULTAC,		HULTAC,		UPDATE_IDENT )
+						SELECT	IN_CCLNT,	WK_NPRALM,	CREFFW,		
+								YEAR(FREFFW) * 10000 + MONTH(FREFFW) * 100 + DAY(FREFFW),
+								IFNULL(YEAR(FULFAC) * 10000 + MONTH(FULFAC) * 100 + DAY(FULFAC), 0),
+								YEAR(FINIPR) * 10000 + MONTH(FINIPR) * 100 + DAY(FINIPR),
+								YEAR(FFINPR) * 10000 + MONTH(FFINPR) * 100 + DAY(FFINPR),
+								QAROCP,		QPSOBL,		QVLBTO,		NDPERM,		NDLIAC,		NDLIPE,		NDFACT,
+								NDAFAC,		IMPFACT,	'A',		IN_USUARI,	WK_FECHA,	WK_HORA,	IN_USUARI,
+								WK_FECHA,	WK_HORA,	1
+						FROM	Session.Bultos;
+		END IF;
+	End if;
+END
+GO
+GRANT ALL PRIVILEGES ON PROCEDURE SP_SOLMIN_SA_ALMACENAJE_RZSC32_INS TO PUBLIC

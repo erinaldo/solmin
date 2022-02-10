@@ -1,0 +1,1848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://asp.ransa.net/WSMineriaABB" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://asp.ransa.net/WSMineriaABB" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://asp.ransa.net/WSMineriaABB">
+      <s:element name="Integracion_Lista_Orden_Compra_Cabecera">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCodOrdenDeCompra" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_CabeceraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_Lista_Orden_Compra_CabeceraResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_Cabecera_Todo">
+        <s:complexType />
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_Cabecera_TodoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_Lista_Orden_Compra_Cabecera_TodoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_Detalle_Todo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intCodOrdenDeCompra" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_Detalle_TodoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_Lista_Orden_Compra_Detalle_TodoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_Detalle_Todo_1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intCodOrdenDeCompra" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_Detalle_Todo_1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_Lista_Orden_Compra_Detalle_Todo_1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTabla" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="testResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_Detalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intCodOrdenDeCompra" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_DetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_Lista_Orden_Compra_DetalleResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Recepcion_Cabecera">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intNroGuiaRansa_NGUIRN" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNroOrdenCompraCliente_NORCCL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNroPlacaCamion_NPLCCM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrRazonSocialEmpTransporte_TCMPTR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrRucEmpTransporte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strChofer_TNMBCH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNroBrevete_NBRVCH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Recepcion_CabeceraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Integracion_Insertar_Recepcion_CabeceraResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Recepcion_Detalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IntPK" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNroOrdenCompraCliente_NORCCL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intNroItemOC_NRITOC" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNroRUCCliente_NRUCLL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNombreProveedor_NOMPRO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCodigoMercaderia_CMRCLR" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="decCantidad_QTRMC" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNroGuiaCliente_NGUICL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUnidadCantidad_CUNCNT" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="in_Embarque" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Recepcion_DetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Integracion_Insertar_Recepcion_DetalleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Despacho_Cabecera">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml_data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Despacho_CabeceraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Integracion_Insertar_Despacho_CabeceraResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Despacho_Detalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NrGuia" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strOrderNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strOrderType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNrLoteCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCodMercaderia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDesMercaderia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUnidadMedida" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="decCantidadTransaccion" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strGuiaRemision" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Despacho_DetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Integracion_Insertar_Despacho_DetalleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Serie_Despacho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml_data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Insertar_Serie_DespachoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Integracion_Insertar_Serie_DespachoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Obtener_Pedido_Cabecera">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="in_vc_OrderNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="in_vc_OrderType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Obtener_Pedido_CabeceraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_Obtener_Pedido_CabeceraResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Obtener_Pedido_Detalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="in_vc_OrderNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="in_vc_OrderType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vc_Usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Obtener_Pedido_DetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_Obtener_Pedido_DetalleResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_ejecutar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSQl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_ejecutarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_ejecutarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Actualizar_Orden_Compra_Cabecera_Estado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intCodOrdenDeCompra" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Actualizar_Orden_Compra_Cabecera_EstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Integracion_Actualizar_Orden_Compra_Cabecera_EstadoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Actualizar_Orden_Compra_Detalle_Estado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intCodOrdenDeCompraDetalle" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Actualizar_Orden_Compra_Detalle_EstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Integracion_Actualizar_Orden_Compra_Detalle_EstadoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_Detalle_x_Codigo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intCodOrdenDeCompraDetalle" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Orden_Compra_Detalle_x_CodigoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_Lista_Orden_Compra_Detalle_x_CodigoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Lista_Pedidos_Pendientes">
+        <s:complexType />
+      </s:element>
+      <s:element name="Integracion_Lista_Pedidos_PendientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Integracion_Lista_Pedidos_PendientesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Actualizar_Estado_Pedidos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCodRefPedido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTipoRefPed" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="int_OrderLine" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Integracion_Actualizar_Estado_PedidosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Integracion_Actualizar_Estado_PedidosResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IntegracionInsertarCostoDeImportacionCAB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml_data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IntegracionInsertarCostoDeImportacionCABResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IntegracionInsertarCostoDeImportacionCABResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IntegracionInsertarCostoDeImportacionDET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml_data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IntegracionInsertarCostoDeImportacionDETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IntegracionInsertarCostoDeImportacionDETResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IntegracionInsertarEmbarqueCAB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml_data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IntegracionInsertarEmbarqueCABResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IntegracionInsertarEmbarqueCABResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IntegracionInsertarEmbarqueDET">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml_data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IntegracionInsertarEmbarqueDETResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IntegracionInsertarEmbarqueDETResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_CabeceraSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Cabecera" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_CabeceraSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_CabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Cabecera_TodoSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Cabecera_Todo" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Cabecera_TodoSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Cabecera_TodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_TodoSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Detalle_Todo" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_TodoSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Detalle_TodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_Todo_1SoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Detalle_Todo_1" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_Todo_1SoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Detalle_Todo_1Response" />
+  </wsdl:message>
+  <wsdl:message name="testSoapIn">
+    <wsdl:part name="parameters" element="tns:test" />
+  </wsdl:message>
+  <wsdl:message name="testSoapOut">
+    <wsdl:part name="parameters" element="tns:testResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_DetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Detalle" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_DetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_DetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_CabeceraSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Recepcion_Cabecera" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_CabeceraSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Recepcion_CabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_DetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Recepcion_Detalle" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_DetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Recepcion_DetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_CabeceraSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Despacho_Cabecera" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_CabeceraSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Despacho_CabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_DetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Despacho_Detalle" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_DetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Despacho_DetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Serie_DespachoSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Serie_Despacho" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Serie_DespachoSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Insertar_Serie_DespachoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_CabeceraSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Obtener_Pedido_Cabecera" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_CabeceraSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Obtener_Pedido_CabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_DetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Obtener_Pedido_Detalle" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_DetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Obtener_Pedido_DetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_ejecutarSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_ejecutar" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_ejecutarSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_ejecutarResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Cabecera_EstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Actualizar_Orden_Compra_Cabecera_Estado" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Cabecera_EstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Actualizar_Orden_Compra_Cabecera_EstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Detalle_EstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Actualizar_Orden_Compra_Detalle_Estado" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Detalle_EstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Actualizar_Orden_Compra_Detalle_EstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_x_CodigoSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Detalle_x_Codigo" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_x_CodigoSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Orden_Compra_Detalle_x_CodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Pedidos_PendientesSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Pedidos_Pendientes" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Pedidos_PendientesSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Lista_Pedidos_PendientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Estado_PedidosSoapIn">
+    <wsdl:part name="parameters" element="tns:Integracion_Actualizar_Estado_Pedidos" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Estado_PedidosSoapOut">
+    <wsdl:part name="parameters" element="tns:Integracion_Actualizar_Estado_PedidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionCABSoapIn">
+    <wsdl:part name="parameters" element="tns:IntegracionInsertarCostoDeImportacionCAB" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionCABSoapOut">
+    <wsdl:part name="parameters" element="tns:IntegracionInsertarCostoDeImportacionCABResponse" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionDETSoapIn">
+    <wsdl:part name="parameters" element="tns:IntegracionInsertarCostoDeImportacionDET" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionDETSoapOut">
+    <wsdl:part name="parameters" element="tns:IntegracionInsertarCostoDeImportacionDETResponse" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueCABSoapIn">
+    <wsdl:part name="parameters" element="tns:IntegracionInsertarEmbarqueCAB" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueCABSoapOut">
+    <wsdl:part name="parameters" element="tns:IntegracionInsertarEmbarqueCABResponse" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueDETSoapIn">
+    <wsdl:part name="parameters" element="tns:IntegracionInsertarEmbarqueDET" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueDETSoapOut">
+    <wsdl:part name="parameters" element="tns:IntegracionInsertarEmbarqueDETResponse" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_CabeceraHttpGetIn">
+    <wsdl:part name="strCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_CabeceraHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Cabecera_TodoHttpGetIn" />
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Cabecera_TodoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_TodoHttpGetIn">
+    <wsdl:part name="intCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_TodoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_Todo_1HttpGetIn">
+    <wsdl:part name="intCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_Todo_1HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="testHttpGetIn">
+    <wsdl:part name="strTabla" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="testHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_DetalleHttpGetIn">
+    <wsdl:part name="intCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_DetalleHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_CabeceraHttpGetIn">
+    <wsdl:part name="intNroGuiaRansa_NGUIRN" type="s:string" />
+    <wsdl:part name="strNroOrdenCompraCliente_NORCCL" type="s:string" />
+    <wsdl:part name="strNroPlacaCamion_NPLCCM" type="s:string" />
+    <wsdl:part name="pstrRazonSocialEmpTransporte_TCMPTR" type="s:string" />
+    <wsdl:part name="pstrRucEmpTransporte" type="s:string" />
+    <wsdl:part name="strChofer_TNMBCH" type="s:string" />
+    <wsdl:part name="strNroBrevete_NBRVCH" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_CabeceraHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_DetalleHttpGetIn">
+    <wsdl:part name="IntPK" type="s:string" />
+    <wsdl:part name="strNroOrdenCompraCliente_NORCCL" type="s:string" />
+    <wsdl:part name="intNroItemOC_NRITOC" type="s:string" />
+    <wsdl:part name="strNroRUCCliente_NRUCLL" type="s:string" />
+    <wsdl:part name="strNombreProveedor_NOMPRO" type="s:string" />
+    <wsdl:part name="strCodigoMercaderia_CMRCLR" type="s:string" />
+    <wsdl:part name="decCantidad_QTRMC" type="s:string" />
+    <wsdl:part name="strNroGuiaCliente_NGUICL" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+    <wsdl:part name="strUnidadCantidad_CUNCNT" type="s:string" />
+    <wsdl:part name="in_Embarque" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_DetalleHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_CabeceraHttpGetIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_CabeceraHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_DetalleHttpGetIn">
+    <wsdl:part name="NrGuia" type="s:string" />
+    <wsdl:part name="strOrderNumber" type="s:string" />
+    <wsdl:part name="strOrderType" type="s:string" />
+    <wsdl:part name="strNrLoteCliente" type="s:string" />
+    <wsdl:part name="strCodMercaderia" type="s:string" />
+    <wsdl:part name="strDesMercaderia" type="s:string" />
+    <wsdl:part name="strUnidadMedida" type="s:string" />
+    <wsdl:part name="decCantidadTransaccion" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+    <wsdl:part name="strGuiaRemision" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_DetalleHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Serie_DespachoHttpGetIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Serie_DespachoHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_CabeceraHttpGetIn">
+    <wsdl:part name="in_vc_OrderNumber" type="s:string" />
+    <wsdl:part name="in_vc_OrderType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_CabeceraHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_DetalleHttpGetIn">
+    <wsdl:part name="in_vc_OrderNumber" type="s:string" />
+    <wsdl:part name="in_vc_OrderType" type="s:string" />
+    <wsdl:part name="vc_Usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_DetalleHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_ejecutarHttpGetIn">
+    <wsdl:part name="strSQl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_ejecutarHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Cabecera_EstadoHttpGetIn">
+    <wsdl:part name="intCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Cabecera_EstadoHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Detalle_EstadoHttpGetIn">
+    <wsdl:part name="intCodOrdenDeCompraDetalle" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Detalle_EstadoHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_x_CodigoHttpGetIn">
+    <wsdl:part name="intCodOrdenDeCompraDetalle" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_x_CodigoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Pedidos_PendientesHttpGetIn" />
+  <wsdl:message name="Integracion_Lista_Pedidos_PendientesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Estado_PedidosHttpGetIn">
+    <wsdl:part name="strCodRefPedido" type="s:string" />
+    <wsdl:part name="strTipoRefPed" type="s:string" />
+    <wsdl:part name="int_OrderLine" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Estado_PedidosHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionCABHttpGetIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionCABHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionDETHttpGetIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionDETHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueCABHttpGetIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueCABHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueDETHttpGetIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueDETHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_CabeceraHttpPostIn">
+    <wsdl:part name="strCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_CabeceraHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Cabecera_TodoHttpPostIn" />
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Cabecera_TodoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_TodoHttpPostIn">
+    <wsdl:part name="intCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_TodoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_Todo_1HttpPostIn">
+    <wsdl:part name="intCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_Todo_1HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="testHttpPostIn">
+    <wsdl:part name="strTabla" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="testHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_DetalleHttpPostIn">
+    <wsdl:part name="intCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_DetalleHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_CabeceraHttpPostIn">
+    <wsdl:part name="intNroGuiaRansa_NGUIRN" type="s:string" />
+    <wsdl:part name="strNroOrdenCompraCliente_NORCCL" type="s:string" />
+    <wsdl:part name="strNroPlacaCamion_NPLCCM" type="s:string" />
+    <wsdl:part name="pstrRazonSocialEmpTransporte_TCMPTR" type="s:string" />
+    <wsdl:part name="pstrRucEmpTransporte" type="s:string" />
+    <wsdl:part name="strChofer_TNMBCH" type="s:string" />
+    <wsdl:part name="strNroBrevete_NBRVCH" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_CabeceraHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_DetalleHttpPostIn">
+    <wsdl:part name="IntPK" type="s:string" />
+    <wsdl:part name="strNroOrdenCompraCliente_NORCCL" type="s:string" />
+    <wsdl:part name="intNroItemOC_NRITOC" type="s:string" />
+    <wsdl:part name="strNroRUCCliente_NRUCLL" type="s:string" />
+    <wsdl:part name="strNombreProveedor_NOMPRO" type="s:string" />
+    <wsdl:part name="strCodigoMercaderia_CMRCLR" type="s:string" />
+    <wsdl:part name="decCantidad_QTRMC" type="s:string" />
+    <wsdl:part name="strNroGuiaCliente_NGUICL" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+    <wsdl:part name="strUnidadCantidad_CUNCNT" type="s:string" />
+    <wsdl:part name="in_Embarque" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Recepcion_DetalleHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_CabeceraHttpPostIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_CabeceraHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_DetalleHttpPostIn">
+    <wsdl:part name="NrGuia" type="s:string" />
+    <wsdl:part name="strOrderNumber" type="s:string" />
+    <wsdl:part name="strOrderType" type="s:string" />
+    <wsdl:part name="strNrLoteCliente" type="s:string" />
+    <wsdl:part name="strCodMercaderia" type="s:string" />
+    <wsdl:part name="strDesMercaderia" type="s:string" />
+    <wsdl:part name="strUnidadMedida" type="s:string" />
+    <wsdl:part name="decCantidadTransaccion" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+    <wsdl:part name="strGuiaRemision" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Despacho_DetalleHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Serie_DespachoHttpPostIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Insertar_Serie_DespachoHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_CabeceraHttpPostIn">
+    <wsdl:part name="in_vc_OrderNumber" type="s:string" />
+    <wsdl:part name="in_vc_OrderType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_CabeceraHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_DetalleHttpPostIn">
+    <wsdl:part name="in_vc_OrderNumber" type="s:string" />
+    <wsdl:part name="in_vc_OrderType" type="s:string" />
+    <wsdl:part name="vc_Usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Obtener_Pedido_DetalleHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_ejecutarHttpPostIn">
+    <wsdl:part name="strSQl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_ejecutarHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Cabecera_EstadoHttpPostIn">
+    <wsdl:part name="intCodOrdenDeCompra" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Cabecera_EstadoHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Detalle_EstadoHttpPostIn">
+    <wsdl:part name="intCodOrdenDeCompraDetalle" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Orden_Compra_Detalle_EstadoHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_x_CodigoHttpPostIn">
+    <wsdl:part name="intCodOrdenDeCompraDetalle" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Orden_Compra_Detalle_x_CodigoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Lista_Pedidos_PendientesHttpPostIn" />
+  <wsdl:message name="Integracion_Lista_Pedidos_PendientesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Estado_PedidosHttpPostIn">
+    <wsdl:part name="strCodRefPedido" type="s:string" />
+    <wsdl:part name="strTipoRefPed" type="s:string" />
+    <wsdl:part name="int_OrderLine" type="s:string" />
+    <wsdl:part name="strUsuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Integracion_Actualizar_Estado_PedidosHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionCABHttpPostIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionCABHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionDETHttpPostIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarCostoDeImportacionDETHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueCABHttpPostIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueCABHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueDETHttpPostIn">
+    <wsdl:part name="xml_data" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IntegracionInsertarEmbarqueDETHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="IntegracionABBSoap">
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_CabeceraSoapIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_CabeceraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera_Todo">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Cabecera_TodoSoapIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Cabecera_TodoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Detalle_TodoSoapIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Detalle_TodoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo_1">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Detalle_Todo_1SoapIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Detalle_Todo_1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input message="tns:testSoapIn" />
+      <wsdl:output message="tns:testSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_DetalleSoapIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_DetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Cabecera">
+      <wsdl:input message="tns:Integracion_Insertar_Recepcion_CabeceraSoapIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Recepcion_CabeceraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Detalle">
+      <wsdl:input message="tns:Integracion_Insertar_Recepcion_DetalleSoapIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Recepcion_DetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Cabecera">
+      <wsdl:input message="tns:Integracion_Insertar_Despacho_CabeceraSoapIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Despacho_CabeceraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Detalle">
+      <wsdl:input message="tns:Integracion_Insertar_Despacho_DetalleSoapIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Despacho_DetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Serie_Despacho">
+      <wsdl:input message="tns:Integracion_Insertar_Serie_DespachoSoapIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Serie_DespachoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Cabecera">
+      <wsdl:input message="tns:Integracion_Obtener_Pedido_CabeceraSoapIn" />
+      <wsdl:output message="tns:Integracion_Obtener_Pedido_CabeceraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Detalle">
+      <wsdl:input message="tns:Integracion_Obtener_Pedido_DetalleSoapIn" />
+      <wsdl:output message="tns:Integracion_Obtener_Pedido_DetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_ejecutar">
+      <wsdl:input message="tns:Integracion_ejecutarSoapIn" />
+      <wsdl:output message="tns:Integracion_ejecutarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Cabecera_Estado">
+      <wsdl:input message="tns:Integracion_Actualizar_Orden_Compra_Cabecera_EstadoSoapIn" />
+      <wsdl:output message="tns:Integracion_Actualizar_Orden_Compra_Cabecera_EstadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Detalle_Estado">
+      <wsdl:input message="tns:Integracion_Actualizar_Orden_Compra_Detalle_EstadoSoapIn" />
+      <wsdl:output message="tns:Integracion_Actualizar_Orden_Compra_Detalle_EstadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_x_Codigo">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Detalle_x_CodigoSoapIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Detalle_x_CodigoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Pedidos_Pendientes">
+      <wsdl:input message="tns:Integracion_Lista_Pedidos_PendientesSoapIn" />
+      <wsdl:output message="tns:Integracion_Lista_Pedidos_PendientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Estado_Pedidos">
+      <wsdl:input message="tns:Integracion_Actualizar_Estado_PedidosSoapIn" />
+      <wsdl:output message="tns:Integracion_Actualizar_Estado_PedidosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionCAB">
+      <wsdl:input message="tns:IntegracionInsertarCostoDeImportacionCABSoapIn" />
+      <wsdl:output message="tns:IntegracionInsertarCostoDeImportacionCABSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionDET">
+      <wsdl:input message="tns:IntegracionInsertarCostoDeImportacionDETSoapIn" />
+      <wsdl:output message="tns:IntegracionInsertarCostoDeImportacionDETSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueCAB">
+      <wsdl:input message="tns:IntegracionInsertarEmbarqueCABSoapIn" />
+      <wsdl:output message="tns:IntegracionInsertarEmbarqueCABSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueDET">
+      <wsdl:input message="tns:IntegracionInsertarEmbarqueDETSoapIn" />
+      <wsdl:output message="tns:IntegracionInsertarEmbarqueDETSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IntegracionABBHttpGet">
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_CabeceraHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_CabeceraHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera_Todo">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Cabecera_TodoHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Cabecera_TodoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Detalle_TodoHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Detalle_TodoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo_1">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Detalle_Todo_1HttpGetIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Detalle_Todo_1HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input message="tns:testHttpGetIn" />
+      <wsdl:output message="tns:testHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_DetalleHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_DetalleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Cabecera">
+      <wsdl:input message="tns:Integracion_Insertar_Recepcion_CabeceraHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Recepcion_CabeceraHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Detalle">
+      <wsdl:input message="tns:Integracion_Insertar_Recepcion_DetalleHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Recepcion_DetalleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Cabecera">
+      <wsdl:input message="tns:Integracion_Insertar_Despacho_CabeceraHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Despacho_CabeceraHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Detalle">
+      <wsdl:input message="tns:Integracion_Insertar_Despacho_DetalleHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Despacho_DetalleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Serie_Despacho">
+      <wsdl:input message="tns:Integracion_Insertar_Serie_DespachoHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Serie_DespachoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Cabecera">
+      <wsdl:input message="tns:Integracion_Obtener_Pedido_CabeceraHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Obtener_Pedido_CabeceraHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Detalle">
+      <wsdl:input message="tns:Integracion_Obtener_Pedido_DetalleHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Obtener_Pedido_DetalleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_ejecutar">
+      <wsdl:input message="tns:Integracion_ejecutarHttpGetIn" />
+      <wsdl:output message="tns:Integracion_ejecutarHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Cabecera_Estado">
+      <wsdl:input message="tns:Integracion_Actualizar_Orden_Compra_Cabecera_EstadoHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Actualizar_Orden_Compra_Cabecera_EstadoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Detalle_Estado">
+      <wsdl:input message="tns:Integracion_Actualizar_Orden_Compra_Detalle_EstadoHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Actualizar_Orden_Compra_Detalle_EstadoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_x_Codigo">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Detalle_x_CodigoHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Detalle_x_CodigoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Pedidos_Pendientes">
+      <wsdl:input message="tns:Integracion_Lista_Pedidos_PendientesHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Lista_Pedidos_PendientesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Estado_Pedidos">
+      <wsdl:input message="tns:Integracion_Actualizar_Estado_PedidosHttpGetIn" />
+      <wsdl:output message="tns:Integracion_Actualizar_Estado_PedidosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionCAB">
+      <wsdl:input message="tns:IntegracionInsertarCostoDeImportacionCABHttpGetIn" />
+      <wsdl:output message="tns:IntegracionInsertarCostoDeImportacionCABHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionDET">
+      <wsdl:input message="tns:IntegracionInsertarCostoDeImportacionDETHttpGetIn" />
+      <wsdl:output message="tns:IntegracionInsertarCostoDeImportacionDETHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueCAB">
+      <wsdl:input message="tns:IntegracionInsertarEmbarqueCABHttpGetIn" />
+      <wsdl:output message="tns:IntegracionInsertarEmbarqueCABHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueDET">
+      <wsdl:input message="tns:IntegracionInsertarEmbarqueDETHttpGetIn" />
+      <wsdl:output message="tns:IntegracionInsertarEmbarqueDETHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IntegracionABBHttpPost">
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_CabeceraHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_CabeceraHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera_Todo">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Cabecera_TodoHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Cabecera_TodoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Detalle_TodoHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Detalle_TodoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo_1">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Detalle_Todo_1HttpPostIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Detalle_Todo_1HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input message="tns:testHttpPostIn" />
+      <wsdl:output message="tns:testHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_DetalleHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_DetalleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Cabecera">
+      <wsdl:input message="tns:Integracion_Insertar_Recepcion_CabeceraHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Recepcion_CabeceraHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Detalle">
+      <wsdl:input message="tns:Integracion_Insertar_Recepcion_DetalleHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Recepcion_DetalleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Cabecera">
+      <wsdl:input message="tns:Integracion_Insertar_Despacho_CabeceraHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Despacho_CabeceraHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Detalle">
+      <wsdl:input message="tns:Integracion_Insertar_Despacho_DetalleHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Despacho_DetalleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Serie_Despacho">
+      <wsdl:input message="tns:Integracion_Insertar_Serie_DespachoHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Insertar_Serie_DespachoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Cabecera">
+      <wsdl:input message="tns:Integracion_Obtener_Pedido_CabeceraHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Obtener_Pedido_CabeceraHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Detalle">
+      <wsdl:input message="tns:Integracion_Obtener_Pedido_DetalleHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Obtener_Pedido_DetalleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_ejecutar">
+      <wsdl:input message="tns:Integracion_ejecutarHttpPostIn" />
+      <wsdl:output message="tns:Integracion_ejecutarHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Cabecera_Estado">
+      <wsdl:input message="tns:Integracion_Actualizar_Orden_Compra_Cabecera_EstadoHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Actualizar_Orden_Compra_Cabecera_EstadoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Detalle_Estado">
+      <wsdl:input message="tns:Integracion_Actualizar_Orden_Compra_Detalle_EstadoHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Actualizar_Orden_Compra_Detalle_EstadoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_x_Codigo">
+      <wsdl:input message="tns:Integracion_Lista_Orden_Compra_Detalle_x_CodigoHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Lista_Orden_Compra_Detalle_x_CodigoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Pedidos_Pendientes">
+      <wsdl:input message="tns:Integracion_Lista_Pedidos_PendientesHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Lista_Pedidos_PendientesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Estado_Pedidos">
+      <wsdl:input message="tns:Integracion_Actualizar_Estado_PedidosHttpPostIn" />
+      <wsdl:output message="tns:Integracion_Actualizar_Estado_PedidosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionCAB">
+      <wsdl:input message="tns:IntegracionInsertarCostoDeImportacionCABHttpPostIn" />
+      <wsdl:output message="tns:IntegracionInsertarCostoDeImportacionCABHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionDET">
+      <wsdl:input message="tns:IntegracionInsertarCostoDeImportacionDETHttpPostIn" />
+      <wsdl:output message="tns:IntegracionInsertarCostoDeImportacionDETHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueCAB">
+      <wsdl:input message="tns:IntegracionInsertarEmbarqueCABHttpPostIn" />
+      <wsdl:output message="tns:IntegracionInsertarEmbarqueCABHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueDET">
+      <wsdl:input message="tns:IntegracionInsertarEmbarqueDETHttpPostIn" />
+      <wsdl:output message="tns:IntegracionInsertarEmbarqueDETHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IntegracionABBSoap" type="tns:IntegracionABBSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Lista_Orden_Compra_Cabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera_Todo">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Lista_Orden_Compra_Cabecera_Todo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Lista_Orden_Compra_Detalle_Todo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo_1">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Lista_Orden_Compra_Detalle_Todo_1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Lista_Orden_Compra_Detalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Cabecera">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Insertar_Recepcion_Cabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Detalle">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Insertar_Recepcion_Detalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Cabecera">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Insertar_Despacho_Cabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Detalle">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Insertar_Despacho_Detalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Serie_Despacho">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Insertar_Serie_Despacho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Cabecera">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Obtener_Pedido_Cabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Detalle">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Obtener_Pedido_Detalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_ejecutar">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_ejecutar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Cabecera_Estado">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Actualizar_Orden_Compra_Cabecera_Estado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Detalle_Estado">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Actualizar_Orden_Compra_Detalle_Estado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_x_Codigo">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Lista_Orden_Compra_Detalle_x_Codigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Pedidos_Pendientes">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Lista_Pedidos_Pendientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Estado_Pedidos">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/Integracion_Actualizar_Estado_Pedidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionCAB">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/IntegracionInsertarCostoDeImportacionCAB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionDET">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/IntegracionInsertarCostoDeImportacionDET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueCAB">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/IntegracionInsertarEmbarqueCAB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueDET">
+      <soap:operation soapAction="http://asp.ransa.net/WSMineriaABB/IntegracionInsertarEmbarqueDET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IntegracionABBHttpGet" type="tns:IntegracionABBHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Cabecera" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera_Todo">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Cabecera_Todo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Detalle_Todo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo_1">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Detalle_Todo_1" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <http:operation location="/test" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Detalle" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Cabecera">
+      <http:operation location="/Integracion_Insertar_Recepcion_Cabecera" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Detalle">
+      <http:operation location="/Integracion_Insertar_Recepcion_Detalle" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Cabecera">
+      <http:operation location="/Integracion_Insertar_Despacho_Cabecera" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Detalle">
+      <http:operation location="/Integracion_Insertar_Despacho_Detalle" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Serie_Despacho">
+      <http:operation location="/Integracion_Insertar_Serie_Despacho" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Cabecera">
+      <http:operation location="/Integracion_Obtener_Pedido_Cabecera" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Detalle">
+      <http:operation location="/Integracion_Obtener_Pedido_Detalle" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_ejecutar">
+      <http:operation location="/Integracion_ejecutar" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Cabecera_Estado">
+      <http:operation location="/Integracion_Actualizar_Orden_Compra_Cabecera_Estado" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Detalle_Estado">
+      <http:operation location="/Integracion_Actualizar_Orden_Compra_Detalle_Estado" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_x_Codigo">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Detalle_x_Codigo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Pedidos_Pendientes">
+      <http:operation location="/Integracion_Lista_Pedidos_Pendientes" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Estado_Pedidos">
+      <http:operation location="/Integracion_Actualizar_Estado_Pedidos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionCAB">
+      <http:operation location="/IntegracionInsertarCostoDeImportacionCAB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionDET">
+      <http:operation location="/IntegracionInsertarCostoDeImportacionDET" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueCAB">
+      <http:operation location="/IntegracionInsertarEmbarqueCAB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueDET">
+      <http:operation location="/IntegracionInsertarEmbarqueDET" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IntegracionABBHttpPost" type="tns:IntegracionABBHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Cabecera" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Cabecera_Todo">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Cabecera_Todo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Detalle_Todo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_Todo_1">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Detalle_Todo_1" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <http:operation location="/test" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Detalle" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Cabecera">
+      <http:operation location="/Integracion_Insertar_Recepcion_Cabecera" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Recepcion_Detalle">
+      <http:operation location="/Integracion_Insertar_Recepcion_Detalle" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Cabecera">
+      <http:operation location="/Integracion_Insertar_Despacho_Cabecera" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Despacho_Detalle">
+      <http:operation location="/Integracion_Insertar_Despacho_Detalle" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Insertar_Serie_Despacho">
+      <http:operation location="/Integracion_Insertar_Serie_Despacho" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Cabecera">
+      <http:operation location="/Integracion_Obtener_Pedido_Cabecera" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Obtener_Pedido_Detalle">
+      <http:operation location="/Integracion_Obtener_Pedido_Detalle" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_ejecutar">
+      <http:operation location="/Integracion_ejecutar" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Cabecera_Estado">
+      <http:operation location="/Integracion_Actualizar_Orden_Compra_Cabecera_Estado" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Orden_Compra_Detalle_Estado">
+      <http:operation location="/Integracion_Actualizar_Orden_Compra_Detalle_Estado" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Orden_Compra_Detalle_x_Codigo">
+      <http:operation location="/Integracion_Lista_Orden_Compra_Detalle_x_Codigo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Lista_Pedidos_Pendientes">
+      <http:operation location="/Integracion_Lista_Pedidos_Pendientes" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Integracion_Actualizar_Estado_Pedidos">
+      <http:operation location="/Integracion_Actualizar_Estado_Pedidos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionCAB">
+      <http:operation location="/IntegracionInsertarCostoDeImportacionCAB" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarCostoDeImportacionDET">
+      <http:operation location="/IntegracionInsertarCostoDeImportacionDET" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueCAB">
+      <http:operation location="/IntegracionInsertarEmbarqueCAB" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntegracionInsertarEmbarqueDET">
+      <http:operation location="/IntegracionInsertarEmbarqueDET" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IntegracionABB">
+    <wsdl:port name="IntegracionABBSoap" binding="tns:IntegracionABBSoap">
+      <soap:address location="http://asp.ransa.net/WSMineriaABB/IntegracionABB.asmx" />
+    </wsdl:port>
+    <wsdl:port name="IntegracionABBHttpGet" binding="tns:IntegracionABBHttpGet">
+      <http:address location="http://asp.ransa.net/WSMineriaABB/IntegracionABB.asmx" />
+    </wsdl:port>
+    <wsdl:port name="IntegracionABBHttpPost" binding="tns:IntegracionABBHttpPost">
+      <http:address location="http://asp.ransa.net/WSMineriaABB/IntegracionABB.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

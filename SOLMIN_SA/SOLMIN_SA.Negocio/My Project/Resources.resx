@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtEtiquetaBultoCINF_F01" xml:space="preserve">
+    <value>^XA
+^DFRECEPC-1^FS
+^PRC 
+^LH0,0^FS
+^LL508
+^MD0
+^MNY
+^LH0,0^FS
+^FO68,36^A0N,37,23^CI13^FR^FDRANSA^FS
+^FO146,43^A0N,24,21^CI13^FR^FDoperador logistico^FS
+^FO404,36^A0N,37,36^CI13^FR^FDxUBICACION^FS
+^FO68,157^A0N,31,28^CI13^FR^FDO / C :^FS
+^FO476,157^A0N,31,28^CI13^FR^FDG / R :^FS
+^FO366,246^A0N,31,32^CI13^FR^FDCant. :^FS
+^FO68,200^A0N,31,33^CI13^FR^FDObs :^FS
+^BY4,2.0^FO108,374^B3N,N,79,Y,N^FR^FDxNROWAYBILL^FS
+^FO168,161^A0N,27,21^CI13^FR^FDxORDEN_COMPRA^FS
+^FO597,161^A0N,27,21^CI13^FR^FDxGUIA_PROVEEDOR^FS
+^FO168,205^A0N,27,21^CI13^FR^FDxOBSERVACIONES^FS
+^FO458,251^A0N,27,21^CI13^FR^FDxCANTIDAD^FS
+^FO68,246^A0N,31,32^CI13^FR^FDBulto :^FS
+^FO168,251^A0N,27,21^CI13^FR^FDxNROWAYBILL^FS
+^FO70,472^A0N,21,21^CI13^FR^FDEtiqueta II / FF^FS
+^FO68,293^A0N,31,32^CI13^FR^FDDestino :^FS
+^FO200,298^A0N,27,21^CI13^FR^FDxDESTINO^FS
+^FO240,113^A0N,27,21^CI13^FR^FDxPROVEEDOR^FS
+^FO68,109^A0N,31,32^CI13^FR^FDProveedor : ^FS
+^FO697,251^A0N,27,21^CI13^FR^FDxPESO^FS
+^FO603,246^A0N,31,32^CI13^FR^FDPeso :^FS
+^FO68,337^A0N,31,32^CI13^FR^FDDirigido a :^FS
+^FO230,342^A0N,27,21^CI13^FR^FDxDIRIGIDO^FS
+^XZ
+^FX End of job
+^XA
+^XFRECEPC-1
+^XZ</value>
+    <comment>Formato para la generación de la Etiqueta del Bulto con toda la información necesaria para su impresión.</comment>
+  </data>
+  <data name="txtEtiquetaBultoCINF_F01_2" xml:space="preserve">
+    <value>^XA
+^DFRECEPC-1^FS
+^PRC 
+^LH0,0^FS
+^LL508
+^MD0
+^MNY
+^LH0,0^FS
+^FO68,36^A0N,37,23^CI13^FR^FDRANSA^FS
+^FO146,43^A0N,24,21^CI13^FR^FDoperador logistico^FS
+^FO335,36^A0N,30,21^CI13^FR^FDxUBICACION^FS
+^FO68,80^A0N,31,32^CI13^FR^FDF. Recep. : ^FS
+^FO240,80^A0N,27,21^CI13^FR^FDxFECHA^FS
+^FO68,157^A0N,31,28^CI13^FR^FDO / C :^FS
+^FO476,157^A0N,31,28^CI13^FR^FDG / R :^FS
+^FO366,246^A0N,31,32^CI13^FR^FDCant. :^FS
+^FO68,200^A0N,31,33^CI13^FR^FDObs :^FS
+^BY4,2.0^FO108,374^B3N,N,79,Y,N^FR^FDxNROWAYBILL^FS
+^FO168,161^A0N,27,21^CI13^FR^FDxORDEN_COMPRA^FS
+^FO597,161^A0N,27,21^CI13^FR^FDxGUIA_PROVEEDOR^FS
+^FO168,205^A0N,27,21^CI13^FR^FDxOBSERVACIONES^FS
+^FO458,251^A0N,27,21^CI13^FR^FDxCANTIDAD^FS
+^FO68,246^A0N,31,32^CI13^FR^FDBulto :^FS
+^FO168,251^A0N,27,21^CI13^FR^FDxNROWAYBILL^FS
+^FO70,472^A0N,21,21^CI13^FR^FDEtiqueta II / FF^FS
+^FO68,293^A0N,31,32^CI13^FR^FDDestino :^FS
+^FO200,298^A0N,27,21^CI13^FR^FDxDESTINO^FS
+^FO240,115^A0N,27,21^CI13^FR^FDxPROVEEDOR^FS
+^FO68,115^A0N,31,32^CI13^FR^FDProveedor : ^FS
+^FO697,251^A0N,27,21^CI13^FR^FDxPESO^FS
+^FO603,246^A0N,31,32^CI13^FR^FDPeso :^FS
+^FO68,337^A0N,31,32^CI13^FR^FDDirigido a :^FS
+^FO230,342^A0N,27,21^CI13^FR^FDxDIRIGIDO^FS
+^XZ
+^FX End of job
+^XA
+^XFRECEPC-1
+^XZ</value>
+  </data>
+  <data name="txtEtiquetaBultoCINF_F01_3" xml:space="preserve">
+    <value>^XA
+^DFRECEPC-1^FS
+^PRC 
+^LH0,0^FS
+^LL508
+^MD0
+^MNY
+^LH0,0^FS
+^FT68,36^A0N,37,23^CI13^FDRANSA^FS
+^FT146,43^A0N,24,21^CI13^FDoperador logistico^FS
+^FT335,36^A0N,30,21^CI13^FDxUBICACION^FS
+^FT68,80^A0N,31,32^CI13^FDF. Recep. : ^FS
+^FT240,80^A0N,27,21^CI13^FDxFECHA^FS
+^FT68,157^A0N,31,28^CI13^FDO / C :^FS
+^FT476,157^A0N,31,28^CI13^FDG / R :^FS
+^FT366,240^A0N,31,32^CI13^FDCant. :^FS
+^FT68,200^A0N,31,33^CI13^FDObs :^FS
+^BY4,2.0^FT108,415^B3N,N,79,Y,N^FDxNROWAYBILL^FS
+^FT168,157^A0N,27,21^CI13^FDxORDEN_COMPRA^FS
+^FT597,157^A0N,27,21^CI13^FDxGUIA_PROVEEDOR^FS
+^FT168,200^A0N,27,21^CI13^FDxOBSERVACIONES^FS
+^FT458,240^A0N,27,21^CI13^FDxCANTIDAD^FS
+^FT68,240^A0N,31,32^CI13^FDBulto :^FS
+^FT168,240^A0N,27,21^CI13^FDxNROWAYBILL^FS
+^FT70,465^A0N,21,21^CI13^FDEtiqueta II / FF^FS
+^FT68,280^A0N,31,32^CI13^FDDestino :^FS
+^FT200,280^A0N,27,21^CI13^FDxDESTINO^FS
+^FT240,115^A0N,27,21^CI13^FDxPROVEEDOR^FS
+^FT68,115^A0N,31,32^CI13^FDProveedor : ^FS
+^FT697,240^A0N,27,21^CI13^FDxPESO^FS
+^FT603,240^A0N,31,32^CI13^FDPeso :^FS
+^FT68,320^A0N,31,32^CI13^FDDirigido a :^FS
+^FT230,320^A0N,27,21^CI13^FDxDIRIGIDO^FS
+^XZ
+^FX End of job
+^XA
+^XFRECEPC-1
+^XZ</value>
+    <comment>Formato con compatibilidad intermec</comment>
+  </data>
+  <data name="txtEtiquetaBultoSINF_F01" xml:space="preserve">
+    <value>^XA
+^DFETIQUE-2^FS
+^PRC 
+^LH0,0^FS
+^LL508
+^MD0
+^MNY
+^LH0,0^FS
+^FO64,26^A0N,37,23^CI13^FR^FDRANSA^FS
+^FO140,33^A0N,24,21^CI13^FR^FDoperador logistico^FS
+^BY4,2.0^FO122,78^B3N,N,79,Y,N^FR^FDR123456789^FS
+^FO444,196^A0N,21,21^CI13^FR^FDEtiqueta II / FF^FS
+^XZ
+^FX End of job
+^XA
+^XFETIQUE-2
+^XZ</value>
+    <comment>Formato para la generación secuencial de los Códigos de Bultos</comment>
+  </data>
+  <data name="txtEtiquetaPaletaSINF_F01" xml:space="preserve">
+    <value>^XA
+^DFETIQUE-1^FS
+^PRC 
+^LH0,0^FS
+^LL508
+^MD0
+^MNY
+^LH0,0^FS
+^FO60,34^A0N,37,23^CI13^FR^FDRANSA^FS
+^FO136,41^A0N,24,21^CI13^FR^FDoperador logistico^FS
+^BY4,2.0^FO151,104^B3N,N,191,Y,N^FR^FDxNROPALETA^FS
+^FO406,336^A0N,21,21^CI13^FR^FDEtiqueta II / FF^FS
+^XZ
+^FX End of job
+^XA
+^XFETIQUE-1
+^XZ</value>
+    <comment>Formato para la generación de la Etiqueta de la Paleta.</comment>
+  </data>
+</root>

@@ -1,0 +1,44 @@
+# Archivo de proyecto de Microsoft Developer Studio - Proyecto de base de datos
+Begin DataProject = "Ransa.SQL.Servicios"
+   MSDTVersion = "80"
+   DefDBRef = "ODBC.RANSA01.DB2400"
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "ODBC.RANSA.DB2400"
+         ConnectStr = "Dsn=PRODUCCION;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+      Begin DBRefNode = "ODBC.RANSA01.DB2400"
+         ConnectStr = "Dsn=DESARROLLO;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+   End
+   Begin Folder = "Functions"
+      Script = "TarifaServicioPorDivision.sql"
+   End
+   Begin Folder = "Procedures"
+      Script = "SP_SOLMIN_SA_ALMACENAJE_RZSC32_DEL.sql"
+      Script = "SP_SOLMIN_SA_ALMACENAJE_RZSC32_INS.sql"
+      Script = "SP_SOLMIN_SA_ALMACENAJE_RZSC32_L01.sql"
+      Script = "SP_SOLMIN_SA_ALMACENAJE_RZSC32_OBJ.sql"
+      Script = "SP_SOLMIN_SA_ALMACENAJE_RZSC32_R01.sql"
+      Script = "SP_SOLMIN_SA_ALMACENAJE_RZSC33_DEL.sql"
+      Script = "SP_SOLMIN_SA_ALMACENAJE_RZSC33_INS.sql"
+      Script = "SP_SOLMIN_SA_ALMACENAJE_RZSC33_L01.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_ALMACENAJE_RZOL65_L01.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_DETALLE_RZSC31_DEL.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_DETALLE_RZSC31_INS.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_DETALLE_RZSC31_L01.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_DETALLE_RZSC31_L02.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_DETALLE_RZSC31_L03.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_DETALLE_RZSC31_L04.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_RZSC30_DEL.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_RZSC30_INS.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_RZSC30_L01.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_RZSC30_L02.sql"
+      Script = "SP_SOLMIN_SA_SERVICIOS_RZSC30_UPD.sql"
+   End
+   Begin Folder = "Queries"
+   End
+End

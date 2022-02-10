@@ -1,0 +1,193 @@
+-- CAMBIAR RNSLIB POR DESLIB
+DROP PROCEDURE DC@DESLIB.SP_SOLMIN_SA_SERVICIOS_RZSC30_INS
+GO
+CREATE PROCEDURE DC@DESLIB.SP_SOLMIN_SA_SERVICIOS_RZSC30_INS(
+		IN	IN_CCLNT		NUMERIC(6, 0),
+		IN	IN_NOPRCN		NUMERIC(10, 0),
+		IN	IN_NRTFSV		NUMERIC(12, 0),
+		IN	IN_FOPRCN		NUMERIC(8, 0),
+		IN	IN_FECINI		NUMERIC(8, 0),
+		IN	IN_FECFIN		NUMERIC(8, 0),
+		IN	IN_CCMPN		VARCHAR(2),
+		IN	IN_CDVSN		VARCHAR(1),
+		IN	IN_CPLNDV		NUMERIC(6, 0),
+		IN	IN_QCNESP		NUMERIC(15, 5),
+		IN	IN_TUNDIT		VARCHAR(10),
+		IN	IN_STPODP		VARCHAR(1),
+		IN	IN_STIPPR		VARCHAR(1),
+		IN	IN_CCLNFC		NUMERIC(6, 0),
+		IN	IN_QATNAN		DECIMAL(15, 5),
+		IN	IN_CPRCN1		VARCHAR(4),
+		IN	IN_NSRCN1		VARCHAR(7),
+		IN  IN_USUARI  		VARCHAR(10),
+		OUT OU_NOPRCN		NUMERIC(10, 0),
+		OUT	OU_MSGERR		VARCHAR(200)	-- Mensaje de Error
+        )
+RESULT SETS 0
+LANGUAGE SQL
+BEGIN ATOMIC
+	--------------------------------------
+	-- Variables de Trabajo - Seguridad --
+	--------------------------------------
+	DECLARE	WK_FECHA	NUMERIC(10, 0)	DEFAULT 0;
+	DECLARE	WK_HORA		NUMERIC(10, 0)	DEFAULT 0;
+	--------------------------
+	-- Variables de Trabajo --
+	--------------------------
+	DECLARE WK_NRCTSL	NUMERIC(10, 0)	DEFAULT 0;
+	DECLARE WK_NRITEM	NUMERIC(6, 0)	DEFAULT 0;
+	DECLARE WK_FLGFAC	VARCHAR(1)		DEFAULT '';
+	DECLARE WK_SESTRG	VARCHAR(1)		DEFAULT '';
+	
+	-- Obtengo la fecha y hora actual
+	SET	WK_FECHA = YEAR(CURRENT DATE) * 10000 + MONTH(CURRENT DATE) * 100 + DAY(CURRENT DATE);
+	SET	WK_HORA  = HOUR(CURRENT TIME) * 10000 + MINUTE(CURRENT TIME) * 100 + SECOND(CURRENT TIME);
+	SET OU_NOPRCN = 0;
+	SET OU_MSGERR = '';
+	
+	IF IN_NOPRCN = 0 THEN
+		UPDATE	RZZM04 
+		SET		NULCTR = IFNULL(NULCTR, 0) + 1,
+				NCTRRL = IFNULL(NCTRRL, 0) + 1,
+				CULUSA = IN_USUARI,
+				FULTAC = WK_FECHA,
+				HULTAC = WK_HORA,
+				UPDATE_IDENT = UPDATE_IDENT + 1
+		WHERE	CTPCTR = 'ATR004';
+		
+		SELECT	IFNULL(NULCTR, 0)
+		INTO	OU_NOPRCN
+		FROM	RZZM04 
+		WHERE	CTPCTR = 'ATR004';
+		
+		SET IN_NOPRCN = OU_NOPRCN;
+	ELSE
+		SET OU_NOPRCN = IN_NOPRCN;
+	END IF;
+	
+	IF EXISTS( SELECT NRTFSV FROM RZSC30 WHERE CCLNT = IN_CCLNT AND NOPRCN = IN_NOPRCN AND NRTFSV = IN_NRTFSV ) THEN
+		-- Obtengo los campos relacionados al Status del detalle del contrato
+		SELECT	FLGFAC, SESTRG
+		INTO	WK_FLGFAC, WK_SESTRG
+		FROM	RZSC02
+		WHERE	NOPRCN = IN_NOPRCN
+		AND		NRTFSV = IN_NRTFSV;
+		
+		IF WK_FLGFAC = 'S' THEN
+			SET OU_MSGERR = 'Servicio ya se encuentra Facturado.';
+		ELSE
+			IF WK_SESTRG <> '*' THEN
+				-- se procede a actualizar el registro
+				UPDATE	RZSC30
+				SET		CCMPN  = IN_CCMPN,
+						CDVSN  = IN_CDVSN,
+						QCNESP = IN_QCNESP,
+						TUNDIT = IN_TUNDIT,
+						STPODP = IN_STPODP,
+						STIPPR = IN_STIPPR,
+						CCLNFC = IN_CCLNFC,
+						QATNAN = IN_QATNAN,
+						CPRCN1 = IN_CPRCN1,
+						NSRCN1 = IN_NSRCN1,
+						FOPRCN = IN_FOPRCN,
+						FECINI = IN_FECINI,
+						FECFIN = IN_FECFIN,
+						CULUSA = IN_USUARI,
+						FULTAC = WK_FECHA,
+						HULTAC = WK_HORA,
+						UPDATE_IDENT = UPDATE_IDENT + 1
+				WHERE	CCLNT  = IN_CCLNT 
+				AND		NOPRCN = IN_NOPRCN 
+				AND		NRTFSV = IN_NRTFSV;
+				
+				-- Actualizo la información de TODOS servicios adquiridos para una misma operación siempre y cuando ninguno esté facturado
+				UPDATE	RZSC30
+				SET		STIPPR = IN_STIPPR,
+						CCLNFC = IN_CCLNFC,
+						FOPRCN = IN_FOPRCN,
+						FECINI = IN_FECINI,
+						FECFIN = IN_FECFIN,
+						CPRCN1 = IN_CPRCN1,
+						NSRCN1 = IN_NSRCN1,
+						CULUSA = IN_USUARI,
+						FULTAC = WK_FECHA,
+						HULTAC = WK_HORA,
+						UPDATE_IDENT = UPDATE_IDENT + 1
+				WHERE	CCLNT  = IN_CCLNT 
+				AND		NOPRCN = IN_NOPRCN
+				AND		NRTFSV <> IN_NRTFSV
+				AND		SESTRG <> '*';
+				
+				-- Llamar proceso de Danny para actualizar la información
+				CALL SP_SOLCT_ACTUALIZAR_DETALLE_CONTRATO(IN_NOPRCN, IN_CCLNT, IN_CCLNFC, IN_CDVSN, IN_NRTFSV, IN_QATNAN, IN_FECINI, IN_FECFIN, '', IN_USUARI, WK_FECHA, WK_HORA);
+				
+				-- Actualizo la información de TODOS servicios adquiridos para una misma operación siempre y cuando ninguno esté facturado
+				UPDATE	RZSC02
+				SET		CCLNFC = IN_CCLNFC,
+						FECINI = IN_FECINI,
+						FECFIN = IN_FECFIN,
+						CULUSA = IN_USUARI,
+						FULTAC = WK_FECHA,
+						HULTAC = WK_HORA,
+						UPDATE_IDENT = UPDATE_IDENT + 1
+				WHERE	CCLNT  = IN_CCLNT 
+				AND		NOPRCN = IN_NOPRCN
+				AND		NRTFSV <> IN_NRTFSV;
+			ELSE
+				SET OU_MSGERR = 'Servicio se encuentra anulado en Facturación. Se procede a eliminar servicio.';
+				
+				-- se procede a actualizar el registro
+				UPDATE	RZSC30
+				SET		SESTRG = '*',
+						CULUSA = IN_USUARI,
+						FULTAC = WK_FECHA,
+						HULTAC = WK_HORA,
+						UPDATE_IDENT = UPDATE_IDENT + 1
+				WHERE	CCLNT  = IN_CCLNT 
+				AND		NOPRCN = IN_NOPRCN 
+				AND		NRTFSV = IN_NRTFSV;
+			END IF;
+		END IF;
+	ELSE			
+		-- Si se registra el servicio procedemos a registrarlo en las tablas de Almacén
+		INSERT INTO RZSC30( CCLNT, NOPRCN, NRTFSV, CCMPN, CDVSN, CCNTCS, QCNESP, TUNDIT, STPODP, STIPPR, CCLNFC, QATNAN, CPRCN1, NSRCN1, 
+							FOPRCN, FECINI, FECFIN, FLGFAC, SESTRG, CUSCRT, FCHCRT, HRACRT, CULUSA, FULTAC, HULTAC, UPDATE_IDENT )
+		VALUES( IN_CCLNT, IN_NOPRCN, IN_NRTFSV, IN_CCMPN, IN_CDVSN, 152, IN_QCNESP, IN_TUNDIT, IN_STPODP, IN_STIPPR, IN_CCLNFC, IN_QATNAN, IN_CPRCN1, 
+				IN_NSRCN1, IN_FOPRCN, IN_FECINI, IN_FECFIN, 'N', 'A', IN_USUARI, WK_FECHA, WK_HORA, IN_USUARI, WK_FECHA, WK_HORA, 1);
+				
+		-- Actualizo la información de TODOS servicios adquiridos para una misma operación siempre y cuando ninguno esté facturado
+		UPDATE	RZSC30
+		SET		STIPPR = IN_STIPPR,
+				CCLNFC = IN_CCLNFC,
+				FECINI = IN_FECINI,
+				FECFIN = IN_FECFIN,
+				CPRCN1 = IN_CPRCN1,
+				NSRCN1 = IN_NSRCN1,
+				CULUSA = IN_USUARI,
+				FULTAC = WK_FECHA,
+				HULTAC = WK_HORA,
+				UPDATE_IDENT = UPDATE_IDENT + 1
+		WHERE	CCLNT  = IN_CCLNT 
+		AND		NOPRCN = IN_NOPRCN
+		AND		NRTFSV <> IN_NRTFSV
+		AND		SESTRG <> '*';
+		
+		-- Llamar al proceo de Danny para registrar la operación
+		CALL SP_SOLCT_AGREGAR_DETALLE_CONTRATO(IN_NOPRCN, IN_CCLNT, IN_CCLNFC, IN_CDVSN, IN_NRTFSV, IN_QATNAN, IN_FECINI, IN_FECFIN, '', IN_USUARI, WK_FECHA, WK_HORA);
+		
+		-- Actualizo la información de TODOS servicios adquiridos para una misma operación siempre y cuando ninguno esté facturado
+		UPDATE	RZSC02
+		SET		CCLNFC = IN_CCLNFC,
+				FECINI = IN_FECINI,
+				FECFIN = IN_FECFIN,
+				CULUSA = IN_USUARI,
+				FULTAC = WK_FECHA,
+				HULTAC = WK_HORA,
+				UPDATE_IDENT = UPDATE_IDENT + 1
+		WHERE	CCLNT  = IN_CCLNT 
+		AND		NOPRCN = IN_NOPRCN
+		AND		NRTFSV <> IN_NRTFSV;
+	END IF;	
+END
+GO
+GRANT ALL PRIVILEGES ON PROCEDURE SP_SOLMIN_SA_SERVICIOS_RZSC30_INS TO PUBLIC

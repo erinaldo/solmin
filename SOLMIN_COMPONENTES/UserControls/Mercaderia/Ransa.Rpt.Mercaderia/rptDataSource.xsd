@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rptDataSource" targetNamespace="http://tempuri.org/rptDataSource.xsd" xmlns:mstns="http://tempuri.org/rptDataSource.xsd" xmlns="http://tempuri.org/rptDataSource.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rptDataSource" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="rptDataSource" msprop:Generator_DataSetName="rptDataSource">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ucMercaderia_DgF01A" msprop:Generator_UserTableName="ucMercaderia_DgF01A" msprop:Generator_RowDeletedName="ucMercaderia_DgF01ARowDeleted" msprop:Generator_RowChangedName="ucMercaderia_DgF01ARowChanged" msprop:Generator_RowClassName="ucMercaderia_DgF01ARow" msprop:Generator_RowChangingName="ucMercaderia_DgF01ARowChanging" msprop:Generator_RowEvArgName="ucMercaderia_DgF01ARowChangeEvent" msprop:Generator_RowEvHandlerName="ucMercaderia_DgF01ARowChangeEventHandler" msprop:Generator_TableClassName="ucMercaderia_DgF01ADataTable" msprop:Generator_TableVarName="tableucMercaderia_DgF01A" msprop:Generator_RowDeletingName="ucMercaderia_DgF01ARowDeleting" msprop:Generator_TablePropName="ucMercaderia_DgF01A">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:long" default="0" minOccurs="0" />
+              <xs:element name="TCMPCL" msprop:Generator_UserColumnName="TCMPCL" msprop:Generator_ColumnPropNameInRow="TCMPCL" msprop:Generator_ColumnVarNameInTable="columnTCMPCL" msprop:Generator_ColumnPropNameInTable="TCMPCLColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="CMRCLR" msprop:Generator_UserColumnName="CMRCLR" msprop:Generator_ColumnPropNameInRow="CMRCLR" msprop:Generator_ColumnVarNameInTable="columnCMRCLR" msprop:Generator_ColumnPropNameInTable="CMRCLRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TMRCD2" msprop:Generator_UserColumnName="TMRCD2" msprop:Generator_ColumnPropNameInRow="TMRCD2" msprop:Generator_ColumnVarNameInTable="columnTMRCD2" msprop:Generator_ColumnPropNameInTable="TMRCD2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CMRCD" msprop:Generator_UserColumnName="CMRCD" msprop:Generator_ColumnPropNameInRow="CMRCD" msprop:Generator_ColumnVarNameInTable="columnCMRCD" msprop:Generator_ColumnPropNameInTable="CMRCDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FPUWEB" msprop:Generator_UserColumnName="FPUWEB" msprop:Generator_ColumnPropNameInRow="FPUWEB" msprop:Generator_ColumnVarNameInTable="columnFPUWEB" msprop:Generator_ColumnPropNameInTable="FPUWEBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CFMCLR" msprop:Generator_UserColumnName="CFMCLR" msprop:Generator_ColumnPropNameInRow="CFMCLR" msprop:Generator_ColumnVarNameInTable="columnCFMCLR" msprop:Generator_ColumnPropNameInTable="CFMCLRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TFMCLR" msprop:Generator_UserColumnName="TFMCLR" msprop:Generator_ColumnPropNameInRow="TFMCLR" msprop:Generator_ColumnVarNameInTable="columnTFMCLR" msprop:Generator_ColumnPropNameInTable="TFMCLRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CGRCLR" msprop:Generator_UserColumnName="CGRCLR" msprop:Generator_ColumnPropNameInRow="CGRCLR" msprop:Generator_ColumnVarNameInTable="columnCGRCLR" msprop:Generator_ColumnPropNameInTable="CGRCLRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TGRCLR" msprop:Generator_UserColumnName="TGRCLR" msprop:Generator_ColumnPropNameInRow="TGRCLR" msprop:Generator_ColumnVarNameInTable="columnTGRCLR" msprop:Generator_ColumnPropNameInTable="TGRCLRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IMVTA_x0024_" msprop:Generator_UserColumnName="IMVTA$" msprop:Generator_ColumnPropNameInRow="_IMVTA_" msprop:Generator_ColumnVarNameInTable="_columnIMVTA_" msprop:Generator_ColumnPropNameInTable="_IMVTA_Column" type="xs:string" minOccurs="0" />
+              <xs:element name="IMVTAS" msprop:Generator_UserColumnName="IMVTAS" msprop:Generator_ColumnPropNameInRow="IMVTAS" msprop:Generator_ColumnVarNameInTable="columnIMVTAS" msprop:Generator_ColumnPropNameInTable="IMVTASColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TMRCTR" msprop:Generator_UserColumnName="TMRCTR" msprop:Generator_ColumnPropNameInRow="TMRCTR" msprop:Generator_ColumnVarNameInTable="columnTMRCTR" msprop:Generator_ColumnPropNameInTable="TMRCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FVNCMR" msprop:Generator_UserColumnName="FVNCMR" msprop:Generator_ColumnPropNameInRow="FVNCMR" msprop:Generator_ColumnVarNameInTable="columnFVNCMR" msprop:Generator_ColumnPropNameInTable="FVNCMRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FINVRN" msprop:Generator_UserColumnName="FINVRN" msprop:Generator_ColumnPropNameInRow="FINVRN" msprop:Generator_ColumnVarNameInTable="columnFINVRN" msprop:Generator_ColumnPropNameInTable="FINVRNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CPTDAR" msprop:Generator_UserColumnName="CPTDAR" msprop:Generator_ColumnPropNameInRow="CPTDAR" msprop:Generator_ColumnVarNameInTable="columnCPTDAR" msprop:Generator_ColumnPropNameInTable="CPTDARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SESTRG" msprop:Generator_UserColumnName="SESTRG" msprop:Generator_ColumnPropNameInRow="SESTRG" msprop:Generator_ColumnVarNameInTable="columnSESTRG" msprop:Generator_ColumnPropNameInTable="SESTRGColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtMovMercaderias_F03" msprop:Generator_UserTableName="dtMovMercaderias_F03" msprop:Generator_RowDeletedName="dtMovMercaderias_F03RowDeleted" msprop:Generator_RowChangedName="dtMovMercaderias_F03RowChanged" msprop:Generator_RowClassName="dtMovMercaderias_F03Row" msprop:Generator_RowChangingName="dtMovMercaderias_F03RowChanging" msprop:Generator_RowEvArgName="dtMovMercaderias_F03RowChangeEvent" msprop:Generator_RowEvHandlerName="dtMovMercaderias_F03RowChangeEventHandler" msprop:Generator_TableClassName="dtMovMercaderias_F03DataTable" msprop:Generator_TableVarName="tabledtMovMercaderias_F03" msprop:Generator_RowDeletingName="dtMovMercaderias_F03RowDeleting" msprop:Generator_TablePropName="dtMovMercaderias_F03">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:long" default="0" minOccurs="0" />
+              <xs:element name="TCMPCL" msprop:Generator_UserColumnName="TCMPCL" msprop:Generator_ColumnPropNameInRow="TCMPCL" msprop:Generator_ColumnVarNameInTable="columnTCMPCL" msprop:Generator_ColumnPropNameInTable="TCMPCLColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="CMRCLR" msprop:Generator_UserColumnName="CMRCLR" msprop:Generator_ColumnPropNameInRow="CMRCLR" msprop:Generator_ColumnVarNameInTable="columnCMRCLR" msprop:Generator_ColumnPropNameInTable="CMRCLRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NORDSR" msprop:Generator_UserColumnName="NORDSR" msprop:Generator_ColumnVarNameInTable="columnNORDSR" msprop:Generator_ColumnPropNameInRow="NORDSR" msprop:Generator_ColumnPropNameInTable="NORDSRColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CMRCD" msprop:Generator_UserColumnName="CMRCD" msprop:Generator_ColumnVarNameInTable="columnCMRCD" msprop:Generator_ColumnPropNameInRow="CMRCD" msprop:Generator_ColumnPropNameInTable="CMRCDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TMRCD2" msprop:Generator_UserColumnName="TMRCD2" msprop:Generator_ColumnPropNameInRow="TMRCD2" msprop:Generator_ColumnVarNameInTable="columnTMRCD2" msprop:Generator_ColumnPropNameInTable="TMRCD2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CUNIDA" msprop:Generator_UserColumnName="CUNIDA" msprop:Generator_ColumnPropNameInRow="CUNIDA" msprop:Generator_ColumnVarNameInTable="columnCUNIDA" msprop:Generator_ColumnPropNameInTable="CUNIDAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SLINIC" msprop:Generator_UserColumnName="SLINIC" msprop:Generator_ColumnPropNameInRow="SLINIC" msprop:Generator_ColumnVarNameInTable="columnSLINIC" msprop:Generator_ColumnPropNameInTable="SLINICColumn" type="xs:decimal" default="0.00" minOccurs="0" />
+              <xs:element name="VLINIC" msprop:Generator_UserColumnName="VLINIC" msprop:Generator_ColumnPropNameInRow="VLINIC" msprop:Generator_ColumnVarNameInTable="columnVLINIC" msprop:Generator_ColumnPropNameInTable="VLINICColumn" type="xs:decimal" default="0.00" minOccurs="0" />
+              <xs:element name="QTRING" msprop:Generator_UserColumnName="QTRING" msprop:Generator_ColumnPropNameInRow="QTRING" msprop:Generator_ColumnVarNameInTable="columnQTRING" msprop:Generator_ColumnPropNameInTable="QTRINGColumn" type="xs:decimal" default="0.00" minOccurs="0" />
+              <xs:element name="VLRING" msprop:Generator_UserColumnName="VLRING" msprop:Generator_ColumnPropNameInRow="VLRING" msprop:Generator_ColumnVarNameInTable="columnVLRING" msprop:Generator_ColumnPropNameInTable="VLRINGColumn" type="xs:decimal" default="0.00" minOccurs="0" />
+              <xs:element name="QTRSAL" msprop:Generator_UserColumnName="QTRSAL" msprop:Generator_ColumnPropNameInRow="QTRSAL" msprop:Generator_ColumnVarNameInTable="columnQTRSAL" msprop:Generator_ColumnPropNameInTable="QTRSALColumn" type="xs:decimal" default="0.00" minOccurs="0" />
+              <xs:element name="VLRSAL" msprop:Generator_UserColumnName="VLRSAL" msprop:Generator_ColumnPropNameInRow="VLRSAL" msprop:Generator_ColumnVarNameInTable="columnVLRSAL" msprop:Generator_ColumnPropNameInTable="VLRSALColumn" type="xs:decimal" default="0.00" minOccurs="0" />
+              <xs:element name="SLFINA" msprop:Generator_UserColumnName="SLFINA" msprop:Generator_ColumnPropNameInRow="SLFINA" msprop:Generator_ColumnVarNameInTable="columnSLFINA" msprop:Generator_ColumnPropNameInTable="SLFINAColumn" type="xs:decimal" default="0.00" minOccurs="0" />
+              <xs:element name="VLFINA" msprop:Generator_UserColumnName="VLFINA" msprop:Generator_ColumnPropNameInRow="VLFINA" msprop:Generator_ColumnVarNameInTable="columnVLFINA" msprop:Generator_ColumnPropNameInTable="VLFINAColumn" type="xs:decimal" default="0.00" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

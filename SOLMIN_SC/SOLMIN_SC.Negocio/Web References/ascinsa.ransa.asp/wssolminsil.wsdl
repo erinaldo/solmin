@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ransa.biz/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://ransa.biz/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ransa.biz/">
+      <s:element name="ListaDirectorios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FtpServer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="User" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Passwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolderName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaDirectoriosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaDirectoriosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaArchivosDirectorio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FtpServer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="User" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Passwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolderName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaArchivosDirectorioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaArchivosDirectorioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GuardarArchivosFtp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FtpServer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="User" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Passwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolderName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cantidad_extraccion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GuardarArchivosFtpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GuardarArchivosFtpResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DescargaArchivoFtp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FtpServer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="User" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Passwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolderName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DescargaArchivoFtpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DescargaArchivoFtpResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaOrdenServicioCabecera">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroOrden" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Medio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaOrdenServicioCabeceraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaOrdenServicioCabeceraResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaOrdenServicioDetalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroOrden" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Medio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaOrdenServicioDetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaOrdenServicioDetalleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListaDirectoriosSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaDirectorios" />
+  </wsdl:message>
+  <wsdl:message name="ListaDirectoriosSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaDirectoriosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListaArchivosDirectorioSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaArchivosDirectorio" />
+  </wsdl:message>
+  <wsdl:message name="ListaArchivosDirectorioSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaArchivosDirectorioResponse" />
+  </wsdl:message>
+  <wsdl:message name="GuardarArchivosFtpSoapIn">
+    <wsdl:part name="parameters" element="tns:GuardarArchivosFtp" />
+  </wsdl:message>
+  <wsdl:message name="GuardarArchivosFtpSoapOut">
+    <wsdl:part name="parameters" element="tns:GuardarArchivosFtpResponse" />
+  </wsdl:message>
+  <wsdl:message name="DescargaArchivoFtpSoapIn">
+    <wsdl:part name="parameters" element="tns:DescargaArchivoFtp" />
+  </wsdl:message>
+  <wsdl:message name="DescargaArchivoFtpSoapOut">
+    <wsdl:part name="parameters" element="tns:DescargaArchivoFtpResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOrdenServicioCabeceraSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaOrdenServicioCabecera" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOrdenServicioCabeceraSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaOrdenServicioCabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOrdenServicioDetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaOrdenServicioDetalle" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOrdenServicioDetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaOrdenServicioDetalleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsSolminSilSoap">
+    <wsdl:operation name="ListaDirectorios">
+      <wsdl:input message="tns:ListaDirectoriosSoapIn" />
+      <wsdl:output message="tns:ListaDirectoriosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaArchivosDirectorio">
+      <wsdl:input message="tns:ListaArchivosDirectorioSoapIn" />
+      <wsdl:output message="tns:ListaArchivosDirectorioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarArchivosFtp">
+      <wsdl:input message="tns:GuardarArchivosFtpSoapIn" />
+      <wsdl:output message="tns:GuardarArchivosFtpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DescargaArchivoFtp">
+      <wsdl:input message="tns:DescargaArchivoFtpSoapIn" />
+      <wsdl:output message="tns:DescargaArchivoFtpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOrdenServicioCabecera">
+      <wsdl:input message="tns:ConsultaOrdenServicioCabeceraSoapIn" />
+      <wsdl:output message="tns:ConsultaOrdenServicioCabeceraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOrdenServicioDetalle">
+      <wsdl:input message="tns:ConsultaOrdenServicioDetalleSoapIn" />
+      <wsdl:output message="tns:ConsultaOrdenServicioDetalleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsSolminSilSoap" type="tns:WsSolminSilSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListaDirectorios">
+      <soap:operation soapAction="http://ransa.biz/ListaDirectorios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaArchivosDirectorio">
+      <soap:operation soapAction="http://ransa.biz/ListaArchivosDirectorio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarArchivosFtp">
+      <soap:operation soapAction="http://ransa.biz/GuardarArchivosFtp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DescargaArchivoFtp">
+      <soap:operation soapAction="http://ransa.biz/DescargaArchivoFtp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOrdenServicioCabecera">
+      <soap:operation soapAction="http://ransa.biz/ConsultaOrdenServicioCabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOrdenServicioDetalle">
+      <soap:operation soapAction="http://ransa.biz/ConsultaOrdenServicioDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsSolminSilSoap12" type="tns:WsSolminSilSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListaDirectorios">
+      <soap12:operation soapAction="http://ransa.biz/ListaDirectorios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaArchivosDirectorio">
+      <soap12:operation soapAction="http://ransa.biz/ListaArchivosDirectorio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarArchivosFtp">
+      <soap12:operation soapAction="http://ransa.biz/GuardarArchivosFtp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DescargaArchivoFtp">
+      <soap12:operation soapAction="http://ransa.biz/DescargaArchivoFtp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOrdenServicioCabecera">
+      <soap12:operation soapAction="http://ransa.biz/ConsultaOrdenServicioCabecera" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOrdenServicioDetalle">
+      <soap12:operation soapAction="http://ransa.biz/ConsultaOrdenServicioDetalle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsSolminSil">
+    <wsdl:port name="WsSolminSilSoap" binding="tns:WsSolminSilSoap">
+      <soap:address location="http://asp.ransa.net/wsmineria/wssolminsil.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsSolminSilSoap12" binding="tns:WsSolminSilSoap12">
+      <soap12:address location="http://asp.ransa.net/wsmineria/wssolminsil.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ns="http://ws.wtr.corpesa.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://ws.wtr.corpesa.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+		Please Type your service description here
+	</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.wtr.corpesa.com">
+      <xs:element name="consultaDespachosCarga">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="cliente" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaInicio" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaFin" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaDespachosCargaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaGPS">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="codigoCarga" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaHoraIni" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaHoraFin" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaGPSResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaInformacionCarga">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="cliente" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="codigoCargaOrigen" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaInformacionCargaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaInformacionCargaDespacho">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="cliente" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="codigoCarga" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaInformacionCargaDespachoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorAlmacenes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaini" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechafin" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorAlmacenesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorCargas">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaini" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechafin" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorCargasResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorConductores">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorConductoresResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorEstados">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorEstadosResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorGrupoUnidades">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorGrupoUnidadesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorGuias">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaini" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechafin" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorGuiasResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorIncidencias">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorIncidenciasResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorMonedas">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorMonedasResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorOC">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaini" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechafin" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorOCResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorResponsables">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorResponsablesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorTipoDocumentos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorTipoDocumentosResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorTipos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorTiposResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorTransportes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaini" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechafin" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorTransportesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorUbicaciones">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechaini" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="fechafin" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorUbicacionesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorUsuarios">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usulector" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaLectorUsuariosResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Exception" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Exception">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Exception" nillable="true" type="ns:Exception" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="informarMovimiento">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="informacion" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="informarMovimientoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="informarSepCarga">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="informacion" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="informarSepCargaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="informarUbicacionGPS">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="informacion" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="informarUbicacionGPSResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="insertarInformacionCarga">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="cliente" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="codigoCargaOrigen" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="insertarInformacionCargaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="consultaLectorTiposRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorTipos" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorTiposResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorTiposResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertarInformacionCargaRequest">
+    <wsdl:part name="parameters" element="ns:insertarInformacionCarga" />
+  </wsdl:message>
+  <wsdl:message name="insertarInformacionCargaResponse">
+    <wsdl:part name="parameters" element="ns:insertarInformacionCargaResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorGuiasRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorGuias" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorGuiasResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorGuiasResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorAlmacenesRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorAlmacenes" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorAlmacenesResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorAlmacenesResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorOCRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorOC" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorOCResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorOCResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorCargasRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorCargas" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorCargasResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorCargasResponse" />
+  </wsdl:message>
+  <wsdl:message name="informarMovimientoRequest">
+    <wsdl:part name="parameters" element="ns:informarMovimiento" />
+  </wsdl:message>
+  <wsdl:message name="informarMovimientoResponse">
+    <wsdl:part name="parameters" element="ns:informarMovimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part name="parameters" element="ns:Exception" />
+  </wsdl:message>
+  <wsdl:message name="consultaInformacionCargaRequest">
+    <wsdl:part name="parameters" element="ns:consultaInformacionCarga" />
+  </wsdl:message>
+  <wsdl:message name="consultaInformacionCargaResponse">
+    <wsdl:part name="parameters" element="ns:consultaInformacionCargaResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorConductoresRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorConductores" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorConductoresResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorConductoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="informarSepCargaRequest">
+    <wsdl:part name="parameters" element="ns:informarSepCarga" />
+  </wsdl:message>
+  <wsdl:message name="informarSepCargaResponse">
+    <wsdl:part name="parameters" element="ns:informarSepCargaResponse" />
+  </wsdl:message>
+  <wsdl:message name="informarUbicacionGPSRequest">
+    <wsdl:part name="parameters" element="ns:informarUbicacionGPS" />
+  </wsdl:message>
+  <wsdl:message name="informarUbicacionGPSResponse">
+    <wsdl:part name="parameters" element="ns:informarUbicacionGPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorTipoDocumentosRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorTipoDocumentos" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorTipoDocumentosResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorTipoDocumentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaInformacionCargaDespachoRequest">
+    <wsdl:part name="parameters" element="ns:consultaInformacionCargaDespacho" />
+  </wsdl:message>
+  <wsdl:message name="consultaInformacionCargaDespachoResponse">
+    <wsdl:part name="parameters" element="ns:consultaInformacionCargaDespachoResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorTransportesRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorTransportes" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorTransportesResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorTransportesResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaGPSRequest">
+    <wsdl:part name="parameters" element="ns:consultaGPS" />
+  </wsdl:message>
+  <wsdl:message name="consultaGPSResponse">
+    <wsdl:part name="parameters" element="ns:consultaGPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorResponsablesRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorResponsables" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorResponsablesResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorResponsablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorMonedasRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorMonedas" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorMonedasResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorMonedasResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaDespachosCargaRequest">
+    <wsdl:part name="parameters" element="ns:consultaDespachosCarga" />
+  </wsdl:message>
+  <wsdl:message name="consultaDespachosCargaResponse">
+    <wsdl:part name="parameters" element="ns:consultaDespachosCargaResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorUsuariosRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorUsuariosResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorGrupoUnidadesRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorGrupoUnidades" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorGrupoUnidadesResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorGrupoUnidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorUbicacionesRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorUbicaciones" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorUbicacionesResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorUbicacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorEstadosRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorEstados" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorEstadosResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorEstadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorIncidenciasRequest">
+    <wsdl:part name="parameters" element="ns:consultaLectorIncidencias" />
+  </wsdl:message>
+  <wsdl:message name="consultaLectorIncidenciasResponse">
+    <wsdl:part name="parameters" element="ns:consultaLectorIncidenciasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebTrackingWSPortType">
+    <wsdl:operation name="consultaLectorTipos">
+      <wsdl:input wsaw:Action="urn:consultaLectorTipos" message="ns:consultaLectorTiposRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorTiposResponse" message="ns:consultaLectorTiposResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarInformacionCarga">
+      <wsdl:input wsaw:Action="urn:insertarInformacionCarga" message="ns:insertarInformacionCargaRequest" />
+      <wsdl:output wsaw:Action="urn:insertarInformacionCargaResponse" message="ns:insertarInformacionCargaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorGuias">
+      <wsdl:input wsaw:Action="urn:consultaLectorGuias" message="ns:consultaLectorGuiasRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorGuiasResponse" message="ns:consultaLectorGuiasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorAlmacenes">
+      <wsdl:input wsaw:Action="urn:consultaLectorAlmacenes" message="ns:consultaLectorAlmacenesRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorAlmacenesResponse" message="ns:consultaLectorAlmacenesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorOC">
+      <wsdl:input wsaw:Action="urn:consultaLectorOC" message="ns:consultaLectorOCRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorOCResponse" message="ns:consultaLectorOCResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorCargas">
+      <wsdl:input wsaw:Action="urn:consultaLectorCargas" message="ns:consultaLectorCargasRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorCargasResponse" message="ns:consultaLectorCargasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="informarMovimiento">
+      <wsdl:input wsaw:Action="urn:informarMovimiento" message="ns:informarMovimientoRequest" />
+      <wsdl:output wsaw:Action="urn:informarMovimientoResponse" message="ns:informarMovimientoResponse" />
+      <wsdl:fault wsaw:Action="urn:informarMovimientoException" name="Exception" message="ns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaInformacionCarga">
+      <wsdl:input wsaw:Action="urn:consultaInformacionCarga" message="ns:consultaInformacionCargaRequest" />
+      <wsdl:output wsaw:Action="urn:consultaInformacionCargaResponse" message="ns:consultaInformacionCargaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorConductores">
+      <wsdl:input wsaw:Action="urn:consultaLectorConductores" message="ns:consultaLectorConductoresRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorConductoresResponse" message="ns:consultaLectorConductoresResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="informarSepCarga">
+      <wsdl:input wsaw:Action="urn:informarSepCarga" message="ns:informarSepCargaRequest" />
+      <wsdl:output wsaw:Action="urn:informarSepCargaResponse" message="ns:informarSepCargaResponse" />
+      <wsdl:fault wsaw:Action="urn:informarSepCargaException" name="Exception" message="ns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="informarUbicacionGPS">
+      <wsdl:input wsaw:Action="urn:informarUbicacionGPS" message="ns:informarUbicacionGPSRequest" />
+      <wsdl:output wsaw:Action="urn:informarUbicacionGPSResponse" message="ns:informarUbicacionGPSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorTipoDocumentos">
+      <wsdl:input wsaw:Action="urn:consultaLectorTipoDocumentos" message="ns:consultaLectorTipoDocumentosRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorTipoDocumentosResponse" message="ns:consultaLectorTipoDocumentosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaInformacionCargaDespacho">
+      <wsdl:input wsaw:Action="urn:consultaInformacionCargaDespacho" message="ns:consultaInformacionCargaDespachoRequest" />
+      <wsdl:output wsaw:Action="urn:consultaInformacionCargaDespachoResponse" message="ns:consultaInformacionCargaDespachoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorTransportes">
+      <wsdl:input wsaw:Action="urn:consultaLectorTransportes" message="ns:consultaLectorTransportesRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorTransportesResponse" message="ns:consultaLectorTransportesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaGPS">
+      <wsdl:input wsaw:Action="urn:consultaGPS" message="ns:consultaGPSRequest" />
+      <wsdl:output wsaw:Action="urn:consultaGPSResponse" message="ns:consultaGPSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorResponsables">
+      <wsdl:input wsaw:Action="urn:consultaLectorResponsables" message="ns:consultaLectorResponsablesRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorResponsablesResponse" message="ns:consultaLectorResponsablesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorMonedas">
+      <wsdl:input wsaw:Action="urn:consultaLectorMonedas" message="ns:consultaLectorMonedasRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorMonedasResponse" message="ns:consultaLectorMonedasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaDespachosCarga">
+      <wsdl:input wsaw:Action="urn:consultaDespachosCarga" message="ns:consultaDespachosCargaRequest" />
+      <wsdl:output wsaw:Action="urn:consultaDespachosCargaResponse" message="ns:consultaDespachosCargaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorUsuarios">
+      <wsdl:input wsaw:Action="urn:consultaLectorUsuarios" message="ns:consultaLectorUsuariosRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorUsuariosResponse" message="ns:consultaLectorUsuariosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorGrupoUnidades">
+      <wsdl:input wsaw:Action="urn:consultaLectorGrupoUnidades" message="ns:consultaLectorGrupoUnidadesRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorGrupoUnidadesResponse" message="ns:consultaLectorGrupoUnidadesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorUbicaciones">
+      <wsdl:input wsaw:Action="urn:consultaLectorUbicaciones" message="ns:consultaLectorUbicacionesRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorUbicacionesResponse" message="ns:consultaLectorUbicacionesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorEstados">
+      <wsdl:input wsaw:Action="urn:consultaLectorEstados" message="ns:consultaLectorEstadosRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorEstadosResponse" message="ns:consultaLectorEstadosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorIncidencias">
+      <wsdl:input wsaw:Action="urn:consultaLectorIncidencias" message="ns:consultaLectorIncidenciasRequest" />
+      <wsdl:output wsaw:Action="urn:consultaLectorIncidenciasResponse" message="ns:consultaLectorIncidenciasResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebTrackingWSSoap11Binding" type="ns:WebTrackingWSPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="consultaLectorTipos">
+      <soap:operation soapAction="urn:consultaLectorTipos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarInformacionCarga">
+      <soap:operation soapAction="urn:insertarInformacionCarga" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorGuias">
+      <soap:operation soapAction="urn:consultaLectorGuias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorAlmacenes">
+      <soap:operation soapAction="urn:consultaLectorAlmacenes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorCargas">
+      <soap:operation soapAction="urn:consultaLectorCargas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorOC">
+      <soap:operation soapAction="urn:consultaLectorOC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="informarMovimiento">
+      <soap:operation soapAction="urn:informarMovimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="informarUbicacionGPS">
+      <soap:operation soapAction="urn:informarUbicacionGPS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="informarSepCarga">
+      <soap:operation soapAction="urn:informarSepCarga" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultaInformacionCarga">
+      <soap:operation soapAction="urn:consultaInformacionCarga" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorConductores">
+      <soap:operation soapAction="urn:consultaLectorConductores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorTipoDocumentos">
+      <soap:operation soapAction="urn:consultaLectorTipoDocumentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaInformacionCargaDespacho">
+      <soap:operation soapAction="urn:consultaInformacionCargaDespacho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaGPS">
+      <soap:operation soapAction="urn:consultaGPS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorTransportes">
+      <soap:operation soapAction="urn:consultaLectorTransportes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorMonedas">
+      <soap:operation soapAction="urn:consultaLectorMonedas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorResponsables">
+      <soap:operation soapAction="urn:consultaLectorResponsables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaDespachosCarga">
+      <soap:operation soapAction="urn:consultaDespachosCarga" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorGrupoUnidades">
+      <soap:operation soapAction="urn:consultaLectorGrupoUnidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorUsuarios">
+      <soap:operation soapAction="urn:consultaLectorUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorUbicaciones">
+      <soap:operation soapAction="urn:consultaLectorUbicaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorIncidencias">
+      <soap:operation soapAction="urn:consultaLectorIncidencias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorEstados">
+      <soap:operation soapAction="urn:consultaLectorEstados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebTrackingWSSoap12Binding" type="ns:WebTrackingWSPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="consultaLectorTipos">
+      <soap12:operation soapAction="urn:consultaLectorTipos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarInformacionCarga">
+      <soap12:operation soapAction="urn:insertarInformacionCarga" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorGuias">
+      <soap12:operation soapAction="urn:consultaLectorGuias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorAlmacenes">
+      <soap12:operation soapAction="urn:consultaLectorAlmacenes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorCargas">
+      <soap12:operation soapAction="urn:consultaLectorCargas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorOC">
+      <soap12:operation soapAction="urn:consultaLectorOC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="informarMovimiento">
+      <soap12:operation soapAction="urn:informarMovimiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap12:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="informarUbicacionGPS">
+      <soap12:operation soapAction="urn:informarUbicacionGPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="informarSepCarga">
+      <soap12:operation soapAction="urn:informarSepCarga" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap12:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultaInformacionCarga">
+      <soap12:operation soapAction="urn:consultaInformacionCarga" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorConductores">
+      <soap12:operation soapAction="urn:consultaLectorConductores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorTipoDocumentos">
+      <soap12:operation soapAction="urn:consultaLectorTipoDocumentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaInformacionCargaDespacho">
+      <soap12:operation soapAction="urn:consultaInformacionCargaDespacho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaGPS">
+      <soap12:operation soapAction="urn:consultaGPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorTransportes">
+      <soap12:operation soapAction="urn:consultaLectorTransportes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorMonedas">
+      <soap12:operation soapAction="urn:consultaLectorMonedas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorResponsables">
+      <soap12:operation soapAction="urn:consultaLectorResponsables" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaDespachosCarga">
+      <soap12:operation soapAction="urn:consultaDespachosCarga" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorGrupoUnidades">
+      <soap12:operation soapAction="urn:consultaLectorGrupoUnidades" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorUsuarios">
+      <soap12:operation soapAction="urn:consultaLectorUsuarios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorUbicaciones">
+      <soap12:operation soapAction="urn:consultaLectorUbicaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorIncidencias">
+      <soap12:operation soapAction="urn:consultaLectorIncidencias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorEstados">
+      <soap12:operation soapAction="urn:consultaLectorEstados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebTrackingWSHttpBinding" type="ns:WebTrackingWSPortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="consultaLectorTipos">
+      <http:operation location="WebTrackingWS/consultaLectorTipos" />
+      <wsdl:input>
+        <mime:content part="consultaLectorTipos" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorTipos" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarInformacionCarga">
+      <http:operation location="WebTrackingWS/insertarInformacionCarga" />
+      <wsdl:input>
+        <mime:content part="insertarInformacionCarga" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="insertarInformacionCarga" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorGuias">
+      <http:operation location="WebTrackingWS/consultaLectorGuias" />
+      <wsdl:input>
+        <mime:content part="consultaLectorGuias" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorGuias" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorAlmacenes">
+      <http:operation location="WebTrackingWS/consultaLectorAlmacenes" />
+      <wsdl:input>
+        <mime:content part="consultaLectorAlmacenes" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorAlmacenes" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorCargas">
+      <http:operation location="WebTrackingWS/consultaLectorCargas" />
+      <wsdl:input>
+        <mime:content part="consultaLectorCargas" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorCargas" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorOC">
+      <http:operation location="WebTrackingWS/consultaLectorOC" />
+      <wsdl:input>
+        <mime:content part="consultaLectorOC" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorOC" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="informarMovimiento">
+      <http:operation location="WebTrackingWS/informarMovimiento" />
+      <wsdl:input>
+        <mime:content part="informarMovimiento" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="informarMovimiento" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="informarUbicacionGPS">
+      <http:operation location="WebTrackingWS/informarUbicacionGPS" />
+      <wsdl:input>
+        <mime:content part="informarUbicacionGPS" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="informarUbicacionGPS" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="informarSepCarga">
+      <http:operation location="WebTrackingWS/informarSepCarga" />
+      <wsdl:input>
+        <mime:content part="informarSepCarga" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="informarSepCarga" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaInformacionCarga">
+      <http:operation location="WebTrackingWS/consultaInformacionCarga" />
+      <wsdl:input>
+        <mime:content part="consultaInformacionCarga" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaInformacionCarga" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorConductores">
+      <http:operation location="WebTrackingWS/consultaLectorConductores" />
+      <wsdl:input>
+        <mime:content part="consultaLectorConductores" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorConductores" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorTipoDocumentos">
+      <http:operation location="WebTrackingWS/consultaLectorTipoDocumentos" />
+      <wsdl:input>
+        <mime:content part="consultaLectorTipoDocumentos" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorTipoDocumentos" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaInformacionCargaDespacho">
+      <http:operation location="WebTrackingWS/consultaInformacionCargaDespacho" />
+      <wsdl:input>
+        <mime:content part="consultaInformacionCargaDespacho" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaInformacionCargaDespacho" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaGPS">
+      <http:operation location="WebTrackingWS/consultaGPS" />
+      <wsdl:input>
+        <mime:content part="consultaGPS" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaGPS" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorTransportes">
+      <http:operation location="WebTrackingWS/consultaLectorTransportes" />
+      <wsdl:input>
+        <mime:content part="consultaLectorTransportes" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorTransportes" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorMonedas">
+      <http:operation location="WebTrackingWS/consultaLectorMonedas" />
+      <wsdl:input>
+        <mime:content part="consultaLectorMonedas" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorMonedas" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorResponsables">
+      <http:operation location="WebTrackingWS/consultaLectorResponsables" />
+      <wsdl:input>
+        <mime:content part="consultaLectorResponsables" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorResponsables" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaDespachosCarga">
+      <http:operation location="WebTrackingWS/consultaDespachosCarga" />
+      <wsdl:input>
+        <mime:content part="consultaDespachosCarga" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaDespachosCarga" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorGrupoUnidades">
+      <http:operation location="WebTrackingWS/consultaLectorGrupoUnidades" />
+      <wsdl:input>
+        <mime:content part="consultaLectorGrupoUnidades" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorGrupoUnidades" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorUsuarios">
+      <http:operation location="WebTrackingWS/consultaLectorUsuarios" />
+      <wsdl:input>
+        <mime:content part="consultaLectorUsuarios" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorUsuarios" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorUbicaciones">
+      <http:operation location="WebTrackingWS/consultaLectorUbicaciones" />
+      <wsdl:input>
+        <mime:content part="consultaLectorUbicaciones" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorUbicaciones" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorIncidencias">
+      <http:operation location="WebTrackingWS/consultaLectorIncidencias" />
+      <wsdl:input>
+        <mime:content part="consultaLectorIncidencias" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorIncidencias" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaLectorEstados">
+      <http:operation location="WebTrackingWS/consultaLectorEstados" />
+      <wsdl:input>
+        <mime:content part="consultaLectorEstados" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="consultaLectorEstados" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebTrackingWS">
+    <wsdl:port name="WebTrackingWSHttpSoap11Endpoint" binding="ns:WebTrackingWSSoap11Binding">
+      <soap:address location="http://oli.corpesa.com.pe:80/WebTrackingWS/services/WebTrackingWS.WebTrackingWSHttpSoap11Endpoint" />
+    </wsdl:port>
+    <wsdl:port name="WebTrackingWSHttpSoap12Endpoint" binding="ns:WebTrackingWSSoap12Binding">
+      <soap12:address location="http://oli.corpesa.com.pe:80/WebTrackingWS/services/WebTrackingWS.WebTrackingWSHttpSoap12Endpoint" />
+    </wsdl:port>
+    <wsdl:port name="WebTrackingWSHttpEndpoint" binding="ns:WebTrackingWSHttpBinding">
+      <http:address location="http://oli.corpesa.com.pe:80/WebTrackingWS/services/WebTrackingWS.WebTrackingWSHttpEndpoint" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

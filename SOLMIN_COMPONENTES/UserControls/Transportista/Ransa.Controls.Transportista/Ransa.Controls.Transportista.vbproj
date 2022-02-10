@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADA9FE7E-9768-4369-A485-18992547DB40}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ransa.Controls.Transportista</RootNamespace>
+    <AssemblyName>Ransa.Controls.Transportista</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Transportista.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Transportista.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeValidatorKryton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\TypeValidatorKryton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ucAcopladoTransportista_DgF01.Designer.vb">
+      <DependentUpon>ucAcopladoTransportista_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucAcopladoTransportista_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAcopladoTransportista_FAcoplado.Designer.vb">
+      <DependentUpon>ucAcopladoTransportista_FAcoplado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucAcopladoTransportista_FAcoplado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucAcopladoTransportista_TxtF01.Designer.vb">
+      <DependentUpon>ucAcopladoTransportista_TxtF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucAcopladoTransportista_TxtF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAcoplado_DgF01.Designer.vb">
+      <DependentUpon>ucAcoplado_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucAcoplado_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAcoplado_FAcoplado.Designer.vb">
+      <DependentUpon>ucAcoplado_FAcoplado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucAcoplado_FAcoplado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucAcoplado_TxtF01.Designer.vb">
+      <DependentUpon>ucAcoplado_TxtF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucAcoplado_TxtF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucConductorTransportista_DgF01.Designer.vb">
+      <DependentUpon>ucConductorTransportista_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucConductorTransportista_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucConductorTransportista_FConductor.Designer.vb">
+      <DependentUpon>ucConductorTransportista_FConductor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucConductorTransportista_FConductor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucConductorTransportista_TxtF01.Designer.vb">
+      <DependentUpon>ucConductorTransportista_TxtF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucConductorTransportista_TxtF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucConductor_DgF01.Designer.vb">
+      <DependentUpon>ucConductor_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucConductor_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucConductor_FConductor.Designer.vb">
+      <DependentUpon>ucConductor_FConductor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucConductor_FConductor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucConductor_TxtF01.Designer.vb">
+      <DependentUpon>ucConductor_TxtF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucConductor_TxtF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTractoTransportista_DgF01.Designer.vb">
+      <DependentUpon>ucTractoTransportista_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTractoTransportista_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTractoTransportista_FTracto.Designer.vb">
+      <DependentUpon>ucTractoTransportista_FTracto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTractoTransportista_FTracto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucTractoTransportista_TxtF01.Designer.vb">
+      <DependentUpon>ucTractoTransportista_TxtF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTractoTransportista_TxtF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTracto_DgF01.Designer.vb">
+      <DependentUpon>ucTracto_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTracto_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTracto_FTracto.Designer.vb">
+      <DependentUpon>ucTracto_FTracto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTracto_FTracto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucTracto_TxtF01.Designer.vb">
+      <DependentUpon>ucTracto_TxtF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTracto_TxtF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTransportista_DgF01.Designer.vb">
+      <DependentUpon>ucTransportista_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTransportista_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTransportista_FTransportista.Designer.vb">
+      <DependentUpon>ucTransportista_FTransportista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTransportista_FTransportista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucTransportista_TxtF01.Designer.vb">
+      <DependentUpon>ucTransportista_TxtF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTransportista_TxtF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAcopladoTransportista_DgF01.resx">
+      <DependentUpon>ucAcopladoTransportista_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAcopladoTransportista_FAcoplado.resx">
+      <DependentUpon>ucAcopladoTransportista_FAcoplado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAcopladoTransportista_TxtF01.resx">
+      <DependentUpon>ucAcopladoTransportista_TxtF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAcoplado_DgF01.resx">
+      <DependentUpon>ucAcoplado_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAcoplado_FAcoplado.resx">
+      <DependentUpon>ucAcoplado_FAcoplado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAcoplado_TxtF01.resx">
+      <DependentUpon>ucAcoplado_TxtF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucConductorTransportista_DgF01.resx">
+      <DependentUpon>ucConductorTransportista_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucConductorTransportista_FConductor.resx">
+      <DependentUpon>ucConductorTransportista_FConductor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucConductorTransportista_TxtF01.resx">
+      <DependentUpon>ucConductorTransportista_TxtF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucConductor_DgF01.resx">
+      <DependentUpon>ucConductor_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucConductor_FConductor.resx">
+      <DependentUpon>ucConductor_FConductor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucConductor_TxtF01.resx">
+      <DependentUpon>ucConductor_TxtF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTractoTransportista_DgF01.resx">
+      <DependentUpon>ucTractoTransportista_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTractoTransportista_FTracto.resx">
+      <DependentUpon>ucTractoTransportista_FTracto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTractoTransportista_TxtF01.resx">
+      <DependentUpon>ucTractoTransportista_TxtF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTracto_DgF01.resx">
+      <DependentUpon>ucTracto_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTracto_FTracto.resx">
+      <DependentUpon>ucTracto_FTracto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTracto_TxtF01.resx">
+      <DependentUpon>ucTracto_TxtF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTransportista_DgF01.resx">
+      <DependentUpon>ucTransportista_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTransportista_FTransportista.resx">
+      <DependentUpon>ucTransportista_FTransportista.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTransportista_TxtF01.resx">
+      <DependentUpon>ucTransportista_TxtF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ransa.DAO.Transportista\Ransa.DAO.Transportista.vbproj">
+      <Project>{C28F60EE-D4D4-48E3-BEA3-9F5F514AE4A4}</Project>
+      <Name>Ransa.DAO.Transportista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ransa.TypeDef.Transportista\Ransa.TypeDef.Transportista.vbproj">
+      <Project>{FE0823EF-4B92-4D5B-95F5-CB0E24414EB3}</Project>
+      <Name>Ransa.TypeDef.Transportista</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

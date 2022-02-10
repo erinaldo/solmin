@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DataTable>
+
+  <Menu ID="mnuMantenimientos" Texto="Mantenimientos" ImageIndex="" >
+    <MenuItem >
+      <ID>mnuTransportista</ID>
+      <TEXTO>Transportista</TEXTO>
+      <IMAGEINDEX></IMAGEINDEX>
+      <FORMULARIO></FORMULARIO>
+    </MenuItem>
+    <MenuItem >
+      <ID>mnuTracto</ID>
+      <TEXTO>Tracto</TEXTO>
+      <IMAGEINDEX></IMAGEINDEX>
+      <FORMULARIO></FORMULARIO>
+    </MenuItem>
+    <MenuItem >
+      <ID>mnuAcoplado</ID>
+      <TEXTO>Acoplado</TEXTO>
+      <IMAGEINDEX></IMAGEINDEX>
+      <FORMULARIO></FORMULARIO>
+    </MenuItem>
+    <MenuItem >
+      <ID>mnuConductor</ID>
+      <TEXTO>Conductor</TEXTO>
+      <IMAGEINDEX></IMAGEINDEX>
+      <FORMULARIO></FORMULARIO>
+    </MenuItem>
+  </Menu>
+  
+</DataTable>

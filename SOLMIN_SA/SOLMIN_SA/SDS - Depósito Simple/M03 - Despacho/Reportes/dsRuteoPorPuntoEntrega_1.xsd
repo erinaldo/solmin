@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRuteoPorPuntoEntrega_1" targetNamespace="http://tempuri.org/dsRuteoPorPuntoEntrega_1.xsd" xmlns:mstns="http://tempuri.org/dsRuteoPorPuntoEntrega_1.xsd" xmlns="http://tempuri.org/dsRuteoPorPuntoEntrega_1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRuteoPorPuntoEntrega_1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRuteoPorPuntoEntrega_1" msprop:Generator_DataSetName="dsRuteoPorPuntoEntrega_1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsRuteoPorPuntoEntrega_1" msprop:Generator_UserTableName="dsRuteoPorPuntoEntrega_1" msprop:Generator_RowDeletedName="dsRuteoPorPuntoEntrega_1RowDeleted" msprop:Generator_RowChangedName="dsRuteoPorPuntoEntrega_1RowChanged" msprop:Generator_RowClassName="dsRuteoPorPuntoEntrega_1Row" msprop:Generator_RowChangingName="dsRuteoPorPuntoEntrega_1RowChanging" msprop:Generator_RowEvArgName="dsRuteoPorPuntoEntrega_1RowChangeEvent" msprop:Generator_RowEvHandlerName="dsRuteoPorPuntoEntrega_1RowChangeEventHandler" msprop:Generator_TableClassName="dsRuteoPorPuntoEntrega_1DataTable" msprop:Generator_TableVarName="tabledsRuteoPorPuntoEntrega_1" msprop:Generator_RowDeletingName="dsRuteoPorPuntoEntrega_1RowDeleting" msprop:Generator_TablePropName="_dsRuteoPorPuntoEntrega_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CDPEPL" msprop:Generator_UserColumnName="CDPEPL" msprop:Generator_ColumnPropNameInRow="CDPEPL" msprop:Generator_ColumnVarNameInTable="columnCDPEPL" msprop:Generator_ColumnPropNameInTable="CDPEPLColumn" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="CRUTAT" msprop:Generator_UserColumnName="CRUTAT" msprop:Generator_ColumnPropNameInRow="CRUTAT" msprop:Generator_ColumnVarNameInTable="columnCRUTAT" msprop:Generator_ColumnPropNameInTable="CRUTATColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NCRRRT" msprop:Generator_UserColumnName="NCRRRT" msprop:Generator_ColumnPropNameInRow="NCRRRT" msprop:Generator_ColumnVarNameInTable="columnNCRRRT" msprop:Generator_ColumnPropNameInTable="NCRRRTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CPLNCL" msprop:Generator_UserColumnName="CPLNCL" msprop:Generator_ColumnPropNameInRow="CPLNCL" msprop:Generator_ColumnVarNameInTable="columnCPLNCL" msprop:Generator_ColumnPropNameInTable="CPLNCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CPRVCL" msprop:Generator_UserColumnName="CPRVCL" msprop:Generator_ColumnPropNameInRow="CPRVCL" msprop:Generator_ColumnVarNameInTable="columnCPRVCL" msprop:Generator_ColumnPropNameInTable="CPRVCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CPLCLP" msprop:Generator_UserColumnName="CPLCLP" msprop:Generator_ColumnPropNameInRow="CPLCLP" msprop:Generator_ColumnVarNameInTable="columnCPLCLP" msprop:Generator_ColumnPropNameInTable="CPLCLPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCLIT" msprop:Generator_UserColumnName="DESCLIT" msprop:Generator_ColumnPropNameInRow="DESCLIT" msprop:Generator_ColumnVarNameInTable="columnDESCLIT" msprop:Generator_ColumnPropNameInTable="DESCLITColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="V_TDRPCP" msprop:Generator_UserColumnName="V_TDRPCP" msprop:Generator_ColumnPropNameInRow="V_TDRPCP" msprop:Generator_ColumnVarNameInTable="columnV_TDRPCP" msprop:Generator_ColumnPropNameInTable="V_TDRPCPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NGUIRM" msprop:Generator_UserColumnName="NGUIRM" msprop:Generator_ColumnPropNameInRow="NGUIRM" msprop:Generator_ColumnVarNameInTable="columnNGUIRM" msprop:Generator_ColumnPropNameInTable="NGUIRMColumn" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="NORDS1" msprop:Generator_UserColumnName="NORDS1" msprop:Generator_ColumnPropNameInRow="NORDS1" msprop:Generator_ColumnVarNameInTable="columnNORDS1" msprop:Generator_ColumnPropNameInTable="NORDS1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CMRCLR" msprop:Generator_UserColumnName="CMRCLR" msprop:Generator_ColumnPropNameInRow="CMRCLR" msprop:Generator_ColumnVarNameInTable="columnCMRCLR" msprop:Generator_ColumnPropNameInTable="CMRCLRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TMRCD2" msprop:Generator_UserColumnName="TMRCD2" msprop:Generator_ColumnPropNameInRow="TMRCD2" msprop:Generator_ColumnVarNameInTable="columnTMRCD2" msprop:Generator_ColumnPropNameInTable="TMRCD2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="qcngu" msprop:Generator_UserColumnName="qcngu" msprop:Generator_ColumnPropNameInRow="qcngu" msprop:Generator_ColumnVarNameInTable="columnqcngu" msprop:Generator_ColumnPropNameInTable="qcnguColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cuncn" msprop:Generator_UserColumnName="cuncn" msprop:Generator_ColumnPropNameInRow="cuncn" msprop:Generator_ColumnVarNameInTable="columncuncn" msprop:Generator_ColumnPropNameInTable="cuncnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="qpsgu" msprop:Generator_UserColumnName="qpsgu" msprop:Generator_ColumnPropNameInRow="qpsgu" msprop:Generator_ColumnVarNameInTable="columnqpsgu" msprop:Generator_ColumnPropNameInTable="qpsguColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cunps" msprop:Generator_UserColumnName="cunps" msprop:Generator_ColumnPropNameInRow="cunps" msprop:Generator_ColumnVarNameInTable="columncunps" msprop:Generator_ColumnPropNameInTable="cunpsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TABRUT" msprop:Generator_UserColumnName="TABRUT" msprop:Generator_ColumnVarNameInTable="columnTABRUT" msprop:Generator_ColumnPropNameInRow="TABRUT" msprop:Generator_ColumnPropNameInTable="TABRUTColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsRuteoDetalle" msprop:Generator_UserTableName="dsRuteoDetalle" msprop:Generator_RowDeletedName="dsRuteoDetalleRowDeleted" msprop:Generator_RowChangedName="dsRuteoDetalleRowChanged" msprop:Generator_RowClassName="dsRuteoDetalleRow" msprop:Generator_RowChangingName="dsRuteoDetalleRowChanging" msprop:Generator_RowEvArgName="dsRuteoDetalleRowChangeEvent" msprop:Generator_RowEvHandlerName="dsRuteoDetalleRowChangeEventHandler" msprop:Generator_TableClassName="dsRuteoDetalleDataTable" msprop:Generator_TableVarName="tabledsRuteoDetalle" msprop:Generator_RowDeletingName="dsRuteoDetalleRowDeleting" msprop:Generator_TablePropName="dsRuteoDetalle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TABRUT" msprop:Generator_UserColumnName="TABRUT" msprop:Generator_ColumnPropNameInRow="TABRUT" msprop:Generator_ColumnVarNameInTable="columnTABRUT" msprop:Generator_ColumnPropNameInTable="TABRUTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_UserColumnName="CANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

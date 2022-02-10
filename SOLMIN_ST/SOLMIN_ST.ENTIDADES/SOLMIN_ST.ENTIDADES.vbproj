@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38D2DECF-4373-4252-9A95-5DE1D7CF8686}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SOLMIN_ST.ENTIDADES</RootNamespace>
+    <AssemblyName>SOLMIN_ST.ENTIDADES</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOLMIN_ST.ENTIDADES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOLMIN_ST.ENTIDADES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="consultas\AdjuntarImagen_BE.vb" />
+    <Compile Include="consultas\AsientoCO.vb" />
+    <Compile Include="consultas\AtributosOI.vb" />
+    <Compile Include="consultas\beResultadoBusqueda.vb" />
+    <Compile Include="consultas\beResultadoOP.vb" />
+    <Compile Include="consultas\Combustible_BE.vb" />
+    <Compile Include="consultas\ConsistenciaOperacion.vb" />
+    <Compile Include="consultas\DetalleAsientoCO.vb" />
+    <Compile Include="consultas\TipoTransporte.vb" />
+    <Compile Include="mantenimientos\Acoplado.vb" />
+    <Compile Include="mantenimientos\AlquilerUnidad.vb" />
+    <Compile Include="mantenimientos\Aprobadores.vb" />
+    <Compile Include="mantenimientos\AsignacionRuta.vb" />
+    <Compile Include="mantenimientos\beAprobacionMargen.vb" />
+    <Compile Include="mantenimientos\beAutorizacion.vb" />
+    <Compile Include="mantenimientos\CapacitacionConductor.vb" />
+    <Compile Include="mantenimientos\CategoriaChofer.vb" />
+    <Compile Include="mantenimientos\CentroCosto.vb" />
+    <Compile Include="mantenimientos\Chofer.vb" />
+    <Compile Include="mantenimientos\ClaseGeneral.vb" />
+    <Compile Include="mantenimientos\ConfiguracionTracto.vb" />
+    <Compile Include="mantenimientos\ConfiguracionVehicular.vb" />
+    <Compile Include="mantenimientos\Contratista_Cliente.vb" />
+    <Compile Include="mantenimientos\DocAdjuntoConductor.vb" />
+    <Compile Include="mantenimientos\DocsAdjuntos_SolTransporte.vb" />
+    <Compile Include="mantenimientos\DuracionDias.vb" />
+    <Compile Include="mantenimientos\Empleado.vb" />
+    <Compile Include="mantenimientos\EvaluacionOperativa.vb" />
+    <Compile Include="mantenimientos\FactorPagoAVC.vb" />
+    <Compile Include="mantenimientos\Grifo.vb" />
+    <Compile Include="mantenimientos\GuiaOCManifiestoCarga.vb" />
+    <Compile Include="mantenimientos\GuiaRemisionCliente.vb" />
+    <Compile Include="mantenimientos\GuiaTransportista.vb" />
+    <Compile Include="mantenimientos\LiquidacionGuiasTransporte.vb" />
+    <Compile Include="mantenimientos\LocalidadRuta.vb" />
+    <Compile Include="mantenimientos\MedioTransporte.vb" />
+    <Compile Include="mantenimientos\MercaderiaTransportes.vb" />
+    <Compile Include="mantenimientos\Moneda.vb" />
+    <Compile Include="mantenimientos\Obrero.vb" />
+    <Compile Include="mantenimientos\OperacionesXAlquiler.vb" />
+    <Compile Include="mantenimientos\PaseConductor.vb" />
+    <Compile Include="mantenimientos\Personal_Contratista.vb" />
+    <Compile Include="mantenimientos\Planeamiento.vb" />
+    <Compile Include="mantenimientos\Proveedor.vb" />
+    <Compile Include="mantenimientos\RecordGeneral.vb" />
+    <Compile Include="mantenimientos\RecordMedico.vb" />
+    <Compile Include="mantenimientos\RecursoEquipo.vb" />
+    <Compile Include="mantenimientos\RecursoPlaneamiento.vb" />
+    <Compile Include="mantenimientos\RegistroWAP.vb" />
+    <Compile Include="mantenimientos\ReporteListadoTarifas.vb" />
+    <Compile Include="mantenimientos\ReporteMensualEntidad.vb" />
+    <Compile Include="mantenimientos\Servicio.vb" />
+    <Compile Include="mantenimientos\ServicioCotizacion.vb" />
+    <Compile Include="mantenimientos\ServicioLiquidacion.vb" />
+    <Compile Include="mantenimientos\ServicioTransporte.vb" />
+    <Compile Include="mantenimientos\SolicitudEfectivoSAP.vb" />
+    <Compile Include="mantenimientos\TipoAcoplado.vb" />
+    <Compile Include="mantenimientos\TipoCapacitacionConductor.vb" />
+    <Compile Include="mantenimientos\TipoCarroceria.vb" />
+    <Compile Include="mantenimientos\TipoCombustible.vb" />
+    <Compile Include="mantenimientos\TipodeTracto.vb" />
+    <Compile Include="mantenimientos\TipoDocumento.vb" />
+    <Compile Include="mantenimientos\TipoLicenciaConducir.vb" />
+    <Compile Include="mantenimientos\TipoPaseConductor.vb" />
+    <Compile Include="mantenimientos\TipoRecord.vb" />
+    <Compile Include="mantenimientos\TipoServicioTransporte.vb" />
+    <Compile Include="mantenimientos\TipoSubServicioTransporte.vb" />
+    <Compile Include="mantenimientos\Tracto.vb" />
+    <Compile Include="mantenimientos\Transportista.vb" />
+    <Compile Include="mantenimientos\TransportistaAcoplado.vb" />
+    <Compile Include="mantenimientos\TransportistaConductor.vb" />
+    <Compile Include="mantenimientos\TransportistaTracto.vb" />
+    <Compile Include="mantenimientos\UnidadTransporte_Tracto.vb" />
+    <Compile Include="mantenimientos\Urea.vb" />
+    <Compile Include="mantenimientos\VacacionesConductor.vb" />
+    <Compile Include="mantenimientos\Vacunas.vb" />
+    <Compile Include="mantenimientos\Viajes_Cliente.vb" />
+    <Compile Include="mantenimientos\Viaje_Pasajero.vb" />
+    <Compile Include="mantenimientos\Viaje_Ruta.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="operaciones\AsigRecursoGT_BE.vb" />
+    <Compile Include="operaciones\AtencionRequerimiento.vb" />
+    <Compile Include="operaciones\AVC.vb" />
+    <Compile Include="operaciones\beDestinatario.vb" />
+    <Compile Include="operaciones\beRespuestaOperacion.vb" />
+    <Compile Include="operaciones\Combustible.vb" />
+    <Compile Include="operaciones\ConsumoNeumatico.vb" />
+    <Compile Include="operaciones\ControlHito.vb" />
+    <Compile Include="operaciones\CostoMantenimiento.vb" />
+    <Compile Include="operaciones\Cotizacion.vb" />
+    <Compile Include="operaciones\DatosAdiionalGuiaRemision.vb" />
+    <Compile Include="operaciones\DetalleGasto_BE.vb" />
+    <Compile Include="operaciones\Detalle_Cotizacion.vb" />
+    <Compile Include="operaciones\Detalle_Junta_Transporte.vb" />
+    <Compile Include="operaciones\Detalle_Solicitud_Transporte.vb" />
+    <Compile Include="operaciones\Dimensiones.vb" />
+    <Compile Include="operaciones\DocAjuntoAWS.vb" />
+    <Compile Include="operaciones\Factura_Transporte.vb" />
+    <Compile Include="operaciones\HitoOperacion.vb" />
+    <Compile Include="operaciones\JuntaRequerimiento.vb" />
+    <Compile Include="operaciones\Junta_Transporte.vb" />
+    <Compile Include="operaciones\LiquidacionCombustible.vb" />
+    <Compile Include="operaciones\LiquidacionGastos.vb" />
+    <Compile Include="operaciones\LiquidacionOperacion.vb" />
+    <Compile Include="operaciones\Multimodal.vb" />
+    <Compile Include="operaciones\OperacionTransporte.vb" />
+    <Compile Include="operaciones\Operacion_BE.vb" />
+    <Compile Include="operaciones\OrdenCompra.vb" />
+    <Compile Include="operaciones\OrdenServicioAgenciaRansa.vb" />
+    <Compile Include="operaciones\OrdenServicioTransporte.vb" />
+    <Compile Include="operaciones\PedidoEfectivo.vb" />
+    <Compile Include="operaciones\PlanRuta.vb" />
+    <Compile Include="operaciones\PreAsignacionUnidades_BE.vb" />
+    <Compile Include="operaciones\PreDocum_BE.vb" />
+    <Compile Include="operaciones\Programacion_Unidad.vb" />
+    <Compile Include="operaciones\Repartos.vb" />
+    <Compile Include="operaciones\ServicioMercaderia.vb" />
+    <Compile Include="operaciones\Solicitud_Transporte.vb" />
+    <Compile Include="operaciones\TipoDatoGeneral.vb" />
+    <Compile Include="operaciones\TransporteConsolidado.vb" />
+    <Compile Include="operaciones\ValeCombustible.vb" />
+    <Compile Include="seguimiento_wap\AccionWap.vb" />
+    <Compile Include="seguimiento_wap\RolWap.vb" />
+    <Compile Include="seguimiento_wap\SeguimientoGPS.vb" />
+    <Compile Include="seguimiento_wap\SeguimientoWap.vb" />
+    <Compile Include="seguimiento_wap\UsuarioWap.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ransa.Controls.UbicacionPlanta", "Ransa.Controls.UbicacionPlanta\Ransa.Controls.UbicacionPlanta.vbproj", "{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ransa.TypeDef.UbicacionPlanta", "Ransa.TypeDef.UbicacionPlanta\Ransa.TypeDef.UbicacionPlanta.vbproj", "{1B95B0F5-173E-4289-B8A1-22073CC94FF1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ransa.Negocio.UbicacionPlanta", "Ransa.Negocio.UbicacionPlanta\Ransa.Negocio.UbicacionPlanta.vbproj", "{B0BE1580-F3C4-4B46-8D78-5F3E96ACD08D}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = Ransa.Controls.UbicacionPlanta\\Ransa.Controls.UbicacionPlanta.vbproj
+		SccProjectName0 = \u0022$/Equipo\u0020Mineria/SOLMIN_COMPONENTES/UserControls/UbicacionPlanta/Ransa.Controls.UbicacionPlanta\u0022,\u0020QAPAAAAA
+		SccLocalPath0 = Ransa.Controls.UbicacionPlanta
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = Ransa.TypeDef.UbicacionPlanta\\Ransa.TypeDef.UbicacionPlanta.vbproj
+		SccProjectName1 = \u0022$/Equipo\u0020Mineria/SOLMIN_COMPONENTES/UserControls/UbicacionPlanta/Ransa.TypeDef.UbicacionPlanta\u0022,\u0020SBPAAAAA
+		SccLocalPath1 = Ransa.TypeDef.UbicacionPlanta
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName2 = Ransa.Negocio.UbicacionPlanta\\Ransa.Negocio.UbicacionPlanta.vbproj
+		SccProjectName2 = \u0022$/Equipo\u0020Mineria/SOLMIN_COMPONENTES/UserControls/UbicacionPlanta/Ransa.Negocio.UbicacionPlanta\u0022,\u0020KVGBAAAA
+		SccLocalPath2 = Ransa.Negocio.UbicacionPlanta
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B95B0F5-173E-4289-B8A1-22073CC94FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B95B0F5-173E-4289-B8A1-22073CC94FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B95B0F5-173E-4289-B8A1-22073CC94FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B95B0F5-173E-4289-B8A1-22073CC94FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0BE1580-F3C4-4B46-8D78-5F3E96ACD08D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BE1580-F3C4-4B46-8D78-5F3E96ACD08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BE1580-F3C4-4B46-8D78-5F3E96ACD08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BE1580-F3C4-4B46-8D78-5F3E96ACD08D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

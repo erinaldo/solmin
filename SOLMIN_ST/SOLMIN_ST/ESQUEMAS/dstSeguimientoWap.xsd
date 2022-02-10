@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstSeguimientoWap1" targetNamespace="http://tempuri.org/dstSeguimientoWap1.xsd" xmlns:mstns="http://tempuri.org/dstSeguimientoWap1.xsd" xmlns="http://tempuri.org/dstSeguimientoWap1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstSeguimientoWap1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstSeguimientoWap1" msprop:Generator_DataSetName="dstSeguimientoWap1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EventosRegistrados" msprop:Generator_UserTableName="EventosRegistrados" msprop:Generator_RowDeletedName="EventosRegistradosRowDeleted" msprop:Generator_RowChangedName="EventosRegistradosRowChanged" msprop:Generator_RowClassName="EventosRegistradosRow" msprop:Generator_RowChangingName="EventosRegistradosRowChanging" msprop:Generator_RowEvArgName="EventosRegistradosRowChangeEvent" msprop:Generator_RowEvHandlerName="EventosRegistradosRowChangeEventHandler" msprop:Generator_TableClassName="EventosRegistradosDataTable" msprop:Generator_TableVarName="tableEventosRegistrados" msprop:Generator_RowDeletingName="EventosRegistradosRowDeleting" msprop:Generator_TablePropName="EventosRegistrados">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NCOREG" msprop:Generator_UserColumnName="NCOREG" msprop:Generator_ColumnVarNameInTable="columnNCOREG" msprop:Generator_ColumnPropNameInRow="NCOREG" msprop:Generator_ColumnPropNameInTable="NCOREGColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NPLCTR" msprop:Generator_UserColumnName="NPLCTR" msprop:Generator_ColumnVarNameInTable="columnNPLCTR" msprop:Generator_ColumnPropNameInRow="NPLCTR" msprop:Generator_ColumnPropNameInTable="NPLCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOPRCN" msprop:Generator_UserColumnName="NOPRCN" msprop:Generator_ColumnVarNameInTable="columnNOPRCN" msprop:Generator_ColumnPropNameInRow="NOPRCN" msprop:Generator_ColumnPropNameInTable="NOPRCNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="HORA" msprop:Generator_UserColumnName="HORA" msprop:Generator_ColumnVarNameInTable="columnHORA" msprop:Generator_ColumnPropNameInRow="HORA" msprop:Generator_ColumnPropNameInTable="HORAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECREG" msprop:Generator_UserColumnName="FECREG" msprop:Generator_ColumnVarNameInTable="columnFECREG" msprop:Generator_ColumnPropNameInRow="FECREG" msprop:Generator_ColumnPropNameInTable="FECREGColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOBS" msprop:Generator_UserColumnName="TOBS" msprop:Generator_ColumnVarNameInTable="columnTOBS" msprop:Generator_ColumnPropNameInRow="TOBS" msprop:Generator_ColumnPropNameInTable="TOBSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NROMOV" msprop:Generator_UserColumnName="NROMOV" msprop:Generator_ColumnVarNameInTable="columnNROMOV" msprop:Generator_ColumnPropNameInRow="NROMOV" msprop:Generator_ColumnPropNameInTable="NROMOVColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ROL" msprop:Generator_UserColumnName="ROL" msprop:Generator_ColumnVarNameInTable="columnROL" msprop:Generator_ColumnPropNameInRow="ROL" msprop:Generator_ColumnPropNameInTable="ROLColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DiferenciaTiempos" msprop:Generator_UserTableName="DiferenciaTiempos" msprop:Generator_RowDeletedName="DiferenciaTiemposRowDeleted" msprop:Generator_RowChangedName="DiferenciaTiemposRowChanged" msprop:Generator_RowClassName="DiferenciaTiemposRow" msprop:Generator_RowChangingName="DiferenciaTiemposRowChanging" msprop:Generator_RowEvArgName="DiferenciaTiemposRowChangeEvent" msprop:Generator_RowEvHandlerName="DiferenciaTiemposRowChangeEventHandler" msprop:Generator_TableClassName="DiferenciaTiemposDataTable" msprop:Generator_TableVarName="tableDiferenciaTiempos" msprop:Generator_RowDeletingName="DiferenciaTiemposRowDeleting" msprop:Generator_TablePropName="DiferenciaTiempos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NCOREG" msprop:Generator_UserColumnName="NCOREG" msprop:Generator_ColumnVarNameInTable="columnNCOREG" msprop:Generator_ColumnPropNameInRow="NCOREG" msprop:Generator_ColumnPropNameInTable="NCOREGColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NPLCTR" msprop:Generator_UserColumnName="NPLCTR" msprop:Generator_ColumnVarNameInTable="columnNPLCTR" msprop:Generator_ColumnPropNameInRow="NPLCTR" msprop:Generator_ColumnPropNameInTable="NPLCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOPRCN" msprop:Generator_UserColumnName="NOPRCN" msprop:Generator_ColumnVarNameInTable="columnNOPRCN" msprop:Generator_ColumnPropNameInRow="NOPRCN" msprop:Generator_ColumnPropNameInTable="NOPRCNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECREG" msprop:Generator_UserColumnName="FECREG" msprop:Generator_ColumnVarNameInTable="columnFECREG" msprop:Generator_ColumnPropNameInRow="FECREG" msprop:Generator_ColumnPropNameInTable="FECREGColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DIFERENCIA_DIAS" msprop:Generator_UserColumnName="DIFERENCIA_DIAS" msprop:Generator_ColumnVarNameInTable="columnDIFERENCIA_DIAS" msprop:Generator_ColumnPropNameInRow="DIFERENCIA_DIAS" msprop:Generator_ColumnPropNameInTable="DIFERENCIA_DIASColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ULTIMA_FECHA" msprop:Generator_UserColumnName="ULTIMA_FECHA" msprop:Generator_ColumnVarNameInTable="columnULTIMA_FECHA" msprop:Generator_ColumnPropNameInRow="ULTIMA_FECHA" msprop:Generator_ColumnPropNameInTable="ULTIMA_FECHAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="HORA" msprop:Generator_UserColumnName="HORA" msprop:Generator_ColumnVarNameInTable="columnHORA" msprop:Generator_ColumnPropNameInRow="HORA" msprop:Generator_ColumnPropNameInTable="HORAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DIFERENCIA_HORAS" msprop:Generator_UserColumnName="DIFERENCIA_HORAS" msprop:Generator_ColumnVarNameInTable="columnDIFERENCIA_HORAS" msprop:Generator_ColumnPropNameInRow="DIFERENCIA_HORAS" msprop:Generator_ColumnPropNameInTable="DIFERENCIA_HORASColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ULTIMA_HORA" msprop:Generator_UserColumnName="ULTIMA_HORA" msprop:Generator_ColumnVarNameInTable="columnULTIMA_HORA" msprop:Generator_ColumnPropNameInRow="ULTIMA_HORA" msprop:Generator_ColumnPropNameInTable="ULTIMA_HORAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOBS" msprop:Generator_UserColumnName="TOBS" msprop:Generator_ColumnVarNameInTable="columnTOBS" msprop:Generator_ColumnPropNameInRow="TOBS" msprop:Generator_ColumnPropNameInTable="TOBSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NROMOV" msprop:Generator_UserColumnName="NROMOV" msprop:Generator_ColumnVarNameInTable="columnNROMOV" msprop:Generator_ColumnPropNameInRow="NROMOV" msprop:Generator_ColumnPropNameInTable="NROMOVColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ROL" msprop:Generator_UserColumnName="ROL" msprop:Generator_ColumnVarNameInTable="columnROL" msprop:Generator_ColumnPropNameInRow="ROL" msprop:Generator_ColumnPropNameInTable="ROLColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IndicadoresWAP" msprop:Generator_UserTableName="IndicadoresWAP" msprop:Generator_RowDeletedName="IndicadoresWAPRowDeleted" msprop:Generator_RowChangedName="IndicadoresWAPRowChanged" msprop:Generator_RowClassName="IndicadoresWAPRow" msprop:Generator_RowChangingName="IndicadoresWAPRowChanging" msprop:Generator_RowEvArgName="IndicadoresWAPRowChangeEvent" msprop:Generator_RowEvHandlerName="IndicadoresWAPRowChangeEventHandler" msprop:Generator_TableClassName="IndicadoresWAPDataTable" msprop:Generator_TableVarName="tableIndicadoresWAP" msprop:Generator_RowDeletingName="IndicadoresWAPRowDeleting" msprop:Generator_TablePropName="IndicadoresWAP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NCOACC" msprop:Generator_UserColumnName="NCOACC" msprop:Generator_ColumnVarNameInTable="columnNCOACC" msprop:Generator_ColumnPropNameInRow="NCOACC" msprop:Generator_ColumnPropNameInTable="NCOACCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOBS" msprop:Generator_UserColumnName="TOBS" msprop:Generator_ColumnVarNameInTable="columnTOBS" msprop:Generator_ColumnPropNameInRow="TOBS" msprop:Generator_ColumnPropNameInTable="TOBSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL" msprop:Generator_UserColumnName="TOTAL" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

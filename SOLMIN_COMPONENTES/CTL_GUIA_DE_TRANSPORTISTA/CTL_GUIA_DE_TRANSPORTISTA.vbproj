@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6099242-318D-4552-B4A2-E45F58DC7442}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CTL_GUIA_DE_TRANSPORTISTA</RootNamespace>
+    <AssemblyName>CTL_GUIA_DE_TRANSPORTISTA</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CTL_GUIA_DE_TRANSPORTISTA.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CTL_GUIA_DE_TRANSPORTISTA.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e">
+      <HintPath>..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\HelpClass.vb" />
+    <Compile Include="Clases\TextField.Designer.vb">
+      <DependentUpon>TextField.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\TextField.vb" />
+    <Compile Include="frmActualizarPesoNetoGuiaTransportes.designer.vb">
+      <DependentUpon>frmActualizarPesoNetoGuiaTransportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActualizarPesoNetoGuiaTransportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaOperacion.Designer.vb">
+      <DependentUpon>frmConsultaOperacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaOperacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaPasajero.Designer.vb">
+      <DependentUpon>frmConsultaPasajero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaPasajero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuiaTransportePasajero.Designer.vb">
+      <DependentUpon>frmGuiaTransportePasajero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuiaTransportePasajero.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAsignarGuia.Designer.vb">
+      <DependentUpon>frmAsignarGuia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsignarGuia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracionVehicular.Designer.vb">
+      <DependentUpon>frmConfiguracionVehicular.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracionVehicular.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaGuia.Designer.vb">
+      <DependentUpon>frmConsultaGuia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaGuia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleBultoDia.Designer.vb">
+      <DependentUpon>frmDetalleBultoDia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleBultoDia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaUbigeo.Designer.vb">
+      <DependentUpon>frmListaUbigeo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaUbigeo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimiento.Designer.vb">
+      <DependentUpon>frmMovimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\MainModule.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuiaTransportista.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmGuiaTransportista.Designer.vb">
+      <DependentUpon>frmGuiaTransportista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrintForm.Designer.vb">
+      <DependentUpon>PrintForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\rptGuiaTransportista.vb">
+      <DependentUpon>rptGuiaTransportista.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmActualizarPesoNetoGuiaTransportes.resx">
+      <DependentUpon>frmActualizarPesoNetoGuiaTransportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaOperacion.resx">
+      <DependentUpon>frmConsultaOperacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPasajero.resx">
+      <DependentUpon>frmConsultaPasajero.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuiaTransportePasajero.resx">
+      <DependentUpon>frmGuiaTransportePasajero.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsignarGuia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAsignarGuia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracionVehicular.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConfiguracionVehicular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaGuia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaGuia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleBultoDia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDetalleBultoDia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaUbigeo.resx">
+      <DependentUpon>frmListaUbigeo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimiento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuiaTransportista.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGuiaTransportista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForm.resx">
+      <DependentUpon>PrintForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\rptGuiaTransportista.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaTransportista.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SOLMIN_ST\SOLMIN_ST.DATOS\SOLMIN_ST.DATOS.vbproj">
+      <Project>{CB1FDD1C-AF45-4F39-9CEC-74581C252646}</Project>
+      <Name>SOLMIN_ST.DATOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_ST\SOLMIN_ST.ENTIDADES\SOLMIN_ST.ENTIDADES.vbproj">
+      <Project>{38D2DECF-4373-4252-9A95-5DE1D7CF8686}</Project>
+      <Name>SOLMIN_ST.ENTIDADES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_ST\SOLMIN_ST.NEGOCIO\SOLMIN_ST.NEGOCIO.vbproj">
+      <Project>{31E084A7-C0FB-450F-888C-C626DF49D05A}</Project>
+      <Name>SOLMIN_ST.NEGOCIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeTextBox\CodeTextBox.vbproj">
+      <Project>{65B6AD03-EFF5-418E-832C-56A7A543F82C}</Project>
+      <Name>CodeTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserControls\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{E440D2C4-A8D1-44EE-9A08-18D9ACEA0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserControls\UbicacionPlanta\Ransa.Controls.UbicacionPlanta\Ransa.Controls.UbicacionPlanta.vbproj">
+      <Project>{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}</Project>
+      <Name>Ransa.Controls.UbicacionPlanta</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_block1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software-development.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_layout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rojo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

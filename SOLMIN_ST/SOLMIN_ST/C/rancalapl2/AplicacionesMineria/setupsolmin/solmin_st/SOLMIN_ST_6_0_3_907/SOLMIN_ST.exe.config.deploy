@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<configuration>
+
+  <configSections>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+      <section name="SOLMIN_ST.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+      <section name="SOLMIN_ST.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    </sectionGroup>
+  </configSections>
+  <connectionStrings>
+    <add name="SOLMIN_ST.My.MySettings.ConnectionString" connectionString="Dsn=QDSN_10.72.16.41;uid=RORTIZP"
+      providerName="System.Data.Odbc" />
+  </connectionStrings>
+  <appSettings> 
+
+    <!--SISTEMA ACTUAL-->
+    <add key="System" value="SOLMIN_ST" />
+    <add key="System_prefix" value="ST" />
+    
+    <!--CADENA DE CONEXION AL SITEMA-->
+    <add key="DataBase"  value="Data Source=RANSA; UserId=$USER; Password=$PASS; Datacompression=True;DefaultCollection=DC@RNSLIB; Pooling=True" /> 
+    <add key="DataBase_ServerChange"  value="Data Source=$Server; UserId=$USER; Password=$PASS; Datacompression=True;DefaultCollection=$Lib; Pooling=True" />
+    <add key="DataBaseAgencias"  value="Data Source=RANSA; UserId=$USER; Password=$PASS; Datacompression=True;DefaultCollection=LIBORDAG; Pooling=True" />
+    
+    
+    <!-- TITULO DEL SISTEMA-->
+    <add key="Sistema"  value="Solmin Transporte " />
+
+    <!-- TITULO DE LA PANTALLA PRINCIPAL-->
+    <add key="Titulo"  value="Sistema de Seguimiento de Transportes" />
+
+    <!-- MENSAJE DE ERROR DEL SISTEMA-->
+    <add key="MsgErr"  value="La operación no pudo completarse, Notifique este evento al Dpto. de Sistemas." />
+
+    <!-- INICIO EXCLUSIVO EN UN SERVIDOR-->
+    <add key="Desarrollo" value="" />
+
+    <!-- RUC de RANSA-->
+    <add key="RUCRANSA" value="20100039207" />
+
+    <!-- VARIABLE DE CARGA DE PRE LOADER-->
+    <add key="Preloader" value="no" />
+
+    <!-- CONSULTA GPS -->
+    <add key="GoogleMapsKey" value="ABQIAAAAR-_D972kTt48vkHY1XkPmxSsu9kPFTNklwbEmDP8PyhZRumioxTOybfyNQxaU2qu-VcIZdXQkRSxkA" />
+
+    <!-- FORMULARIO DE COTIZACION -->
+    <add key="PlantaFacturacion" value="1"/>
+    <add key="Compania" value="EZ"/>
+    <add key="Division" value="T"/>
+    <add key="Planta" value="1"/>
+
+    <!-- para el envio de documentos por correo se usaba Smtp.mail.microsoftonline.com -->
+    <!-- para el envio de documentos por correo -->
+    <add key="MailCO" value="solmin.integracion@gmail.com"/>
+    <add key="MailFrom" value="solminintegracion@ransa.net"/>
+    <add key="MailFromClave" value="Pa$$w0rd2"/>
+    <add key="ServerMail" value="pod51010.outlook.com"/>    
+    
+    <add key="Url" value="https://secure.ransa.net/portalmineria/index.aspx"/>
+
+    <!-- RUTA A LA CARPETA DE CONDUCTOR -->
+    <add key="RUTA_CONDUCTOR" value="conductor/"/>
+    
+  </appSettings>
+
+  <userSettings>
+    <SOLMIN_ST.My.MySettings>
+      <setting name="ST_URL" serializeAs="String">
+        <value>http://secure.ransa.net/imagenessolmin/</value>
+      </setting>
+      <setting name="ST_DIR" serializeAs="String">
+        <value>http://secure.ransa.net/imagenessolmin/</value>
+      </setting>
+      <setting name="ST_WEB" serializeAs="String">
+        <value>http://secure.ransa.net/portalmineria/</value>
+      </setting>
+      <setting name="URL_GPS" serializeAs="String">
+        <value>http://secure.ransa.net/wssolmin/</value>
+      </setting>
+    </SOLMIN_ST.My.MySettings>
+  </userSettings>
+  <applicationSettings>
+    <SOLMIN_ST.My.MySettings>
+      <setting name="ST_CDVSN" serializeAs="String">
+        <value>T</value>
+      </setting>
+      <setting name="ST_CPLNDV" serializeAs="String">
+        <value>1</value>
+      </setting>
+    </SOLMIN_ST.My.MySettings>
+  </applicationSettings>
+</configuration>
+

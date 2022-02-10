@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReporteOperacionesTransporte" targetNamespace="http://tempuri.org/dstReporteOperacionesTransporte.xsd" xmlns:mstns="http://tempuri.org/dstReporteOperacionesTransporte.xsd" xmlns="http://tempuri.org/dstReporteOperacionesTransporte.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReporteOperacionesTransporte" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReporteOperacionesTransporte" msprop:Generator_DataSetName="dstReporteOperacionesTransporte">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ListadoOperaciones" msprop:Generator_UserTableName="ListadoOperaciones" msprop:Generator_RowDeletedName="ListadoOperacionesRowDeleted" msprop:Generator_RowChangedName="ListadoOperacionesRowChanged" msprop:Generator_RowClassName="ListadoOperacionesRow" msprop:Generator_RowChangingName="ListadoOperacionesRowChanging" msprop:Generator_RowEvArgName="ListadoOperacionesRowChangeEvent" msprop:Generator_RowEvHandlerName="ListadoOperacionesRowChangeEventHandler" msprop:Generator_TableClassName="ListadoOperacionesDataTable" msprop:Generator_TableVarName="tableListadoOperaciones" msprop:Generator_RowDeletingName="ListadoOperacionesRowDeleting" msprop:Generator_TablePropName="ListadoOperaciones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NCSOTR" msprop:Generator_UserColumnName="NCSOTR" msprop:Generator_ColumnVarNameInTable="columnNCSOTR" msprop:Generator_ColumnPropNameInRow="NCSOTR" msprop:Generator_ColumnPropNameInTable="NCSOTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CODCLI" msprop:Generator_UserColumnName="CODCLI" msprop:Generator_ColumnVarNameInTable="columnCODCLI" msprop:Generator_ColumnPropNameInRow="CODCLI" msprop:Generator_ColumnPropNameInTable="CODCLIColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RECURSOS" msprop:Generator_UserColumnName="RECURSOS" msprop:Generator_ColumnVarNameInTable="columnRECURSOS" msprop:Generator_ColumnPropNameInRow="RECURSOS" msprop:Generator_ColumnPropNameInTable="RECURSOSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOPRCN" msprop:Generator_UserColumnName="NOPRCN" msprop:Generator_ColumnVarNameInTable="columnNOPRCN" msprop:Generator_ColumnPropNameInRow="NOPRCN" msprop:Generator_ColumnPropNameInTable="NOPRCNColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RESUMEN" msprop:Generator_UserTableName="RESUMEN" msprop:Generator_RowDeletedName="RESUMENRowDeleted" msprop:Generator_TableClassName="RESUMENDataTable" msprop:Generator_RowChangedName="RESUMENRowChanged" msprop:Generator_RowClassName="RESUMENRow" msprop:Generator_RowChangingName="RESUMENRowChanging" msprop:Generator_RowEvArgName="RESUMENRowChangeEvent" msprop:Generator_RowEvHandlerName="RESUMENRowChangeEventHandler" msprop:Generator_TablePropName="RESUMEN" msprop:Generator_TableVarName="tableRESUMEN" msprop:Generator_RowDeletingName="RESUMENRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOPRCN" msprop:Generator_UserColumnName="NOPRCN" msprop:Generator_ColumnPropNameInRow="NOPRCN" msprop:Generator_ColumnVarNameInTable="columnNOPRCN" msprop:Generator_ColumnPropNameInTable="NOPRCNColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ESTADO" msprop:Generator_UserColumnName="ESTADO" msprop:Generator_ColumnPropNameInRow="ESTADO" msprop:Generator_ColumnVarNameInTable="columnESTADO" msprop:Generator_ColumnPropNameInTable="ESTADOColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

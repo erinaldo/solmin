@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BFDD001A-A03F-4D84-A788-F4F87EF27A62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ransa.Controls.Proveedor</RootNamespace>
+    <AssemblyName>Ransa.Controls.Proveedor</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Proveedor.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Proveedor.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeValidatorKryton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\KryptonValidator\TypeValidatorKryton.dll</HintPath>
+      <HintPath>..\..\..\DLL\TypeValidatorKryton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DATOS\brGeneral_DAL.vb" />
+    <Compile Include="DATOS\daBase.vb" />
+    <Compile Include="DATOS\Proveedor.vb" />
+    <Compile Include="ENTIDAD\beBase.vb" />
+    <Compile Include="ENTIDAD\beProveedor.vb" />
+    <Compile Include="ENTIDAD\Proveedor.vb" />
+    <Compile Include="frmBuscarProveedor.Designer.vb">
+      <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusqueda.designer.vb">
+      <DependentUpon>frmBusqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusqueda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargaMasivaProveedor.Designer.vb">
+      <DependentUpon>frmCargaMasivaProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargaMasivaProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedor_MDatos.Designer.vb">
+      <DependentUpon>frmProveedor_MDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedor_MDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelacionClienteProveedor.vb.Designer.vb">
+      <DependentUpon>frmRelacionClienteProveedor.vb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelacionClienteProveedor.vb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NEGOCIO\brGeneral_BL.vb" />
+    <Compile Include="NEGOCIO\Class1.vb" />
+    <Compile Include="ucProveedor_DgCab.Designer.vb">
+      <DependentUpon>ucProveedor_DgCab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucProveedor_DgCab.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProveedor_DgF01.Designer.vb">
+      <DependentUpon>ucProveedor_DgF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucProveedor_DgF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProveedor_DgGeneral.Designer.vb">
+      <DependentUpon>ucProveedor_DgGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucProveedor_DgGeneral.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProveedor_FProveedor.Designer.vb">
+      <DependentUpon>ucProveedor_FProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucProveedor_FProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucProveedor_MDato.Designer.vb">
+      <DependentUpon>ucProveedor_MDato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucProveedor_MDato.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProveedor_MProv.Designer.vb">
+      <DependentUpon>ucProveedor_MProv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucProveedor_MProv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucProveedor_TxtF01.Designer.vb">
+      <DependentUpon>ucProveedor_TxtF01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucProveedor_TxtF01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBuscarProveedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusqueda.resx">
+      <DependentUpon>frmBusqueda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargaMasivaProveedor.resx">
+      <DependentUpon>frmCargaMasivaProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedor_MDatos.resx">
+      <DependentUpon>frmProveedor_MDatos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelacionClienteProveedor.vb.resx">
+      <DependentUpon>frmRelacionClienteProveedor.vb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProveedor_DgCab.resx">
+      <DependentUpon>ucProveedor_DgCab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProveedor_DgF01.resx">
+      <DependentUpon>ucProveedor_DgF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProveedor_DgGeneral.resx">
+      <DependentUpon>ucProveedor_DgGeneral.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProveedor_FProveedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucProveedor_FProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProveedor_MDato.resx">
+      <DependentUpon>ucProveedor_MDato.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProveedor_MProv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucProveedor_MProv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProveedor_TxtF01.resx">
+      <DependentUpon>ucProveedor_TxtF01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SOLMIN_SA\SOLMIN_SA.TypeDef\RANSA.TYPEDEF.vbproj">
+      <Project>{92EF2C77-6996-427A-8E39-0F003417E224}</Project>
+      <Name>RANSA.TYPEDEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{E440D2C4-A8D1-44EE-9A08-18D9ACEA0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ransa.Rutime.CtrlsSolmin\Ransa.Rutime.CtrlsSolmin.vbproj">
+      <Project>{7A592B05-2D87-4A2A-9E9D-A96C51CB191F}</Project>
+      <Name>Ransa.Rutime.CtrlsSolmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+    <None Include="Resources\button_cancel.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cofirmacion 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excelicon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenerarReporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

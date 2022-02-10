@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57583771-9974-49B0-8C46-3BBCC5EA6467}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RANSA.DATA</RootNamespace>
+    <AssemblyName>RANSA.DATA</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RANSA.DATA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RANSA.DATA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General\BasicClass.vb" />
+    <Compile Include="General\clsUploadImagen.vb" />
+    <Compile Include="General\daAlmacen.vb" />
+    <Compile Include="General\daBase.vb" />
+    <Compile Include="General\daCheckPoint.vb" />
+    <Compile Include="General\daCnx.vb" />
+    <Compile Include="General\daDocumento.vb" />
+    <Compile Include="General\daGeneral.vb" />
+    <Compile Include="General\daIntegracion.vb" />
+    <Compile Include="General\daoCamion.vb" />
+    <Compile Include="General\daoChofer.vb" />
+    <Compile Include="General\daProveedor.vb" />
+    <Compile Include="General\daUsuario.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SAT - Almacén de Tránsito\daBulto.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daCargaRecepcion_CC.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daCentroOrigen.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daContenedor.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daDespachoMovimientos.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daGuiasRemision.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daIngresoMovimientos.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daoEtiquetasBarras.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daoSecuenciaControl.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daoOrdenCompra.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daoPartidaArancelaria.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daPreDespacho.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daReporteAT.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daUbicacionesXCliente.vb" />
+    <Compile Include="SAT - Almacén de Tránsito\daZonaAlmacen.vb" />
+    <Compile Include="SDS - Depósito Simple\Almacen.vb" />
+    <Compile Include="SDS - Depósito Simple\daAcoplado.vb" />
+    <Compile Include="SDS - Depósito Simple\daDespachoMasivo.vb" />
+    <Compile Include="SDS - Depósito Simple\daGuiasRemision.vb" />
+    <Compile Include="SDS - Depósito Simple\daIncidencia.vb" />
+    <Compile Include="SDS - Depósito Simple\daIncidencias.vb" />
+    <Compile Include="SDS - Depósito Simple\daInterfazOutoTec.vb" />
+    <Compile Include="SDS - Depósito Simple\daLote.vb" />
+    <Compile Include="SDS - Depósito Simple\daObservacionesPedido.vb" />
+    <Compile Include="SDS - Depósito Simple\daPedidoDeposito.vb" />
+    <Compile Include="SDS - Depósito Simple\daPoliza.vb" />
+    <Compile Include="SDS - Depósito Simple\daProyecto.vb" />
+    <Compile Include="SDS - Depósito Simple\daRecepcionInterfaceSap.vb" />
+    <Compile Include="SDS - Depósito Simple\daReporteDS.vb" />
+    <Compile Include="SDS - Depósito Simple\daSerie.vb" />
+    <Compile Include="SDS - Depósito Simple\daTomaInvertario.vb" />
+    <Compile Include="SDS - Depósito Simple\daChofer.vb" />
+    <Compile Include="SDS - Depósito Simple\daCamion.vb" />
+    <Compile Include="SDS - Depósito Simple\daDespacho.vb" />
+    <Compile Include="SDS - Depósito Simple\daIndicador.vb" />
+    <Compile Include="SDS - Depósito Simple\daInventarioMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\daLoteDeMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\daMaestroRuta.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\daoMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\daOrdenCompra.vb" />
+    <Compile Include="SDS - Depósito Simple\daPedido.vb" />
+    <Compile Include="SDS - Depósito Simple\daPlanta.vb" />
+    <Compile Include="SDS - Depósito Simple\daPlantaClienteProveedor.vb" />
+    <Compile Include="SDS - Depósito Simple\daPosicion.vb" />
+    <Compile Include="SDS - Depósito Simple\daRutaTienda.vb" />
+    <Compile Include="SDS - Depósito Simple\daSerieMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\daSugerenciaMercaderia.vb" />
+    <Compile Include="SDS - Depósito Simple\daTipoDeDeposito.vb" />
+    <Compile Include="SDS - Depósito Simple\daTransportista.vb" />
+    <Compile Include="SDS - Depósito Simple\daUbicacion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SDS - Depósito Simple\daUbicacionSugeridaMercaderiaGuia.vb" />
+    <Compile Include="SDS - Depósito Simple\daUnidad.vb" />
+    <Compile Include="SDS - Depósito Simple\Familia.vb" />
+    <Compile Include="SDS - Depósito Simple\GuiaRemision.vb" />
+    <Compile Include="SDS - Depósito Simple\ItemGR.vb" />
+    <Compile Include="SDS - Depósito Simple\R03 - DESPACHO\daPreDespacho.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Serie\Ransa.Controls.Serie\Ransa.Controls.Serie.vbproj">
+      <Project>{932116b3-8127-4417-a348-71db2c1efa0a}</Project>
+      <Name>Ransa.Controls.Serie</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SA.TypeDef\RANSA.TYPEDEF.vbproj">
+      <Project>{92EF2C77-6996-427A-8E39-0F003417E224}</Project>
+      <Name>RANSA.TYPEDEF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\SOLMIN_COMPONENTES\DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\SOLMIN_COMPONENTES\DLL\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SOLMIN_COMPONENTES\DLL\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SOLMIN_COMPONENTES\DLL\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SOLMIN_COMPONENTES\DLL\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

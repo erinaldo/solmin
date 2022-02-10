@@ -1,0 +1,36 @@
+# Archivo de proyecto de Microsoft Developer Studio - Proyecto de base de datos
+Begin DataProject = "Ransa.DB2Scripts"
+   MSDTVersion = "80"
+   DefDBRef = "ODBC.RANSA.DB2400"
+   SccProjectName = "SAK"
+   SccLocalPath = "SAK"
+   SccAuxPath = "SAK"
+   SccProvider = "SAK"
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "ODBC.RANSA.DB2400"
+         ConnectStr = "Dsn=PRODUCCION;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+      Begin DBRefNode = "ODBC.RANSA01.DB2400"
+         ConnectStr = "Dsn=DESARROLLO;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+   End
+   Begin Folder = "Functions"
+   End
+   Begin Folder = "Procedures"
+      Script = "SP_SOLMIN_SA_YRC_BITACORA_Q01.sql"
+      Script = "SP_SOLMIN_SA_YRC_CHECKPOINT_Q01.sql"
+      Script = "SP_SOLMIN_SA_YRC_EMBARQUE_Q01.sql"
+      Script = "SP_SOLMIN_SA_YRC_EMBARQUE_SUSTENTO_Q01.sql"
+      Script = "SP_SOLMIN_SA_YRC_ITEM_OC_Q01.sql"
+      Script = "SP_SOLMIN_SA_YRC_ITEMS_X_OC_Q01.sql"
+      Script = "SP_SOLMIN_SA_YRC_M004_CHECKPOINT_Q01.sql"
+      Script = "SP_SOLMIN_SA_YRC_T002_CAMBIAR_STATUS_OC.sql"
+      Script = "SP_SOLMIN_SA_YRC_T006_SUSTENTO_COSTO.sql"
+   End
+   Begin Folder = "Queries"
+   End
+End

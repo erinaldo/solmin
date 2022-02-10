@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EstructuraReporteConsistencia" targetNamespace="http://tempuri.org/EstructuraReporteConsistencia.xsd" xmlns:mstns="http://tempuri.org/EstructuraReporteConsistencia.xsd" xmlns="http://tempuri.org/EstructuraReporteConsistencia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EstructuraReporteConsistencia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EstructuraReporteConsistencia" msprop:Generator_DataSetName="EstructuraReporteConsistencia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtReporteConsistencia" msprop:Generator_UserTableName="dtReporteConsistencia" msprop:Generator_RowDeletedName="dtReporteConsistenciaRowDeleted" msprop:Generator_TableClassName="dtReporteConsistenciaDataTable" msprop:Generator_RowChangedName="dtReporteConsistenciaRowChanged" msprop:Generator_RowClassName="dtReporteConsistenciaRow" msprop:Generator_RowChangingName="dtReporteConsistenciaRowChanging" msprop:Generator_RowEvArgName="dtReporteConsistenciaRowChangeEvent" msprop:Generator_RowEvHandlerName="dtReporteConsistenciaRowChangeEventHandler" msprop:Generator_TablePropName="dtReporteConsistencia" msprop:Generator_TableVarName="tabledtReporteConsistencia" msprop:Generator_RowDeletingName="dtReporteConsistenciaRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FCDRMV" msprop:Generator_UserColumnName="FCDRMV" msprop:Generator_ColumnPropNameInRow="FCDRMV" msprop:Generator_ColumnVarNameInTable="columnFCDRMV" msprop:Generator_ColumnPropNameInTable="FCDRMVColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCMPCL" msprop:Generator_UserColumnName="TCMPCL" msprop:Generator_ColumnPropNameInRow="TCMPCL" msprop:Generator_ColumnVarNameInTable="columnTCMPCL" msprop:Generator_ColumnPropNameInTable="TCMPCLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NCHSVH" msprop:Generator_UserColumnName="NCHSVH" msprop:Generator_ColumnPropNameInRow="NCHSVH" msprop:Generator_ColumnVarNameInTable="columnNCHSVH" msprop:Generator_ColumnPropNameInTable="NCHSVHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NCRRLT" msprop:Generator_UserColumnName="NCRRLT" msprop:Generator_ColumnPropNameInRow="NCRRLT" msprop:Generator_ColumnVarNameInTable="columnNCRRLT" msprop:Generator_ColumnPropNameInTable="NCRRLTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CULUSA" msprop:Generator_UserColumnName="CULUSA" msprop:Generator_ColumnPropNameInRow="CULUSA" msprop:Generator_ColumnVarNameInTable="columnCULUSA" msprop:Generator_ColumnPropNameInTable="CULUSAColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

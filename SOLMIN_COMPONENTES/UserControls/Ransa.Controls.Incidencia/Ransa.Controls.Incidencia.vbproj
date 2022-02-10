@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DB2706E-5D10-4A1F-8D33-3E6ED3F3BE8B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ransa.Controls.Incidencia</RootNamespace>
+    <AssemblyName>Ransa.Controls.Incidencia</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Incidencia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ransa.Controls.Incidencia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Design\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONTROL\dsSeguimiento.Designer.vb">
+      <DependentUpon>dsSeguimiento.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CONTROL\dsSeguimiento.vb">
+      <DependentUpon>dsSeguimiento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmConcluidoInc.Designer.vb">
+      <DependentUpon>frmConcluidoInc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmConcluidoInc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmConsultaSeguimientoPorFecha.Designer.vb">
+      <DependentUpon>frmConsultaSeguimientoPorFecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmConsultaSeguimientoPorFecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmCopiarPerfil.Designer.vb">
+      <DependentUpon>frmCopiarPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmCopiarPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmMIncidencias.Designer.vb">
+      <DependentUpon>frmMIncidencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmMIncidencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmRevisionInc.Designer.vb">
+      <DependentUpon>frmRevisionInc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmRevisionInc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmVistaRegistros.Designer.vb">
+      <DependentUpon>frmVistaRegistros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmVistaRegistros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmVistaSeguimientoFecha.Designer.vb">
+      <DependentUpon>frmVistaSeguimientoFecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmVistaSeguimientoFecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\RecepciónAlmacenSimple\ucRASimple_FRASimple.Designer.vb">
+      <DependentUpon>ucRASimple_FRASimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\RecepciónAlmacenSimple\ucRASimple_FRASimple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\rptIncidenciaPorFecha1.vb">
+      <DependentUpon>rptIncidenciaPorFecha1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CONTROL\dsIncidencia.Designer.vb">
+      <DependentUpon>dsIncidencia.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CONTROL\dsIncidencia.vb">
+      <DependentUpon>dsIncidencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmConsultaIncidenciaPorFecha.designer.vb">
+      <DependentUpon>frmConsultaIncidenciaPorFecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmConsultaIncidenciaPorFecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmConsultaIncidenciaPorMes.designer.vb">
+      <DependentUpon>frmConsultaIncidenciaPorMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmConsultaIncidenciaPorMes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmRegistroIncidencias.designer.vb">
+      <DependentUpon>frmRegistroIncidencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmRegistroIncidencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmVisorIncidenciasPorFecha.Designer.vb">
+      <DependentUpon>frmVisorIncidenciasPorFecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmVisorIncidenciasPorFecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\frmVisorIncidenciasPorMes.Designer.vb">
+      <DependentUpon>frmVisorIncidenciasPorMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\frmVisorIncidenciasPorMes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL\rptIncidenciaMes1.vb">
+      <DependentUpon>rptIncidenciaMes1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CONTROL\rptIncidenciaPorFecha.vb">
+      <DependentUpon>rptIncidenciaPorFecha.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CONTROL\rptResumen.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptResumen.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\rptResumenIncidenciaPorFecha.vb">
+      <DependentUpon>rptResumenIncidenciaPorFecha.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CONTROL\rptSeguimientoPorFecha.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSeguimientoPorFecha.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\rptTotales.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTotales.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\ucMaestroIncidencias.Designer.vb">
+      <DependentUpon>ucMaestroIncidencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\ucMaestroIncidencias.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CONTROL\ucRegistroDeIncidencias.Designer.vb">
+      <DependentUpon>ucRegistroDeIncidencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\ucRegistroDeIncidencias.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CONTROL\ucSeguimientoInc.Designer.vb">
+      <DependentUpon>ucSeguimientoInc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL\ucSeguimientoInc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DAO\daAlmacen.vb" />
+    <Compile Include="DAO\daBase.vb" />
+    <Compile Include="DAO\daGeneral.vb" />
+    <Compile Include="DAO\daIncidenciaEnvioEmail.vb" />
+    <Compile Include="DAO\daIncidencias.vb" />
+    <Compile Include="DAO\daSeguimiento.vb" />
+    <Compile Include="ENTIDAD\beAlmacen.vb" />
+    <Compile Include="ENTIDAD\beBase.vb" />
+    <Compile Include="ENTIDAD\beDestinatario.vb" />
+    <Compile Include="ENTIDAD\beGeneral.vb" />
+    <Compile Include="ENTIDAD\beIncidencias.vb" />
+    <Compile Include="ENTIDAD\beSeguimiento.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NEGO\brAlmacen.vb" />
+    <Compile Include="NEGO\brGeneral.vb" />
+    <Compile Include="NEGO\brIncidenciaEnvioEmail.vb" />
+    <Compile Include="NEGO\brIncidencias.vb" />
+    <Compile Include="NEGO\brSeguimiento.vb" />
+    <Compile Include="NEGO\ClaseGeneral.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CONTROL\frmConcluidoInc.resx">
+      <DependentUpon>frmConcluidoInc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmConsultaSeguimientoPorFecha.resx">
+      <DependentUpon>frmConsultaSeguimientoPorFecha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmCopiarPerfil.resx">
+      <DependentUpon>frmCopiarPerfil.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmMIncidencias.resx">
+      <DependentUpon>frmMIncidencias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmRevisionInc.resx">
+      <DependentUpon>frmRevisionInc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmVistaRegistros.resx">
+      <DependentUpon>frmVistaRegistros.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmVistaSeguimientoFecha.resx">
+      <DependentUpon>frmVistaSeguimientoFecha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\RecepciónAlmacenSimple\ucRASimple_FRASimple.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucRASimple_FRASimple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\rptIncidenciaPorFecha1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIncidenciaPorFecha1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmConsultaIncidenciaPorFecha.resx">
+      <DependentUpon>frmConsultaIncidenciaPorFecha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmConsultaIncidenciaPorMes.resx">
+      <DependentUpon>frmConsultaIncidenciaPorMes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmRegistroIncidencias.resx">
+      <DependentUpon>frmRegistroIncidencias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmVisorIncidenciasPorFecha.resx">
+      <DependentUpon>frmVisorIncidenciasPorFecha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\frmVisorIncidenciasPorMes.resx">
+      <DependentUpon>frmVisorIncidenciasPorMes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\rptIncidenciaMes1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIncidenciaMes1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\rptIncidenciaPorFecha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIncidenciaPorFecha.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\rptResumen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResumen.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\rptResumenIncidenciaPorFecha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResumenIncidenciaPorFecha.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\rptSeguimientoPorFecha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSeguimientoPorFecha.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\rptTotales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTotales.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\ucMaestroIncidencias.resx">
+      <DependentUpon>ucMaestroIncidencias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\ucRegistroDeIncidencias.resx">
+      <DependentUpon>ucRegistroDeIncidencias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL\ucSeguimientoInc.resx">
+      <DependentUpon>ucSeguimientoInc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CONTROL\dsIncidencia.xsc">
+      <DependentUpon>dsIncidencia.xsd</DependentUpon>
+    </None>
+    <None Include="CONTROL\dsIncidencia.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIncidencia.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONTROL\dsIncidencia.xss">
+      <DependentUpon>dsIncidencia.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ark_selectall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excelicon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenerarReporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CONTROL\dsSeguimiento.xsc">
+      <DependentUpon>dsSeguimiento.xsd</DependentUpon>
+    </None>
+    <None Include="CONTROL\dsSeguimiento.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSeguimiento.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="CONTROL\dsSeguimiento.xss">
+      <DependentUpon>dsSeguimiento.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\btnMarcarItems.png" />
+    <Content Include="Resources\btnNoMarcarItems.png" />
+    <Content Include="Resources\carga_3.gif" />
+    <Content Include="Resources\carga_31.gif" />
+    <Content Include="Resources\CuadradoBlanco.JPG" />
+    <Content Include="Resources\desktop.png" />
+    <Content Include="Resources\Documento.bmp" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\filesave.png" />
+    <Content Include="Resources\iconoEspera.gif" />
+    <Content Include="Resources\images %282%29.jpg" />
+    <Content Include="Resources\pdf_icon.jpg" />
+    <Content Include="Resources\text_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SOLMIN_SC\Ransa.Controls.Email\Ransa.Controls.Email.vbproj">
+      <Project>{A8A5563C-2A27-488C-A655-E7D2E66739CF}</Project>
+      <Name>Ransa.Controls.Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StorageFileManager\StorageFileManager.vbproj">
+      <Project>{3165C610-476B-40FA-BD2B-B32A920398A9}</Project>
+      <Name>StorageFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{E440D2C4-A8D1-44EE-9A08-18D9ACEA0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlantaDeEntrega\Ransa.Controls.PlantaDeEntrega\Ransa.Controls.PlantaDeEntrega.vbproj">
+      <Project>{B04DCB49-844F-468A-B75D-1A5093F08C0C}</Project>
+      <Name>Ransa.Controls.PlantaDeEntrega</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlantaDeEntrega\Ransa.DAO.PlantaDeEntrega\Ransa.DAO.PlantaDeEntrega.vbproj">
+      <Project>{C9D71863-4D20-4328-9236-5100D1F544A1}</Project>
+      <Name>Ransa.DAO.PlantaDeEntrega</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlantaDeEntrega\Ransa.TypeDef.PlantaDeEntrega\Ransa.TypeDef.PlantaDeEntrega.vbproj">
+      <Project>{598C7766-5464-4E48-B657-08A43D51791E}</Project>
+      <Name>Ransa.TypeDef.PlantaDeEntrega</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ransa.Controls.Menu\Ransa.Controls.Menu.vbproj">
+      <Project>{EBFA900F-1EF9-4950-93CC-03871B0C4781}</Project>
+      <Name>Ransa.Controls.Menu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UbicacionPlanta\Ransa.Controls.UbicacionPlanta\Ransa.Controls.UbicacionPlanta.vbproj">
+      <Project>{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}</Project>
+      <Name>Ransa.Controls.UbicacionPlanta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

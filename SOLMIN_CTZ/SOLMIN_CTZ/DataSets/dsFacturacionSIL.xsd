@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsFacturacionSIL" targetNamespace="http://tempuri.org/dsFacturacionSIL.xsd" xmlns:mstns="http://tempuri.org/dsFacturacionSIL.xsd" xmlns="http://tempuri.org/dsFacturacionSIL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsFacturacionSIL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsFacturacionSIL" msprop:Generator_DataSetName="dsFacturacionSIL">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FacturaSIL" msprop:Generator_UserTableName="FacturaSIL" msprop:Generator_RowDeletedName="FacturaSILRowDeleted" msprop:Generator_TableClassName="FacturaSILDataTable" msprop:Generator_RowChangedName="FacturaSILRowChanged" msprop:Generator_RowClassName="FacturaSILRow" msprop:Generator_RowChangingName="FacturaSILRowChanging" msprop:Generator_RowEvArgName="FacturaSILRowChangeEvent" msprop:Generator_RowEvHandlerName="FacturaSILRowChangeEventHandler" msprop:Generator_TablePropName="FacturaSIL" msprop:Generator_TableVarName="tableFacturaSIL" msprop:Generator_RowDeletingName="FacturaSILRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOPRCN" msprop:Generator_UserColumnName="NOPRCN" msprop:Generator_ColumnPropNameInRow="NOPRCN" msprop:Generator_ColumnVarNameInTable="columnNOPRCN" msprop:Generator_ColumnPropNameInTable="NOPRCNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CCLNT" msprop:Generator_UserColumnName="CCLNT" msprop:Generator_ColumnPropNameInRow="CCLNT" msprop:Generator_ColumnVarNameInTable="columnCCLNT" msprop:Generator_ColumnPropNameInTable="CCLNTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DESC_CLIE" msprop:Generator_UserColumnName="DESC_CLIE" msprop:Generator_ColumnPropNameInRow="DESC_CLIE" msprop:Generator_ColumnVarNameInTable="columnDESC_CLIE" msprop:Generator_ColumnPropNameInTable="DESC_CLIEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NORSCI" msprop:Generator_UserColumnName="NORSCI" msprop:Generator_ColumnPropNameInRow="NORSCI" msprop:Generator_ColumnVarNameInTable="columnNORSCI" msprop:Generator_ColumnPropNameInTable="NORSCIColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CCMPN" msprop:Generator_UserColumnName="CCMPN" msprop:Generator_ColumnPropNameInRow="CCMPN" msprop:Generator_ColumnVarNameInTable="columnCCMPN" msprop:Generator_ColumnPropNameInTable="CCMPNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CDVSN" msprop:Generator_UserColumnName="CDVSN" msprop:Generator_ColumnPropNameInRow="CDVSN" msprop:Generator_ColumnVarNameInTable="columnCDVSN" msprop:Generator_ColumnPropNameInTable="CDVSNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CTPODC" msprop:Generator_UserColumnName="CTPODC" msprop:Generator_ColumnPropNameInRow="CTPODC" msprop:Generator_ColumnVarNameInTable="columnCTPODC" msprop:Generator_ColumnPropNameInTable="CTPODCColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NDCFCC" msprop:Generator_UserColumnName="NDCFCC" msprop:Generator_ColumnPropNameInRow="NDCFCC" msprop:Generator_ColumnVarNameInTable="columnNDCFCC" msprop:Generator_ColumnPropNameInTable="NDCFCCColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PNNMOS" msprop:Generator_UserColumnName="PNNMOS" msprop:Generator_ColumnPropNameInRow="PNNMOS" msprop:Generator_ColumnVarNameInTable="columnPNNMOS" msprop:Generator_ColumnPropNameInTable="PNNMOSColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="FECHA_EMBARQUE" msprop:Generator_UserColumnName="FECHA_EMBARQUE" msprop:Generator_ColumnPropNameInRow="FECHA_EMBARQUE" msprop:Generator_ColumnVarNameInTable="columnFECHA_EMBARQUE" msprop:Generator_ColumnPropNameInTable="FECHA_EMBARQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_FACTURA" msprop:Generator_UserColumnName="FECHA_FACTURA" msprop:Generator_ColumnPropNameInRow="FECHA_FACTURA" msprop:Generator_ColumnVarNameInTable="columnFECHA_FACTURA" msprop:Generator_ColumnPropNameInTable="FECHA_FACTURAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTADO_FACTURA" msprop:Generator_UserColumnName="ESTADO_FACTURA" msprop:Generator_ColumnPropNameInRow="ESTADO_FACTURA" msprop:Generator_ColumnVarNameInTable="columnESTADO_FACTURA" msprop:Generator_ColumnPropNameInTable="ESTADO_FACTURAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTADO_EMBARCACION" msprop:Generator_UserColumnName="ESTADO_EMBARCACION" msprop:Generator_ColumnPropNameInRow="ESTADO_EMBARCACION" msprop:Generator_ColumnVarNameInTable="columnESTADO_EMBARCACION" msprop:Generator_ColumnPropNameInTable="ESTADO_EMBARCACIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FLGFAC" msprop:Generator_UserColumnName="FLGFAC" msprop:Generator_ColumnPropNameInRow="FLGFAC" msprop:Generator_ColumnVarNameInTable="columnFLGFAC" msprop:Generator_ColumnPropNameInTable="FLGFACColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

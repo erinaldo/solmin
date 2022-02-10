@@ -1,0 +1,7 @@
+DBRefFolders found in your dbp file
+Connect String: Dsn=PRODUCCION;uid=DDEZELAP
+Provider: ODBC
+
+Connect String: Dsn=DESARROLLO;uid=DDEZELAP
+Provider: ODBC
+

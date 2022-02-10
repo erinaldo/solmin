@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BL_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://secure.ransa.net/imagenessolmin/</Value>
+    </Setting>
+    <Setting Name="SOLMIN_ST_NEGOCIO_localhost_SolminWeb" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:3461/SOLMIN_WAP/SolminWeb.asmx</Value>
+    </Setting>
+    <Setting Name="SOLMIN_ST_NEGOCIO_pe_com_ransa_asp_SolminWeb" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://asp.ransa.com.pe/wapmineria/SolminWeb.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

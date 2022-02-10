@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31E084A7-C0FB-450F-888C-C626DF49D05A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SOLMIN_ST.NEGOCIO</RootNamespace>
+    <AssemblyName>SOLMIN_ST.NEGOCIO</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOLMIN_ST.NEGOCIO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOLMIN_ST.NEGOCIO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="GmailHelper, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SOLMIN_COMPONENTES\DLL\GmailHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentService\ws_reversion_Ingreso.vb" />
+    <Compile Include="comun\AdjuntarImagen_BLL.vb" />
+    <Compile Include="comun\Autenticacion_BLL.vb" />
+    <Compile Include="comun\clsComun.vb" />
+    <Compile Include="comun\clsResultadoBusqueda.vb" />
+    <Compile Include="comun\Constantes.vb" />
+    <Compile Include="comun\ImageWebUpload_BLL.vb" />
+    <Compile Include="comun\RegionVenta_BLL.vb" />
+    <Compile Include="comun\Seguridad.vb" />
+    <Compile Include="comun\Utility.vb" />
+    <Compile Include="consultas\AtributosOI_BLL.vb" />
+    <Compile Include="consultas\Indicadores_BLL.vb" />
+    <Compile Include="mantenimientos\AlquilerUnidad_BLL.vb" />
+    <Compile Include="mantenimientos\CentroCosto_BLL.vb" />
+    <Compile Include="mantenimientos\Combustible_BLL.vb" />
+    <Compile Include="mantenimientos\CompaniaSeguro_BLL.vb" />
+    <Compile Include="mantenimientos\CondicionRuta_BLL.vb" />
+    <Compile Include="mantenimientos\Contratista_Cliente_BL.vb" />
+    <Compile Include="mantenimientos\DocAdjuntoConductor_BLL.vb" />
+    <Compile Include="mantenimientos\AsignacionRuta_BLL.vb" />
+    <Compile Include="mantenimientos\AVC_BLL.vb" />
+    <Compile Include="mantenimientos\CapacitacionConductor_BLL.vb" />
+    <Compile Include="comun\DbBridge_BLL.vb" />
+    <Compile Include="mantenimientos\Acoplado_BLL.vb" />
+    <Compile Include="mantenimientos\Categoria_Chofer_BLL.vb" />
+    <Compile Include="mantenimientos\Chofer_BLL.vb" />
+    <Compile Include="mantenimientos\clsImageWebUpload.vb" />
+    <Compile Include="mantenimientos\ConfiguracionVehicular_BLL.vb" />
+    <Compile Include="mantenimientos\DocsAdjuntos_SolTransporte_BLL.vb" />
+    <Compile Include="mantenimientos\DuracionDias_BLL.vb" />
+    <Compile Include="mantenimientos\Empleado_BLL.vb" />
+    <Compile Include="mantenimientos\EnvioEmailAnulacionOperacion.vb" />
+    <Compile Include="mantenimientos\EnvioEmailAprobacionMargen_BLL.vb" />
+    <Compile Include="mantenimientos\EvaluacionOperativa_BLL.vb" />
+    <Compile Include="mantenimientos\FactorPagoAVC_BLL.vb" />
+    <Compile Include="mantenimientos\Grifo_BLL.vb" />
+    <Compile Include="mantenimientos\GuiaTransportista_BLL.vb" />
+    <Compile Include="mantenimientos\Localidad_BLL.vb" />
+    <Compile Include="mantenimientos\LocalidadRuta_BLL.vb" />
+    <Compile Include="mantenimientos\MedioTransporte_BLL.vb" />
+    <Compile Include="mantenimientos\MercaderiaTransportes_BLL.vb" />
+    <Compile Include="mantenimientos\Moneda_BLL.vb" />
+    <Compile Include="mantenimientos\Naves_BLL.vb" />
+    <Compile Include="mantenimientos\Obrero_BLL.vb" />
+    <Compile Include="mantenimientos\OperacionesXAlquiler_BLL.vb" />
+    <Compile Include="mantenimientos\ParametroFacturacionDAO.vb" />
+    <Compile Include="mantenimientos\PaseConductor_BLL.vb" />
+    <Compile Include="mantenimientos\PedidoEfectivo_BLL.vb" />
+    <Compile Include="mantenimientos\Personal_Contratista_BL.vb" />
+    <Compile Include="mantenimientos\Planeamiento_BLL.vb" />
+    <Compile Include="mantenimientos\PlantaFacturacion_BLL.vb" />
+    <Compile Include="mantenimientos\Proveedor_BLL.vb" />
+    <Compile Include="mantenimientos\RecordGeneral_BLL.vb" />
+    <Compile Include="mantenimientos\RecordMedico_BLL.vb" />
+    <Compile Include="mantenimientos\RecursoEquipo_BLL.vb" />
+    <Compile Include="mantenimientos\ReportesVariados_BLL.vb" />
+    <Compile Include="mantenimientos\SectorXGastos_BLL.vb" />
+    <Compile Include="mantenimientos\ServicioCotizacion_BLL.vb" />
+    <Compile Include="mantenimientos\ServicioTransporte_BLL.vb" />
+    <Compile Include="mantenimientos\TipoAcoplado_BLL.vb" />
+    <Compile Include="mantenimientos\TipoCapacitacionConductor_BLL.vb" />
+    <Compile Include="mantenimientos\TipoCarroceria_BLL.vb" />
+    <Compile Include="mantenimientos\TipoCombustible_BLL.vb" />
+    <Compile Include="mantenimientos\TipodeTracto_BLL.vb" />
+    <Compile Include="mantenimientos\TipoDocumento_BLL.vb" />
+    <Compile Include="mantenimientos\TipoLicenciaConducir_BLL.vb" />
+    <Compile Include="mantenimientos\TipoOperacion_BLL.vb" />
+    <Compile Include="mantenimientos\TipoPaseConductor_BLL.vb" />
+    <Compile Include="mantenimientos\TipoRecord_BLL.vb" />
+    <Compile Include="mantenimientos\TipoServicioTransporte_BLL.vb" />
+    <Compile Include="mantenimientos\TipoSubServicioTransporte_BLL.vb" />
+    <Compile Include="mantenimientos\Tracto_BLL.vb" />
+    <Compile Include="mantenimientos\TransportistaAcoplado_BLL.vb" />
+    <Compile Include="mantenimientos\TransportistaAS400_BLL.vb" />
+    <Compile Include="mantenimientos\TransportistaConductor_BLL.vb" />
+    <Compile Include="mantenimientos\TransportistaTracto_BLL.vb" />
+    <Compile Include="mantenimientos\Transportista_BLL.vb" />
+    <Compile Include="mantenimientos\Ubigeo_BLL.vb" />
+    <Compile Include="mantenimientos\UnidadesTransporte_BLL.vb" />
+    <Compile Include="mantenimientos\UnidadMedida_BLL.vb" />
+    <Compile Include="mantenimientos\UrlServicios_BLL.vb" />
+    <Compile Include="mantenimientos\VacacionesConductor_BLL.vb" />
+    <Compile Include="mantenimientos\Vacunas_BLL.vb" />
+    <Compile Include="mantenimientos\Reportes_BLL.vb" />
+    <Compile Include="mantenimientos\Viajes_Cliente_BL.vb" />
+    <Compile Include="mantenimientos\Viajes_Ruta_BL.vb" />
+    <Compile Include="mantenimientos\Viaje_Pasajero_BLL.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="operaciones\AtencionRequerimiento_BLL.vb" />
+    <Compile Include="operaciones\clsPreDocum_BLL.vb" />
+    <Compile Include="operaciones\Combustible_BLL.vb" />
+    <Compile Include="operaciones\ConsumoNeumatico_BLL.vb" />
+    <Compile Include="operaciones\ControlHitos_BLL.vb" />
+    <Compile Include="operaciones\CostoMantenimiento_BLL.vb" />
+    <Compile Include="operaciones\Detalle_Solicitud_Transporte_BLL.vb" />
+    <Compile Include="operaciones\Dimensiones_BLL.vb" />
+    <Compile Include="operaciones\DocAjuntoAWS_BLL.vb" />
+    <Compile Include="operaciones\Factura_Transporte_BLL.vb" />
+    <Compile Include="operaciones\Gastos_Ruta_BLL.vb" />
+    <Compile Include="operaciones\GuiaRemision_BLL.vb" />
+    <Compile Include="operaciones\JuntaRequerimiento_BLL.vb" />
+    <Compile Include="operaciones\Junta_Transporte_BLL.vb" />
+    <Compile Include="operaciones\LiquidacionCombustible_BLL.vb" />
+    <Compile Include="operaciones\LiquidacionGastos_BLL.vb" />
+    <Compile Include="operaciones\LiquidarOperacion_BL.vb" />
+    <Compile Include="operaciones\Multimodal_BLL.vb" />
+    <Compile Include="operaciones\OperacionTransporte_BLL.vb" />
+    <Compile Include="operaciones\OrdenInterna_BLL.vb" />
+    <Compile Include="operaciones\OrdenServicioAgenciaRansa_BLL.vb" />
+    <Compile Include="operaciones\OrdenServicio_BLL.vb" />
+    <Compile Include="operaciones\PlanRuta_BLL.vb" />
+    <Compile Include="operaciones\PreAsignacionUnidades_BLL.vb" />
+    <Compile Include="operaciones\PreLiquidacion_BLL.vb" />
+    <Compile Include="operaciones\Programacion_Unid_Junta_BLL.vb" />
+    <Compile Include="operaciones\RecursosReasignado_BLL.vb" />
+    <Compile Include="operaciones\ReFacturacion_BLL.vb" />
+    <Compile Include="operaciones\Repartos_BLL.vb" />
+    <Compile Include="operaciones\ServicioMercaderia_BLL.vb" />
+    <Compile Include="operaciones\SolicitudPedidoEfectivo_BLL.vb" />
+    <Compile Include="operaciones\TipoDatoGeneral_BLL.vb" />
+    <Compile Include="operaciones\TransporteConsolidado_BLL.vb" />
+    <Compile Include="mantenimientos\Urea_BLL.vb" />
+    <Compile Include="operaciones\UnidadProductiva_BLL.vb" />
+    <Compile Include="operaciones\ValeCombustible_BLL.vb" />
+    <Compile Include="seguimiento_wap\SeguimientoGPS_BLL.vb" />
+    <Compile Include="seguimiento_wap\SeguimientoWAP_BLL.vb" />
+    <Compile Include="operaciones\Solicitud_Transporte_BLL.vb" />
+    <Compile Include="Seguridad\Acceso_Opciones_Usuario_BLL.vb" />
+    <Compile Include="Seguridad\Compania_BLL.vb" />
+    <Compile Include="Seguridad\Division_BLL.vb" />
+    <Compile Include="Seguridad\Planta_BLL.vb" />
+    <Compile Include="mantenimientos\SolicitudEfectivoSAP_BLL.vb" />
+    <Compile Include="Web References\localhost\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\pe.com.ransa.asp\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\pe.com.ransa.asp\SolminWeb.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://asp.ransa.com.pe/wapmineria/SolminWeb.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\pe.com.ransa.asp\</RelPath>
+      <UpdateFromURL>http://asp.ransa.com.pe/wapmineria/SolminWeb.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SOLMIN_ST_NEGOCIO_pe_com_ransa_asp_SolminWeb</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:3461/SOLMIN_WAP/SolminWeb.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://localhost:3461/SOLMIN_WAP/SolminWeb.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SOLMIN_ST_NEGOCIO_localhost_SolminWeb</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Web References\localhost\SolminWeb.wsdl" />
+    <None Include="Web References\pe.com.ransa.asp\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\pe.com.ransa.asp\SolminWeb.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\SolminWeb.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_SC\Ransa.Controls.Email\Ransa.Controls.Email.vbproj">
+      <Project>{A8A5563C-2A27-488C-A655-E7D2E66739CF}</Project>
+      <Name>Ransa.Controls.Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_ST.DATOS\SOLMIN_ST.DATOS.vbproj">
+      <Project>{CB1FDD1C-AF45-4F39-9CEC-74581C252646}</Project>
+      <Name>SOLMIN_ST.DATOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_ST.ENTIDADES\SOLMIN_ST.ENTIDADES.vbproj">
+      <Project>{38D2DECF-4373-4252-9A95-5DE1D7CF8686}</Project>
+      <Name>SOLMIN_ST.ENTIDADES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API_REST\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

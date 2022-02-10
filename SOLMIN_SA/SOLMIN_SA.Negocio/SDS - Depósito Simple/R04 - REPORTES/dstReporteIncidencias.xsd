@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReporteIncidencias" targetNamespace="http://tempuri.org/dstReporteIncidencias.xsd" xmlns:mstns="http://tempuri.org/dstReporteIncidencias.xsd" xmlns="http://tempuri.org/dstReporteIncidencias.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReporteIncidencias" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReporteIncidencias" msprop:Generator_DataSetName="dstReporteIncidencias">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbIncidencias" msprop:Generator_UserTableName="dtbIncidencias" msprop:Generator_RowDeletedName="dtbIncidenciasRowDeleted" msprop:Generator_RowChangedName="dtbIncidenciasRowChanged" msprop:Generator_RowClassName="dtbIncidenciasRow" msprop:Generator_RowChangingName="dtbIncidenciasRowChanging" msprop:Generator_RowEvArgName="dtbIncidenciasRowChangeEvent" msprop:Generator_RowEvHandlerName="dtbIncidenciasRowChangeEventHandler" msprop:Generator_TableClassName="dtbIncidenciasDataTable" msprop:Generator_TableVarName="tabledtbIncidencias" msprop:Generator_RowDeletingName="dtbIncidenciasRowDeleting" msprop:Generator_TablePropName="dtbIncidencias">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dia" msprop:Generator_UserColumnName="dia" msprop:Generator_ColumnVarNameInTable="columndia" msprop:Generator_ColumnPropNameInRow="dia" msprop:Generator_ColumnPropNameInTable="diaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cant_reposicion" msprop:Generator_UserColumnName="cant_reposicion" msprop:Generator_ColumnVarNameInTable="columncant_reposicion" msprop:Generator_ColumnPropNameInRow="cant_reposicion" msprop:Generator_ColumnPropNameInTable="cant_reposicionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="cant_error_codigo" msprop:Generator_UserColumnName="cant_error_codigo" msprop:Generator_ColumnVarNameInTable="columncant_error_codigo" msprop:Generator_ColumnPropNameInRow="cant_error_codigo" msprop:Generator_ColumnPropNameInTable="cant_error_codigoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="cant_error_codigo_por_otro" msprop:Generator_UserColumnName="cant_error_codigo_por_otro" msprop:Generator_ColumnVarNameInTable="columncant_error_codigo_por_otro" msprop:Generator_ColumnPropNameInRow="cant_error_codigo_por_otro" msprop:Generator_ColumnPropNameInTable="cant_error_codigo_por_otroColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="error_ventas" msprop:Generator_UserColumnName="error_ventas" msprop:Generator_ColumnVarNameInTable="columnerror_ventas" msprop:Generator_ColumnPropNameInRow="error_ventas" msprop:Generator_ColumnPropNameInTable="error_ventasColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="error_no_contar_guias" msprop:Generator_UserColumnName="error_no_contar_guias" msprop:Generator_ColumnVarNameInTable="columnerror_no_contar_guias" msprop:Generator_ColumnPropNameInRow="error_no_contar_guias" msprop:Generator_ColumnPropNameInTable="error_no_contar_guiasColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="error_no_cumplir_plazo" msprop:Generator_UserColumnName="error_no_cumplir_plazo" msprop:Generator_ColumnVarNameInTable="columnerror_no_cumplir_plazo" msprop:Generator_ColumnPropNameInRow="error_no_cumplir_plazo" msprop:Generator_ColumnPropNameInTable="error_no_cumplir_plazoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="error_no_despachada" msprop:Generator_UserColumnName="error_no_despachada" msprop:Generator_ColumnVarNameInTable="columnerror_no_despachada" msprop:Generator_ColumnPropNameInRow="error_no_despachada" msprop:Generator_ColumnPropNameInTable="error_no_despachadaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="recarga_despachos" msprop:Generator_UserColumnName="recarga_despachos" msprop:Generator_ColumnVarNameInTable="columnrecarga_despachos" msprop:Generator_ColumnPropNameInRow="recarga_despachos" msprop:Generator_ColumnPropNameInTable="recarga_despachosColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="cliente" msprop:Generator_UserColumnName="cliente" msprop:Generator_ColumnVarNameInTable="columncliente" msprop:Generator_ColumnPropNameInRow="cliente" msprop:Generator_ColumnPropNameInTable="clienteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="observaciones" msprop:Generator_UserColumnName="observaciones" msprop:Generator_ColumnVarNameInTable="columnobservaciones" msprop:Generator_ColumnPropNameInRow="observaciones" msprop:Generator_ColumnPropNameInTable="observacionesColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="detalle_Incidencia" msprop:Generator_UserTableName="detalle_Incidencia" msprop:Generator_RowDeletedName="detalle_IncidenciaRowDeleted" msprop:Generator_RowChangedName="detalle_IncidenciaRowChanged" msprop:Generator_RowClassName="detalle_IncidenciaRow" msprop:Generator_RowChangingName="detalle_IncidenciaRowChanging" msprop:Generator_RowEvArgName="detalle_IncidenciaRowChangeEvent" msprop:Generator_RowEvHandlerName="detalle_IncidenciaRowChangeEventHandler" msprop:Generator_TableClassName="detalle_IncidenciaDataTable" msprop:Generator_TableVarName="tabledetalle_Incidencia" msprop:Generator_RowDeletingName="detalle_IncidenciaRowDeleting" msprop:Generator_TablePropName="detalle_Incidencia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tipo" msprop:Generator_UserColumnName="tipo" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_UserColumnName="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

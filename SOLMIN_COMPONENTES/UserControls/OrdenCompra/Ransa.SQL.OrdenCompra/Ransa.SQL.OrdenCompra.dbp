@@ -1,0 +1,39 @@
+# Archivo de proyecto de Microsoft Developer Studio - Proyecto de base de datos
+Begin DataProject = "Ransa.SQL.OrdenCompra"
+   MSDTVersion = "80"
+   DefDBRef = "ODBC.RANSA.DB2400"
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "ODBC.RANSA.DB2400"
+         ConnectStr = "Dsn=PRODUCCION;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+      Begin DBRefNode = "ODBC.RANSA01.DB2400"
+         ConnectStr = "Dsn=DESARROLLO;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+   End
+   Begin Folder = "Functions"
+      Script = "FN_SOLMIN_OC_SUBITEM_RZOL39S_CANTIDAD_SUBITEMS_X_ITEM.sql"
+   End
+   Begin Folder = "Procedures"
+      Script = "SP_SOLMIN_OC_ITEM_RZOL39_INS.sql"
+      Script = "SP_SOLMIN_OC_ITEM_RZOL39_L01.sql"
+      Script = "SP_SOLMIN_OC_ITEM_RZOL39_L02.sql"
+      Script = "SP_SOLMIN_OC_ITEM_RZOL39_L03.sql"
+      Script = "SP_SOLMIN_OC_ITEM_RZOL39_OBJ.sql"
+      Script = "SP_SOLMIN_OC_ITEM_RZOL39_R01.sql"
+      Script = "SP_SOLMIN_OC_RZOL38_DEL.sql"
+      Script = "SP_SOLMIN_OC_RZOL38_INS.sql"
+      Script = "SP_SOLMIN_OC_RZOL38_L01.sql"
+      Script = "SP_SOLMIN_OC_RZOL38_OBJ.sql"
+      Script = "SP_SOLMIN_OC_SUB_ITEM_RZOL39S_INS.sql"
+      Script = "SP_SOLMIN_OC_SUB_ITEM_RZOL39S_L01.sql"
+      Script = "SP_SOLMIN_OC_SUB_ITEM_RZOL39S_OBJ.sql"
+      Script = "SP_SOLMIN_SAT_OC_ITEM_RZOL39_DEL.sql"
+      Script = "SP_SOLMIN_SAT_OC_SUB_ITEM_RZOL39S_DEL.sql"
+   End
+   Begin Folder = "Queries"
+   End
+End

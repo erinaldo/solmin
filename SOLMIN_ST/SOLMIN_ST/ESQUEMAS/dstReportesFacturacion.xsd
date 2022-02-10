@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReportesFacturacion" targetNamespace="http://tempuri.org/dstReportesFacturacion.xsd" xmlns:mstns="http://tempuri.org/dstReportesFacturacion.xsd" xmlns="http://tempuri.org/dstReportesFacturacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReportesFacturacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReportesFacturacion" msprop:Generator_DataSetName="dstReportesFacturacion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbRendimientoUnidad" msprop:Generator_UserTableName="dtbRendimientoUnidad" msprop:Generator_RowDeletedName="dtbRendimientoUnidadRowDeleted" msprop:Generator_RowChangedName="dtbRendimientoUnidadRowChanged" msprop:Generator_RowClassName="dtbRendimientoUnidadRow" msprop:Generator_RowChangingName="dtbRendimientoUnidadRowChanging" msprop:Generator_RowEvArgName="dtbRendimientoUnidadRowChangeEvent" msprop:Generator_RowEvHandlerName="dtbRendimientoUnidadRowChangeEventHandler" msprop:Generator_TableClassName="dtbRendimientoUnidadDataTable" msprop:Generator_TableVarName="tabledtbRendimientoUnidad" msprop:Generator_RowDeletingName="dtbRendimientoUnidadRowDeleting" msprop:Generator_TablePropName="dtbRendimientoUnidad">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NPLCTR" msprop:Generator_UserColumnName="NPLCTR" msprop:Generator_ColumnVarNameInTable="columnNPLCTR" msprop:Generator_ColumnPropNameInRow="NPLCTR" msprop:Generator_ColumnPropNameInTable="NPLCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TUNDVH" msprop:Generator_UserColumnName="TUNDVH" msprop:Generator_ColumnVarNameInTable="columnTUNDVH" msprop:Generator_ColumnPropNameInRow="TUNDVH" msprop:Generator_ColumnPropNameInTable="TUNDVHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ISRVGU" msprop:Generator_UserColumnName="ISRVGU" msprop:Generator_ColumnPropNameInRow="ISRVGU" msprop:Generator_ColumnVarNameInTable="columnISRVGU" msprop:Generator_ColumnPropNameInTable="ISRVGUColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ISRVGU_A" msprop:Generator_UserColumnName="ISRVGU_A" msprop:Generator_ColumnVarNameInTable="columnISRVGU_A" msprop:Generator_ColumnPropNameInRow="ISRVGU_A" msprop:Generator_ColumnPropNameInTable="ISRVGU_AColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="IMPPET" msprop:Generator_UserColumnName="IMPPET" msprop:Generator_ColumnVarNameInTable="columnIMPPET" msprop:Generator_ColumnPropNameInRow="IMPPET" msprop:Generator_ColumnPropNameInTable="IMPPETColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="IMPAVC" msprop:Generator_UserColumnName="IMPAVC" msprop:Generator_ColumnVarNameInTable="columnIMPAVC" msprop:Generator_ColumnPropNameInRow="IMPAVC" msprop:Generator_ColumnPropNameInTable="IMPAVCColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="IMPGST" msprop:Generator_UserColumnName="IMPGST" msprop:Generator_ColumnVarNameInTable="columnIMPGST" msprop:Generator_ColumnPropNameInRow="IMPGST" msprop:Generator_ColumnPropNameInTable="IMPGSTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="RENDIM" msprop:Generator_UserColumnName="RENDIM" msprop:Generator_ColumnVarNameInTable="columnRENDIM" msprop:Generator_ColumnPropNameInRow="RENDIM" msprop:Generator_ColumnPropNameInTable="RENDIMColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PORENT" msprop:Generator_UserColumnName="PORENT" msprop:Generator_ColumnVarNameInTable="columnPORENT" msprop:Generator_ColumnPropNameInRow="PORENT" msprop:Generator_ColumnPropNameInTable="PORENTColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

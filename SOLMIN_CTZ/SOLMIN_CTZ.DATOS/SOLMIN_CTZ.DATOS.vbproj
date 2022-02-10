@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33B6CD37-4D62-427E-B36B-050CA5FB3E23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SOLMIN_CTZ.DATOS</RootNamespace>
+    <AssemblyName>SOLMIN_CTZ.DATOS</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOLMIN_COTIZACIONES.DATOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOLMIN_COTIZACIONES.DATOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General\clsAyudaGeneral.vb" />
+    <Compile Include="General\clsBase.vb" />
+    <Compile Include="General\clsCalendario.vb" />
+    <Compile Include="General\clsCentroCosto.vb" />
+    <Compile Include="General\clsClaseOrden.vb" />
+    <Compile Include="General\clsCliente.vb" />
+    <Compile Include="General\clsCompania.vb" />
+    <Compile Include="General\clsDestMailValorizacion.vb" />
+    <Compile Include="General\clsDirecServ.vb" />
+    <Compile Include="General\clsDivision.vb" />
+    <Compile Include="General\clsGeneral.vb" />
+    <Compile Include="General\clsIGV.vb" />
+    <Compile Include="General\clsManteniValorizacion.vb" />
+    <Compile Include="General\clsMoneda.vb" />
+    <Compile Include="General\clsPlanta.vb" />
+    <Compile Include="General\clsRegionVenta.vb" />
+    <Compile Include="General\clsTipoDocumento.vb" />
+    <Compile Include="General\clsUbigeo.vb" />
+    <Compile Include="General\clsUploadImagen.vb" />
+    <Compile Include="General\clsUrlServicio.vb" />
+    <Compile Include="General\clsValorizacion.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Operacion\clsAprobadorDA.vb" />
+    <Compile Include="Operacion\clsContrato.vb" />
+    <Compile Include="Operacion\clsCtaCta_Venta.vb" />
+    <Compile Include="Operacion\clsCtaCte_Observacion.vb" />
+    <Compile Include="Operacion\clsCuentaCorriente.vb" />
+    <Compile Include="Operacion\clsDetalleTarifaTipoFlete.vb" />
+    <Compile Include="Operacion\clsDetContrato.vb" />
+    <Compile Include="Operacion\clsFactura.vb" />
+    <Compile Include="Operacion\clsFacturaPreDoc_DA.vb" />
+    <Compile Include="Operacion\clsFacturaSIL.vb" />
+    <Compile Include="Operacion\clsFleteMargen.vb" />
+    <Compile Include="Operacion\clsOrdenesInternas.vb" />
+    <Compile Include="Operacion\clsOrdenInternaControl.vb" />
+    <Compile Include="Operacion\clsParteTransferenciaDA.vb" />
+    <Compile Include="Operacion\clsPreLiquidacion.vb" />
+    <Compile Include="Operacion\clsProvisionDeVenta.vb" />
+    <Compile Include="Operacion\clsRangoTarifaXTarifaFlete.vb" />
+    <Compile Include="Operacion\clsResumenMensualAlmacenes.vb" />
+    <Compile Include="Operacion\clsRubro.vb" />
+    <Compile Include="Operacion\clsRubroXDivision.vb" />
+    <Compile Include="Operacion\clsSeguimientoDocumentos.vb" />
+    <Compile Include="Operacion\clsServicio.vb" />
+    <Compile Include="Operacion\clsServicioAtendido.vb" />
+    <Compile Include="Operacion\clsServicioOperacion.vb" />
+    <Compile Include="Operacion\clsServicioSILDat.vb" />
+    <Compile Include="Operacion\clsServicioXDivision.vb" />
+    <Compile Include="General\clsUM.vb" />
+    <Compile Include="Operacion\clsTarifa.vb" />
+    <Compile Include="Operacion\clsTarifario.vb" />
+    <Compile Include="Operacion\clsVentaInternaDA.vb" />
+    <Compile Include="Operacion\EnvioEmailAprobacionMargen_DAL.vb" />
+    <Compile Include="Operacion\transporte\Autenticacion_DAL.vb" />
+    <Compile Include="Operacion\transporte\DbBridge.vb" />
+    <Compile Include="Seguridad\Bitacora_Detalle.vb" />
+    <Compile Include="Seguridad\clsAcceso.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_CTZ.Entidades\SOLMIN_CTZ.ENTIDADES.vbproj">
+      <Project>{E8395264-FC27-46CE-9031-A4F96FE3C8B6}</Project>
+      <Name>SOLMIN_CTZ.ENTIDADES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

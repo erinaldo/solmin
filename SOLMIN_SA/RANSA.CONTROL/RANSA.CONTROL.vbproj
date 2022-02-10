@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02FD3D93-B99D-4EA7-A067-AFE76A00CA1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RANSA.CONTROL</RootNamespace>
+    <AssemblyName>RANSA.CONTROL</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RANSA.CONTROL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RANSA.CONTROL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e">
+      <HintPath>..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SOLMIN_COMPONENTES\UserControls\Utilitario\Ransa.Utilitario\NPOI\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOIV2, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SOLMIN_COMPONENTES\DLL\NPOI\NPOIV2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ayuda\Busqueda.vb" />
+    <Compile Include="Ayuda\Comparador.vb" />
+    <Compile Include="Ayuda\frmAyudaConectado.Designer.vb">
+      <DependentUpon>frmAyudaConectado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\frmAyudaConectado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\ucAyudaConectado.Designer.vb">
+      <DependentUpon>ucAyudaConectado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\ucAyudaConectado.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ayuda\frmAyuda.Designer.vb">
+      <DependentUpon>frmAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\frmAyuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\Predicado.vb" />
+    <Compile Include="Ayuda\ucAyuda.Designer.vb">
+      <DependentUpon>ucAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\ucAyuda.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Busqueda.vb" />
+    <Compile Include="CheckComboBoxTest\CheckComboBoxTest.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CheckComboBoxTest\CCBoxItem.vb" />
+    <Compile Include="frmBusquedaGeneral.designer.vb">
+      <DependentUpon>frmBusquedaGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyuda.Designer.vb">
+      <DependentUpon>frmAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAyuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UcMedioTransporte.Designer.vb">
+      <DependentUpon>UcMedioTransporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UcMedioTransporte.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProyecto.Designer.vb">
+      <DependentUpon>ucProyecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucProyecto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucText.Designer.vb">
+      <DependentUpon>ucText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucText.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ayuda\frmAyudaConectado.resx">
+      <DependentUpon>frmAyudaConectado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\ucAyudaConectado.resx">
+      <DependentUpon>ucAyudaConectado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\frmAyuda.resx">
+      <DependentUpon>frmAyuda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\ucAyuda.resx">
+      <DependentUpon>ucAyuda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaGeneral.resx">
+      <DependentUpon>frmBusquedaGeneral.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAyuda.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAyuda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcMedioTransporte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UcMedioTransporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProyecto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucProyecto.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{E440D2C4-A8D1-44EE-9A08-18D9ACEA0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\PlantaDeEntrega\Ransa.Controls.PlantaDeEntrega\Ransa.Controls.PlantaDeEntrega.vbproj">
+      <Project>{B04DCB49-844F-468A-B75D-1A5093F08C0C}</Project>
+      <Name>Ransa.Controls.PlantaDeEntrega</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\PlantaDeEntrega\Ransa.DAO.PlantaDeEntrega\Ransa.DAO.PlantaDeEntrega.vbproj">
+      <Project>{C9D71863-4D20-4328-9236-5100D1F544A1}</Project>
+      <Name>Ransa.DAO.PlantaDeEntrega</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\PlantaDeEntrega\Ransa.TypeDef.PlantaDeEntrega\Ransa.TypeDef.PlantaDeEntrega.vbproj">
+      <Project>{598C7766-5464-4E48-B657-08A43D51791E}</Project>
+      <Name>Ransa.TypeDef.PlantaDeEntrega</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SOLMIN_COMPONENTES\UserControls\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SA.Datos\RANSA.DATA.vbproj">
+      <Project>{57583771-9974-49B0-8C46-3BBCC5EA6467}</Project>
+      <Name>RANSA.DATA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SA.Negocio\RANSA.NEGO.vbproj">
+      <Project>{51B8061D-C481-405B-B692-7C2EDC3464CB}</Project>
+      <Name>RANSA.NEGO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLMIN_SA.TypeDef\RANSA.TYPEDEF.vbproj">
+      <Project>{92EF2C77-6996-427A-8E39-0F003417E224}</Project>
+      <Name>RANSA.TYPEDEF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

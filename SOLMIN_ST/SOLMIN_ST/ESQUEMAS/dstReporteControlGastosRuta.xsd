@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReporteControlGastosRuta" targetNamespace="http://tempuri.org/dstReporteControlGastosRuta.xsd" xmlns:mstns="http://tempuri.org/dstReporteControlGastosRuta.xsd" xmlns="http://tempuri.org/dstReporteControlGastosRuta.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReporteControlGastosRuta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReporteControlGastosRuta" msprop:Generator_DataSetName="dstReporteControlGastosRuta">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GastosRuta" msprop:Generator_UserTableName="GastosRuta" msprop:Generator_RowDeletedName="GastosRutaRowDeleted" msprop:Generator_RowChangedName="GastosRutaRowChanged" msprop:Generator_RowClassName="GastosRutaRow" msprop:Generator_RowChangingName="GastosRutaRowChanging" msprop:Generator_RowEvArgName="GastosRutaRowChangeEvent" msprop:Generator_RowEvHandlerName="GastosRutaRowChangeEventHandler" msprop:Generator_TableClassName="GastosRutaDataTable" msprop:Generator_TableVarName="tableGastosRuta" msprop:Generator_RowDeletingName="GastosRutaRowDeleting" msprop:Generator_TablePropName="GastosRuta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FCSLPE" msprop:Generator_UserColumnName="FCSLPE" msprop:Generator_ColumnVarNameInTable="columnFCSLPE" msprop:Generator_ColumnPropNameInRow="FCSLPE" msprop:Generator_ColumnPropNameInTable="FCSLPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COBRR" msprop:Generator_UserColumnName="COBRR" msprop:Generator_ColumnVarNameInTable="columnCOBRR" msprop:Generator_ColumnPropNameInRow="COBRR" msprop:Generator_ColumnPropNameInTable="COBRRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TNMBOB" msprop:Generator_UserColumnName="TNMBOB" msprop:Generator_ColumnVarNameInTable="columnTNMBOB" msprop:Generator_ColumnPropNameInRow="TNMBOB" msprop:Generator_ColumnPropNameInTable="TNMBOBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NPLCUN" msprop:Generator_UserColumnName="NPLCUN" msprop:Generator_ColumnVarNameInTable="columnNPLCUN" msprop:Generator_ColumnPropNameInRow="NPLCUN" msprop:Generator_ColumnPropNameInTable="NPLCUNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CLCLOR" msprop:Generator_UserColumnName="CLCLOR" msprop:Generator_ColumnVarNameInTable="columnCLCLOR" msprop:Generator_ColumnPropNameInRow="CLCLOR" msprop:Generator_ColumnPropNameInTable="CLCLORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ORIGEN" msprop:Generator_UserColumnName="ORIGEN" msprop:Generator_ColumnVarNameInTable="columnORIGEN" msprop:Generator_ColumnPropNameInRow="ORIGEN" msprop:Generator_ColumnPropNameInTable="ORIGENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CLCLDS" msprop:Generator_UserColumnName="CLCLDS" msprop:Generator_ColumnVarNameInTable="columnCLCLDS" msprop:Generator_ColumnPropNameInRow="CLCLDS" msprop:Generator_ColumnPropNameInTable="CLCLDSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DESTIN" msprop:Generator_UserColumnName="DESTIN" msprop:Generator_ColumnVarNameInTable="columnDESTIN" msprop:Generator_ColumnPropNameInRow="DESTIN" msprop:Generator_ColumnPropNameInTable="DESTINColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRTAVC" msprop:Generator_UserColumnName="IRTAVC" msprop:Generator_ColumnVarNameInTable="columnIRTAVC" msprop:Generator_ColumnPropNameInRow="IRTAVC" msprop:Generator_ColumnPropNameInTable="IRTAVCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IARAVC" msprop:Generator_UserColumnName="IARAVC" msprop:Generator_ColumnVarNameInTable="columnIARAVC" msprop:Generator_ColumnPropNameInRow="IARAVC" msprop:Generator_ColumnPropNameInTable="IARAVCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NCTAVC" msprop:Generator_UserColumnName="NCTAVC" msprop:Generator_ColumnVarNameInTable="columnNCTAVC" msprop:Generator_ColumnPropNameInRow="NCTAVC" msprop:Generator_ColumnPropNameInTable="NCTAVCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOPRCN" msprop:Generator_UserColumnName="NOPRCN" msprop:Generator_ColumnVarNameInTable="columnNOPRCN" msprop:Generator_ColumnPropNameInRow="NOPRCN" msprop:Generator_ColumnPropNameInTable="NOPRCNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CCNTCS" msprop:Generator_UserColumnName="CCNTCS" msprop:Generator_ColumnVarNameInTable="columnCCNTCS" msprop:Generator_ColumnPropNameInRow="CCNTCS" msprop:Generator_ColumnPropNameInTable="CCNTCSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCNTCS" msprop:Generator_UserColumnName="TCNTCS" msprop:Generator_ColumnVarNameInTable="columnTCNTCS" msprop:Generator_ColumnPropNameInRow="TCNTCS" msprop:Generator_ColumnPropNameInTable="TCNTCSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NMSOLC" msprop:Generator_UserColumnName="NMSOLC" msprop:Generator_ColumnVarNameInTable="columnNMSOLC" msprop:Generator_ColumnPropNameInRow="NMSOLC" msprop:Generator_ColumnPropNameInTable="NMSOLCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IMPSOL" msprop:Generator_UserColumnName="IMPSOL" msprop:Generator_ColumnVarNameInTable="columnIMPSOL" msprop:Generator_ColumnPropNameInRow="IMPSOL" msprop:Generator_ColumnPropNameInTable="IMPSOLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IMPAVCSTR" msprop:Generator_UserColumnName="IMPAVCSTR" msprop:Generator_ColumnVarNameInTable="columnIMPAVCSTR" msprop:Generator_ColumnPropNameInRow="IMPAVCSTR" msprop:Generator_ColumnPropNameInTable="IMPAVCSTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MOTIVO" msprop:Generator_UserColumnName="MOTIVO" msprop:Generator_ColumnPropNameInRow="MOTIVO" msprop:Generator_ColumnVarNameInTable="columnMOTIVO" msprop:Generator_ColumnPropNameInTable="MOTIVOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CBRCNT" msprop:Generator_UserColumnName="CBRCNT" msprop:Generator_ColumnVarNameInTable="columnCBRCNT" msprop:Generator_ColumnPropNameInRow="CBRCNT" msprop:Generator_ColumnPropNameInTable="CBRCNTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RUTA" msprop:Generator_UserColumnName="RUTA" msprop:Generator_ColumnPropNameInRow="RUTA" msprop:Generator_ColumnVarNameInTable="columnRUTA" msprop:Generator_ColumnPropNameInTable="RUTAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CMTCDS" msprop:Generator_UserColumnName="CMTCDS" msprop:Generator_ColumnVarNameInTable="columnCMTCDS" msprop:Generator_ColumnPropNameInRow="CMTCDS" msprop:Generator_ColumnPropNameInTable="CMTCDSColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

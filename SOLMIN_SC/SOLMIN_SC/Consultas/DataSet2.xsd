@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet2" msprop:Generator_DataSetName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DtTable1" msprop:Generator_UserTableName="DtTable1" msprop:Generator_RowDeletedName="DtTable1RowDeleted" msprop:Generator_RowChangedName="DtTable1RowChanged" msprop:Generator_RowClassName="DtTable1Row" msprop:Generator_RowChangingName="DtTable1RowChanging" msprop:Generator_RowEvArgName="DtTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DtTable1RowChangeEventHandler" msprop:Generator_TableClassName="DtTable1DataTable" msprop:Generator_TableVarName="tableDtTable1" msprop:Generator_RowDeletingName="DtTable1RowDeleting" msprop:Generator_TablePropName="DtTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tcitcl" msprop:Generator_UserColumnName="tcitcl" msprop:Generator_ColumnVarNameInTable="columntcitcl" msprop:Generator_ColumnPropNameInRow="tcitcl" msprop:Generator_ColumnPropNameInTable="tcitclColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="tdites" msprop:Generator_UserColumnName="tdites" msprop:Generator_ColumnVarNameInTable="columntdites" msprop:Generator_ColumnPropNameInRow="tdites" msprop:Generator_ColumnPropNameInTable="tditesColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NRPEMB" msprop:Generator_UserColumnName="NRPEMB" msprop:Generator_ColumnVarNameInTable="columnNRPEMB" msprop:Generator_ColumnPropNameInRow="NRPEMB" msprop:Generator_ColumnPropNameInTable="NRPEMBColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NORSCI" msprop:Generator_UserColumnName="NORSCI" msprop:Generator_ColumnVarNameInTable="columnNORSCI" msprop:Generator_ColumnPropNameInRow="NORSCI" msprop:Generator_ColumnPropNameInTable="NORSCIColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qAtendida" msprop:Generator_UserColumnName="qAtendida" msprop:Generator_ColumnVarNameInTable="columnqAtendida" msprop:Generator_ColumnPropNameInRow="qAtendida" msprop:Generator_ColumnPropNameInTable="qAtendidaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" msprop:Generator_UserColumnName="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NMONOC" msprop:Generator_UserColumnName="NMONOC" msprop:Generator_ColumnVarNameInTable="columnNMONOC" msprop:Generator_ColumnPropNameInRow="NMONOC" msprop:Generator_ColumnPropNameInTable="NMONOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TPAGME" msprop:Generator_UserColumnName="TPAGME" msprop:Generator_ColumnVarNameInTable="columnTPAGME" msprop:Generator_ColumnPropNameInRow="TPAGME" msprop:Generator_ColumnPropNameInTable="TPAGMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TTINTC" msprop:Generator_UserColumnName="TTINTC" msprop:Generator_ColumnVarNameInTable="columnTTINTC" msprop:Generator_ColumnPropNameInRow="TTINTC" msprop:Generator_ColumnPropNameInTable="TTINTCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TNOMCOM" msprop:Generator_UserColumnName="TNOMCOM" msprop:Generator_ColumnVarNameInTable="columnTNOMCOM" msprop:Generator_ColumnPropNameInRow="TNOMCOM" msprop:Generator_ColumnPropNameInTable="TNOMCOMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCrea102" msprop:Generator_UserColumnName="FechaCrea102" msprop:Generator_ColumnVarNameInTable="columnFechaCrea102" msprop:Generator_ColumnPropNameInRow="FechaCrea102" msprop:Generator_ColumnPropNameInTable="FechaCrea102Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEst102" msprop:Generator_UserColumnName="FechaEst102" msprop:Generator_ColumnVarNameInTable="columnFechaEst102" msprop:Generator_ColumnPropNameInRow="FechaEst102" msprop:Generator_ColumnPropNameInTable="FechaEst102Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCrea103" msprop:Generator_UserColumnName="FechaCrea103" msprop:Generator_ColumnVarNameInTable="columnFechaCrea103" msprop:Generator_ColumnPropNameInRow="FechaCrea103" msprop:Generator_ColumnPropNameInTable="FechaCrea103Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEst103" msprop:Generator_UserColumnName="FechaEst103" msprop:Generator_ColumnVarNameInTable="columnFechaEst103" msprop:Generator_ColumnPropNameInRow="FechaEst103" msprop:Generator_ColumnPropNameInTable="FechaEst103Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCrea107" msprop:Generator_UserColumnName="FechaCrea107" msprop:Generator_ColumnVarNameInTable="columnFechaCrea107" msprop:Generator_ColumnPropNameInRow="FechaCrea107" msprop:Generator_ColumnPropNameInTable="FechaCrea107Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEst107" msprop:Generator_UserColumnName="FechaEst107" msprop:Generator_ColumnVarNameInTable="columnFechaEst107" msprop:Generator_ColumnPropNameInRow="FechaEst107" msprop:Generator_ColumnPropNameInTable="FechaEst107Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCrea108" msprop:Generator_UserColumnName="FechaCrea108" msprop:Generator_ColumnVarNameInTable="columnFechaCrea108" msprop:Generator_ColumnPropNameInRow="FechaCrea108" msprop:Generator_ColumnPropNameInTable="FechaCrea108Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEst108" msprop:Generator_UserColumnName="FechaEst108" msprop:Generator_ColumnVarNameInTable="columnFechaEst108" msprop:Generator_ColumnPropNameInRow="FechaEst108" msprop:Generator_ColumnPropNameInTable="FechaEst108Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCrea124" msprop:Generator_UserColumnName="FechaCrea124" msprop:Generator_ColumnPropNameInRow="FechaCrea124" msprop:Generator_ColumnVarNameInTable="columnFechaCrea124" msprop:Generator_ColumnPropNameInTable="FechaCrea124Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEst124" msprop:Generator_UserColumnName="FechaEst124" msprop:Generator_ColumnPropNameInRow="FechaEst124" msprop:Generator_ColumnVarNameInTable="columnFechaEst124" msprop:Generator_ColumnPropNameInTable="FechaEst124Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

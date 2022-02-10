@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39AD819A-4F63-4829-B963-B9803FD011C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SOLMIN_TR.CTLGUIA_TRANSPORTISTA</RootNamespace>
+    <AssemblyName>SOLMIN_TR.CTLGUIA_TRANSPORTISTA</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOLMIN_TR.CTLGUIA_TRANSPORTISTA.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOLMIN_TR.CTLGUIA_TRANSPORTISTA.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeTextBox, Version=1.0.3321.17351, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CodeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CTLGuiaTransportista.Designer.vb">
+      <DependentUpon>CTLGuiaTransportista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CTLGuiaTransportista.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Esquemas\Schema.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Schema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeleccionarPlaneamiento.Designer.vb">
+      <DependentUpon>frmSeleccionarPlaneamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeleccionarPlaneamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\MainModule.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrintForm.Designer.vb">
+      <DependentUpon>PrintForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\rptGuiaTransportista.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaTransportista.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CTLGuiaTransportista.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CTLGuiaTransportista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeleccionarPlaneamiento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSeleccionarPlaneamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\rptGuiaTransportista.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaTransportista.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software-development.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Esquemas\Schema.xsc">
+      <DependentUpon>Schema.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Schema.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Schema.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Esquemas\Schema.xss">
+      <DependentUpon>Schema.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\printer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DBManager\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SolucionesWIN\slnSOLMIN_TR\RANSA.DATA\SOLMIN_TR.DATOS.vbproj">
+      <Project>{DF779BAE-DE4E-4C49-8B71-17E350DDBF51}</Project>
+      <Name>SOLMIN_TR.DATOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SolucionesWIN\slnSOLMIN_TR\RANSA.NEGO\SOLMIN_TR.NEGOCIO.vbproj">
+      <Project>{51CEB280-AB1B-4B0F-8C15-A58C807C045B}</Project>
+      <Name>SOLMIN_TR.NEGOCIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReporteObreros" targetNamespace="http://tempuri.org/dstReporteObreros.xsd" xmlns:mstns="http://tempuri.org/dstReporteObreros.xsd" xmlns="http://tempuri.org/dstReporteObreros.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReporteObreros" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstReporteObreros" msprop:Generator_DataSetName="dstReporteObreros">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OBRERO" msprop:Generator_UserTableName="OBRERO" msprop:Generator_RowDeletedName="OBRERORowDeleted" msprop:Generator_RowChangedName="OBRERORowChanged" msprop:Generator_RowClassName="OBRERORow" msprop:Generator_RowChangingName="OBRERORowChanging" msprop:Generator_RowEvArgName="OBRERORowChangeEvent" msprop:Generator_RowEvHandlerName="OBRERORowChangeEventHandler" msprop:Generator_TableClassName="OBRERODataTable" msprop:Generator_TableVarName="tableOBRERO" msprop:Generator_RowDeletingName="OBRERORowDeleting" msprop:Generator_TablePropName="OBRERO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COBRR" msprop:Generator_UserColumnName="COBRR" msprop:Generator_ColumnVarNameInTable="columnCOBRR" msprop:Generator_ColumnPropNameInRow="COBRR" msprop:Generator_ColumnPropNameInTable="COBRRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TNMBOB" msprop:Generator_UserColumnName="TNMBOB" msprop:Generator_ColumnVarNameInTable="columnTNMBOB" msprop:Generator_ColumnPropNameInRow="TNMBOB" msprop:Generator_ColumnPropNameInTable="TNMBOBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FINGCH" msprop:Generator_UserColumnName="FINGCH" msprop:Generator_ColumnVarNameInTable="columnFINGCH" msprop:Generator_ColumnPropNameInRow="FINGCH" msprop:Generator_ColumnPropNameInTable="FINGCHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FVNCCR" msprop:Generator_UserColumnName="FVNCCR" msprop:Generator_ColumnVarNameInTable="columnFVNCCR" msprop:Generator_ColumnPropNameInRow="FVNCCR" msprop:Generator_ColumnPropNameInTable="FVNCCRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CMTCDS" msprop:Generator_UserColumnName="CMTCDS" msprop:Generator_ColumnVarNameInTable="columnCMTCDS" msprop:Generator_ColumnPropNameInRow="CMTCDS" msprop:Generator_ColumnPropNameInTable="CMTCDSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCATEG" msprop:Generator_UserColumnName="TCATEG" msprop:Generator_ColumnVarNameInTable="columnTCATEG" msprop:Generator_ColumnPropNameInRow="TCATEG" msprop:Generator_ColumnPropNameInTable="TCATEGColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

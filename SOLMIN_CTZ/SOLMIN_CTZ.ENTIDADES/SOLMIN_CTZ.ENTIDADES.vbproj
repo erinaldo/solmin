@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8395264-FC27-46CE-9031-A4F96FE3C8B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SOLMIN_CTZ.Entidades</RootNamespace>
+    <AssemblyName>SOLMIN_CTZ.Entidades</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOLMIN_CTZ.Entidades.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOLMIN_CTZ.Entidades.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\Base.vb" />
+    <Compile Include="Entidades\beAprobador.vb" />
+    <Compile Include="Entidades\beAyudaGeneral.vb" />
+    <Compile Include="Entidades\beCalendario.vb" />
+    <Compile Include="Entidades\beClienteDireccion.vb" />
+    <Compile Include="Entidades\beCorreoValorizacion.vb" />
+    <Compile Include="Entidades\beDestinatario.vb" />
+    <Compile Include="Entidades\beDirecServ.vb" />
+    <Compile Include="Entidades\beFactParam.vb" />
+    <Compile Include="Entidades\beImputCeBe.vb" />
+    <Compile Include="Entidades\beImputCeCo.vb" />
+    <Compile Include="Entidades\beMantValorizacion.vb" />
+    <Compile Include="Entidades\bePlanta.vb" />
+    <Compile Include="Entidades\beSector.vb" />
+    <Compile Include="Entidades\beUbigeo.vb" />
+    <Compile Include="Entidades\beZonaFacturacion.vb" />
+    <Compile Include="Entidades\Bitacora_Contrato.vb" />
+    <Compile Include="Entidades\Bitacora_Detalle.vb" />
+    <Compile Include="Entidades\CentroCosto.vb" />
+    <Compile Include="Entidades\CentroCostoTarifa.vb" />
+    <Compile Include="Entidades\Cliente.vb" />
+    <Compile Include="Entidades\beFactura_Transporte.vb" />
+    <Compile Include="Entidades\Contrato.vb" />
+    <Compile Include="Entidades\Contrato_Almacen.vb" />
+    <Compile Include="Entidades\Contrato_SIL.vb" />
+    <Compile Include="Entidades\Contrato_Transporte.vb" />
+    <Compile Include="Entidades\CuentaCorriente.vb" />
+    <Compile Include="Entidades\DetalleTarifaTipoFlete.vb" />
+    <Compile Include="Entidades\Detalle_Contrato.vb" />
+    <Compile Include="Entidades\FacturaElectronica.vb" />
+    <Compile Include="Entidades\FacturaElectronicaDet.vb" />
+    <Compile Include="Entidades\FacturaHistorialCab.vb" />
+    <Compile Include="Entidades\FacturaHistorialDet.vb" />
+    <Compile Include="Entidades\FacturaPreDoc_BE.vb" />
+    <Compile Include="Entidades\FacturaSIL.vb" />
+    <Compile Include="Entidades\Filtro.vb" />
+    <Compile Include="Entidades\CtaCte_Observacion.vb" />
+    <Compile Include="Entidades\DatosGenerales.vb" />
+    <Compile Include="Entidades\OrdenesInternas.vb" />
+    <Compile Include="Entidades\OrdenInternaControl.vb" />
+    <Compile Include="Entidades\OrdenServicioTransporte.vb" />
+    <Compile Include="Entidades\Planta.vb" />
+    <Compile Include="Entidades\ProvisionVentas.vb" />
+    <Compile Include="Entidades\Rango.vb" />
+    <Compile Include="Entidades\RangoTarifas.vb" />
+    <Compile Include="Entidades\RangoTarifaXTarifaFlete.vb" />
+    <Compile Include="Entidades\RegionVenta.vb" />
+    <Compile Include="Entidades\ResumenMensualAlmacenes.vb" />
+    <Compile Include="Entidades\Rubro_X_Division.vb" />
+    <Compile Include="Entidades\SeguimientoDocumentos.vb" />
+    <Compile Include="Entidades\Servicio.vb" />
+    <Compile Include="Entidades\Rubro.vb" />
+    <Compile Include="Entidades\ServicioAlmacen.vb" />
+    <Compile Include="Entidades\ServicioOperacion.vb" />
+    <Compile Include="Entidades\ServicioSIL.vb" />
+    <Compile Include="Entidades\ServicioSILDet.vb" />
+    <Compile Include="Entidades\Servicio_Atendido.vb" />
+    <Compile Include="Entidades\Servicio_General.vb" />
+    <Compile Include="Entidades\Servicio_X_Rubro.vb" />
+    <Compile Include="Entidades\Tarifa.vb" />
+    <Compile Include="Entidades\TarifaSAP.vb" />
+    <Compile Include="Entidades\transporte\ClaseGeneral.vb" />
+    <Compile Include="Entidades\transporte\Moneda.vb" />
+    <Compile Include="Entidades\transporte\OperacionTransporte.vb" />
+    <Compile Include="Entidades\transporte\OrdenServicioTransporte.vb" />
+    <Compile Include="Entidades\transporte\Repartos.vb" />
+    <Compile Include="General\Base_BE.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\Tarifario.vb" />
+    <Compile Include="Entidades\CtaCte_Venta.vb" />
+    <Compile Include="RequestDataReversion.vb" />
+    <Compile Include="Entidades\Valorizacion.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DiagramaEntidades.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

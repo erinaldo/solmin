@@ -1,0 +1,12 @@
+diff a/SOLMIN_SA/SOLMIN_SA/RANSA.APLI.vbproj b/SOLMIN_SA/SOLMIN_SA/RANSA.APLI.vbproj	(rejected hunks)
+@@ -13,8 +13,8 @@
+     <MyType>WindowsForms</MyType>
+     <ApplicationIcon>ICO.ico</ApplicationIcon>
+     <IsWebBootstrapper>true</IsWebBootstrapper>
+-    <ManifestCertificateThumbprint>9678F4E8565222C3FF1029E5924DE6BEF5F552DD</ManifestCertificateThumbprint>
+-    <ManifestKeyFile>RANSA.APLI_TemporaryKey.pfx</ManifestKeyFile>
++    <ManifestCertificateThumbprint>8A9B678267F90067023C765D5426914FEFC8873B</ManifestCertificateThumbprint>
++    <ManifestKeyFile>RANSA.APLI_4_TemporaryKey.pfx</ManifestKeyFile>
+     <GenerateManifests>true</GenerateManifests>
+     <SignManifests>true</SignManifests>
+     <SccProjectName>

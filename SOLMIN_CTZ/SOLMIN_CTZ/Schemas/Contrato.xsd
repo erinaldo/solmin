@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Contrato" targetNamespace="http://tempuri.org/Contrato.xsd" xmlns:mstns="http://tempuri.org/Contrato.xsd" xmlns="http://tempuri.org/Contrato.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Contrato" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Contrato" msprop:Generator_DataSetName="Contrato">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Det_Contrato" msprop:Generator_UserTableName="Det_Contrato" msprop:Generator_RowDeletedName="Det_ContratoRowDeleted" msprop:Generator_RowChangedName="Det_ContratoRowChanged" msprop:Generator_RowClassName="Det_ContratoRow" msprop:Generator_RowChangingName="Det_ContratoRowChanging" msprop:Generator_RowEvArgName="Det_ContratoRowChangeEvent" msprop:Generator_RowEvHandlerName="Det_ContratoRowChangeEventHandler" msprop:Generator_TableClassName="Det_ContratoDataTable" msprop:Generator_TableVarName="tableDet_Contrato" msprop:Generator_RowDeletingName="Det_ContratoRowDeleting" msprop:Generator_TablePropName="Det_Contrato">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NCNTRT" msprop:Generator_UserColumnName="NCNTRT" msprop:Generator_ColumnVarNameInTable="columnNCNTRT" msprop:Generator_ColumnPropNameInRow="NCNTRT" msprop:Generator_ColumnPropNameInTable="NCNTRTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCTR" msprop:Generator_UserColumnName="DESCTR" msprop:Generator_ColumnVarNameInTable="columnDESCTR" msprop:Generator_ColumnPropNameInRow="DESCTR" msprop:Generator_ColumnPropNameInTable="DESCTRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TCNCTO" msprop:Generator_UserColumnName="TCNCTO" msprop:Generator_ColumnVarNameInTable="columnTCNCTO" msprop:Generator_ColumnPropNameInRow="TCNCTO" msprop:Generator_ColumnPropNameInTable="TCNCTOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TMACTO" msprop:Generator_UserColumnName="TMACTO" msprop:Generator_ColumnVarNameInTable="columnTMACTO" msprop:Generator_ColumnPropNameInRow="TMACTO" msprop:Generator_ColumnPropNameInTable="TMACTOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NTLCTO" msprop:Generator_UserColumnName="NTLCTO" msprop:Generator_ColumnVarNameInTable="columnNTLCTO" msprop:Generator_ColumnPropNameInRow="NTLCTO" msprop:Generator_ColumnPropNameInTable="NTLCTOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FEC_INI" msprop:Generator_UserColumnName="FEC_INI" msprop:Generator_ColumnVarNameInTable="columnFEC_INI" msprop:Generator_ColumnPropNameInRow="FEC_INI" msprop:Generator_ColumnPropNameInTable="FEC_INIColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FEC_FIN" msprop:Generator_UserColumnName="FEC_FIN" msprop:Generator_ColumnVarNameInTable="columnFEC_FIN" msprop:Generator_ColumnPropNameInRow="FEC_FIN" msprop:Generator_ColumnPropNameInTable="FEC_FINColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOBS" msprop:Generator_UserColumnName="TOBS" msprop:Generator_ColumnVarNameInTable="columnTOBS" msprop:Generator_ColumnPropNameInRow="TOBS" msprop:Generator_ColumnPropNameInTable="TOBSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMCAR" msprop:Generator_UserColumnName="NOMCAR" msprop:Generator_ColumnVarNameInTable="columnNOMCAR" msprop:Generator_ColumnPropNameInRow="NOMCAR" msprop:Generator_ColumnPropNameInTable="NOMCARColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tarifa_Contrato" msprop:Generator_UserTableName="Tarifa_Contrato" msprop:Generator_RowDeletedName="Tarifa_ContratoRowDeleted" msprop:Generator_RowChangedName="Tarifa_ContratoRowChanged" msprop:Generator_RowClassName="Tarifa_ContratoRow" msprop:Generator_RowChangingName="Tarifa_ContratoRowChanging" msprop:Generator_RowEvArgName="Tarifa_ContratoRowChangeEvent" msprop:Generator_RowEvHandlerName="Tarifa_ContratoRowChangeEventHandler" msprop:Generator_TableClassName="Tarifa_ContratoDataTable" msprop:Generator_TableVarName="tableTarifa_Contrato" msprop:Generator_RowDeletingName="Tarifa_ContratoRowDeleting" msprop:Generator_TablePropName="Tarifa_Contrato">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOMSER" msprop:Generator_UserColumnName="NOMSER" msprop:Generator_ColumnVarNameInTable="columnNOMSER" msprop:Generator_ColumnPropNameInRow="NOMSER" msprop:Generator_ColumnPropNameInTable="NOMSERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOBS" msprop:Generator_UserColumnName="TOBS" msprop:Generator_ColumnVarNameInTable="columnTOBS" msprop:Generator_ColumnPropNameInRow="TOBS" msprop:Generator_ColumnPropNameInTable="TOBSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PLANTA" msprop:Generator_UserColumnName="PLANTA" msprop:Generator_ColumnVarNameInTable="columnPLANTA" msprop:Generator_ColumnPropNameInRow="PLANTA" msprop:Generator_ColumnPropNameInTable="PLANTAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DIVISION" msprop:Generator_UserColumnName="DIVISION" msprop:Generator_ColumnVarNameInTable="columnDIVISION" msprop:Generator_ColumnPropNameInRow="DIVISION" msprop:Generator_ColumnPropNameInTable="DIVISIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TARIFA" msprop:Generator_UserColumnName="TARIFA" msprop:Generator_ColumnVarNameInTable="columnTARIFA" msprop:Generator_ColumnPropNameInRow="TARIFA" msprop:Generator_ColumnPropNameInTable="TARIFAColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

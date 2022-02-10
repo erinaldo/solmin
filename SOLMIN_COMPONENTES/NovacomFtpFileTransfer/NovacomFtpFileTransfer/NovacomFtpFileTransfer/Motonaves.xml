@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DATA>
+  <DATAROW>
+    <NAVE>M.F. Bermejo</NAVE>
+    <PLACA>IQ-20989-MF</PLACA>
+    <AS400>CO1010</AS400>
+  </DATAROW>
+  <DATAROW>
+    <NAVE>M.F. Centenario</NAVE>
+    <PLACA>IQ-20912-MF</PLACA>
+    <AS400>CO1006</AS400>
+  </DATAROW>
+  <DATAROW>
+    <NAVE>M.F. Jibarito</NAVE>
+    <PLACA>IQ-21269-MF</PLACA>
+    <AS400>CO1008</AS400>
+  </DATAROW>
+  <DATAROW>
+    <NAVE>M.F. PAVAYACU</NAVE>
+    <PLACA>IQ-21317-MF</PLACA>
+    <AS400>CO1007</AS400>
+  </DATAROW>
+  <DATAROW>
+    <NAVE>M.F. Porvenir</NAVE>
+    <PLACA>IQ-20988-MF</PLACA>
+    <AS400>CO1002</AS400>
+  </DATAROW>
+  <DATAROW>
+    <NAVE>M.F. Ramos</NAVE>
+    <PLACA>IQ-20924-MF</PLACA>
+    <AS400>CO1004</AS400>
+  </DATAROW>
+  <DATAROW>
+    <NAVE>M.F. San Martin</NAVE>
+    <PLACA>IQ-21270-MF</PLACA>
+    <AS400>CO1009</AS400>
+  </DATAROW> 
+</DATA>

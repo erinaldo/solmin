@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="SOLMIN_SC.Negocio.clsAcceso" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>clsAcceso.vb</FileName>
+      <HashCode>EAAAAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsUsuario" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>clsUsuario.vb</FileName>
+      <HashCode>AAAQAAAAAAACAAAAAAAAAAQGABAAAAgAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsAgenteCarga" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsAgenteCarga.vb</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAACAAAAAAAAAACAAAAAQAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsCanal" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsCanal.vb</FileName>
+      <HashCode>AABAAAAAAAAAAAAAAAgAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsCliente" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsCliente.vb</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAACAAAAAAAACAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsDatosDistribucionOS">
+    <Position X="4.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsDatosDistribucionOS.vb</FileName>
+      <HashCode>AkUABASAAAAAAAAIAAASAAABAAAKAIACIAAQACAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsDespacho" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsDespacho.vb</FileName>
+      <HashCode>AAAAAAAAgUAAAAAAAAACAAAAAAAAAAAAAAAgAAIEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsDocApertura" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsDocApertura.vb</FileName>
+      <HashCode>AAAAAAAAAUBAAACAAAADAAACEAAAABAAAAQgCIAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsEnvio" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsEnvio.vb</FileName>
+      <HashCode>AAAAAAAACEAAAAAAAACCAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsEstado" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsEstado.vb</FileName>
+      <HashCode>AABAAAAABgAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsIncoterm" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsIncoterm.vb</FileName>
+      <HashCode>AABAAAAAAAAAAAAAAAgAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsLiquidacion" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsLiquidacion.vb</FileName>
+      <HashCode>AAABAAAAAAAAAEgABEACIBAAAAAAAAAAAAAIAAAAgAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsMoneda" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsMoneda.vb</FileName>
+      <HashCode>AAAIAEAAAEAAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsNoLaborable" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsNoLaborable.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAQAAAgAAAAAAAAIACAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsPais" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsPais.vb</FileName>
+      <HashCode>AAAAAAIAAEAAAAAAAAACBAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsPrioridad" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsPrioridad.vb</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAACAAAAAAAQAAAABAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsProveedor" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsProveedor.vb</FileName>
+      <HashCode>AAAAAAAAAEAAACACAAACAAAIAAAAAAAAAAgAAQAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsPuerto" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsPuerto.vb</FileName>
+      <HashCode>AAAAAAAAAEgAAAAAAAACAAAAAAAAQAAgAAAAACAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRegimen" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsRegimen.vb</FileName>
+      <HashCode>AAAAAAAAAUAAAAAAAAACAAAAAAAAAAABAAAggAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRepContenedor" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsRepContenedor.vb</FileName>
+      <HashCode>AQBFADAAAIIAQgIEAQAISMACWYRASAogAAAAAPgxgAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRepDespacho" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsRepDespacho.vb</FileName>
+      <HashCode>AECEIEQMEA0KQAAAYABiNAESAAIhYQAAAgAIIEACBQE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsTerminal" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsTerminal.vb</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAACAEAAAAAAAAAAAAAAAAAEAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsTipoCarga" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsTipoCarga.vb</FileName>
+      <HashCode>AAAAAAAAAUAAAAAAACACAAAAAAAABAAAAAAgAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsTransporte" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsTransporte.vb</FileName>
+      <HashCode>AABAAAAAAQAAAAAAAAgAIAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsVapor" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsVapor.vb</FileName>
+      <HashCode>AAAAAEAAAEAAAAAAAAACAAAAAAAAAAAAAAAABAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsZona" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>General\clsZona.vb</FileName>
+      <HashCode>AAAAAAAAAUAAAAAEAAACAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsCalculoCosto">
+    <Position X="6.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operaciones\clsCalculoCosto.vb</FileName>
+      <HashCode>BAAAAEAAAAhYAUKYAKSQAAAQABBAQABEAAGAADABIYA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="lstOC" />
+      <Field Name="lstOS" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsDetOC">
+    <Position X="11.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operaciones\clsDetOC.vb</FileName>
+      <HashCode>YgQAEAUQARwQQQYIAgA6AQAFIAACQIAsQAASCAAQJFA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsEmbarque" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operaciones\clsEmbarque.vb</FileName>
+      <HashCode>IgAAVJCoEEhYCgglDCGGJAABBCQAIgAgAwAAIl8iAwE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsForol" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operaciones\clsForol.vb</FileName>
+      <HashCode>hAAQAIAAAKEAAAKAgzCQACgBAAAoCAEABFAAAEAAVAM=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsOC">
+    <Position X="9" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operaciones\clsOC.vb</FileName>
+      <HashCode>J2AAEKAAAAgAAQAAYCmSAAAFAEAAAYjABAQAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="lstItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsPreEmbarque" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operaciones\clsPreEmbarque.vb</FileName>
+      <HashCode>AAACAACAIAgAAAAhIgCAAAAAAQAAQAAAAABGAUAiAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRep3PL" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\clsRep3PL.vb</FileName>
+      <HashCode>AgEAEAoCBCIDAnEgBCBrCCHRhBmZARQAAABAslCAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRepLiqAntamina" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\clsRepLiqAntamina.vb</FileName>
+      <HashCode>AgAAAAAAAAAAAAAAAAABAAAAABAAAEAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRepMenAdn" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\clsRepMenAdn.vb</FileName>
+      <HashCode>AgAAAAAAAAAAAAEAAgQAAAEAGAAAAAAAAhAEAAABIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRepMenSA" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\clsRepMenSA.vb</FileName>
+      <HashCode>AgAAAAAAAAAAABAAAAAAAAAAAQAAAAAAABAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRepMonthly" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\clsRepMonthly.vb</FileName>
+      <HashCode>IgQAgAAAEhACCBEAAgIAAAAAIAAyABAAAAAACAQQAgE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRepSadAntamina" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\clsRepSadAntamina.vb</FileName>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsRptMenCI" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\clsRptMenCI.vb</FileName>
+      <HashCode>AgAAAAAAAAACAAAAAACAAAQgAAAAAAAEABAAAAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsCheckPoint" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Tablas\clsCheckPoint.vb</FileName>
+      <HashCode>gAEAAAAAgEAABgAAABACAAQAABAAAAgAAAABAACUAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsMultiTabla" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Tablas\clsMultiTabla.vb</FileName>
+      <HashCode>AABAAAACAQAAAAAAAAAAAAwgAAQIAAAAAKQAABAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.clsTableroDatos" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Tablas\clsTableroDatos.vb</FileName>
+      <HashCode>AADAAAAAgAAAAAAAAAECAAQAQBAAAAgAAAAAAACAIgQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLMIN_SC.Negocio.My.MySettings" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="SOLMIN_SC.Negocio.My.Resources.Resources" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SOLMIN_SC.Negocio.My.MySettingsProperty" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+</ClassDiagram>

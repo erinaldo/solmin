@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ACD809D7-131C-4256-B26D-2B0E4D659815}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ransa.Controls</RootNamespace>
+    <AssemblyName>Ransa.Controls</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ransa.Controls.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ransa.Controls.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CarlosAg.ExcelXmlWriter, Version=1.0.0.6, Culture=neutral, PublicKeyToken=eac822d9c4196ba1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\CarlosAg.ExcelXmlWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.7.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e">
+      <HintPath>..\..\..\Dlls\ComponentFactory.Krypton.Toolkit 2.7.1\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AyudaConectado\frmAyudaConectado.Designer.vb">
+      <DependentUpon>frmAyudaConectado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AyudaConectado\frmAyudaConectado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AyudaConectado\ucAyudaConectado.Designer.vb">
+      <DependentUpon>ucAyudaConectado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AyudaConectado\ucAyudaConectado.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucLote.Designer.vb">
+      <DependentUpon>ucLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucLote.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucUbicaciones_Dg.Designer.vb">
+      <DependentUpon>ucUbicaciones_Dg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucUbicaciones_Dg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DATOS\brLote_DAL.vb" />
+    <Compile Include="DATOS\brMercaderia_DAL.vb" />
+    <Compile Include="DATOS\daBase.vb" />
+    <Compile Include="DATOS\DAUbicacion.vb" />
+    <Compile Include="Forms\frmAyudaPaginada.Designer.vb">
+      <DependentUpon>frmAyudaPaginada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAyudaPaginada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmBusqueda.designer.vb">
+      <DependentUpon>frmBusqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmBusqueda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\modGlobal.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="General\Busqueda.vb" />
+    <Compile Include="General\Comparador.vb" />
+    <Compile Include="General\Predicado.vb" />
+    <Compile Include="General\ParamentrosGlobales.vb" />
+    <Compile Include="NEGOCIO\brBase.vb" />
+    <Compile Include="NEGOCIO\brLote_BL.vb" />
+    <Compile Include="NEGOCIO\brMercaderia_BL.vb" />
+    <Compile Include="NEGOCIO\brObject.vb" />
+    <Compile Include="NEGOCIO\brUbicacion.vb" />
+    <Compile Include="ENTIDAD\beUbicacion.vb" />
+    <Compile Include="General\HelpClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NEGOCIO\ClsGeneral_BL.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AyudaConectado\frmAyudaConectado.resx">
+      <DependentUpon>frmAyudaConectado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AyudaConectado\ucAyudaConectado.resx">
+      <DependentUpon>ucAyudaConectado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucLote.resx">
+      <DependentUpon>ucLote.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucUbicaciones_Dg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucUbicaciones_Dg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAyudaPaginada.resx">
+      <DependentUpon>frmAyudaPaginada.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmBusqueda.resx">
+      <DependentUpon>frmBusqueda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+    <Content Include="Resources\404FileNotFound.jpg" />
+    <Content Include="Resources\Agregar2.jpg" />
+    <Content Include="Resources\agt_web.png" />
+    <Content Include="Resources\Almacen.png" />
+    <Content Include="Resources\ark_selectall.png" />
+    <Content Include="Resources\button_cancel.png" />
+    <None Include="Resources\button_ok1.png" />
+    <None Include="Resources\button_ok11.png" />
+    <None Include="Resources\button_ok12.png" />
+    <None Include="Resources\button_ok2.png" />
+    <None Include="Resources\button_cancel1.png" />
+    <None Include="Resources\button_ok3.png" />
+    <Content Include="Resources\cell_layout.png" />
+    <Content Include="Resources\cell_layout1.png" />
+    <Content Include="Resources\chardevice---.png" />
+    <Content Include="Resources\Confirmar_1.jpg" />
+    <Content Include="Resources\db_add.png" />
+    <Content Include="Resources\db_remove.png" />
+    <Content Include="Resources\Dibujo.bmp" />
+    <Content Include="Resources\Dibujo.JPG" />
+    <Content Include="Resources\edit_add.png" />
+    <Content Include="Resources\EnBlanco.JPG" />
+    <Content Include="Resources\excel.jpg" />
+    <Content Include="Resources\excelicon.jpg" />
+    <Content Include="Resources\excel_icon.jpg" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\exit2.png" />
+    <Content Include="Resources\flecha.png" />
+    <Content Include="Resources\FondoPantalla.jpg" />
+    <Content Include="Resources\FondoPantalla.PNG" />
+    <None Include="Resources\GenerarReporte.png" />
+    <Content Include="Resources\Host16.gif" />
+    <Content Include="Resources\icono_verdetalle.gif" />
+    <Content Include="Resources\icon_truck.jpg" />
+    <Content Include="Resources\images %281%29.jpg" />
+    <Content Include="Resources\images %281%291.jpg" />
+    <Content Include="Resources\images %282%29.jpg" />
+    <Content Include="Resources\images.jpg" />
+    <Content Include="Resources\img_Avc.jpg" />
+    <Content Include="Resources\kwalletmanager.png" />
+    <Content Include="Resources\Leyeda05.JPG" />
+    <Content Include="Resources\Leyenda011.bmp" />
+    <Content Include="Resources\Leyenda02.bmp" />
+    <Content Include="Resources\Leyenda02.JPG" />
+    <Content Include="Resources\Leyenda03.JPG" />
+    <Content Include="Resources\Leyenda031.JPG" />
+    <Content Include="Resources\Leyenda4.bmp" />
+    <Content Include="Resources\Leyenda41.bmp" />
+    <Content Include="Resources\liconf.png" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\LogoFactura.JPG" />
+    <Content Include="Resources\LogoSOLMIN1.PNG" />
+    <Content Include="Resources\logo_cargo_Plan.PNG" />
+    <Content Include="Resources\Logo_Ransa.png" />
+    <Content Include="Resources\map.jpg" />
+    <Content Include="Resources\mozilla_blu.gif" />
+    <None Include="Resources\Nada_11.PNG" />
+    <Content Include="Resources\pdf_icon.jpg" />
+    <Content Include="Resources\powerpoint_icon.jpg" />
+    <Content Include="Resources\progressbar.gif" />
+    <Content Include="Resources\retorno.jpg" />
+    <Content Include="Resources\runprog.png" />
+    <Content Include="Resources\salir.jpg" />
+    <Content Include="Resources\sapcicon.jpg" />
+    <Content Include="Resources\search.png" />
+    <Content Include="Resources\stop.png" />
+    <Content Include="Resources\text_block.png" />
+    <Content Include="Resources\text_block1.png" />
+    <Content Include="Resources\ToolStripMenuItem25.Image.png" />
+    <Content Include="Resources\ToolStripMenuItem26.Image.png" />
+    <Content Include="Resources\ToolStripMenuItem27.Image.png" />
+    <Content Include="Resources\trash.png" />
+    <Content Include="Resources\unknown_icon.jpg" />
+    <Content Include="Resources\window_fullscreen.png" />
+    <Content Include="Resources\window_nofullscreen.png" />
+    <Content Include="Resources\word_icon.jpg" />
+    <None Include="Resources\Nada_1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SOLMIN_SA\SOLMIN_SA.TypeDef\RANSA.TYPEDEF.vbproj">
+      <Project>{92EF2C77-6996-427A-8E39-0F003417E224}</Project>
+      <Name>RANSA.TYPEDEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CodeTextBox\CodeTextBox.vbproj">
+      <Project>{65B6AD03-EFF5-418E-832C-56A7A543F82C}</Project>
+      <Name>CodeTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Db2Manager\Db2Manager.vbproj">
+      <Project>{A2C91CD2-A100-4979-9EA9-53939E4A666F}</Project>
+      <Name>Db2Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cliente\Ransa.Controls.Cliente\Ransa.Controls.Cliente.vbproj">
+      <Project>{E440D2C4-A8D1-44EE-9A08-18D9ACEA0771}</Project>
+      <Name>Ransa.Controls.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ransa.Controls.Menu\Ransa.Controls.Menu.vbproj">
+      <Project>{EBFA900F-1EF9-4950-93CC-03871B0C4781}</Project>
+      <Name>Ransa.Controls.Menu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UbicacionPlanta\Ransa.Controls.UbicacionPlanta\Ransa.Controls.UbicacionPlanta.vbproj">
+      <Project>{0EEA3048-0BD4-4822-AB36-9FDA790A19BF}</Project>
+      <Name>Ransa.Controls.UbicacionPlanta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitario\Ransa.Utilitario\Ransa.Utilitario.vbproj">
+      <Project>{7E7BA314-5F8A-4352-A484-CA1D254337AA}</Project>
+      <Name>Ransa.Utilitario</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="SOLMIN_SC_Negocio_WSyrcRns_AddData" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.yrcransaexpediting.com/yrcransaws/AddData.asmx</Value>
+    </Setting>
+    <Setting Name="SOLMIN_SC_Negocio_WSABB_Integracion_IntegracionABB" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://asp.ransa.net/WSMineriaABB/IntegracionABB.asmx</Value>
+    </Setting>
+    <Setting Name="SOLMIN_SC_Negocio_WSABB_IntegracionTest_IntegracionABBTest" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://asp.ransa.net/WSMineriaABB/IntegracionABBtest.asmx</Value>
+    </Setting>
+    <Setting Name="SOLMIN_SC_Negocio_ascinsa_ransa_asp_WsSolminSil" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://asp.ransa.net/wsmineria/wssolminsil.asmx</Value>
+    </Setting>
+    <Setting Name="SOLMIN_SC_Negocio_pe_com_ransa_asp_SolminWeb" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ranmolapl01.gruporansa.gromero.net/imagenessolmin/SolminWeb.asmx</Value>
+    </Setting>
+    <Setting Name="SOLMIN_SC_Negocio_WSmiqransa_AddData" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.miqransaexpediting.com/miqransaws/adddata.asmx</Value>
+    </Setting>
+    <Setting Name="SOLMIN_SC_Negocio_WSmiqpowerplus_AddData" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://powerplus.miq.com/miqransaws/AddData.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

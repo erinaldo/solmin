@@ -1,0 +1,35 @@
+# Archivo de proyecto de Microsoft Developer Studio - Proyecto de base de datos
+Begin DataProject = "Ransa.SQL.Transportista"
+   MSDTVersion = "80"
+   DefDBRef = "ODBC.RANSA01.DB2400"
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "ODBC.RANSA.DB2400"
+         ConnectStr = "Dsn=PRODUCCION;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+      Begin DBRefNode = "ODBC.RANSA01.DB2400"
+         ConnectStr = "Dsn=DESARROLLO;uid=DDEZELAP"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+   End
+   Begin Folder = "Functions"
+   End
+   Begin Folder = "Procedures"
+      Script = "SP_SOLMIN_ACOPLADO_POR_TRANSPORTISTA_RZST18_L01.sql"
+      Script = "SP_SOLMIN_ACOPLADO_POR_TRANSPORTISTA_RZST18_OBJ.sql"
+      Script = "SP_SOLMIN_ACOPLADO_RZST05_L01.sql"
+      Script = "SP_SOLMIN_ACOPLADO_RZST05_OBJ.sql"
+      Script = "SP_SOLMIN_CONDUCTOR_RZST08_L01.sql"
+      Script = "SP_SOLMIN_CONDUCTOR_RZST08_OBJ.sql"
+      Script = "SP_SOLMIN_TRACTO_POR_TRANSPORTISTA_RZST17_L01.sql"
+      Script = "SP_SOLMIN_TRACTO_POR_TRANSPORTISTA_RZST17_OBJ.sql"
+      Script = "SP_SOLMIN_TRACTO_RZST03_L01.sql"
+      Script = "SP_SOLMIN_TRACTO_RZST03_OBJ.sql"
+      Script = "SP_SOLMIN_TRANSPORTISTA_RZST01_L01.sql"
+      Script = "SP_SOLMIN_TRANSPORTISTA_RZST01_OBJ.sql"
+   End
+   Begin Folder = "Queries"
+   End
+End
